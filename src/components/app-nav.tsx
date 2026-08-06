@@ -8,12 +8,15 @@ import {
   ClipboardCheck,
   FileBarChart,
   LayoutDashboard,
+  LineChart,
   MoreHorizontal,
   PackagePlus,
   Search,
   ShoppingCart,
+  SlidersHorizontal,
   Tags,
   Truck,
+  Upload,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -29,11 +32,14 @@ export const NAV_ITEMS = [
   { href: "/stock", label: "Stock lookup", icon: Search, primary: true },
   { href: "/receiving", label: "Receiving", icon: PackagePlus, primary: true },
   { href: "/dispatch", label: "Dispatch", icon: Truck, primary: true },
+  { href: "/analytics", label: "Analytics", icon: LineChart },
   { href: "/transfers", label: "Transfers", icon: ArrowLeftRight },
   { href: "/stock-takes", label: "Stock takes", icon: ClipboardCheck },
   { href: "/procurement", label: "Procurement", icon: ShoppingCart },
+  { href: "/minimums", label: "Minimum qty", icon: SlidersHorizontal },
   { href: "/reports", label: "Reports", icon: FileBarChart },
   { href: "/labels", label: "Bin labels", icon: Tags },
+  { href: "/import", label: "Import stock", icon: Upload },
 ] as const;
 
 function isActive(pathname: string, href: string) {

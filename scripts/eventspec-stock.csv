@@ -1,0 +1,2243 @@
+group,sku,description,type,bin,location,qty,price,supplier,uom,min_qty,order_qty
+Consumables,CON-AA-01,M8X35 Hex Bolt,Hex Bolt,AA-01,RB,185,1.2,,EA,47,93
+Consumables,CON-AA-02,M8X40 Hex Bolt,Hex Bolt,AA-02,RB,190,1.4,,EA,48,95
+Consumables,CON-AA-03,M8X45 Hex Bolt,Hex Bolt,AA-03,RB,99,2,,EA,25,50
+Consumables,CON-AA-04,M8X50 Hex Bolt,Hex Bolt,AA-04,RB,154,2.2,,EA,39,77
+Consumables,CON-AA-05,M8X55 Hex Bolt,Hex Bolt,AA-05,RB,172,2.4,,EA,43,86
+Consumables,CON-AA-06,M8X60 Hex Bolt,Hex Bolt,AA-06,RB,735,2.05,,EA,184,368
+Consumables,CON-AA-07,M8X65 Hex Bolt,Hex Bolt,AA-07,RB,122,2.25,,EA,31,61
+Consumables,CON-AA-08,M8X70 Hex Bolt,Hex Bolt,AA-08,RB,144,2.25,,EA,36,72
+Consumables,CON-AA-09,M8X75 Hex Bolt,Hex Bolt,AA-09,RB,62,2.5,,EA,16,31
+Consumables,CON-AA-10,M8X80 Hex Bolt,Hex Bolt,AA-10,RB,163,2.85,,EA,41,82
+Consumables,CON-AA-11,M8X90 Hex Bolt,Hex Bolt,AA-11,RB,54,2.7,,EA,14,27
+Consumables,CON-AA-12,M8X100 Hex Bolt,Hex Bolt,AA-12,RB,56,3.04,,EA,14,28
+Consumables,CON-AA-13,M8X110 Hex Bolt,Hex Bolt,AA-13,RB,45,3.17,,EA,12,23
+Consumables,CON-AA-14,M8X120 Hex Bolt,Hex Bolt,AA-14,RB,9,4.7,,EA,3,5
+Consumables,CON-AA-15,M8X130 Hex Bolt,Hex Bolt,AA-15,RB,13,4.4,,EA,4,7
+Consumables,CON-AA-16,M10X16 Hex Bolt,Hex Bolt,AA-16,RB,55,1.52,,EA,14,28
+Consumables,CON-AA-17,M10X20 Hex Bolt,Hex Bolt,AA-17,RB,227,1.53,,EA,57,114
+Consumables,CON-AA-18,M10X25 Hex Bolt,Hex Bolt,AA-18,RB,113,1.82,,EA,29,57
+Consumables,CON-AA-19,M10X30 Hex Bolt,Hex Bolt,AA-19,RB,290,1.79,,EA,73,145
+Consumables,CON-AA-20,M10X35 Hex Bolt,Hex Bolt,AA-20,RB,120,1.95,,EA,30,60
+Consumables,CON-AA-21,M10X40 Hex Bolt,Hex Bolt,AA-21,RB,205,1.97,,EA,52,103
+Consumables,CON-AA-22,M10X45 Hex Bolt,Hex Bolt,AA-22,RB,66,2.45,,EA,17,33
+Consumables,CON-AA-23,M10X50 Hex Bolt,Hex Bolt,AA-23,RB,84,2.51,,EA,21,42
+Consumables,CON-AA-24,M10X55 Hex Bolt,Hex Bolt,AA-24,RB,158,2.75,,EA,40,79
+Consumables,CON-AA-25,M10X60 Hex Bolt,Hex Bolt,AA-25,RB,146,2.92,,EA,37,73
+Consumables,CON-AA-26,M10X65 Hex Bolt,Hex Bolt,AA-26,RB,83,4.5,,EA,21,42
+Consumables,CON-AA-27,M10X70 Hex Bolt,Hex Bolt,AA-27,RB,77,3.46,,EA,20,39
+Consumables,CON-AA-28,M10X75 Hex Bolt,Hex Bolt,AA-28,RB,230,3.85,,EA,58,115
+Consumables,CON-AA-29,M10X80 Hex Bolt,Hex Bolt,AA-29,RB,89,3.98,,EA,23,45
+Consumables,CON-AA-30,M10X90 P/T Hex Bolt,Hex Bolt,AA-30,RB,51,3.07,,EA,13,26
+Consumables,CON-AA-31,M10X90 F/T Hex Bolt,Hex Bolt,AA-31,RB,232,3.07,,EA,58,116
+Consumables,CON-AA-32,M10X100 P/T Hex Bolt,Hex Bolt,AA-32,RB,47,4.3,,EA,12,24
+Consumables,CON-AA-33,M10X110 P/T Hex Bolt,Hex Bolt,AA-33,RB,202,4.05,,EA,51,101
+Consumables,CON-AA-34,M10X120 P/T Hex Bolt,Hex Bolt,AA-34,RB,90,4.4,,EA,23,45
+Consumables,CON-AA-35,M10X130 P/T Hex Bolt,Hex Bolt,AA-35,RB,63,5.85,,EA,16,32
+Consumables,CON-AA-36,M10X140 P/T Hex Bolt,Hex Bolt,AA-36,RB,72,5.7,,EA,18,36
+Consumables,CON-AA-37,M10X160 P/T Hex Bolt,Hex Bolt,AA-37,RB,60,9.4,,EA,15,30
+Consumables,CON-AA-38,M4X20 Countersink,Countersink,AA-38,RB,0,,,EA,0,0
+Consumables,CON-AA-39,M4X30 Countersink,Countersink,AA-39,RB,14,,,EA,4,7
+Consumables,CON-AA-40,M5X16 Countersink,Countersink,AA-40,RB,45,,,EA,12,23
+Consumables,CON-AA-41,M5X25 Countersink,Countersink,AA-41,RB,67,,,EA,17,34
+Consumables,CON-AA-42,M6X16 Countersink,Countersink,AA-42,RB,74,,,EA,19,37
+Consumables,CON-AA-43,M6X20 Countersink,Countersink,AA-43,RB,67,,,EA,17,34
+Consumables,CON-AA-44,M6X30 Countersink,Countersink,AA-44,RB,76,,,EA,19,38
+Consumables,CON-AA-45,M8X16 Countersink,Countersink,AA-45,RB,164,,,EA,41,82
+Consumables,CON-AA-46,M8X20 Countersink,Countersink,AA-46,RB,120,,,EA,30,60
+Consumables,CON-AA-47,M8X25 Countersink,Countersink,AA-47,RB,130,,,EA,33,65
+Consumables,CON-AA-48,M8X30 Countersink,Countersink,AA-48,RB,227,,,EA,57,114
+Consumables,CON-AA-49,M8X40 Countersink,Countersink,AA-49,RB,74,,,EA,19,37
+Consumables,CON-AA-50,M8X50 Countersink,Countersink,AA-50,RB,33,,,EA,9,17
+Consumables,CON-AA-51,M10X12 Countersink,Countersink,AA-51,RB,94,,,EA,24,47
+Consumables,CON-AA-52,M10X16 Countersink,Countersink,AA-52,RB,106,,,EA,27,53
+Consumables,CON-AA-53,M10X20 Countersink,Countersink,AA-53,RB,260,,,EA,65,130
+Consumables,CON-AA-54,M10X25 Countersink,Countersink,AA-54,RB,121,,,EA,31,61
+Consumables,CON-AA-55,M10X30 Countersink,Countersink,AA-55,RB,121,,,EA,31,61
+Consumables,CON-AA-56,M10X40 Countersink,Countersink,AA-56,RB,94,,,EA,24,47
+Consumables,CON-AA-57,M10X50 Countersink,Countersink,AA-57,RB,9,,,EA,3,5
+Consumables,CON-AA-58,M10X90 Countersink,Countersink,AA-58,RB,16,,,EA,4,8
+Consumables,CON-AA-59,M12X35 Countersink,Countersink,AA-59,RB,39,,,EA,10,20
+Consumables,CON-AA-60,M12X40 Countersink,Countersink,AA-60,RB,16,,,EA,4,8
+Consumables,CON-AA-61,M12X45 Countersink,Countersink,AA-61,RB,50,,,EA,13,25
+Consumables,CON-AA-62,M12X50 Countersink,Countersink,AA-62,RB,24,,,EA,6,12
+Consumables,CON-AA-63,M16X20 Countersink,Countersink,AA-63,RB,51,,,EA,13,26
+Consumables,CON-AA-64,M16X30 Countersink,Countersink,AA-64,RB,2,,,EA,1,1
+Consumables,CON-AA-65,M16X35 Countersink,Countersink,AA-65,RB,36,,,EA,9,18
+Consumables,CON-AA-66,M16X40 Countersink,Countersink,AA-66,RB,37,,,EA,10,19
+Consumables,CON-AA-67,M16X50 Countersink,Countersink,AA-67,RB,3,,,EA,1,2
+Consumables,CON-AA-68,M16X55 Countersink,Countersink,AA-68,RB,5,,,EA,2,3
+Consumables,CON-AA-69,M16X60 Countersink,Countersink,AA-69,RB,14,,,EA,4,7
+Consumables,CON-AA-70,M20X60 Countersink,Countersink,AA-70,RB,20,,,EA,5,10
+Consumables,CON-AA-71,M20X80 Countersink,Countersink,AA-71,RB,26,,,EA,7,13
+Consumables,CON-AA-72,M20X100 Countersink,Countersink,AA-72,RB,28,,,EA,7,14
+Consumables,CON-AA-73,M24X65 Countersink,Countersink,AA-73,RB,13,,,EA,4,7
+Consumables,CON-AA-74,M24X80 Countersink,Countersink,AA-74,RB,30,,,EA,8,15
+Consumables,CON-AA-75,M24X90 Countersink,Countersink,AA-75,RB,28,,,EA,7,14
+Consumables,CON-AA-75#2,M24X90 Countersink,Countersink,AA-75,RB,37,,,EA,10,19
+Consumables,CON-AB-01,M10X65 Cap Screw,Cap Screw,AB-01,RB,72,4.5,,EA,18,36
+Consumables,CON-AB-02,M10X70 Cap Screw,Cap Screw,AB-02,RB,71,3.46,,EA,18,36
+Consumables,CON-AB-03,M10X75 Cap Screw,Cap Screw,AB-03,RB,27,3.85,,EA,7,14
+Consumables,CON-AB-04,M10X80 Cap Screw,Cap Screw,AB-04,RB,179,3.98,,EA,45,90
+Consumables,CON-AB-05,M10X90 Cap Screw,Cap Screw,AB-05,RB,48,,,EA,12,24
+Consumables,CON-AB-06,M10X100 Cap Screw,Cap Screw,AB-06,RB,77,,,EA,20,39
+Consumables,CON-AB-07,M10X110 Cap Screw,Cap Screw,AB-07,RB,71,,,EA,18,36
+Consumables,CON-AB-08,M10X130 Cap Screw,Cap Screw,AB-08,RB,114,5.85,,EA,29,57
+Consumables,CON-AB-09,M10X160 Cap Screw,Cap Screw,AB-09,RB,74,9.4,,EA,19,37
+Consumables,CON-AB-10,M10X150 Cap Screw,Cap Screw,AB-10,RB,59,6.58,,EA,15,30
+Consumables,CON-AB-100,M12X40 Selloc Pin,Selloc Pin,AB-100,RB,10,,,EA,3,5
+Consumables,CON-AB-101,M10X70 Selloc Pin,Selloc Pin,AB-101,RB,25,,,EA,7,13
+Consumables,CON-AB-102,M10X40 Selloc Pin,Selloc Pin,AB-102,RB,6,,,EA,2,3
+Consumables,CON-AB-103,M8X70 Selloc Pin,Selloc Pin,AB-103,RB,114,,,EA,29,57
+Consumables,CON-AB-104,M8X35 Selloc Pin,Selloc Pin,AB-104,RB,12,,,EA,3,6
+Consumables,CON-AB-105,M8X30 Selloc Pin,Selloc Pin,AB-105,RB,15,,,EA,4,8
+Consumables,CON-AB-106,M8X20 Selloc Pin,Selloc Pin,AB-106,RB,32,,,EA,8,16
+Consumables,CON-AB-107,M6X60 Selloc Pin,Selloc Pin,AB-107,RB,26,,,EA,7,13
+Consumables,CON-AB-108,M6X50 Selloc Pin,Selloc Pin,AB-108,RB,7,,,EA,2,4
+Consumables,CON-AB-109,M6X16 Selloc Pin,Selloc Pin,AB-109,RB,42,,,EA,11,21
+Consumables,CON-AB-11,M12X16 Cap Screw,Cap Screw,AB-11,RB,162,2.15,,EA,41,81
+Consumables,CON-AB-110,M6X40 Selloc Pin,Selloc Pin,AB-110,RB,30,,,EA,8,15
+Consumables,CON-AB-111,M5X25 Selloc Pin,Selloc Pin,AB-111,RB,14,,,EA,4,7
+Consumables,CON-AB-112,M20X60 Dowel Pin,Dowel Pin,AB-112,RB,10,,,EA,3,5
+Consumables,CON-AB-114,M12X35 Dowel Pin,Dowel Pin,AB-114,RB,4,,,EA,1,2
+Consumables,CON-AB-115,M10X40 Dowel Pin,Dowel Pin,AB-115,RB,21,,,EA,6,11
+Consumables,CON-AB-116,M8X45 Dowel Pin,Dowel Pin,AB-116,RB,4,,,EA,1,2
+Consumables,CON-AB-119,M8X40 Dowel Pin,Dowel Pin,AB-119,RB,15,,,EA,4,8
+Consumables,CON-AB-12,M12X20 Cap Screw,Cap Screw,AB-12,RB,31,2.27,,EA,8,16
+Consumables,CON-AB-13,M12X25 Cap Screw,Cap Screw,AB-13,RB,86,2.47,,EA,22,43
+Consumables,CON-AB-14,M12X30 Cap Screw,Cap Screw,AB-14,RB,108,2.72,,EA,27,54
+Consumables,CON-AB-15,M12X35 Cap Screw,Cap Screw,AB-15,RB,7,3,,EA,2,4
+Consumables,CON-AB-16,M12X40 Cap Screw,Cap Screw,AB-16,RB,38,3.29,,EA,10,19
+Consumables,CON-AB-17,M12X45 Cap Screw,Cap Screw,AB-17,RB,74,3.41,,EA,19,37
+Consumables,CON-AB-18,M12X50 Cap Screw,Cap Screw,AB-18,RB,76,3.49,,EA,19,38
+Consumables,CON-AB-19,M12X55 Cap Screw,Cap Screw,AB-19,RB,150,3.96,,EA,38,75
+Consumables,CON-AB-20,M12X60 Cap Screw,Cap Screw,AB-20,RB,86,4.53,,EA,22,43
+Consumables,CON-AB-21,M12X65 Cap Screw,Cap Screw,AB-21,RB,46,4.36,,EA,12,23
+Consumables,CON-AB-22,M12X70 Cap Screw,Cap Screw,AB-22,RB,47,5.18,,EA,12,24
+Consumables,CON-AB-23,M12X75 Cap Screw,Cap Screw,AB-23,RB,51,5.26,,EA,13,26
+Consumables,CON-AB-24,M12X80 Cap Screw,Cap Screw,AB-24,RB,172,5.41,,EA,43,86
+Consumables,CON-AB-25,M12X90 Cap Screw,Cap Screw,AB-25,RB,9,6.15,,EA,3,5
+Consumables,CON-AB-26,M12X100 Cap Screw,Cap Screw,AB-26,RB,55,6.92,,EA,14,28
+Consumables,CON-AB-27,M12X110 Cap Screw,Cap Screw,AB-27,RB,72,7.35,,EA,18,36
+Consumables,CON-AB-28,M12X120 Cap Screw,Cap Screw,AB-28,RB,17,8.15,,EA,5,9
+Consumables,CON-AB-29,M12X125 Cap Screw,Cap Screw,AB-29,RB,8,,,EA,2,4
+Consumables,CON-AB-30,M12X130 Cap Screw,Cap Screw,AB-30,RB,33,9.4,,EA,9,17
+Consumables,CON-AB-31,M5X16 Hex Bolt,Hex Bolt,AB-31,RB,53,0.44,,EA,14,27
+Consumables,CON-AB-32,M5X20 Hex Bolt,Hex Bolt,AB-32,RB,33,0.37,,EA,9,17
+Consumables,CON-AB-33,M5X25 Hex Bolt,Hex Bolt,AB-33,RB,289,0.36,,EA,73,145
+Consumables,CON-AB-34,M5X30 Hex Bolt,Hex Bolt,AB-34,RB,217,0.52,,EA,55,109
+Consumables,CON-AB-35,M5X35 Hex Bolt,Hex Bolt,AB-35,RB,208,0.68,,EA,52,104
+Consumables,CON-AB-36,M5X40 Hex Bolt,Hex Bolt,AB-36,RB,80,0.75,,EA,20,40
+Consumables,CON-AB-37,M5X45 Hex Bolt,Hex Bolt,AB-37,RB,239,0.8,,EA,60,120
+Consumables,CON-AB-38,M5X50 Hex Bolt,Hex Bolt,AB-38,RB,121,0.71,,EA,31,61
+Consumables,CON-AB-39,M5X110 Hex Bolt,Hex Bolt,AB-39,RB,42,,,EA,11,21
+Consumables,CON-AB-40,M6X12 Hex Bolt,Hex Bolt,AB-40,RB,286,0.5,,EA,72,143
+Consumables,CON-AB-41,M6X16 Hex Bolt,Hex Bolt,AB-41,RB,129,0.4,,EA,33,65
+Consumables,CON-AB-42,M6X20 Hex Bolt,Hex Bolt,AB-42,RB,17,0.5,,EA,5,9
+Consumables,CON-AB-43,M6X25 Hex Bolt,Hex Bolt,AB-43,RB,127,0.58,,EA,32,64
+Consumables,CON-AB-44,M6X30 Hex Bolt,Hex Bolt,AB-44,RB,190,0.83,,EA,48,95
+Consumables,CON-AB-45,M6X35 Hex Bolt,Hex Bolt,AB-45,RB,145,,,EA,37,73
+Consumables,CON-AB-46,M6X40 Hex Bolt,Hex Bolt,AB-46,RB,74,0.88,,EA,19,37
+Consumables,CON-AB-47,M6X45 Hex Bolt,Hex Bolt,AB-47,RB,45,1.1,,EA,12,23
+Consumables,CON-AB-48,M6X50 Hex Bolt,Hex Bolt,AB-48,RB,126,,,EA,32,63
+Consumables,CON-AB-49,M6X55 Hex Bolt,Hex Bolt,AB-49,RB,51,,,EA,13,26
+Consumables,CON-AB-50,M6X60 Hex Bolt,Hex Bolt,AB-50,RB,25,,,EA,7,13
+Consumables,CON-AB-51,M6X65 Hex Bolt,Hex Bolt,AB-51,RB,143,,,EA,36,72
+Consumables,CON-AB-52,M6X70 Hex Bolt,Hex Bolt,AB-52,RB,41,1.95,,EA,11,21
+Consumables,CON-AB-53,M6X75 Hex Bolt,Hex Bolt,AB-53,RB,42,1.6,,EA,11,21
+Consumables,CON-AB-54,M6X80 Hex Bolt,Hex Bolt,AB-54,RB,60,1.5,,EA,15,30
+Consumables,CON-AB-55,M6X140 Hex Bolt,Hex Bolt,AB-55,RB,0,,,EA,0,0
+Consumables,CON-AB-56,M8X12 Hex Bolt,Hex Bolt,AB-56,RB,230,0.59,,EA,58,115
+Consumables,CON-AB-57,M8X16 Hex Bolt,Hex Bolt,AB-57,RB,214,0.82,,EA,54,107
+Consumables,CON-AB-57#2,M10X25 Cap Screw,Cap Screw,AB-57,RB,108,,,EA,27,54
+Consumables,CON-AB-58,M8X25 Hex Bolt,Hex Bolt,AB-58,RB,89,1.21,,EA,23,45
+Consumables,CON-AB-59,M8X30 Hex Bolt,Hex Bolt,AB-59,RB,77,1.2,,EA,20,39
+Consumables,CON-AB-60,M8X30 Hex Bolt,Hex Bolt,AB-60,RB,171,1.21,,EA,43,86
+Consumables,CON-AB-61,M6X2.0X1D Helicoil,Helicoil,AB-61,RB,40,,,EA,10,20
+Consumables,CON-AB-62,M6X2.0X1.5D Helicoil,Helicoil,AB-62,RB,92,,,EA,23,46
+Consumables,CON-AB-63,M6X2.0X2D Helicoil,Helicoil,AB-63,RB,10,,,EA,3,5
+Consumables,CON-AB-64,M6X2.0X3D Helicoil,Helicoil,AB-64,RB,25,,,EA,7,13
+Consumables,CON-AB-65,M8X2.0X2D Helicoil,Helicoil,AB-65,RB,18,,,EA,5,9
+Consumables,CON-AB-66,M8X2.0X1.5D Helicoil,Helicoil,AB-66,RB,92,,,EA,23,46
+Consumables,CON-AB-67,M10X2.0X1.5D Helicoil,Helicoil,AB-67,RB,52,,,EA,13,26
+Consumables,CON-AB-68,M10X2.0X1D Helicoil,Helicoil,AB-68,RB,103,,,EA,26,52
+Consumables,CON-AB-69,M10X2.0X2D Helicoil,Helicoil,AB-69,RB,4,,,EA,1,2
+Consumables,CON-AB-70,M10X2.0X2.5D Helicoil,Helicoil,AB-70,RB,132,,,EA,33,66
+Consumables,CON-AB-71,M10X2.0X3D Helicoil,Helicoil,AB-71,RB,78,,,EA,20,39
+Consumables,CON-AB-72,M12X2.0X1D Helicoil,Helicoil,AB-72,RB,31,,,EA,8,16
+Consumables,CON-AB-73,M12X2.0X1.5D Helicoil,Helicoil,AB-73,RB,22,,,EA,6,11
+Consumables,CON-AB-74,M12X2.0X1.75D Helicoil,Helicoil,AB-74,RB,74,,,EA,19,37
+Consumables,CON-AB-75,M12X2.0X2.5D Helicoil,Helicoil,AB-75,RB,11,,,EA,3,6
+Consumables,CON-AB-76,M12X2.0X3D Helicoil,Helicoil,AB-76,RB,95,,,EA,24,48
+Consumables,CON-AB-77,M16X2.0X1D Helicoil,Helicoil,AB-77,RB,29,,,EA,8,15
+Consumables,CON-AB-78,M16X2.0X2D Helicoil,Helicoil,AB-78,RB,20,,,EA,5,10
+Consumables,CON-AB-79,M16X2.0X1.5D Helicoil,Helicoil,AB-79,RB,28,,,EA,7,14
+Consumables,CON-AB-80,M16X1.5X1.5D Helicoil,Helicoil,AB-80,RB,27,,,EA,7,14
+Consumables,CON-AB-81,M16X2.0X3D Helicoil,Helicoil,AB-81,RB,89,,,EA,23,45
+Consumables,CON-AB-82,M24X2.0X2.5D Helicoil,Helicoil,AB-82,RB,6,,,EA,2,3
+Consumables,CON-AB-83,M24X2.0X1D Helicoil,Helicoil,AB-83,RB,102,,,EA,26,51
+Consumables,CON-AB-84,M20X2.0X1D Helicoil,Helicoil,AB-84,RB,72,,,EA,18,36
+Consumables,CON-AB-85,M20X2.0X1.5D Helicoil,Helicoil,AB-85,RB,30,,,EA,8,15
+Consumables,CON-AB-86,M20X2.0X3D Helicoil,Helicoil,AB-86,RB,8,,,EA,2,4
+Consumables,CON-AB-87,M24X2.0X2D Helicoil,Helicoil,AB-87,RB,11,,,EA,3,6
+Consumables,CON-AB-88,M24X2.0X3D Helicoil,Helicoil,AB-88,RB,37,,,EA,10,19
+Consumables,CON-AB-89,8Mm R-Clip,R-Clip,AB-89,RB,10,,,EA,3,5
+Consumables,CON-AB-90,6Mm R-Clip,R-Clip,AB-90,RB,9,,,EA,3,5
+Consumables,CON-AB-91,5Mm R-Clip,R-Clip,AB-91,RB,11,,,EA,3,6
+Consumables,CON-AB-92,4Mm R-Clip,R-Clip,AB-92,RB,21,,,EA,6,11
+Consumables,CON-AB-93,M20X60 Selloc Pin,Selloc Pin,AB-93,RB,27,,,EA,7,14
+Consumables,CON-AB-94,M20X40 Sellco Pin,Selloc Pin,AB-94,RB,13,,,EA,4,7
+Consumables,CON-AB-95,M16X100 Selloc Pin,Selloc Pin,AB-95,RB,15,,,EA,4,8
+Consumables,CON-AB-96,M16X80 Selloc Pin,Selloc Pin,AB-96,RB,12,,,EA,3,6
+Consumables,CON-AB-97,M16X60 Selloc Pin,Selloc Pin,AB-97,RB,34,,,EA,9,17
+Consumables,CON-AB-98,M16X40 Selloc Pin,Selloc Pin,AB-98,RB,48,,,EA,12,24
+Consumables,CON-AB-99,M14X100 Selloc Pin,Selloc Pin,AB-99,RB,13,,,EA,4,7
+Consumables,CON-AC-01,M5X16 Cap Screw,Cap Screw,AC-01,RB,236,0.44,,EA,59,118
+Consumables,CON-AC-02,M5X20 Cap Screw,Cap Screw,AC-02,RB,359,0.37,,EA,90,180
+Consumables,CON-AC-03,M5X25 Cap Screw,Cap Screw,AC-03,RB,270,0.36,,EA,68,135
+Consumables,CON-AC-04,M5X30 Cap Screw,Cap Screw,AC-04,RB,52,0.52,,EA,13,26
+Consumables,CON-AC-05,M5X12 Cap Screw,Cap Screw,AC-05,RB,97,0.35,,EA,25,49
+Consumables,CON-AC-06,M5X35 Cap Screw,Cap Screw,AC-06,RB,150,0.68,,EA,38,75
+Consumables,CON-AC-07,M5X40 Cap Screw,Cap Screw,AC-07,RB,106,0.75,,EA,27,53
+Consumables,CON-AC-08,M5X45 Cap Screw,Cap Screw,AC-08,RB,109,0.8,,EA,28,55
+Consumables,CON-AC-09,M5X50 Cap Screw,Cap Screw,AC-09,RB,46,0.71,,EA,12,23
+Consumables,CON-AC-10,M5X55 Cap Screw,Cap Screw,AC-10,RB,49,,,EA,13,25
+Consumables,CON-AC-100,M6X20 Galvanised Hex Bolt,Galvanised,AC-100,RB,3,,,EA,1,2
+Consumables,CON-AC-101,M12X30 Galvanised Cap Screw,Galvanised,AC-101,RB,20,,,EA,5,10
+Consumables,CON-AC-102,M16X25 Galvanised Cap Screw,Galvanised,AC-102,RB,107,,,EA,27,54
+Consumables,CON-AC-104,M16X75 Galvanised Cap Screw,Galvanised,AC-104,RB,35,,,EA,9,18
+Consumables,CON-AC-105,M16X60 Galvanised Hex Bolt,Galvanised,AC-105,RB,25,,,EA,7,13
+Consumables,CON-AC-106,M16X70 Galvanised Hex Bolt,Galvanised,AC-106,RB,21,,,EA,6,11
+Consumables,CON-AC-107,M12X100 Galvanised Hex Bolt,Galvanised,AC-107,RB,11,,,EA,3,6
+Consumables,CON-AC-108,M16X160 Galvanised Hex Bolt,Galvanised,AC-108,RB,11,,,EA,3,6
+Consumables,CON-AC-109,M12X40 Galvanised Hex Bolt,Galvanised,AC-109,RB,15,,,EA,4,8
+Consumables,CON-AC-11,M5X60 Cap Screw,Cap Screw,AC-11,RB,61,1.15,,EA,16,31
+Consumables,CON-AC-110,M12X65 Galvanised Hex Bolt,Galvanised,AC-110,RB,19,,,EA,5,10
+Consumables,CON-AC-111,M10X65 Galvanised Hex Bolt,Galvanised,AC-111,RB,16,,,EA,4,8
+Consumables,CON-AC-112,M16X75 Galvanised Hex Bolt,Galvanised,AC-112,RB,10,,,EA,3,5
+Consumables,CON-AC-113,M20X150 Galvanised Hex Bolt,Galvanised,AC-113,RB,4,,,EA,1,2
+Consumables,CON-AC-114,M16X25 Galvanised Cap Screw,Galvanised,AC-114,RB,119,,,EA,30,60
+Consumables,CON-AC-115,M16X120 Galvanised Hex Bolt,Galvanised,AC-115,RB,21,,,EA,6,11
+Consumables,CON-AC-116,M20X100 Galvanised Hex Bolt,Galvanised,AC-116,RB,8,,,EA,2,4
+Consumables,CON-AC-117,M16X100 Galvanised Hex Bolt,Galvanised,AC-117,RB,23,,,EA,6,12
+Consumables,CON-AC-118,M16X40 Galvanised Cap Screw,Galvanised,AC-118,RB,28,,,EA,7,14
+Consumables,CON-AC-12,M5X65 Cap Screw,Cap Screw,AC-12,RB,74,1.4,,EA,19,37
+Consumables,CON-AC-13,M5X75 Cap Screw,Cap Screw,AC-13,RB,96,1.5,,EA,24,48
+Consumables,CON-AC-14,M5X80 Cap Screw,Cap Screw,AC-14,RB,57,1.1,,EA,15,29
+Consumables,CON-AC-15,M5X90 Cap Screw,Cap Screw,AC-15,RB,85,1.92,,EA,22,43
+Consumables,CON-AC-16,M5X100 Cap Screw,Cap Screw,AC-16,RB,110,1.8,,EA,28,55
+Consumables,CON-AC-17,M6X16 Cap Screw,Cap Screw,AC-17,RB,78,0.4,,EA,20,39
+Consumables,CON-AC-18,M6X20 Cap Screw,Cap Screw,AC-18,RB,120,0.5,,EA,30,60
+Consumables,CON-AC-19,M6X30 Cap Screw,Cap Screw,AC-19,RB,124,0.83,,EA,31,62
+Consumables,CON-AC-20,M6X35 Cap Screw,Cap Screw,AC-20,RB,58,0.78,,EA,15,29
+Consumables,CON-AC-21,M6X40 Cap Screw,Cap Screw,AC-21,RB,49,0.88,,EA,13,25
+Consumables,CON-AC-22,M6X45 Cap Screw,Cap Screw,AC-22,RB,164,1.1,,EA,41,82
+Consumables,CON-AC-23,M6X50 Cap Screw,Cap Screw,AC-23,RB,90,1.03,,EA,23,45
+Consumables,CON-AC-24,M6X55 Cap Screw,Cap Screw,AC-24,RB,101,1.5,,EA,26,51
+Consumables,CON-AC-25,M6X60 Cap Screw,Cap Screw,AC-25,RB,78,1.14,,EA,20,39
+Consumables,CON-AC-26,M6X65 Cap Screw,Cap Screw,AC-26,RB,53,1.2,,EA,14,27
+Consumables,CON-AC-27,M6X70 Cap Screw,Cap Screw,AC-27,RB,50,1.95,,EA,13,25
+Consumables,CON-AC-28,M6X75 Cap Screw,Cap Screw,AC-28,RB,188,1.6,,EA,47,94
+Consumables,CON-AC-29,M6X80 Cap Screw,Cap Screw,AC-29,RB,67,1.5,,EA,17,34
+Consumables,CON-AC-30,M6X90 Cap Screw,Cap Screw,AC-30,RB,21,2.05,,EA,6,11
+Consumables,CON-AC-31,M6X100 Cap Screw,Cap Screw,AC-31,RB,29,1.9,,EA,8,15
+Consumables,CON-AC-32,M6X110 Cap Screw,Cap Screw,AC-32,RB,88,,,EA,22,44
+Consumables,CON-AC-33,M6X12 Cap Screw,Cap Screw,AC-33,RB,92,0.5,,EA,23,46
+Consumables,CON-AC-34,M6X25 Cap Screw,Cap Screw,AC-34,RB,65,0.58,,EA,17,33
+Consumables,CON-AC-35,M8X12 Cap Screw,Cap Screw,AC-35,RB,8,,,EA,2,4
+Consumables,CON-AC-36,M8X16 Cap Screw,Cap Screw,AC-36,RB,79,0.82,,EA,20,40
+Consumables,CON-AC-37,M8X20 Cap Screw,Cap Screw,AC-37,RB,154,1.21,,EA,39,77
+Consumables,CON-AC-38,M8X25 Cap Screw,Cap Screw,AC-38,RB,85,1.2,,EA,22,43
+Consumables,CON-AC-39,M8X30 Cap Screw,Cap Screw,AC-39,RB,213,1.21,,EA,54,107
+Consumables,CON-AC-40,M8X35 Cap Screw,Cap Screw,AC-40,RB,69,1.2,,EA,18,35
+Consumables,CON-AC-41,M8X40 Cap Screw,Cap Screw,AC-41,RB,76,1.4,,EA,19,38
+Consumables,CON-AC-42,M8X45 Cap Screw,Cap Screw,AC-42,RB,94,2,,EA,24,47
+Consumables,CON-AC-43,M8X50 Cap Screw,Cap Screw,AC-43,RB,74,2.2,,EA,19,37
+Consumables,CON-AC-44,M8X55 Cap Screw,Cap Screw,AC-44,RB,24,2.4,,EA,6,12
+Consumables,CON-AC-45,M8X60 Cap Screw,Cap Screw,AC-45,RB,71,2.05,,EA,18,36
+Consumables,CON-AC-46,M8X65 Cap Screw,Cap Screw,AC-46,RB,100,2.25,,EA,25,50
+Consumables,CON-AC-47,M8X70 Cap Screw,Cap Screw,AC-47,RB,59,2.25,,EA,15,30
+Consumables,CON-AC-48,M8X75 Cap Screw,Cap Screw,AC-48,RB,252,2.5,,EA,63,126
+Consumables,CON-AC-49,M8X80 Cap Screw,Cap Screw,AC-49,RB,19,2.85,,EA,5,10
+Consumables,CON-AC-50,M8X90 Cap Screw,Cap Screw,AC-50,RB,171,2.7,,EA,43,86
+Consumables,CON-AC-51,M8X100 Cap Screw,Cap Screw,AC-51,RB,41,3.04,,EA,11,21
+Consumables,CON-AC-52,M8X110 Cap Screw,Cap Screw,AC-52,RB,28,3.17,,EA,7,14
+Consumables,CON-AC-53,M8X120 Cap Screw,Cap Screw,AC-53,RB,24,4.7,,EA,6,12
+Consumables,CON-AC-54,M8X130 Cap Screw,Cap Screw,AC-54,RB,10,4.4,,EA,3,5
+Consumables,CON-AC-55,M10X16 Cap Screw,Cap Screw,AC-55,RB,142,1.52,,EA,36,71
+Consumables,CON-AC-56,M10X20 Cap Screw,Cap Screw,AC-56,RB,184,1.53,,EA,46,92
+Consumables,CON-AC-57,M10X30 Cap Screw,Cap Screw,AC-57,RB,46,1.79,,EA,12,23
+Consumables,CON-AC-60,M10X40 Cap Screw,Cap Screw,AC-60,RB,125,1.97,,EA,32,63
+Consumables,CON-AC-61,M10X45 Cap Screw,Cap Screw,AC-61,RB,85,2.45,,EA,22,43
+Consumables,CON-AC-62,M10X50 Cap Screw,Cap Screw,AC-62,RB,179,2.51,,EA,45,90
+Consumables,CON-AC-63,M10X55 Cap Screw,Cap Screw,AC-63,RB,52,2.75,,EA,13,26
+Consumables,CON-AC-64,M10X60 Cap Screw,Cap Screw,AC-64,RB,24,2.92,,EA,6,12
+Consumables,CON-AC-69,M10X35 Cap Screw,Cap Screw,AC-69,RB,42,1.95,,EA,11,21
+Consumables,CON-AC-70,M16X240 Galvanised Cap Screw,Galvanised,AC-70,RB,12,,,EA,3,6
+Consumables,CON-AC-72,M8X120 Galvanised Cap Screw,Galvanised,AC-72,RB,4,,,EA,1,2
+Consumables,CON-AC-73,M16X240 Galvanised Cap Screw,Galvanised,AC-73,RB,12,,,EA,3,6
+Consumables,CON-AC-74,M16X110 Galvanised Cap Screw,Galvanised,AC-74,RB,8,,,EA,2,4
+Consumables,CON-AC-75,M20X75 Galvanised Cap Screw,Galvanised,AC-75,RB,21,,,EA,6,11
+Consumables,CON-AC-76,M24X90 Galvanised Cap Screw,Galvanised,AC-76,RB,17,,,EA,5,9
+Consumables,CON-AC-77,M8X50 Galvanised Cap Screw,Galvanised,AC-77,RB,6,,,EA,2,3
+Consumables,CON-AC-78,M6X40 Galvanised Cap Screw,Galvanised,AC-78,RB,13,,,EA,4,7
+Consumables,CON-AC-79,M6X35 Galvanised Cap Screw,Galvanised,AC-79,RB,7,,,EA,2,4
+Consumables,CON-AC-80,M10X20 Galvanised Cap Screw,Galvanised,AC-80,RB,9,,,EA,3,5
+Consumables,CON-AC-81,M8X25 Galvanised Cap Screw,Galvanised,AC-81,RB,1,,,EA,1,1
+Consumables,CON-AC-82,M24X220 Glavanised Cap Screw,Galvanised,AC-82,RB,6,,,EA,2,3
+Consumables,CON-AC-83,M12X20 Galvanised Cap Screw,Galvanised,AC-83,RB,85,,,EA,22,43
+Consumables,CON-AC-84,M16X50 Galvanised Cap Screw,Galvanised,AC-84,RB,14,,,EA,4,7
+Consumables,CON-AC-85,M6X12 Galvanised Cap Screw,Galvanised,AC-85,RB,4,,,EA,1,2
+Consumables,CON-AC-86,M10X35 Glavanised Cap Screw,Galvanised,AC-86,RB,4,,,EA,1,2
+Consumables,CON-AC-87,M10X30 Galvanised Cap Screw,Galvanised,AC-87,RB,7,,,EA,2,4
+Consumables,CON-AC-88,M8X110 Galvanised Cap Screw,Galvanised,AC-88,RB,25,,,EA,7,13
+Consumables,CON-AC-89,M20X70 Galvanised Cap Screw,Galvanised,AC-89,RB,18,,,EA,5,9
+Consumables,CON-AC-90,M10X35 Galvanised Cap Screw,Galvanised,AC-90,RB,33,,,EA,9,17
+Consumables,CON-AC-91,M20X130 Galvanised Hex Bolt,Galvanised,AC-91,RB,8,,,EA,2,4
+Consumables,CON-AC-92,M12X120 Galvanised Hex Bolt,Galvanised,AC-92,RB,12,,,EA,3,6
+Consumables,CON-AC-93,M20X55 Galvanised Hex Bolt,Galvanised,AC-93,RB,53,,,EA,14,27
+Consumables,CON-AC-95,M10X25 Galvanised Hex Bolt,Galvanised,AC-95,RB,12,,,EA,3,6
+Consumables,CON-AC-96,M20X70 Galvanised Hex Bolt,Galvanised,AC-96,RB,7,,,EA,2,4
+Consumables,CON-AC-97,M12X130 Galvanised Cap Screw,Galvanised,AC-97,RB,7,,,EA,2,4
+Consumables,CON-AC-98,M12X50 Galvanised Hex Bolt,Galvanised,AC-98,RB,10,,,EA,3,5
+Consumables,CON-AC-99,M12X35 Galvanised Hex Bolt,Galvanised,AC-99,RB,15,,,EA,4,8
+Consumables,CON-AX,Unkown,Bearing,AX,RB,8,,,EA,2,4
+Consumables,CON-AX#2,Accor,Bearing,AX,RB,2,,,EA,1,1
+Consumables,CON-AX#3,Nachi,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#4,Nsk,Bearing,AX,RB,3,,,EA,1,2
+Consumables,CON-AX#5,Nsk,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#6,Nsk,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#7,Nsk,Bearing,AX,RB,4,,,EA,1,2
+Consumables,CON-AX#8,Nsk,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#9,Ntn,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#10,Ntn,Bearing,AX,RB,5,,,EA,2,3
+Consumables,CON-AX#11,Ntn,Bearing,AX,RB,2,,,EA,1,1
+Consumables,CON-AX#12,Sdvv,Bearing,AX,RB,2,,,EA,1,1
+Consumables,CON-AX#13,Skf,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#14,Spicer,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#15,Spicer,Bearing,AX,RB,4,,,EA,1,2
+Consumables,CON-AX#16,Spicer,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#17,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#18,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#19,Timken,Bearing,AX,RB,2,,,EA,1,1
+Consumables,CON-AX#20,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#21,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#22,Timken,Bearing,AX,RB,4,,,EA,1,2
+Consumables,CON-AX#23,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#24,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#25,Timken,Bearing,AX,RB,1,,,EA,1,1
+Consumables,CON-AX#26,Timken,Bearing,AX,RB,4,,,EA,1,2
+Consumables,CON-AX#27,Timken,Bearing,AX,RB,2,,,EA,1,1
+Consumables,CON-AX#28,Timken,Bearing,AX,RB,3,,,EA,1,2
+Consumables,CON-AX#29,Timken,Bearing,AX,RB,5,,,EA,2,3
+Consumables,CON-AX#30,Vbh,Bearing,AX,RB,8,,,EA,2,4
+Consumables,CON-AXT,Axle Consumables,Basic Consumable,AXT,RB,0,,,EA,0,0
+Consumables,CON-BA-01,M16X130 F/T Hex Bolt,Hex Bolt,BA-01,RB,36,,,EA,9,18
+Consumables,CON-BA-02,M16X130 P/T Hex Bolt,Hex Bolt,BA-02,RB,37,,,EA,10,19
+Consumables,CON-BA-03,M16X140 P/T Hex Bolt,Hex Bolt,BA-03,RB,22,,,EA,6,11
+Consumables,CON-BA-04,M16X150 P/T Hex Bolt,Hex Bolt,BA-04,RB,97,14.65,,EA,25,49
+Consumables,CON-BA-05,M16X160 P/T Hex Bolt,Hex Bolt,BA-05,RB,9,,,EA,3,5
+Consumables,CON-BA-06,M16X180 F/T Hex Bolt,Hex Bolt,BA-06,RB,34,17.3,,EA,9,17
+Consumables,CON-BA-07,M16X180 P/T Hex Bolt,Hex Bolt,BA-07,RB,149,17.3,,EA,38,75
+Consumables,CON-BA-08,M16X190 P/T Hex Bolt,Hex Bolt,BA-08,RB,1,,,EA,1,1
+Consumables,CON-BA-09,M16X200 P/T Hex Bolt,Hex Bolt,BA-09,RB,102,,,EA,26,51
+Consumables,CON-BA-10,M16X220 P/T Hex Bolt,Hex Bolt,BA-10,RB,44,29.3,,EA,11,22
+Consumables,CON-BA-11,M16X220 P/T Hex Bolt,Hex Bolt,BA-11,RB,46,29.3,,EA,12,23
+Consumables,CON-BA-12,M16X240 P/T Hex Bolt,Hex Bolt,BA-12,RB,29,32,,EA,8,15
+Consumables,CON-BA-13,M16X260 P/T Hex Bolt,Hex Bolt,BA-13,RB,42,,,EA,11,21
+Consumables,CON-BA-14,M16X280 P/T Hex Bolt,Hex Bolt,BA-14,RB,61,36.05,,EA,16,31
+Consumables,CON-BA-15,M16X320 P/T Hex Bolt,Hex Bolt,BA-15,RB,10,57,,EA,3,5
+Consumables,CON-BA-16,M16X340 P/T Hex Bolt,Hex Bolt,BA-16,RB,1,46.15,,EA,1,1
+Consumables,CON-BA-17,M20X30 Hex Bolt,Hex Bolt,BA-17,RB,105,10.8,,EA,27,53
+Consumables,CON-BA-18,M20X35 Hex Bolt,Hex Bolt,BA-18,RB,102,10.51,,EA,26,51
+Consumables,CON-BA-19,M20X40 Hex Bolt,Hex Bolt,BA-19,RB,56,9.4,,EA,14,28
+Consumables,CON-BB-01,M16X80 P/T Hex Bolt,Hex Bolt,BB-01,RB,186,7.65,,EA,47,93
+Consumables,CON-BB-02,M16X80 F/T Hex Bolt,Hex Bolt,BB-02,RB,74,7.65,,EA,19,37
+Consumables,CON-BB-03,M16X90 P/T Hex Bolt,Hex Bolt,BB-03,RB,151,9.52,,EA,38,76
+Consumables,CON-BB-04,M16X100 F/T Hex Bolt,Hex Bolt,BB-04,RB,141,,,EA,36,71
+Consumables,CON-BB-05,M16X100 P/T Hex Bolt,Hex Bolt,BB-05,RB,127,,,EA,32,64
+Consumables,CON-BB-06,M16X110 F/T Hex Bolt,Hex Bolt,BB-06,RB,102,,,EA,26,51
+Consumables,CON-BB-07,M16X110 P/T Hex Bolt,Hex Bolt,BB-07,RB,37,,,EA,10,19
+Consumables,CON-BB-08,M16X110 P/T Hex Bolt,Hex Bolt,BB-08,RB,127,,,EA,32,64
+Consumables,CON-BB-09,M16X120 F/T Hex Bolt,Hex Bolt,BB-09,RB,58,,,EA,15,29
+Consumables,CON-BB-10,M16X120 P/T Hex Bolt,Hex Bolt,BB-10,RB,84,,,EA,21,42
+Consumables,CON-BB-11,M20X45 Hex Bolt,Hex Bolt,BB-11,RB,54,9.79,,EA,14,27
+Consumables,CON-BB-12,M20X50 Hex Bolt,Hex Bolt,BB-12,RB,165,9.61,,EA,42,83
+Consumables,CON-BB-13,M20X55 Hex Bolt,Hex Bolt,BB-13,RB,62,11.1,,EA,16,31
+Consumables,CON-BB-14,M20X60 Hex Bolt,Hex Bolt,BB-14,RB,132,13.15,,EA,33,66
+Consumables,CON-BB-15,M20X65 Hex Bolt,Hex Bolt,BB-15,RB,139,,,EA,35,70
+Consumables,CON-BB-16,M20X65 P/T Hex Bolt,Hex Bolt,BB-16,RB,120,,,EA,30,60
+Consumables,CON-BB-17,M20X70 Hex Bolt,Hex Bolt,BB-17,RB,98,,,EA,25,49
+Consumables,CON-BB-18,M20X80 P/T Hex Bolt,Hex Bolt,BB-18,RB,65,,,EA,17,33
+Consumables,CON-BB-19,M20X90 P/T Hex Bolt,Hex Bolt,BB-19,RB,57,,,EA,15,29
+Consumables,CON-BB-20,M20X90 P/T Hex Bolt,Hex Bolt,BB-20,RB,55,,,EA,14,28
+Consumables,CON-BC-01,M16X55 F/T Hex Bolt,Hex Bolt,BC-01,RB,104,6.77,,EA,26,52
+Consumables,CON-BC-02,M16X55 P/T Hex Bolt,Hex Bolt,BC-02,RB,148,6.77,,EA,37,74
+Consumables,CON-BC-03,M16X60 P/T Hex Bolt,Hex Bolt,BC-03,RB,103,7.15,,EA,26,52
+Consumables,CON-BC-04,M16X65 P/T Hex Bolt,Hex Bolt,BC-04,RB,30,8.15,,EA,8,15
+Consumables,CON-BC-05,M16X70 F/T Hex Bolt,Hex Bolt,BC-05,RB,124,9.9,,EA,31,62
+Consumables,CON-BC-06,M16X70 P/T Hex Bolt,Hex Bolt,BC-06,RB,166,9.9,,EA,42,83
+Consumables,CON-BC-07,M16X75 P/T Hex Bolt,Hex Bolt,BC-07,RB,72,8.2,,EA,18,36
+Consumables,CON-BC-08,M16X75 F/T Hex Bolt,Hex Bolt,BC-08,RB,29,8.2,,EA,8,15
+Consumables,CON-BC-09,M20X100 P/T Hex Bolt,Hex Bolt,BC-09,RB,100,,,EA,25,50
+Consumables,CON-BC-10,M20X100 P/T Hex Bolt,Hex Bolt,BC-10,RB,101,170.7,,EA,26,51
+Consumables,CON-BC-11,M20X110 P/T Hex Bolt,Hex Bolt,BC-11,RB,86,,,EA,22,43
+Consumables,CON-BC-12,M20X120 P/T Hex Bolt,Hex Bolt,BC-12,RB,87,19.75,,EA,22,44
+Consumables,CON-BC-13,M20X130 P/T Hex Bolt,Hex Bolt,BC-13,RB,48,,,EA,12,24
+Consumables,CON-BC-14,M20X140 P/T Hex Bolt,Hex Bolt,BC-14,RB,24,,,EA,6,12
+Consumables,CON-BC-15,M20X150 Fine T 10.9 Hex Bolt,Hex Bolt,BC-15,RB,13,,,EA,4,7
+Consumables,CON-BC-16,M20X150 P/T Hex Bolt,Hex Bolt,BC-16,RB,54,,,EA,14,27
+Consumables,CON-BC-17,M20X160 P/T Hex Bolt,Hex Bolt,BC-17,RB,15,,,EA,4,8
+Consumables,CON-BD-01,M14X35 Hex Bolt,Hex Bolt,BD-01,RB,103,6.5,,EA,26,52
+Consumables,CON-BD-02,M14X40 Hex Bolt,Hex Bolt,BD-02,RB,64,4.5,,EA,16,32
+Consumables,CON-BD-03,M14X160 Hex Bolt,Hex Bolt,BD-03,RB,68,13.9,,EA,17,34
+Consumables,CON-BD-04,M14X180 Hex Bolt,Hex Bolt,BD-04,RB,24,18.5,,EA,6,12
+Consumables,CON-BD-05,M14X210 Hex Bolt,Hex Bolt,BD-05,RB,72,,,EA,18,36
+Consumables,CON-BD-06,M16X25 Hex Bolt,Hex Bolt,BD-06,RB,138,7.2,,EA,35,69
+Consumables,CON-BD-07,M16X30 Hex Bolt,Hex Bolt,BD-07,RB,126,4.19,,EA,32,63
+Consumables,CON-BD-08,M16X35 Hex Bolt,Hex Bolt,BD-08,RB,232,4.2,,EA,58,116
+Consumables,CON-BD-09,M16X40 Hex Bolt,Hex Bolt,BD-09,RB,139,5.7,,EA,35,70
+Consumables,CON-BD-10,M16X45 Hex Bolt,Hex Bolt,BD-10,RB,18,5.52,,EA,5,9
+Consumables,CON-BD-11,M16X50 F/T Hex Bolt,Hex Bolt,BD-11,RB,231,5.25,,EA,58,116
+Consumables,CON-BD-12,M16X50 P/T Hex Bolt,Hex Bolt,BD-12,RB,93,5.25,,EA,24,47
+Consumables,CON-BD-13,M20X180 10.9 Hex Bolt,Hex Bolt,BD-13,RB,77,,,EA,20,39
+Consumables,CON-BD-14,M20X180 P/T Hex Bolt,Hex Bolt,BD-14,RB,32,32.28,,EA,8,16
+Consumables,CON-BD-15,M20X180 P/T 10.9 Hex Bolt,Hex Bolt,BD-15,RB,29,32.28,,EA,8,15
+Consumables,CON-BD-16,M20X190 P/T Hex Bolt,Hex Bolt,BD-16,RB,8,,,EA,2,4
+Consumables,CON-BD-17,M20X200 P/T Hex Bolt,Hex Bolt,BD-17,RB,15,39,,EA,4,8
+Consumables,CON-BD-18,M20X220 P/T Hex Bolt,Hex Bolt,BD-18,RB,36,40.25,,EA,9,18
+Consumables,CON-BD-19,M20X220 P/T Hex Bolt,Hex Bolt,BD-19,RB,27,40.25,,EA,7,14
+Consumables,CON-BD-20,M20X240 P/T 10.9 Hex Bolt,Hex Bolt,BD-20,RB,7,132.3,,EA,2,4
+Consumables,CON-BD-21,M20X260 P/T 10.9 Hex Bolt,Hex Bolt,BD-21,RB,32,70.65,,EA,8,16
+Consumables,CON-BD-22,M20X260 P/T 8.8 Hex Bolt,Hex Bolt,BD-22,RB,37,70.65,,EA,10,19
+Consumables,CON-BD-23,M20X280 P/T Hex Bolt,Hex Bolt,BD-23,RB,7,85.4,,EA,2,4
+Consumables,CON-BD-26,M24X30 Hex Bolt,Hex Bolt,BD-26,RB,42,,,EA,11,21
+Consumables,CON-BD-27,M24X35 Hex Bolt,Hex Bolt,BD-27,RB,47,,,EA,12,24
+Consumables,CON-BE-01,M12X110 P/T Hex Bolt,Hex Bolt,BE-01,RB,73,7.35,,EA,19,37
+Consumables,CON-BE-02,M12X120 P/T Hex Bolt,Hex Bolt,BE-02,RB,73,8.15,,EA,19,37
+Consumables,CON-BE-03,M12X120 F/T Hex Bolt,Hex Bolt,BE-03,RB,47,8.15,,EA,12,24
+Consumables,CON-BE-04,M12X130 P/T Hex Bolt,Hex Bolt,BE-04,RB,44,9.4,,EA,11,22
+Consumables,CON-BE-05,M12X140 P/T Hex Bolt,Hex Bolt,BE-05,RB,43,8.65,,EA,11,22
+Consumables,CON-BE-06,M12X150 P/T Hex Bolt,Hex Bolt,BE-06,RB,73,8.36,,EA,19,37
+Consumables,CON-BE-07,M12X160 P/T Hex Bolt,Hex Bolt,BE-07,RB,35,9.3,,EA,9,18
+Consumables,CON-BE-08,M12X160 F/T Hex Bolt,Hex Bolt,BE-08,RB,42,,,EA,11,21
+Consumables,CON-BE-09,M12X170 P/T Hex Bolt,Hex Bolt,BE-09,RB,61,8.9,,EA,16,31
+Consumables,CON-BE-10,M12X180 P/T Hex Bolt,Hex Bolt,BE-10,RB,70,10.7,,EA,18,35
+Consumables,CON-BE-11,M12X200 P/T Hex Bolt,Hex Bolt,BE-11,RB,81,10.8,,EA,21,41
+Consumables,CON-BE-12,M12X210 P/T Hex Bolt,Hex Bolt,BE-12,RB,103,,,EA,26,52
+Consumables,CON-BE-13,M24X40 Hex Bolt,Hex Bolt,BE-13,RB,178,,,EA,45,89
+Consumables,CON-BE-14,M24X50 Hex Bolt,Hex Bolt,BE-14,RB,144,,,EA,36,72
+Consumables,CON-BE-15,M24X60 Hex Bolt,Hex Bolt,BE-15,RB,109,,,EA,28,55
+Consumables,CON-BE-16,M24X70 Hex Bolt,Hex Bolt,BE-16,RB,77,,,EA,20,39
+Consumables,CON-BE-17,M24X80 Hex Bolt,Hex Bolt,BE-17,RB,82,,,EA,21,41
+Consumables,CON-BE-18,M24X90 P/T Hex Bolt,Hex Bolt,BE-18,RB,48,,,EA,12,24
+Consumables,CON-BE-19,M24X100 P/T Hex Bolt,Hex Bolt,BE-19,RB,17,,,EA,5,9
+Consumables,CON-BE-20,M24X110 P/T Hex Bolt,Hex Bolt,BE-20,RB,38,,,EA,10,19
+Consumables,CON-BE-21,M24X120 P/T Hex Bolt,Hex Bolt,BE-21,RB,36,,,EA,9,18
+Consumables,CON-BE-22,M24X130 P/T Hex Bolt,Hex Bolt,BE-22,RB,4,,,EA,1,2
+Consumables,CON-BE-23,M24X140 P/T Hex Bolt,Hex Bolt,BE-23,RB,14,,,EA,4,7
+Consumables,CON-BE-24,M24X150 Hex Bolt,Hex Bolt,BE-24,RB,24,124.8,,EA,6,12
+Consumables,CON-BF-01,M12X60 P/T Hex Bolt,Hex Bolt,BF-01,RB,343,4.53,,EA,86,172
+Consumables,CON-BF-02,M12X65 F/T Hex Bolt,Hex Bolt,BF-02,RB,218,4.36,,EA,55,109
+Consumables,CON-BF-03,M12X65 P/T Hex Bolt,Hex Bolt,BF-03,RB,82,4.36,,EA,21,41
+Consumables,CON-BF-04,M12X70 F/T Hex Bolt,Hex Bolt,BF-04,RB,83,5.18,,EA,21,42
+Consumables,CON-BF-05,M12X70 P/T Hex Bolt,Hex Bolt,BF-05,RB,226,5.18,,EA,57,113
+Consumables,CON-BF-06,M12X75 F/T Hex Bolt,Hex Bolt,BF-06,RB,80,5.26,,EA,20,40
+Consumables,CON-BF-07,M12X80 F/T Hex Bolt,Hex Bolt,BF-07,RB,241,5.41,,EA,61,121
+Consumables,CON-BF-08,M12X80 P/T Hex Bolt,Hex Bolt,BF-08,RB,89,5.41,,EA,23,45
+Consumables,CON-BF-09,M12X90 F/T Hex Bolt,Hex Bolt,BF-09,RB,115,6.15,,EA,29,58
+Consumables,CON-BF-10,M12X90 P/T Hex Bolt,Hex Bolt,BF-10,RB,50,6.15,,EA,13,25
+Consumables,CON-BF-11,M12X100 F/T Hex Bolt,Hex Bolt,BF-11,RB,110,6.92,,EA,28,55
+Consumables,CON-BF-12,M12X100 P/T Hex Bolt,Hex Bolt,BF-12,RB,107,6.92,,EA,27,54
+Consumables,CON-BF-13,M12X110 F/T Hex Bolt,Hex Bolt,BF-13,RB,62,7.35,,EA,16,31
+Consumables,CON-BF-14,M24X160 P/T Hex Bolt,Hex Bolt,BF-14,RB,15,,,EA,4,8
+Consumables,CON-BF-15,M24X165 P/T Hex Bolt,Hex Bolt,BF-15,RB,10,,,EA,3,5
+Consumables,CON-BF-16,M24X170 P/T Hex Bolt,Hex Bolt,BF-16,RB,29,,,EA,8,15
+Consumables,CON-BF-17,M24X180 P/T Hex Bolt,Hex Bolt,BF-17,RB,41,,,EA,11,21
+Consumables,CON-BF-18,M24X190 P/T Hex Bolt,Hex Bolt,BF-18,RB,31,,,EA,8,16
+Consumables,CON-BF-19,M24X200 P/T Hex Bolt,Hex Bolt,BF-19,RB,8,,,EA,2,4
+Consumables,CON-BF-20,M24X220 P/T Hex Bolt,Hex Bolt,BF-20,RB,32,,,EA,8,16
+Consumables,CON-BF-21,M24X240 P/T Hex Bolt,Hex Bolt,BF-21,RB,0,,,EA,0,0
+Consumables,CON-BF-22,M24X250 P/T Hex Bolt,Hex Bolt,BF-22,RB,0,,,EA,0,0
+Consumables,CON-BF-23,M24X260 P/T 10.9 Hex Bolt,Hex Bolt,BF-23,RB,13,,,EA,4,7
+Consumables,CON-BF-24,M24X260 P/T 8.8 Hex Bolt,Hex Bolt,BF-24,RB,32,,,EA,8,16
+Consumables,CON-BG-01,M12X20 Hex Bolt,Hex Bolt,BG-01,RB,63,2.27,,EA,16,32
+Consumables,CON-BG-02,M12X25 Hex Bolt,Hex Bolt,BG-02,RB,193,2.47,,EA,49,97
+Consumables,CON-BG-03,M12X30 Hex Bolt,Hex Bolt,BG-03,RB,125,2.72,,EA,32,63
+Consumables,CON-BG-04,M12X35 Hex Bolt,Hex Bolt,BG-04,RB,131,3,,EA,33,66
+Consumables,CON-BG-05,M12X40 Hex Bolt,Hex Bolt,BG-05,RB,76,3.29,,EA,19,38
+Consumables,CON-BG-06,M12X45 F/T Hex Bolt,Hex Bolt,BG-06,RB,222,3.41,,EA,56,111
+Consumables,CON-BG-07,M12X45 P/T Hex Bolt,Hex Bolt,BG-07,RB,95,3.41,,EA,24,48
+Consumables,CON-BG-08,M12X50 F/T Hex Bolt,Hex Bolt,BG-08,RB,306,3.49,,EA,77,153
+Consumables,CON-BG-09,M12X50 P/T Hex Bolt,Hex Bolt,BG-09,RB,171,3.49,,EA,43,86
+Consumables,CON-BG-10,M12X55 P/T Hex Bolt,Hex Bolt,BG-10,RB,275,3.96,,EA,69,138
+Consumables,CON-BG-12,M12X60 F/T Hex Bolt,Hex Bolt,BG-12,RB,108,4.53,,EA,27,54
+Consumables,CON-CA-01,M30X200 P/T Hex Bolt,Hex Bolt,CA-01,RB,5,,,EA,2,3
+Consumables,CON-CA-02,M30X260 P/T Hex Bolt,Hex Bolt,CA-02,RB,20,,,EA,5,10
+Consumables,CON-CA-03,M30X200 P/T Hex Bolt,Hex Bolt,CA-03,RB,6,,,EA,2,3
+Consumables,CON-CA-04,M30X150 P/T Hex Bolt,Hex Bolt,CA-04,RB,4,,,EA,1,2
+Consumables,CON-CA-05,M30X140 P/T Hex Bolt,Hex Bolt,CA-05,RB,1,,,EA,1,1
+Consumables,CON-CA-06,M30X120 P/T Hex Bolt,Hex Bolt,CA-06,RB,21,,,EA,6,11
+Consumables,CON-CA-07,M25X125 P/T Hex Bolt,Hex Bolt,CA-07,RB,16,,,EA,4,8
+Consumables,CON-CA-08,M30X90 Hex Bolt,Hex Bolt,CA-08,RB,19,,,EA,5,10
+Consumables,CON-CA-09,M25X65 Hex Bolt,Hex Bolt,CA-09,RB,27,,,EA,7,14
+Consumables,CON-CA-10,M30X200 P/T Hex Bolt,Hex Bolt,CA-10,RB,5,,,EA,2,3
+Consumables,CON-CA-11,M24X300 P/T Hex Bolt,Hex Bolt,CA-11,RB,43,,,EA,11,22
+Consumables,CON-CA-12,M32X300 Hex Bolt,Hex Bolt,CA-12,RB,3,,,EA,1,2
+Consumables,CON-CA-13,M36X100 Hex Bolt,Hex Bolt,CA-13,RB,5,,,EA,2,3
+Consumables,CON-CA-14,M24X150 Cap Screw,Cap Screw,CA-14,RB,8,,,EA,2,4
+Consumables,CON-CA-15,M30X120 Cap Screw,Cap Screw,CA-15,RB,7,,,EA,2,4
+Consumables,CON-CA-16,M35X120 Cap Screw,Cap Screw,CA-16,RB,1,,,EA,1,1
+Consumables,CON-CB-01,M24X50 Hex Bolt,Hex Bolt,CB-01,RB,108,,,EA,27,54
+Consumables,CON-CB-02,M24X60 Hex Bolt,Hex Bolt,CB-02,RB,56,,,EA,14,28
+Consumables,CON-CB-03,M24X120 Hex Bolt,Hex Bolt,CB-03,RB,29,,,EA,8,15
+Consumables,CON-CB-04,M24X125 Hex Bolt,Hex Bolt,CB-04,RB,19,,,EA,5,10
+Consumables,CON-CB-05,M24X160 Hex Bolt,Hex Bolt,CB-05,RB,24,,,EA,6,12
+Consumables,CON-CB-06,M24X180 Hex Bolt,Hex Bolt,CB-06,RB,29,,,EA,8,15
+Consumables,CON-CB-07,M24X200 Hex Bolt,Hex Bolt,CB-07,RB,5,,,EA,2,3
+Consumables,CON-CB-08,M24X220 Hex Bolt,Hex Bolt,CB-08,RB,15,,,EA,4,8
+Consumables,CON-CB-09,M24X240 Hex Bolt,Hex Bolt,CB-09,RB,9,,,EA,3,5
+Consumables,CON-CB-10,M24X250 Hex Bolt,Hex Bolt,CB-10,RB,27,,,EA,7,14
+Consumables,CON-CB-11,M24X260 Hex Bolt,Hex Bolt,CB-11,RB,7,,,EA,2,4
+Consumables,CON-CB-12,M22X80 Cap Screw,Cap Screw,CB-12,RB,15,,,EA,4,8
+Consumables,CON-CB-13,M24X90 Cap Screw,Cap Screw,CB-13,RB,53,,,EA,14,27
+Consumables,CON-CB-14,M24X70 Cap Screw,Cap Screw,CB-14,RB,124,,,EA,31,62
+Consumables,CON-CB-15,M14 Nylock Nut,Nuts,CB-15,RB,214,,,EA,54,107
+Consumables,CON-CB-16,M20X140 Fine Thread Hex Bolt,Hex Bolt,CB-16,RB,43,,,EA,11,22
+Consumables,CON-CB-17,M16X130 Fine Tread Hex Bolt,Hex Bolt,CB-17,RB,15,,,EA,4,8
+Consumables,CON-CB-18,M14X120 P/T Hex Bolt,Hex Bolt,CB-18,RB,204,,,EA,51,102
+Consumables,CON-CB-19,M14X50 Hex Bolt,Hex Bolt,CB-19,RB,77,,,EA,20,39
+Consumables,CON-CB-20,M14X55 P/T Hex Bolt,Hex Bolt,CB-20,RB,27,,,EA,7,14
+Consumables,CON-CC-01,M14 Nordlock Washers,Washers,CC-01,RB,39,,,EA,10,20
+Consumables,CON-CC-02,M14 Flat Washers,Washers,CC-02,RB,37,0.14,,EA,10,19
+Consumables,CON-CC-03,M16 Flat Washers,Washers,CC-03,RB,89,0.19,,EA,23,45
+Consumables,CON-CC-04,M16 Nordlock Washers,Washers,CC-04,RB,0,13.4,,EA,0,0
+Consumables,CON-CC-05,M20 Flat Washers,Washers,CC-05,RB,143,2.5,,EA,36,72
+Consumables,CON-CC-06,M20 Nordlock Washers,Washers,CC-06,RB,32,,,EA,8,16
+Consumables,CON-CC-07,M24 Nordlock Washer,Washers,CC-07,RB,0,,,EA,0,0
+Consumables,CON-CC-08,M24 Flat Washers,Washers,CC-08,RB,224,19,,EA,56,112
+Consumables,CON-CC-09,M30 Nordlock Washer,Washers,CC-09,RB,0,,,EA,0,0
+Consumables,CON-CC-10,M30 Flat Washers,Washers,CC-10,RB,20,0.65,,EA,5,10
+Consumables,CON-CC-11,M27 Nordlock Washer,Washers,CC-11,RB,18,,,EA,5,9
+Consumables,CON-CC-12,M20X110 P/T Hex Bolt,Hex Bolt,CC-12,RB,23,,,EA,6,12
+Consumables,CON-CC-13,M20X100 F/T Hex Bolt,Hex Bolt,CC-13,RB,72,,,EA,18,36
+Consumables,CON-CC-14,M20X50 Hex Bolt,Hex Bolt,CC-14,RB,250,,,EA,63,125
+Consumables,CON-CC-15,M16X340 P/T Hex Bolt,Hex Bolt,CC-15,RB,27,,,EA,7,14
+Consumables,CON-CC-16,M16X200 P/T Hex Bolt,Hex Bolt,CC-16,RB,261,,,EA,66,131
+Consumables,CON-CC-17,M20X200 Fine Thread Hex Bolt,Hex Bolt,CC-17,RB,19,,,EA,5,10
+Consumables,CON-CC-18,M12X100 P/T Hex Bolt,Hex Bolt,CC-18,RB,75,,,EA,19,38
+Consumables,CON-CC-19,M16X90 F/T Hex Bolt,Hex Bolt,CC-19,RB,248,,,EA,62,124
+Consumables,CON-CC-20,M16X280 P/T Hex Bolt,Hex Bolt,CC-20,RB,8,,,EA,2,4
+Consumables,CON-CD-01,M12 Nylock Nuts,Nuts,CD-01,RB,130,0.88,,EA,33,65
+Consumables,CON-CD-02,M16 Normal Nuts,Nuts,CD-02,RB,38,1.8,,EA,10,19
+Consumables,CON-CD-03,M16 Nylock Nuts,Nuts,CD-03,RB,31,0.88,,EA,8,16
+Consumables,CON-CD-04,M16 Stova Nuts,Nuts,CD-04,RB,0,,,EA,0,0
+Consumables,CON-CD-05,M20 Nylock Nuts,Nuts,CD-05,RB,43,,,EA,11,22
+Consumables,CON-CD-06,M20 Normal Nuts,Nuts,CD-06,RB,41,,,EA,11,21
+Consumables,CON-CD-07,M20 Stova Nuts,Nuts,CD-07,RB,28,,,EA,7,14
+Consumables,CON-CD-08,M24 Nylock Nuts,Nuts,CD-08,RB,11,,,EA,3,6
+Consumables,CON-CD-09,M24 Normal Nuts,Nuts,CD-09,RB,31,,,EA,8,16
+Consumables,CON-CD-11,M22 Nordlock Washer,Washers,CD-11,RB,15,,,EA,4,8
+Consumables,CON-CD-12,M10X80 Cap Screw,Cap Screw,CD-12,RB,249,,,EA,63,125
+Consumables,CON-CD-13,M32X225 Fine Thread Hex Bolt,Hex Bolt,CD-13,RB,7,,,EA,2,4
+Consumables,CON-CD-14,24X310 Cap Screw,Cap Screw,CD-14,RB,2,,,EA,1,1
+Consumables,CON-CD-15,M37X100 F/T Hex Bolt,Hex Bolt,CD-15,RB,9,,,EA,3,5
+Consumables,CON-CD-16,M24X305 P/T Hex Bolt,Hex Bolt,CD-16,RB,10,,,EA,3,5
+Consumables,CON-CD-17,M16X180 Fine Thread Hex Bolt,Hex Bolt,CD-17,RB,8,,,EA,2,4
+Consumables,CON-CD-18,M20X160 P/T Hex Bolt,Hex Bolt,CD-18,RB,24,,,EA,6,12
+Consumables,CON-CE-01,M16X20 Cap Screw,Cap Screw,CE-01,RB,58,,,EA,15,29
+Consumables,CON-CE-02,M16X25 Cap Screw,Cap Screw,CE-02,RB,101,6.2,,EA,26,51
+Consumables,CON-CE-03,M16X30 Cap Screw,Cap Screw,CE-03,RB,206,6.5,,EA,52,103
+Consumables,CON-CE-04,M16X35 Cap Screw,Cap Screw,CE-04,RB,78,,,EA,20,39
+Consumables,CON-CE-05,M16X40 Cap Screw,Cap Screw,CE-05,RB,66,7.3,,EA,17,33
+Consumables,CON-CE-06,M16X45 Cap Screw,Cap Screw,CE-06,RB,129,,,EA,33,65
+Consumables,CON-CE-07,M16X50 Cap Screw,Cap Screw,CE-07,RB,140,,,EA,35,70
+Consumables,CON-CE-08,M16X55 Cap Screw,Cap Screw,CE-08,RB,76,,,EA,19,38
+Consumables,CON-CE-09,M16X60 Cap Screw,Cap Screw,CE-09,RB,33,,,EA,9,17
+Consumables,CON-CE-10,M16X65 Cap Screw,Cap Screw,CE-10,RB,148,,,EA,37,74
+Consumables,CON-CE-11,M16X70 Cap Screw,Cap Screw,CE-11,RB,70,,,EA,18,35
+Consumables,CON-CE-12,M12X55 Cap Screw,Cap Screw,CE-12,RB,285,,,EA,72,143
+Consumables,CON-CE-13,M10X130 Cap Screw,Cap Screw,CE-13,RB,48,,,EA,12,24
+Consumables,CON-CE-14,M10X60 Cap Screw,Cap Screw,CE-14,RB,98,,,EA,25,49
+Consumables,CON-CE-15,M22X90 P/T Hex Bolt,Hex Bolt,CE-15,RB,6,,,EA,2,3
+Consumables,CON-CE-16,M24X70 F/T Hex Bolt,Hex Bolt,CE-16,RB,46,,,EA,12,23
+Consumables,CON-CE-17,M16X90 Fine Thread Hex Bolt,Hex Bolt,CE-17,RB,20,,,EA,5,10
+Consumables,CON-CF-01,M16X200 Cap Screw,Hex Bolt,CF-01,RB,42,,,EA,11,21
+Consumables,CON-CF-03,M16X160 Cap Screw,Cap Screw,CF-03,RB,44,,,EA,11,22
+Consumables,CON-CF-04,M16X150 Cap Screw,Cap Screw,CF-04,RB,63,,,EA,16,32
+Consumables,CON-CF-05,M16X140 Cap Screw,Cap Screw,CF-05,RB,26,,,EA,7,13
+Consumables,CON-CF-06,M16X130 Cap Screw,Cap Screw,CF-06,RB,63,,,EA,16,32
+Consumables,CON-CF-07,M16X110 Cap Screw,Cap Screw,CF-07,RB,89,,,EA,23,45
+Consumables,CON-CF-08,M16X100 Cap Screw,Cap Screw,CF-08,RB,104,,,EA,26,52
+Consumables,CON-CF-09,M16X90 Cap Screw,Cap Screw,CF-09,RB,103,,,EA,26,52
+Consumables,CON-CF-10,M16X80 Cap Screw,Cap Screw,CF-10,RB,95,,,EA,24,48
+Consumables,CON-CF-11,M16X75 Cap Screw,Cap Screw,CF-11,RB,150,10.65,,EA,38,75
+Consumables,CON-CF-12,M20X150 Fine Theads Hex Bolt,Hex Bolt,CF-12,RB,128,,,EA,32,64
+Consumables,CON-CF-13,M19X125 Hex Bolt,Hex Bolt,CF-13,RB,24,,,EA,6,12
+Consumables,CON-CF-14,M24X260 P/T Hex Bolt,Hex Bolt,CF-14,RB,24,,,EA,6,12
+Consumables,CON-CF-15,M30X110 P/T Hex Bolt,Hex Bolt,CF-15,RB,16,,,EA,4,8
+Consumables,CON-CF-16,M30 Nylock Nut,Nuts,CF-16,RB,27,,,EA,7,14
+Consumables,CON-CF-17,M24X40 F/T Hex Bolt,Hex Bolt,CF-17,RB,90,,,EA,23,45
+Consumables,CON-CF-18,M20X180 Fine Thread Hex Bolt,Hex Bolt,CF-18,RB,42,,,EA,11,21
+Consumables,CON-CF-19,M20X160 Fine Thread Hex Bolt,Hex Bolt,CF-19,RB,119,,,EA,30,60
+Consumables,CON-CF-20,M16X150 Fine Thread Hex Bolt,Hex Bolt,CF-20,RB,68,,,EA,17,34
+Consumables,CON-CG-01,M16X340 Cap Screw,Cap Screw,CG-01,RB,49,321,,EA,13,25
+Consumables,CON-CG-02,M20X40 Cap Screw,Cap Screw,CG-02,RB,13,,,EA,4,7
+Consumables,CON-CG-03,M20X60 Cap Screw,Cap Screw,CG-03,RB,77,13.15,,EA,20,39
+Consumables,CON-CG-04,M20X75 Cap Screw,Cap Screw,CG-04,RB,91,,,EA,23,46
+Consumables,CON-CG-05,M20X80 Cap Screw,Cap Screw,CG-05,RB,81,,,EA,21,41
+Consumables,CON-CG-06,M20X100 Cap Screw,Cap Screw,CG-06,RB,29,22.45,,EA,8,15
+Consumables,CON-CG-07,M22X90 Cap Screw,Cap Screw,CG-07,RB,23,,,EA,6,12
+Consumables,CON-CG-08,M22X50 Cap Screw,Cap Screw,CG-08,RB,45,,,EA,12,23
+Consumables,CON-CG-09,M22X55 Cap Screw,Cap Screw,CG-09,RB,56,,,EA,14,28
+Consumables,CON-CG-10,M22X60 Cap Screw,Cap Screw,CG-10,RB,25,,,EA,7,13
+Consumables,CON-CG-11,M22X70 Cap Screw,Cap Screw,CG-11,RB,10,,,EA,3,5
+Consumables,CON-CG-12,M30 Normal Nut,Nut,CG-12,RB,8,,,EA,2,4
+Consumables,CON-CG-13,M32 Nordlock Washer,Washers,CG-13,RB,20,,,EA,5,10
+Consumables,CON-CG-14,M32 Normal Nut,Nut,CG-14,RB,10,,,EA,3,5
+Consumables,CON-CG-15,M16X90 P/T Hex Bolt,Hex Bolt,CG-15,RB,32,,,EA,8,16
+Consumables,CON-CG-16,M16X100 P/T Hex Bolt,Hex Bolt,CG-16,RB,150,,,EA,38,75
+Consumables,CON-CG-17,M16X340 F/T Hex Bolt,Hex Bolt,CG-17,RB,2,,,EA,1,1
+Consumables,CON-CG-18,M39 Flat Washer,Washers,CG-18,RB,16,,,EA,4,8
+Consumables,CON-DA-01,M24 Stoval Nut,Nut,DA-01,RB,38,,,EA,10,19
+Consumables,CON-DA-02,M30X260 P/T Hex Bolt,Hex Bolt,DA-02,RB,2,,,EA,1,1
+Consumables,CON-DA-03,M30X150 P/T Hex Bolt,Hex Bolt,DA-03,RB,6,,,EA,2,3
+Consumables,CON-DA-04,M32X190 P/T Hex Bolt,Hex Bolt,DA-04,RB,4,,,EA,1,2
+Consumables,CON-DA-05,M24X200 Cap Screw,Cap Screw,DA-05,RB,4,,,EA,1,2
+Consumables,CON-DA-06,M20X130 P/T Hex Bolt,Hex Bolt,DA-06,RB,93,,,EA,24,47
+Consumables,CON-DA-07,M24 Nylock Nut,Nut,DA-07,RB,33,,,EA,9,17
+Consumables,CON-DA-08,"1 1/4"" Unc Nut",Nut,DA-08,RB,62,,,EA,16,31
+Consumables,CON-DA-09,M30 Normal Nut,Nut,DA-09,RB,18,,,EA,5,9
+Consumables,CON-DA-10,M34X125 Hex Bolt,Hex Bolt,DA-10,RB,10,,,EA,3,5
+Consumables,CON-DA-11,Truck Tyre Cap Orange,Tool,DA-11,RB,144,,,EA,36,72
+Consumables,CON-DA-12,Truck Tyre Cap Yellow,Tool,DA-12,RB,73,,,EA,19,37
+Consumables,CON-DA-16,Wire Holder,Basic Consumable,DA-16,RB,52,,,EA,13,26
+Consumables,CON-DA-13,M34 Normal Nut,Nut,DA-13,RB,42,,,EA,11,21
+Consumables,CON-DA-14,M36 Normal Nut,Nut,DA-14,RB,28,,,EA,7,14
+Consumables,CON-DA-15,M24 Normal Nut,Nut,DA-15,RB,49,,,EA,13,25
+Consumables,CON-DB-01,M27X280 Hex Bolt,Hex Bolt,DB-01,RB,5,,,EA,2,3
+Consumables,CON-DB-02,M20X285 Hex Bolt,Hex Bolt,DB-02,RB,5,,,EA,2,3
+Consumables,CON-DB-03,Chemical Anchor Rods,Chemical Anchor,DB-03,RB,31,,,EA,8,16
+Consumables,CON-DB-04,M32 Normal Nut,Nut,DB-04,RB,19,,,EA,5,10
+Consumables,CON-DB-05,M32X125 Hex Bolt,Hex Bolt,DB-05,RB,27,,,EA,7,14
+Consumables,CON-DB-06,"1 1/4""X 8"" Hex Bolt",Hex Bolt,DB-06,RB,7,,,EA,2,4
+Consumables,CON-DB-07,M24X60 Hex Bolt,Hex Bolt,DB-07,RB,43,,,EA,11,22
+Consumables,CON-DB-08,M20X90 P/T Hex Bolt,Hex Bolt,DB-08,RB,22,,,EA,6,11
+Consumables,CON-DB-09,M24X120 Hex Bolt,Hex Bolt,DB-09,RB,0,,,EA,0,0
+Consumables,CON-DB-10,Rubber Buffers,Part,DB-10,RB,10,,,EA,3,5
+Consumables,CON-DB-11,"3/4"" X 2 1/2"" Hex Bolt",Hex Bolt,DB-11,RB,45,,,EA,12,23
+Consumables,CON-DB-12,3/4 Unc Nut,Nut,DB-12,RB,18,,,EA,5,9
+Consumables,CON-DB-13,"3/4"" X 1 1/2"" Hex Bolt",Hex Bolt,DB-13,RB,15,,,EA,4,8
+Consumables,CON-DB-14,Axle Nuts,Nut,DB-14,RB,142,,,EA,36,71
+Consumables,CON-DB-15,M14 Normal Nut,Nut,DB-15,RB,43,,,EA,11,22
+Consumables,CON-DB-16,Special Nuts,Nut,DB-16,RB,58,,,EA,15,29
+Consumables,CON-DC-01,M14X35 Cap Screw,Cap Screw,DC-01,RB,121,,,EA,31,61
+Consumables,CON-DC-02,M22 Nylock Nut,Nut,DC-02,RB,21,,,EA,6,11
+Consumables,CON-DC-03,M20 Stoval Nut,Nut,DC-03,RB,50,,,EA,13,25
+Consumables,CON-DC-04,M24X60 Cap Screw,Cap Screw,DC-04,RB,62,,,EA,16,31
+Consumables,CON-DC-05,M27X350 Hex Bolt,Hex Bolt,DC-05,RB,5,,,EA,2,3
+Consumables,CON-DC-06,M38X140 Hex Bolt,Hex Bolt,DC-06,RB,10,,,EA,3,5
+Consumables,CON-DC-06#2,Springbolts,Basic Consumable,DC-06,RB,1,,,EA,1,1
+Consumables,CON-DC-07,M25X127 Hex Bolt,Hex Bolt,DC-07,RB,23,,,EA,6,12
+Consumables,CON-DC-07#2,U-Clips,Basic Consumable,DC-07,RB,114,,,EA,29,57
+Consumables,CON-DC-08,Engineering Studs,Basic Consumable,DC-08,RB,32,,,EA,8,16
+Consumables,CON-DC-09,M16X50 Dowel Pins,Dowel Pin,DC-09,RB,27,,,EA,7,14
+Consumables,CON-DC-10,M10 Fasloc,Tool,DC-10,RB,18,,,EA,5,9
+Consumables,CON-DD-01,M16X360 Cap Screw,Cap Screw,DD-01,RB,31,,,EA,8,16
+Consumables,CON-DD-02,"1 1/2"" Nylock Nut",Nut,DD-02,RB,22,,,EA,6,11
+Consumables,CON-DD-03,M24X220 Hex Bolt,Hex Bolt,DD-03,RB,8,,,EA,2,4
+Consumables,CON-DD-05,M20X120 Hex Bolt,Hex Bolt,DD-05,RB,66,,,EA,17,33
+Consumables,CON-DD-06,Used Chains,Chain,DD-06,RB,0,,,EA,0,0
+Consumables,CON-EA-01,20X20,Technoslide,EA-01,RB,4,24.8,,EA,1,2
+Consumables,CON-EA-02,20X30,Technoslide,EA-02,RB,6,30.8,,EA,2,3
+Consumables,CON-EA-03,22X25,Technoslide,EA-03,RB,21,31.5,,EA,6,11
+Consumables,CON-EA-04,30X20,Technoslide,EA-04,RB,8,32.85,,EA,2,4
+Consumables,CON-EA-05,30X30,Technoslide,EA-05,RB,3,45.65,,EA,1,2
+Consumables,CON-EA-06,35X35,Technoslide,EA-06,RB,40,55.75,,EA,10,20
+Consumables,CON-EA-07,30X40,Technoslide,EA-07,RB,3,56.4,,EA,1,2
+Consumables,CON-EA-08,35X50,Technoslide,EA-08,RB,4,73.2,,EA,1,2
+Consumables,CON-EA-09,45X20,Technoslide,EA-09,RB,4,66.35,,EA,1,2
+Consumables,CON-EA-10,40X30,Technoslide,EA-10,RB,2,53.6,,EA,1,1
+Consumables,CON-EA-11,45X30,Technoslide,EA-11,RB,2,70,,EA,1,1
+Consumables,CON-EA-12,40X22,Technoslide,EA-12,RB,4,138.35,,EA,1,2
+Consumables,CON-EA-13,40X25,Technoslide,EA-13,RB,21,,,EA,6,11
+Consumables,CON-EA-14,40X50,Technoslide,EA-14,RB,2,79.8,,EA,1,1
+Consumables,CON-EA-15,80X80,Technoslide,EA-15,RB,3,674.35,,EA,1,2
+Consumables,CON-EA-16,90X50,Technoslide,EA-16,RB,6,,,EA,2,3
+Consumables,CON-EA-17,100X60,Technoslide,EA-17,RB,0,446.5,,EA,0,0
+Consumables,CON-EA-18,150X50,Technoslide,EA-18,RB,18,3268.85,,EA,5,9
+Consumables,CON-EA-19,150X60,Technoslide,EA-19,RB,31,3268.85,,EA,8,16
+Consumables,CON-EB-01,100X50,Technoslide,EB-01,RB,2,345.2,,EA,1,1
+Consumables,CON-EB-03,80X100,Technoslide,EB-03,RB,9,354.65,,EA,3,5
+Consumables,CON-EB-04,80X80,Technoslide,EB-04,RB,12,337.05,,EA,3,6
+Consumables,CON-EB-06,80X40,Technoslide,EB-06,RB,9,178.75,,EA,3,5
+Consumables,CON-EB-07,60X30,Technoslide,EB-07,RB,3,94.75,,EA,1,2
+Consumables,CON-EB-08,60X50,Technoslide,EB-08,RB,11,147.8,,EA,3,6
+Consumables,CON-EB-09,50X60,Technoslide,EB-09,RB,3,150.2,,EA,1,2
+Consumables,CON-EB-10,55X40,Technoslide,EB-10,RB,13,117.3,,EA,4,7
+Consumables,CON-EB-11,50X30,Technoslide,EB-11,RB,9,85.4,,EA,3,5
+Consumables,CON-EB-12,50X40,Technoslide,EB-12,RB,16,110.15,,EA,4,8
+Consumables,CON-EB-13,45X45,Technoslide,EB-13,RB,14,90.6,,EA,4,7
+Consumables,CON-EB-14,45X50,Technoslide,EB-14,RB,4,99.25,,EA,1,2
+Consumables,CON-EB-15,40X40,Technoslide,EB-15,RB,2,66.2,,EA,1,1
+Consumables,CON-EB-16,Techno Slide Yellow 45X40,Technoslide,EB-16,RB,5,79.8,,EA,2,3
+Consumables,CON-EB-17,35X40,Technoslide,EB-17,RB,31,451.44,,EA,8,16
+Consumables,CON-EB-18,35X50,Technoslide,EB-18,RB,12,551.76,,EA,3,6
+Consumables,CON-EB-19,100X50,Technoslide,EB-19,RB,3,446.5,,EA,1,2
+Consumables,CON-EB-20,150X60,Technoslide,EB-20,RB,1,3268.85,,EA,1,1
+Consumables,CON-EB-21,20X17,Technoslide,EB-21,RB,54,72.75,,EA,14,27
+Consumables,CON-EB-22,35X26,Technoslide,EB-22,RB,53,134.25,,EA,14,27
+Consumables,CON-EB-23,30X27,Technoslide,EB-23,RB,12,126.7,,EA,3,6
+Consumables,CON-EB-24,40X27,Technoslide,EB-24,RB,2,141.96,,EA,1,1
+Consumables,CON-EB-25,40X25,Technoslide,EB-25,RB,2,187.95,,EA,1,1
+Consumables,CON-EB-26,40X40,Technoslide,EB-26,RB,32,162.22,,EA,8,16
+Consumables,CON-EB-27,45X26,Technoslide,EB-27,RB,10,200.35,,EA,3,5
+Consumables,CON-EB-28,60X35,Technoslide,EB-28,RB,4,,,EA,1,2
+Consumables,CON-EB-29,16X15,Technoslide,EB-29,RB,10,18.55,,EA,3,5
+Consumables,CON-EB-30,22X25,Technoslide,EB-30,RB,45,28.85,,EA,12,23
+Consumables,CON-EB-31,22X30,Technoslide,EB-31,RB,3,31.75,,EA,1,2
+Consumables,CON-EB-32,30X30,Technoslide,EB-32,RB,10,42.15,,EA,3,5
+Consumables,CON-EB-33,35X50,Technoslide,EB-33,RB,2,68,,EA,1,1
+Consumables,CON-EB-34,45X40,Technoslide,EB-34,RB,7,79.9,,EA,2,4
+Consumables,CON-EB-35,50X40,Technoslide,EB-35,RB,4,102.8,,EA,1,2
+Consumables,CON-EB-36,55X50,Technoslide,EB-36,RB,2,132.55,,EA,1,1
+Consumables,CON-EB-37,60X40,Technoslide,EB-37,RB,13,124.8,,EA,4,7
+Consumables,CON-EB-38,60X50,Technoslide,EB-38,RB,11,139.15,,EA,3,6
+Consumables,CON-EB-39,65X50,Technoslide,EB-39,RB,10,160.05,,EA,3,5
+Consumables,CON-EB-40,60X60,Technoslide,EB-40,RB,3,172.55,,EA,1,2
+Consumables,CON-EB-41,85X40,Technoslide,EB-41,RB,12,226.55,,EA,3,6
+Consumables,CON-EB-42,60X70,Technoslide,EB-42,RB,5,191.2,,EA,2,3
+Consumables,CON-EB-5,60X70,Technoslide,EB-5,RB,17,201.25,,EA,5,9
+Consumables,CON-EC-01,Rubber Boot Medium 95X34,Rubber Boot,EC-01,RB,3,,,EA,1,2
+Consumables,CON-EC-02,Rubber Sleeves Rebuild,Rubber Sleeves,EC-02,RB,8,,,EA,2,4
+Consumables,CON-EC-03,Rubber Sleeves Rebuild,Rubber Sleeves,EC-03,RB,2,,,EA,1,1
+Consumables,CON-EC-04,Rubber Sleeves Rebuild,Rubber Sleeves,EC-04,RB,21,,,EA,6,11
+Consumables,CON-EC-05,Rubber Boot Small Square 115X61X49,Rubber Boot,EC-05,RB,40,175.15,,EA,10,20
+Consumables,CON-EC-06,09373667,V-Seal,EC-06,RB,35,,,EA,9,18
+Consumables,CON-EC-07,Rubber Sleeves Rebuild,Rubber Sleeves,EC-07,RB,1,,,EA,1,1
+Consumables,CON-EC-08,Rubber Boot Large 101X23X114,Rubber Boot,EC-08,RB,10,,,EA,3,5
+Consumables,CON-EC-09,Rubber Sleeves Rebuild,Rubber Sleeves,EC-09,RB,25,,,EA,7,13
+Consumables,CON-EC-10,Rubber Sleeves Rebuild,Rubber Sleeves,EC-10,RB,1,,,EA,1,1
+Consumables,CON-EC-11,Rubber Sleeves Rebuild,Rubber Sleeves,EC-11,RB,30,,,EA,8,15
+Consumables,CON-EC-12,Rubber Boot Medium Rectangle Gear Lever Protection 78X30X102,Rubber Boot,EC-12,RB,4,235.55,,EA,1,2
+Consumables,CON-EC-13,09373658,V-Seal,EC-13,RB,9,,,EA,3,5
+Consumables,CON-EC-14,09373686,V-Seal,EC-14,RB,6,,,EA,2,3
+Consumables,CON-EC-15,09373659,V-Seal,EC-15,RB,9,,,EA,3,5
+Consumables,CON-EC-16,09373665,V-Seal,EC-16,RB,2,,,EA,1,1
+Consumables,CON-EC-17,09373664,V-Seal,EC-17,RB,2,,,EA,1,1
+Consumables,CON-EC-18,Va-100,Oil Seal,EC-18,RB,22,,,EA,6,11
+Consumables,CON-EC-19,09373661,V-Seal,EC-19,RB,0,,,EA,0,0
+Consumables,CON-EC-20,Va-065,Oil Seal,EC-20,RB,8,,,EA,2,4
+Consumables,CON-EC-21,Va-036,Oil Seal,EC-21,RB,28,,,EA,7,14
+Consumables,CON-EC-22,Va-095,Oil Seal,EC-22,RB,102,,,EA,26,51
+Consumables,CON-EC-23,Va-120,Oil Seal,EC-23,RB,36,35.03,,EA,9,18
+Consumables,CON-EC-25,9373663,V-Seal,EC-25,RB,1,,,EA,1,1
+Consumables,CON-EC-24,Va-140,Oil Seal,EC-24,RB,34,,,EA,9,17
+Consumables,CON-EC-25#2,Rubber Sleeves Rebuild,Rubber Sleeves,EC-25,RB,7,,,EA,2,4
+Consumables,CON-EC-26,Sanvik Gear Lever Boot/Cylinder/Cone With Ribs/Rubber Connector,Sanvik Gear,EC-26,RB,14,,,EA,4,7
+Consumables,CON-ED-01,Nsk,Bearing,ED-01,RB,3,1,,EA,1,2
+Consumables,CON-ED-02,Nsk,Bearing,ED-02,RB,3,1,,EA,1,2
+Consumables,CON-ED-03,Nsk,Bearing,ED-03,RB,6,170,,EA,2,3
+Consumables,CON-ED-04,Nsk,Bearing,ED-04,RB,5,1,,EA,2,3
+Consumables,CON-ED-05,Nsk,Bearing,ED-05,RB,1,1420,,EA,1,1
+Consumables,CON-ED-06,Nsk,Bearing,ED-06,RB,72,1,,EA,18,36
+Consumables,CON-ED-07,Nsk,Bearing,ED-07,RB,1,1,,EA,1,1
+Consumables,CON-ED-08,Nsk,Bearing,ED-08,RB,2,1,,EA,1,1
+Consumables,CON-ED-09,Nsk,Bearing,ED-09,RB,6,1,,EA,2,3
+Consumables,CON-ED-10,Nsk,Bearing,ED-10,RB,1,1,,EA,1,1
+Consumables,CON-ED-11,Nsk,Bearing,ED-11,RB,1,125,,EA,1,1
+Consumables,CON-ED-12,Nsk,Bearing,ED-12,RB,1,180,,EA,1,1
+Consumables,CON-ED-13,Nsk,Bearing,ED-13,RB,1,1,,EA,1,1
+Consumables,CON-ED-14,Nsk,Bearing,ED-14,RB,1,1,,EA,1,1
+Consumables,CON-ED-15,Nsk,Bearing,ED-15,RB,0,1,,EA,0,0
+Consumables,CON-ED-16,Nsk,Bearing,ED-16,RB,1,1,,EA,1,1
+Consumables,CON-ED-17,Timken,Bearing,ED-17,RB,3,1,,EA,1,2
+Consumables,CON-ED-18,Timken,Bearing,ED-18,RB,2,590.75,,EA,1,1
+Consumables,CON-ED-19,Timken,Bearing,ED-19,RB,2,1236.73,,EA,1,1
+Consumables,CON-ED-20,Timken,Bearing,ED-20,RB,1,2980,,EA,1,1
+Consumables,CON-ED-21,Timken,Bearing,ED-21,RB,1,424.52,,EA,1,1
+Consumables,CON-ED-22,Timken,Bearing,ED-22,RB,2,695,,EA,1,1
+Consumables,CON-ED-23,Nachi,Bearing,ED-23,RB,1,150,,EA,1,1
+Consumables,CON-ED-24,Timken,Bearing,ED-24,RB,1,1221,,EA,1,1
+Consumables,CON-ED-25,Timken,Bearing,ED-25,RB,1,1,,EA,1,1
+Consumables,CON-ED-26,Accor,Bearing,ED-26,RB,1,65,,EA,1,1
+Consumables,CON-ED-27,Accor,Bearing,ED-27,RB,2,1,,EA,1,1
+Consumables,CON-ED-28,Accor,Bearing,ED-28,RB,2,650,,EA,1,1
+Consumables,CON-ED-29,Twb,Bearing,ED-29,RB,1,1,,EA,1,1
+Consumables,CON-ED-30,Vbh,Bearing,ED-30,RB,15,1,,EA,4,8
+Consumables,CON-ED-31,Vbh,Bearing,ED-31,RB,13,1,,EA,4,7
+Consumables,CON-ED-32,Sdvv,Bearing,ED-32,RB,0,1,,EA,0,0
+Consumables,CON-ED-33,Nsk,Bearing,ED-33,RB,1,1,,EA,1,1
+Consumables,CON-ED-34,Nsk,Bearing,ED-34,RB,1,1,,EA,1,1
+Consumables,CON-ED-35,Nsk,Bearing,ED-35,RB,1,1,,EA,1,1
+Consumables,CON-ED-36,Nsk,Bearing,ED-36,RB,1,1,,EA,1,1
+Consumables,CON-ED-37,Nsk,Bearing,ED-37,RB,2,1,,EA,1,1
+Consumables,CON-ED-38,Nsk,Bearing,ED-38,RB,4,125,,EA,1,2
+Consumables,CON-ED-39,Nsk,Bearing,ED-39,RB,1,1,,EA,1,1
+Consumables,CON-ED-40,Nsk,Bearing,ED-40,RB,5,1,,EA,2,3
+Consumables,CON-ED-41,Nsk,Bearing,ED-41,RB,2,1,,EA,1,1
+Consumables,CON-ED-42,Nsk,Bearing,ED-42,RB,1,1,,EA,1,1
+Consumables,CON-ED-43,Nsk,Bearing,ED-43,RB,1,125,,EA,1,1
+Consumables,CON-ED-44,Nsk,Bearing,ED-44,RB,2,1,,EA,1,1
+Consumables,CON-ED-45,Nsk,Bearing,ED-45,RB,2,1,,EA,1,1
+Consumables,CON-ED-46,Nsk,Bearing,ED-46,RB,0,130,,EA,0,0
+Consumables,CON-ED-47,Nsk,Bearing,ED-47,RB,0,661.78,,EA,0,0
+Consumables,CON-ED-48,Nsk,Bearing,ED-48,RB,1,1350,,EA,1,1
+Consumables,CON-ED-49,Nsk,Bearing,ED-49,RB,2,110,,EA,1,1
+Consumables,CON-ED-50,Nsk,Bearing,ED-50,RB,1,1,,EA,1,1
+Consumables,CON-ED-51,Nsk,Bearing,ED-51,RB,1,1,,EA,1,1
+Consumables,CON-ED-52,Btc,Bearing,ED-52,RB,0,1,,EA,0,0
+Consumables,CON-ED-53,Vbf,Bearing,ED-53,RB,2,1,,EA,1,1
+Consumables,CON-ED-54,Vbf,Bearing,ED-54,RB,5,554,,EA,2,3
+Consumables,CON-ED-55,Nachi,Bearing,ED-55,RB,6,2900,,EA,2,3
+Consumables,CON-ED-56,Nachi,Bearing,ED-56,RB,2,300,,EA,1,1
+Consumables,CON-ED-57,Nachi,Bearing,ED-57,RB,1,275,,EA,1,1
+Consumables,CON-ED-58,Nachi,Bearing,ED-58,RB,1,2900,,EA,1,1
+Consumables,CON-ED-59,Btc,Bearing,ED-59,RB,1,1,,EA,1,1
+Consumables,CON-ED-60,Iso,Bearing,ED-60,RB,1,1,,EA,1,1
+Consumables,CON-ED-61,Accor,Bearing,ED-61,RB,1,1,,EA,1,1
+Consumables,CON-ED-62,Zen,Bearing,ED-62,RB,1,650,,EA,1,1
+Consumables,CON-ED-63,Timken,Bearing,ED-63,RB,2,1,,EA,1,1
+Consumables,CON-ED-64,Timken,Bearing,ED-64,RB,1,1,,EA,1,1
+Consumables,CON-ED-65,Iso Ucfa207,Bearing,ED-65,RB,3,,,EA,1,2
+Consumables,CON-FA-01,Rags,Basic Consumable,FA-01,RB,25,104.35,,EA,7,13
+Consumables,CON-FB-01,Waco Spiral Light,Basic Consumable,FB-01,RB,9,,,EA,3,5
+Consumables,CON-FB-02,Anti Slip Tape,Basic Consumable,FB-02,RB,8,,,EA,2,4
+Consumables,CON-FB-03,Delcor Batterie,Basic Consumable,FB-03,RB,2,,,EA,1,1
+Consumables,CON-FD-01,Chains,Basic Consumable,FD-01,RB,4,,,EA,1,2
+Consumables,CON-FD-02,Eye Bolts Big,Basic Consumable,FD-02,RB,7,,,EA,2,4
+Consumables,CON-FD-02#2,Eye Bolts Big,Basic Consumable,FD-02,RB,8,,,EA,2,4
+Consumables,CON-FE-01,M38X460 P/T Hex Bolt,Hex Bolt,FE-01,RB,15,,,EA,4,8
+Consumables,CON-FE-01#2,M38X460 P/T Hex Bolt,Hex Bolt,FE-01,RB,17,,,EA,5,9
+Consumables,CON-FE-02,M50 Blank Bolts,Hex Bolt,FE-02,RB,7,,,EA,2,4
+Consumables,CON-JA-01,Unkown,Bearing,JA-01,RB,41,1,,EA,11,21
+Consumables,CON-JA-02,Unkown,Bearing,JA-02,RB,27,1,,EA,7,14
+Consumables,CON-JA-03,Unkown,Bearing,JA-03,RB,28,1,,EA,7,14
+Consumables,CON-JA-04,Unkown,Bearing,JA-04,RB,17,1,,EA,5,9
+Consumables,CON-JB-01,Accor,Bearing,JB-01,RB,1,45,,EA,1,1
+Consumables,CON-JB-02,Unkown,Bearing,JB-02,RB,7,1,,EA,2,4
+Consumables,CON-JB-03,Unkown,Bearing,JB-03,RB,7,1,,EA,2,4
+Consumables,CON-JB-04,Unkown,Bearing,JB-04,RB,42,1,,EA,11,21
+Consumables,CON-JC-01,Unkown,Bearing,JC-01,RB,2,1,,EA,1,1
+Consumables,CON-JC-02,Unkown,Bearing,JC-02,RB,22,1,,EA,6,11
+Consumables,CON-JC-03,Unkown,Bearing,JC-03,RB,24,1,,EA,6,12
+Consumables,CON-JC-04,Unkown,Bearing,JC-04,RB,16,1,,EA,4,8
+Consumables,CON-JD-01,Unkown,Bearing,JD-01,RB,15,1,,EA,4,8
+Consumables,CON-JD-02,Unkown,Bearing,JD-02,RB,40,1,,EA,10,20
+Consumables,CON-JD-03,Unkown,Bearing,JD-03,RB,8,1,,EA,2,4
+Consumables,CON-JD-04,Unkown,Bearing,JD-04,RB,10,1,,EA,3,5
+Consumables,CON-JE-01,Unkown,Bearing,JE-01,RB,7,1,,EA,2,4
+Consumables,CON-JE-02,Unkown,Bearing,JE-02,RB,3,1,,EA,1,2
+Consumables,CON-JE-03,Accor,Bearing,JE-03,RB,8,320,,EA,2,4
+Consumables,CON-JE-04,Unkown,Bearing,JE-04,RB,4,1,,EA,1,2
+Consumables,CON-JF-01,Unkown,Bearing,JF-01,RB,6,1,,EA,2,3
+Consumables,CON-JF-02,Unkown,Bearing,JF-02,RB,3,1,,EA,1,2
+Consumables,CON-JF-03,Ge60-Fo 2Rs,Bearing,JF-03,RB,15,,,EA,4,8
+Consumables,CON-KA-01,32 Internal Circlip,Circlip,KA-01,RB,146,,,EA,37,73
+Consumables,CON-KA-02,37 Internal Circlip,Circlip,KA-02,RB,58,,,EA,15,29
+Consumables,CON-KA-03,50 Internal Circlip,Circlip,KA-03,RB,272,,,EA,68,136
+Consumables,CON-KA-04,51 Internal Circlip,Circlip,KA-04,RB,130,,,EA,33,65
+Consumables,CON-KB-01,60 Internal Circlip,Circlip,KB-01,RB,29,,,EA,8,15
+Consumables,CON-KB-02,65 Internal Circlip,Circlip,KB-02,RB,304,,,EA,76,152
+Consumables,CON-KB-03,67 Internal Circlip,Circlip,KB-03,RB,76,,,EA,19,38
+Consumables,CON-KB-04,73 Internal Circlip,Circlip,KB-04,RB,274,,,EA,69,137
+Consumables,CON-KC-01,75 Internal Circlip,Circlip,KC-01,RB,21,,,EA,6,11
+Consumables,CON-KC-02,80 Internal Circlip,Circlip,KC-02,RB,124,,,EA,31,62
+Consumables,CON-KC-03,90 Internal Circlip,Circlip,KC-03,RB,152,,,EA,38,76
+Consumables,CON-KC-04,100 Internal Circlip,Circlip,KC-04,RB,46,,,EA,12,23
+Consumables,CON-KD-01,105 Internal Circlip,Circlip,KD-01,RB,22,,,EA,6,11
+Consumables,CON-KD-02,110 Internal Circlip,Circlip,KD-02,RB,214,,,EA,54,107
+Consumables,CON-KD-03,112 Internal Circlip,Circlip,KD-03,RB,318,,,EA,80,159
+Consumables,CON-KD-04,113 Internal Circlip,Circlip,KD-04,RB,313,,,EA,79,157
+Consumables,CON-KE-01,114 Internal Circlip,Circlip,KE-01,RB,34,,,EA,9,17
+Consumables,CON-KE-02,116 Internal Circlip,Circlip,KE-02,RB,28,,,EA,7,14
+Consumables,CON-KE-03,117 Internal Circlip,Circlip,KE-03,RB,107,,,EA,27,54
+Consumables,CON-KE-04,125 Internal Circlip,Circlip,KE-04,RB,13,,,EA,4,7
+Consumables,CON-KF-01,127 Internal Circlip,Circlip,KF-01,RB,98,,,EA,25,49
+Consumables,CON-KF-02,156 Internal Circlip,Circlip,KF-02,RB,20,,,EA,5,10
+Consumables,CON-KF-03,27 Internal Circlip,Circlip,KF-03,RB,274,,,EA,69,137
+Consumables,CON-KF-04,85 Internal Circlip,Circlip,KF-04,RB,0,,,EA,0,0
+Consumables,CON-MA-01,Circlip Kit,Basic Consumable,MA-01,RB,3,,,EA,1,2
+Consumables,CON-MA-02,O-Ring Kit,Basic Consumable,MA-02,RB,1,,,EA,1,1
+Consumables,CON-MA-03,Copper Washer Kit,Basic Consumable,MA-03,RB,2,,,EA,1,1
+Consumables,CON-MB-01,Chemical Anchor M20,Basic Consumable,MB-01,RB,4,,,EA,1,2
+Consumables,CON-MB-02,Chemical Anchor M24,Basic Consumable,MB-02,RB,4,,,EA,1,2
+Consumables,CON-MC-01,Spanjaard Lektro Kleen 400Ml,Basic Consumable,MC-01,RB,1,113.75,,EA,1,1
+Consumables,CON-MC-02,High Heat Rust-Oleum,Basic Consumable,MC-02,RB,4,,,EA,1,2
+Consumables,CON-MC-03,Shield Tool In A Can 500Ml,Basic Consumable,MC-03,RB,21,76.9,,EA,6,11
+Consumables,CON-MC-04,Tool In A Can Small,Basic Consumable,MC-04,RB,41,,,EA,11,21
+Consumables,CON-MC-05,Sprayon Lacquer Spray,Basic Consumable,MC-05,RB,4,,,EA,1,2
+Consumables,CON-MC-06,Sealant Remover,Basic Consumable,MC-06,RB,1,,,EA,1,1
+Consumables,CON-MC-07,Copper Gasket Spray,Basic Consumable,MC-07,RB,1,,,EA,1,1
+Consumables,CON-MD-01,Genkem Adhesive Contact 500Ml,Basic Consumable,MD-01,RB,5,183.1,,EA,2,3
+Consumables,CON-MD-02,Stag,Basic Consumable,MD-02,RB,2,,,EA,1,1
+Consumables,CON-MD-03,Altis Em2,Basic Consumable,MD-03,RB,3,,,EA,1,2
+Consumables,CON-MD-04,Pvc Solvent,Basic Consumable,MD-04,RB,1,,,EA,1,1
+Consumables,CON-MD-05,Grinding Paste,Basic Consumable,MD-05,RB,1,,,EA,1,1
+Consumables,CON-MD-06,Polyester Filler,Basic Consumable,MD-06,RB,1,,,EA,1,1
+Consumables,CON-MD-07,Gun Gum,Basic Consumable,MD-07,RB,2,,,EA,1,1
+Consumables,CON-MD-08,Red Rubber Grease 500G,Basic Consumable,MD-08,RB,1,163.9,,EA,1,1
+Consumables,CON-MD-09,Electrical Contact Lubricant,Basic Consumable,MD-09,RB,4,,,EA,1,2
+Consumables,CON-MD-11,Molykote,Basic Consumable,MD-11,RB,1,,,EA,1,1
+Consumables,CON-MD-12,Richem Eltametal,Basic Consumable,MD-12,RB,2,,,EA,1,1
+Consumables,CON-MD-13,Dynamic Belting Adhesive,Basic Consumable,MD-13,RB,2,,,EA,1,1
+Consumables,CON-MD-14,Heavy Industrial Grease,Basic Consumable,MD-14,RB,2,,,EA,1,1
+Consumables,CON-MD-15,Polydure 2Ku,Basic Consumable,MD-15,RB,1,,,EA,1,1
+Consumables,CON-ME-01,Silicone Gun,Basic Consumable,ME-01,RB,2,,,EA,1,1
+Consumables,CON-ME-02,3 Pin Plug Male,Basic Consumable,ME-02,RB,10,15,,EA,3,5
+Consumables,CON-ME-03,3 Pin Plug Female,Basic Consumable,ME-03,RB,0,15,,EA,0,0
+Consumables,CON-ME-04,Sikaflex Black 600Ml,Basic Consumable,ME-04,RB,9,175,,EA,3,5
+Consumables,CON-ME-05,Silicone Clear,Basic Consumable,ME-05,RB,6,,,EA,2,3
+Consumables,CON-ME-06,Silicone Black,Basic Consumable,ME-06,RB,2,,,EA,1,1
+Consumables,CON-ME-07,Gasket Sealor,Basic Consumable,ME-07,RB,2,,,EA,1,1
+Consumables,CON-ME-08,Afrox Pickling Paste,Basic Consumable,ME-08,RB,4,,,EA,1,2
+Consumables,CON-ME-09,Bio Chesil Paste,Basic Consumable,ME-09,RB,12,,,EA,3,6
+Consumables,CON-MM-14,Navy Rubberised Rainsuit M,Basic Consumable,MM 14,RB,1,105,,EA,1,1
+Consumables,CON-MM-15,Navy Rubberised Rainsuit L,Basic Consumable,MM 15,RB,0,105,,EA,0,0
+Consumables,CON-NA-01,M3 Riv Nut Head,Tool,NA-01,RB,2,,,EA,1,1
+Consumables,CON-NA-02,M4 Riv Nut Head,Tool,NA-02,RB,2,,,EA,1,1
+Consumables,CON-NA-03,M5 Riv Nut Head,Tool,NA-03,RB,3,,,EA,1,2
+Consumables,CON-NA-04,M6 Riv Nut Head,Tool,NA-04,RB,2,,,EA,1,1
+Consumables,CON-NA-05,M8 Riv Nut Head,Tool,NA-05,RB,2,,,EA,1,1
+Consumables,CON-NA-06,M10 Riv Nut Head,Tool,NA-06,RB,2,,,EA,1,1
+Consumables,CON-NA-07,M12 Riv Nut Head,Tool,NA-07,RB,2,,,EA,1,1
+Consumables,CON-NA-08,Lock,Tool,NA-08,RB,2,,,EA,1,1
+Consumables,CON-NA-09,Grinder Brushes,Tool,NA-09,RB,26,,,EA,7,13
+Consumables,CON-NA-10,Stanley Blades,Tool,NA-10,RB,17,,,EA,5,9
+Consumables,CON-NA-11,5M Tape Measure,Tool,NA-11,RB,0,,,EA,0,0
+Consumables,CON-NA-12,Crane Hooks,Tool,NA-12,RB,3,,,EA,1,2
+Consumables,CON-NA-13,M10X40 Brass Bolt,Tool,NA-13,RB,30,,,EA,8,15
+Consumables,CON-NA-14,Mullet Caps,Tool,NA-14,RB,16,,,EA,4,8
+Consumables,CON-NA-15,Stanley Knife,Tool,NA-15,RB,3,,,EA,1,2
+Consumables,CON-NA-16,Blue Handle,Tool,NA-16,RB,4,,,EA,1,2
+Consumables,CON-NA-17,Plier,Tool,NA-17,RB,2,,,EA,1,1
+Consumables,CON-NB-01,Letter Stamp,Tool,NB-01,RB,1,,,EA,1,1
+Consumables,CON-NB-02,Number Stamp,Tool,NB-02,RB,1,,,EA,1,1
+Consumables,CON-NB-03,Araldite,Tool,NB-03,RB,1,,,EA,1,1
+Consumables,CON-NB-04,Valve Grinding Set,Tool,NB-04,RB,1,,,EA,1,1
+Consumables,CON-NB-05,Wheel Kit,Tool,NB-05,RB,1,,,EA,1,1
+Consumables,CON-NB-06,Industrial Back-Up Alarm,Tool,NB-06,RB,2,,,EA,1,1
+Consumables,CON-NB-07,Pressure Washer Set,Tool,NB-07,RB,5,,,EA,2,3
+Consumables,CON-NB-08,Allen Key,Tool,NB-08,RB,7,,,EA,2,4
+Consumables,CON-NB-09,Socket,Tool,NB-09,RB,2,,,EA,1,1
+Consumables,CON-NB-10,Torque Wrench,Tool,NB-10,RB,2,,,EA,1,1
+Consumables,CON-NB-11,O-Ring Gauge,Tool,NB-11,RB,1,,,EA,1,1
+Consumables,CON-NC-01,Kobe Spray Gun,Tool,NC-01,RB,1,,,EA,1,1
+Consumables,CON-NC-02,Exhaust Back Pressure Tester,Tool,NC-02,RB,1,,,EA,1,1
+Consumables,CON-NC-03,Digital Clamp Meter,Tool,NC-03,RB,1,,,EA,1,1
+Consumables,CON-NC-04,Tachometer,Tool,NC-04,RB,1,,,EA,1,1
+Consumables,CON-NC-05,12Pcs Oil Pressure Tester,Tool,NC-05,RB,1,,,EA,1,1
+Consumables,CON-NC-06,Bore Gauge,Tool,NC-06,RB,3,,,EA,1,2
+Consumables,CON-NC-07,Dial Vernier,Tool,NC-07,RB,1,,,EA,1,1
+Consumables,CON-NC-08,Socket Set,Tool,NC-08,RB,1,,,EA,1,1
+Consumables,CON-NC-09,Universal Valve Spring Remover Installer Compressor Kit,Tool,NC-09,RB,1,,,EA,1,1
+Consumables,CON-NC-10,Hydraulic Krimping Tool,Tool,NC-10,RB,1,,,EA,1,1
+Consumables,CON-NC-11,Multi Angle Magnetic Welding Holder,Tool,NC-11,RB,1,,,EA,1,1
+Consumables,CON-NC-12,Dremel Set,Tool,NC-12,RB,2,,,EA,1,1
+Consumables,CON-ND-01,Ratchet Straps,Tool,ND-01,RB,3,,,EA,1,2
+Consumables,CON-ND-02,Riv Nut Gun,Tool,ND-02,RB,2,,,EA,1,1
+Consumables,CON-ND-03,Air Wrench Gun,Tool,ND-03,RB,1,,,EA,1,1
+Consumables,CON-NE-01,Washing Gun,Tool,NE-01,RB,1,,,EA,1,1
+Consumables,CON-NE-02,Bearing Puller Set,Tool,NE-02,RB,1,,,EA,1,1
+Consumables,CON-NE-03,Cordless Wrench,Tool,NE-03,RB,1,,,EA,1,1
+Consumables,CON-NE-04,Polishing Gun,Tool,NE-04,RB,1,,,EA,1,1
+Consumables,CON-NE-05,Grease Gun,Tool,NE-05,RB,2,,,EA,1,1
+Consumables,CON-QA-01,Spray Paint,Basic Consumable,QA-01,WS,7,45.5,,EA,2,4
+Consumables,CON-QA-02,Spray Paint,Basic Consumable,QA-02,WS,13,45.5,,EA,4,7
+Consumables,CON-QA-03,Spray Paint,Basic Consumable,QA-03,WS,11,45.5,,EA,3,6
+Consumables,CON-QA-04,Spray Paint,Basic Consumable,QA-04,WS,8,45.5,,EA,2,4
+Consumables,CON-QA-05,Spray Paint,Basic Consumable,QA-05,WS,19,45.5,,EA,5,10
+Consumables,CON-QB-01,Spray Paint,Basic Consumable,QB-01,WS,9,45.5,,EA,3,5
+Consumables,CON-QB-02,Spray Paint,Basic Consumable,QB-02,WS,4,45.5,,EA,1,2
+Consumables,CON-QB-03,Red Oxide Primer,Basic Consumable,QB-03,WS,4,45.5,,EA,1,2
+Consumables,CON-QB-04,Spray Paint,Basic Consumable,QB-04,WS,5,45.5,,EA,2,3
+Consumables,CON-QB-05,Spray Paint,Basic Consumable,QB-05,WS,10,45.5,,EA,3,5
+Consumables,CON-QB-06,Spray Paint,Basic Consumable,QB-06,WS,4,45.5,,EA,1,2
+Consumables,CON-QB-07,Spray Paint,Basic Consumable,QB-07,WS,5,45.5,,EA,2,3
+Consumables,CON-QC-01,Ardrox 8903/W White Contrast,Basic Consumable,QC-01,WS,23,250.24,,EA,6,12
+Consumables,CON-QC-02,Spray Paint,Basic Consumable,QC-02,WS,4,40.9,,EA,1,2
+Consumables,CON-QC-03,Spray Paint,Basic Consumable,QC-03,WS,1,40.9,,EA,1,1
+Consumables,CON-QC-04,Spray Paint,Basic Consumable,QC-04,WS,3,40.9,,EA,1,2
+Consumables,CON-QC-05,Spray Paint,Basic Consumable,QC-05,WS,1,40.9,,EA,1,1
+Consumables,CON-QC-06,Spray Paint,Basic Consumable,QC-06,WS,1,40.9,,EA,1,1
+Consumables,CON-QC-07,Ardrox 907Pb,Basic Consumable,QC-07,WS,3,,,EA,1,2
+Consumables,CON-QC-08,Spray Paint,Basic Consumable,QC-08,WS,4,188,,EA,1,2
+Consumables,CON-QC-09,Anti Spatter Spray (Silicone),Basic Consumable,QC-09,WS,79,38.9,,EA,20,40
+Consumables,CON-QC-10,Spray Paint,Basic Consumable,QC-10,WS,4,,,EA,1,2
+Consumables,CON-QD-01,Marking Blue Engineering Herschell 300Ml,Basic Consumable,QD-01,WS,7,76.35,,EA,2,4
+Consumables,CON-QD-02,Herschell Protective Wax Spray,Basic Consumable,QD-02,WS,10,66.1,,EA,3,5
+Consumables,CON-QE-01,Tapmatic No 1 5L,Basic Consumable,QE-01,WS,0,873.75,,EA,0,0
+Consumables,CON-SA-01,Disposable Overall Small,Basic Consumable,SA-01,WS,2,21.6,,EA,1,1
+Consumables,CON-SA-02,Disposable Overall Type 4/5/6 Medium,Basic Consumable,SA-02,WS,12,42.5,,EA,3,6
+Consumables,CON-SA-03,Disposable Overall Type 4/5/6 Large,Basic Consumable,SA-03,WS,23,42.5,,EA,6,12
+Consumables,CON-SB-01,Black Nitrile Gloves,Basic Consumable,SB-01,WS,19,22.8,,EA,5,10
+Consumables,CON-SB-02,Glove Vip Size 10 Premium Grade,Basic Consumable,SB-02,WS,100,30.63,,EA,25,50
+Consumables,CON-SB-03,Glove Vip Size 12,Basic Consumable,SB-03,WS,164,36.25,,EA,41,82
+Consumables,CON-SC-01,Dust Mask Ffp2,Basic Consumable,SC-01,WS,165,2.95,,EA,42,83
+Consumables,CON-SC-02,Visor Only Clear For Faceshield,Basic Consumable,SC-02,WS,19,36.9,,EA,5,10
+Consumables,CON-SC-03,Dust Mask 3M 5935 Pads,Basic Consumable,SC-03,WS,23,,,EA,6,12
+Consumables,CON-SC-04,Dust Mask 3M 6055 Cover,Basic Consumable,SC-04,WS,45,,,EA,12,23
+Consumables,CON-SC-05,3M 6000 Large Actual Mask,Basic Consumable,SC-05,WS,5,,,EA,2,3
+Consumables,CON-SD-01,Knee Pads,Basic Consumable,SD-01,WS,11,,,EA,3,6
+Consumables,CON-SD-02,Welding Safety Jacket,Basic Consumable,SD-02,WS,0,,,EA,0,0
+Consumables,CON-SD-03,Chrome Leather Apron 60X120,Basic Consumable,SD-03,WS,0,124.95,,EA,0,0
+Consumables,CON-SD-04,Leather Yoke Size 4Xl,Basic Consumable,SD-04,WS,1,140.13,,EA,1,1
+Consumables,CON-SD-05,Welding Cap Red,Basic Consumable,SD-05,WS,5,,,EA,2,3
+Consumables,CON-SD-06,Hydraulic Apron,Basic Consumable,SD-06,WS,2,,,EA,1,1
+Consumables,CON-TA-01,H827-A Spay Gun,Basic Consumable,TA-01,WS,1,,,EA,1,1
+Consumables,CON-TA-02,Nozzle Cleaner,Basic Consumable,TA-02,WS,1,,,EA,1,1
+Consumables,CON-TA-03,Argon Regulator Flowmeter,Basic Consumable,TA-03,WS,3,341.6,,EA,1,2
+Consumables,CON-TA-04,Deburring Blades Bs2010,Basic Consumable,TA-04,WS,64,47.52,,EA,16,32
+Consumables,CON-TA-05,Boilermaker Soapstone Chalk 3Kg Mts,Basic Consumable,TA-05,WS,682,312.5,,EA,171,341
+Consumables,CON-TB-01,Paint Brush Pitch 25Mm,Basic Consumable,TB-01,WS,3,8.16,,EA,1,2
+Consumables,CON-TB-02,Paint Brush Pitch 50Mm,Basic Consumable,TB-02,WS,2,13.75,,EA,1,1
+Consumables,CON-TB-03,Paint Brush Pitch 75 Mm,Basic Consumable,TB-03,WS,0,30,,EA,0,0
+Consumables,CON-TB-04,Duct Tape White 48Mmx25M,Basic Consumable,TB-04,WS,10,87.3,,EA,3,5
+Consumables,CON-TB-05,Duct Tape Red 48Mmx25M,Basic Consumable,TB-05,WS,8,78.15,,EA,2,4
+Consumables,CON-TB-06,Duct Tape Green 48Mmx25M,Basic Consumable,TB-06,WS,8,54.84,,EA,2,4
+Consumables,CON-TB-07,Duct Tape Blue 48Mmx25M,Basic Consumable,TB-07,WS,14,54.84,,EA,4,7
+Consumables,CON-TB-08,Masking Tape 48X40Mm,Basic Consumable,TB-08,WS,58,42.6,,EA,15,29
+Consumables,CON-TB-09,Insulation Tape Black,Basic Consumable,TB-09,WS,0,25,,EA,0,0
+Consumables,CON-TB-10,Insulation Tape Yellow,Basic Consumable,TB-10,WS,5,25,,EA,2,3
+Consumables,CON-TB-11,Insulation Tape Red,Basic Consumable,TB-11,WS,1,25,,EA,1,1
+Consumables,CON-TB-12,Insulation Tape White,Basic Consumable,TB-12,WS,3,25,,EA,1,2
+Consumables,CON-TB-13,Insulation Tape Blue,Basic Consumable,TB-13,WS,1,25,,EA,1,1
+Consumables,CON-TC-01,Grinding Disc 115-6A Psf,Basic Consumable,TC-01,WS,163,37.1,,EA,41,82
+Consumables,CON-TC-02,Grinding Disc Aluminium 115-7Sg- Alu,Basic Consumable,TC-02,WS,45,127.65,,EA,12,23
+Consumables,CON-TC-03,Grinding Disc 230-7 A30 Psf,Basic Consumable,TC-03,WS,13,79.68,,EA,4,7
+Consumables,CON-TC-04,"Cutting Disc 115 X 1,0 A60 Inox Slims",Basic Consumable,TC-04,WS,161,36.41,,EA,41,81
+Consumables,CON-TC-05,Cutting Disc 115 X 2.4 A30 Sg,Basic Consumable,TC-05,WS,-1,23.56,,EA,0,0
+Consumables,CON-TC-06,Cutting Disc 230 X 3 A24 Psf,Basic Consumable,TC-06,WS,43,39.73,,EA,11,22
+Consumables,CON-TC-07,Polifan Disc 115X40,Basic Consumable,TC-07,WS,23,36.41,,EA,6,12
+Consumables,CON-TC-08,115Mm Pferd Polifan Pff Z40 Steelox,Basic Consumable,TC-08,WS,19,40.1,,EA,5,10
+Consumables,CON-UA-01,Crimped Wire Cup Brush 50 X 6Mm,Basic Consumable,UA-01,WS,33,38,,EA,9,17
+Consumables,CON-UA-02,Spindle Wire Cup Brush,Basic Consumable,UA-02,WS,6,,,EA,2,3
+Consumables,CON-UA-03,Wire Cup Brush,Basic Consumable,UA-03,WS,6,,,EA,2,3
+Consumables,CON-UB-01,Bench Wire Wheel Brush,Basic Consumable,UB-01,WS,4,,,EA,1,2
+Consumables,CON-UB-02,Wire Cup Brush Small 50Mm,Basic Consumable,UB-02,WS,2,55,,EA,1,1
+Consumables,CON-UB-03,Wire Cup Brush Big 75Mm,Basic Consumable,UB-03,WS,32,65,,EA,8,16
+Consumables,CON-UC-01,Flapperwheel 80 X 50 P80,Basic Consumable,UC-01,WS,8,155.28,,EA,2,4
+Consumables,CON-UC-02,Flapperwheel 60 X 60 Nk60,Basic Consumable,UC-02,WS,13,75.8,,EA,4,7
+Consumables,CON-UC-03,Flapperwheel 50 X 40 P60,Basic Consumable,UC-03,WS,34,72,,EA,9,17
+Consumables,CON-UC-04,Flapperwheel 40 X 25 P80,Basic Consumable,UC-04,WS,25,40,,EA,7,13
+Consumables,CON-UC-05,Flapperwheel 30 X 20 P60,Basic Consumable,UC-05,WS,36,49.63,,EA,9,18
+Consumables,CON-UC-06,Flapperwheel 25 X 15 P80,Basic Consumable,UC-06,WS,32,49.1,,EA,8,16
+Consumables,CON-UC-07,Flapperwheel 20 X 20 P80,Basic Consumable,UC-07,WS,23,40,,EA,6,12
+Consumables,CON-UD-01,Bench Grinding Wheel 200X25X32,Basic Consumable,UD-01,WS,1,,,EA,1,1
+Consumables,CON-UD-02,Bench Grinding Wheel 200X32X31,Basic Consumable,UD-02,WS,2,,,EA,1,1
+Consumables,CON-VA-01,P/N 93-1933A 1Litre,Basic Consumable,VA-01,WS,7,,,EA,2,4
+Consumables,CON-VA-02,P/N 93-2365,Basic Consumable,VA-02,WS,1,,,EA,1,1
+Consumables,CON-VA-03,P/N 93-3584C 1Litre,Basic Consumable,VA-03,WS,13,,,EA,4,7
+Consumables,CON-VA-04,P/N 93-4203,Basic Consumable,VA-04,WS,6,,,EA,2,3
+Consumables,CON-VA-05,Welding Rod,Basic Consumable,VA-05,WS,105,,,EA,27,53
+Consumables,CON-VB-01,Electrode Holder,Basic Consumable,VB-01,WS,3,,,EA,1,2
+Consumables,CON-VB-02,Earth Clamp,Basic Consumable,VB-02,WS,6,,,EA,2,3
+Consumables,CON-VB-03,Ecowet P1200,Basic Consumable,VB-03,WS,78,,,EA,20,39
+Consumables,CON-VB-04,Ecowet P400,Basic Consumable,VB-04,WS,45,,,EA,12,23
+Consumables,CON-VB-05,Ecowet P600,Basic Consumable,VB-05,WS,39,,,EA,10,20
+Consumables,CON-VB-06,Ecowet P800,Basic Consumable,VB-06,WS,0,,,EA,0,0
+Consumables,CON-VB-07,Ecowet P1000,Basic Consumable,VB-07,WS,23,,,EA,6,12
+Consumables,CON-VC-01,Welding Wire Liner,Basic Consumable,VC-01,WS,26,,,EA,7,13
+Consumables,CON-VC-02,Aluminium Welding Wire,Basic Consumable,VC-02,WS,2,,,EA,1,1
+Consumables,CON-VC-03,Welding Wire 1.2Mm Mig-6000 Afrox,Basic Consumable,VC-03,WS,9,45.61,,EA,3,5
+Consumables,CON-VD-01,Baby Grinder (Makita),Basic Consumable,VD-01,WS,3,,,EA,1,2
+Consumables,CON-VD-02,Welding Gun (Trafimet),Basic Consumable,VD-02,WS,4,,,EA,1,2
+Consumables,CON-VD-03,Heating Gun (Ryobi),Basic Consumable,VD-03,WS,1,,,EA,1,1
+Consumables,CON-VD-04,Multi-Stage Regulator (Prima),Basic Consumable,VD-04,WS,2,,,EA,1,1
+Consumables,CON-VD-05,Single Stage Regulator Acetylene (Matweld),Basic Consumable,VD-05,WS,2,,,EA,1,1
+Consumables,CON-VD-06,Spray Paint Gun (Wagema),Basic Consumable,VD-06,WS,1,7.46,,EA,1,1
+Consumables,CON-WA-01,Spectacle Euro Amber,Basic Consumable,WA-01,WS,0,7.46,,EA,0,0
+Consumables,CON-WA-02,Spectacle Euro Clear,Basic Consumable,WA-02,WS,26,7.46,,EA,7,13
+Consumables,CON-WA-03,Euro Green Spactacles Black Adj Frame,Basic Consumable,WA-03,WS,26,9.95,,EA,7,13
+Consumables,CON-WA-04,Ear Plug Dromex Reusable-Green/Blue,Basic Consumable,WA-04,WS,149,2.8,,EA,38,75
+Consumables,CON-WB-01,Cutting Nozzle Anm 1.6Mm,Basic Consumable,WB-01,WS,54,74.9,,EA,14,27
+Consumables,CON-WB-02,1.4Mm Contact Tip M8,Basic Consumable,WB-02,WS,75,11.5,,EA,19,38
+Consumables,CON-WB-03,"Anm Cutting Nozzle 1.2Mm (1/16"") 12-75Mm",Basic Consumable,WB-03,WS,10,74.95,,EA,3,5
+Consumables,CON-WB-04,Contact Tip 2.4Mm,Basic Consumable,WB-04,WS,11,,,EA,3,6
+Consumables,CON-WB-05,Cutting Nozzle Anm 1.2Mm,Basic Consumable,WB-05,WS,58,57.65,,EA,15,29
+Consumables,CON-WB-06,Cutting Nozzle Anm 1.4Mm,Basic Consumable,WB-06,WS,0,57.65,,EA,0,0
+Consumables,CON-WB-07,Cutting Nozzle Anm 1.6Mm,Basic Consumable,WB-07,WS,36,57.65,,EA,9,18
+Consumables,CON-WB-08,Lenses Clear 108X52,Basic Consumable,WB-08,WS,31,3.5,,EA,8,16
+Consumables,CON-WB-09,Lens Shade 10,Basic Consumable,WB-09,WS,36,3.5,,EA,9,18
+Consumables,CON-WB-10,Shade 12 Lens,Basic Consumable,WB-10,WS,76,3,,EA,19,38
+Consumables,CON-WB-11,Welding Shroud Copper,Basic Consumable,WB-11,WS,24,,,EA,6,12
+Consumables,CON-WB-12,Stainless Steel Tig 308L 1.6Mm,Basic Consumable,WB-12,WS,32,76.61,,EA,8,16
+Consumables,CON-WB-13,2.4Mm Taurus Mild Steel Tig Rod 70S-6,Basic Consumable,WB-13,WS,29,40,,EA,8,15
+Consumables,CON-WC-01,Green Line Welding (Wristy 2.5: Length),Basic Consumable,WC-01,WS,17,37.5,,EA,5,9
+Consumables,CON-WC-02,Flint Lighter Complete,Basic Consumable,WC-02,WS,7,18.9,,EA,2,4
+Consumables,CON-WC-03,Plastic Nozzle,Basic Consumable,WC-03,WS,12,,,EA,3,6
+Consumables,CON-WC-04,Tungesten Tip Red 2.4Mm,Basic Consumable,WC-04,WS,86,24.88,,EA,22,43
+Consumables,CON-WD-01,Welding Gloves Medium,Basic Consumable,WD-01,WS,29,41,,EA,8,15
+Consumables,CON-WD-02,Welding Gloves Long,Basic Consumable,WD-02,WS,28,41,,EA,7,14
+Consumables,CON-WE-01,Pvc Red Smooth Shoulder Gloves,Basic Consumable,WE-01,WS,1,26.1,,EA,1,1
+Consumables,CON-WE-02,Dromex Orange Synthetic Freezer Gloves,Basic Consumable,WE-02,WS,2,62,,EA,1,1
+Consumables,CON-WE-03,Ecowet P100,Basic Consumable,WE-03,WS,62,,,EA,16,31
+Consumables,CON-WE-04,Ecowet P180,Basic Consumable,WE-04,WS,50,,,EA,13,25
+Consumables,CON-WE-05,Contact Nozzle 1.2Mm,Basic Consumable,WE-05,WS,13,,,EA,4,7
+Consumables,CON-WE-06,Copper Welding Nozzle,Basic Consumable,WE-06,WS,11,,,EA,3,6
+Consumables,CON-WE-07,Welding Clamp Attachment,Basic Consumable,WE-07,WS,30,,,EA,8,15
+Consumables,CON-WE-08,Brass Tip Adaptor,Basic Consumable,WE-08,WS,13,,,EA,4,7
+Consumables,CON-WE-09,Flashback Arrestor,Basic Consumable,WE-09,WS,29,,,EA,8,15
+Consumables,CON-WE-10,Ear Protectors,Basic Consumable,WE-10,WS,1,,,EA,1,1
+Consumables,CON-WE-11,Denso Tape,Basic Consumable,WE-11,WS,1,,,EA,1,1
+Consumables,CON-WE-12,Vacpac Electrodes,Basic Consumable,WE-12,WS,4,,,EA,1,2
+Consumables,CON-WE-13,Wire Brush,Basic Consumable,WE-13,WS,1,,,EA,1,1
+Consumables,CON-WE-14,De-Burring Tool,Basic Consumable,WE-14,WS,1,,,EA,1,1
+Consumables,CON-WE-15,Welding Helmet,Basic Consumable,WE-15,WS,2,,,EA,1,1
+Consumables,CON-WE-16,Scotchbrite,Basic Consumable,WE-16,WS,1,,,EA,1,1
+Consumables,CON-WE-17,Sandpaper #40,Basic Consumable,WE-17,WS,1,,,EA,1,1
+Consumables,CON-WE-18,Sandpaper #60,Basic Consumable,WE-18,WS,2,,,EA,1,1
+Consumables,CON-WE-19,Sandpaper #80,Basic Consumable,WE-19,WS,2,,,EA,1,1
+Consumables,CON-WE-20,Sandpaper #150,Basic Consumable,WE-20,WS,1,,,EA,1,1
+Consumables,CON-WE-21,Sandpaper #220,Basic Consumable,WE-21,WS,3,,,EA,1,2
+Consumables,CON-WE-22,Sandpaper #240,Basic Consumable,WE-22,WS,2,,,EA,1,1
+Consumables,CON-WE-23,Sandpaper #320,Basic Consumable,WE-23,WS,1,,,EA,1,1
+Consumables,CON-WP,Work In Progress,Basic Consumable,WP,RB,24,,,EA,6,12
+Consumables,CON-WP#2,Work In Progress,Basic Consumable,WP,RB,0,,,EA,0,0
+Consumables,CON-WP#3,Work In Progress,Basic Consumable,WP,RB,0,,,EA,0,0
+Consumables,CON-XA-01,M4 Normal Nuts,Nuts,XA-01,RB,312,,,EA,78,156
+Consumables,CON-XA-02,M4 Stover Nuts,Nuts,XA-02,RB,0,,,EA,0,0
+Consumables,CON-XA-03,M4 Nylock Nuts,Nuts,XA-03,RB,133,,,EA,34,67
+Consumables,CON-XA-04,M4 Nordlock Washers,Washers,XA-04,RB,354,,,EA,89,177
+Consumables,CON-XA-05,M4 Flat Washers,Washers,XA-05,RB,258,,,EA,65,129
+Consumables,CON-XA-06,M4 Bodywasher,Washers,XA-06,RB,252,,,EA,63,126
+Consumables,CON-XB-01,M5 Normal Nuts,Nuts,XB-01,RB,353,0.1,,EA,89,177
+Consumables,CON-XB-02,M5 Stover Nuts,Nuts,XB-02,RB,0,,,EA,0,0
+Consumables,CON-XB-03,M5 Nylock Nuts,Nuts,XB-03,RB,202,0.1,,EA,51,101
+Consumables,CON-XB-04,M5 Nordlock Washers,Washers,XB-04,RB,242,1.95,,EA,61,121
+Consumables,CON-XB-05,M5 Flat Washers,Washers,XB-05,RB,306,0.17,,EA,77,153
+Consumables,CON-XB-06,M5 Bodywasher,Washers,XB-06,RB,234,1,,EA,59,117
+Consumables,CON-XC-01,M6 Normal Nuts,Nuts,XC-01,RB,0,0.1,,EA,0,0
+Consumables,CON-XC-02,M6 Stover Nuts,Nuts,XC-02,RB,0,1.6,,EA,0,0
+Consumables,CON-XC-03,M6 Nylock Nuts,Nuts,XC-03,RB,0,0.11,,EA,0,0
+Consumables,CON-XC-04,M6 Nordlock Washers,Washers,XC-04,RB,0,6.52,,EA,0,0
+Consumables,CON-XC-05,M6 Flat Washers,Washers,XC-05,RB,0,0.04,,EA,0,0
+Consumables,CON-XC-06,M6 Bodywasher,Washers,XC-06,RB,258,,,EA,65,129
+Consumables,CON-XD-01,M8 Normal Nuts,Nuts,XD-01,RB,0,0.2,,EA,0,0
+Consumables,CON-XD-02,M8 Stover Nuts,Nuts,XD-02,RB,0,2,,EA,0,0
+Consumables,CON-XD-03,M8 Nylock Nuts,Nuts,XD-03,RB,0,0.19,,EA,0,0
+Consumables,CON-XD-04,M8 Nordlock Washers,Washers,XD-04,RB,0,7,,EA,0,0
+Consumables,CON-XD-05,M8 Flat Washers,Washers,XD-05,RB,0,0.06,,EA,0,0
+Consumables,CON-XD-06,M8 Bodywasher,Washers,XD-06,RB,42,,,EA,11,21
+Consumables,CON-XE-01,M10 Normal Nuts,Nuts,XE-01,RB,0,7.47,,EA,0,0
+Consumables,CON-XE-02,M10 Stover Nuts,Nuts,XE-02,RB,0,0.48,,EA,0,0
+Consumables,CON-XE-03,M10 Nylock Nuts,Nuts,XE-03,RB,0,0.55,,EA,0,0
+Consumables,CON-XE-04,M10 Nordlock Washers,Washers,XE-04,RB,0,55.38,,EA,0,0
+Consumables,CON-XE-05,M10 Flat Washers,Washers,XE-05,RB,0,104,,EA,0,0
+Consumables,CON-XE-06,M10 Bodywasher,Washers,XE-06,RB,175,,,EA,44,88
+Consumables,CON-XF-01,M12 Normal Nuts,Nuts,XF-01,RB,207,2.7,,EA,52,104
+Consumables,CON-XF-02,M12 Stover Nuts,Nuts,XF-02,RB,82,0.67,,EA,21,41
+Consumables,CON-XF-03,M12 Nordlock Washers,Washers,XF-03,RB,0,,,EA,0,0
+Consumables,CON-XF-04,M12 Flat Washers,Washers,XF-04,RB,0,8.4,,EA,0,0
+Consumables,CON-XF-05,M12 Bodywashers,Washers,XF-05,RB,434,,,EA,109,217
+Consumables,CON-XH-01,"7/16"" X 3"" Hex Bolt",Hex Bolt,XH-01,RB,4,,,EA,1,2
+Consumables,CON-XH-02,"3/4"" X 4"" Hex Bolt",Hex Bolt,XH-02,RB,4,,,EA,1,2
+Consumables,CON-XH-03,"7/16"" X 1"" Hex Bolt",Hex Bolt,XH-03,RB,11,,,EA,3,6
+Consumables,CON-XH-04,"7/16"" X 2"" Hex Bolt",Hex Bolt,XH-04,RB,20,,,EA,5,10
+Consumables,CON-XH-05,"3/8"" X 1"" Cap Screw",Hex Bolt,XH-05,RB,24,,,EA,6,12
+Consumables,CON-XH-06,M20X30 Grub Screw,Grub Screw,XH-06,RB,17,,,EA,5,9
+Consumables,CON-XH-07,M20X50 Grub Screw,Grub Screw,XH-07,RB,14,,,EA,4,7
+Consumables,CON-XH-08,M16X20 Grub Screw,Grub Screw,XH-08,RB,10,,,EA,3,5
+Consumables,CON-XH-09,M16X25 Grub Screw,Grub Screw,XH-09,RB,0,,,EA,0,0
+Consumables,CON-XH-10,M12X40 Grub Screw,Grub Screw,XH-10,RB,50,,,EA,13,25
+Consumables,CON-XH-11,M12X35 Grub Screw,Grub Screw,XH-11,RB,50,,,EA,13,25
+Consumables,CON-XH-12,M12X20 Grub Screw,Grub Screw,XH-12,RB,39,,,EA,10,20
+Consumables,CON-XH-13,M12X25 Grub Screw,Grub Screw,XH-13,RB,38,,,EA,10,19
+Consumables,CON-XH-14,M12X12 Grub Screw,Grub Screw,XH-14,RB,130,,,EA,33,65
+Consumables,CON-XH-15,M12X16 Grub Screw,Grub Screw,XH-15,RB,46,,,EA,12,23
+Consumables,CON-XH-16,M10X40 Grub Screw,Grub Screw,XH-16,RB,61,,,EA,16,31
+Consumables,CON-XH-17,M10X50 Grub Screw,Grub Screw,XH-17,RB,6,,,EA,2,3
+Consumables,CON-XH-18,M10X30 Grub Screw,Grub Screw,XH-18,RB,49,,,EA,13,25
+Consumables,CON-XH-19,M10X20 Grub Screw,Grub Screw,XH-19,RB,59,,,EA,15,30
+Consumables,CON-XH-20,M10X25 Grub Screw,Grub Screw,XH-20,RB,39,,,EA,10,20
+Consumables,CON-XH-21,M8X30 Grub Screw,Grub Screw,XH-21,RB,50,,,EA,13,25
+Consumables,CON-XH-22,M10X16 Grub Screw,Grub Screw,XH-22,RB,29,,,EA,8,15
+Consumables,CON-XH-23,M8X20 Grub Screw,Grub Screw,XH-23,RB,46,,,EA,12,23
+Consumables,CON-XH-24,M8X25 Grub Screw,Grub Screw,XH-24,RB,56,,,EA,14,28
+Consumables,CON-XH-25,M6X30 Grub Screw,Grub Screw,XH-25,RB,28,,,EA,7,14
+Consumables,CON-XH-26,M6X20 Grub Screw,Grub Screw,XH-26,RB,36,,,EA,9,18
+Consumables,CON-XH-27,M6X25 Grub Screw,Grub Screw,XH-27,RB,37,,,EA,10,19
+Consumables,CON-XH-28,M5X16 Grub Screw,Grub Screw,XH-28,RB,30,,,EA,8,15
+Consumables,CON-XH-29,M5X20 Grub Screw,Grub Screw,XH-29,RB,22,,,EA,6,11
+Consumables,CON-XH-30,M16X16 Fine Thread Grub Screw,Grub Screw,XH-30,RB,49,,,EA,13,25
+Consumables,CON-XH-31,M10X16 Fine Thread Grub Screw,Grub Screw,XH-31,RB,0,,,EA,0,0
+Consumables,CON-XH-32,M22X2.5 Tap,Tap,XH-32,RB,1,,,EA,1,1
+Consumables,CON-XH-33,Router,Router,XH-33,RB,1,,,EA,1,1
+Consumables,CON-XH-34,M4X12 Cap Screw,Cap Screw,XH-34,RB,0,,,EA,0,0
+Consumables,CON-XH-35,M4X16 Cap Screw,Cap Screw,XH-35,RB,16,,,EA,4,8
+Consumables,CON-XH-36,M4X20 Cap Screw,Cap Screw,XH-36,RB,277,,,EA,70,139
+Consumables,CON-XH-37,M4X30 Cap Screw,Cap Screw,XH-37,RB,15,,,EA,4,8
+Consumables,CON-XH-38,M4X40 Cap Screw,Cap Screw,XH-38,RB,61,,,EA,16,31
+Consumables,CON-XH-39,M16 Bodywasher,Bodywasher,XH-39,RB,19,,,EA,5,10
+Consumables,CON-XH-40,M20 Bodywasher,Bodywasher,XH-40,RB,18,,,EA,5,9
+Consumables,CON-YA-01,M5 Spring Washer,Spring Washer,YA-01,RB,0,,,EA,0,0
+Consumables,CON-YA-02,M6 Spring Washer,Spring Washer,YA-02,RB,52,,,EA,13,26
+Consumables,CON-YA-03,M8 Spring Washer,Spring Washer,YA-03,RB,235,,,EA,59,118
+Consumables,CON-YA-04,M10 Spring Washer,Spring Washer,YA-04,RB,167,,,EA,42,84
+Consumables,CON-YA-05,M12 Spring Washer,Spring Washer,YA-05,RB,646,,,EA,162,323
+Consumables,CON-YA-06,M16 Spring Washer,Spring Washer,YA-06,RB,17,,,EA,5,9
+Consumables,CON-YA-07,M20 Spring Washer,Spring Washer,YA-07,RB,97,,,EA,25,49
+Consumables,CON-YA-08,Stanley Blade,Tool,YA-08,RB,0,,,EA,0,0
+Consumables,CON-YA-09,Air Hose Male Connecter,Tool,YA-09,RB,9,,,EA,3,5
+Consumables,CON-YA-10,Air Hose Female Connecter,Tool,YA-10,RB,29,,,EA,8,15
+Consumables,CON-YA-11,Air Hose Extender,Tool,YA-11,RB,14,,,EA,4,7
+Consumables,CON-YA-12,Air Gun Connecter,Tool,YA-12,RB,58,,,EA,15,29
+Consumables,CON-YA-13,Air Hose Coupling,Tool,YA-13,RB,10,,,EA,3,5
+Consumables,CON-YA-14,Ring Clip 6Mm,Basic Consumable,YA-14,RB,0,,,EA,0,0
+Consumables,CON-YB-01,M8 Straight Grease Nipple,Basic Consumable,YB-01,RB,5,,,EA,2,3
+Consumables,CON-YB-02,M8 90' Grease Nipple,Basic Consumable,YB-02,RB,24,,,EA,6,12
+Consumables,CON-YB-03,M8 Straight Grease Nipple,Basic Consumable,YB-03,RB,45,,,EA,12,23
+Consumables,CON-YB-43,M8 90' Grease Nipple,Basic Consumable,YB-43,RB,227,,,EA,57,114
+Consumables,CON-YB-44,Small Wire Crimper,Basic Consumable,YB-44,RB,24,,,EA,6,12
+Consumables,CON-YB-45,Medium Wire Crimper,Basic Consumable,YB-45,RB,6,,,EA,2,3
+Consumables,CON-YB-46,Large Wire Crimper,Basic Consumable,YB-46,RB,51,,,EA,13,26
+Consumables,CON-YB-47,Grease Nipple Caps,Basic Consumable,YB-47,RB,113,,,EA,29,57
+Consumables,CON-YB-04,1/8' Straight Grease Nipple,Basic Consumable,YB-04,RB,200,,,EA,50,100
+Consumables,CON-YB-05,1/8' 90 Grease Nipple,Basic Consumable,YB-05,RB,5,,,EA,2,3
+Consumables,CON-YB-06,1/8' 45 Grease Nipple,Basic Consumable,YB-06,RB,43,,,EA,11,22
+Consumables,CON-YB-07,M10 Straight Grease Nipple,Basic Consumable,YB-07,RB,22,,,EA,6,11
+Consumables,CON-YB-08,M10 90' Grease Nipple,Basic Consumable,YB-08,RB,438,,,EA,110,219
+Consumables,CON-YB-09,M10 45' Grease Nipple,Basic Consumable,YB-09,RB,7,,,EA,2,4
+Consumables,CON-YB-41,M4 Riv Nut,Riv Nut,YB-41,RB,90,,,EA,23,45
+Consumables,CON-YB-10,M5 Riv Nut,Riv Nut,YB-10,RB,70,,,EA,18,35
+Consumables,CON-YB-11,M6 Riv Nut,Riv Nut,YB-11,RB,85,,,EA,22,43
+Consumables,CON-YB-12,M8 Riv Nut,Riv Nut,YB-12,RB,90,,,EA,23,45
+Consumables,CON-YB-13,M10 Riv Nut,Riv Nut,YB-13,RB,81,,,EA,21,41
+Consumables,CON-YB-14,M12 Riv Nut,Riv Nut,YB-14,RB,15,,,EA,4,8
+Consumables,CON-YB-41#2,P-Clamp 10,Basic Consumable,YB-41,RB,3,,,EA,1,2
+Consumables,CON-YB-40,35-39 Clamp,Basic Consumable,YB-40,RB,27,,,EA,7,14
+Consumables,CON-YB-38,108-116Mm Clamps,Basic Consumable,YB-38,RB,9,,,EA,3,5
+Consumables,CON-YB-39,Hose Clamp,Basic Consumable,YB-39,RB,4,,,EA,1,2
+Consumables,CON-YB-15,Gs44 Clamp-33,Basic Consumable,YB-15,RB,12,,,EA,3,6
+Consumables,CON-YB-16,Rectangle Clamp,Basic Consumable,YB-16,RB,16,,,EA,4,8
+Consumables,CON-YB-17,Clamps-38-64,Basic Consumable,YB-17,RB,5,,,EA,2,3
+Consumables,CON-YB-18,P-Clamp 20,Basic Consumable,YB-18,RB,7,,,EA,2,4
+Consumables,CON-YB-19,P-Clamp 30,Basic Consumable,YB-19,RB,11,,,EA,3,6
+Consumables,CON-YB-20,P-Clamp 45,Basic Consumable,YB-20,RB,12,,,EA,3,6
+Consumables,CON-YB-21,P-Clamp 30,Basic Consumable,YB-21,RB,5,,,EA,2,3
+Consumables,CON-YB-22,Hose Clamp 10-16Mm,Basic Consumable,YB-22,RB,31,,,EA,8,16
+Consumables,CON-YB-23,P-Clamp 38,Basic Consumable,YB-23,RB,9,,,EA,3,5
+Consumables,CON-YB-24,P-Clamp 35,Basic Consumable,YB-24,RB,11,,,EA,3,6
+Consumables,CON-YB-25,P-Clamp 50,Basic Consumable,YB-25,RB,14,,,EA,4,7
+Consumables,CON-YB-26,P-Clamp 37,Basic Consumable,YB-26,RB,12,,,EA,3,6
+Consumables,CON-YB-27,Male Water House Connector,Basic Consumable,YB-27,RB,19,,,EA,5,10
+Consumables,CON-YB-28,Small Cable Tie,Basic Consumable,YB-28,RB,6,,,EA,2,3
+Consumables,CON-YB-29,Medium Cable Tie,Basic Consumable,YB-29,RB,14,,,EA,4,7
+Consumables,CON-YB-30,Large Cable Tie,Basic Consumable,YB-30,RB,4,,,EA,1,2
+Consumables,CON-YB-31,Thin/Long Cable Tie,Basic Consumable,YB-31,RB,0,,,EA,0,0
+Consumables,CON-YB-32,D-Shackle Small,Basic Consumable,YB-32,RB,20,,,EA,5,10
+Consumables,CON-YB-33,D-Shacle Medium,Basic Consumable,YB-33,RB,26,,,EA,7,13
+Consumables,CON-YB-48,Gs 120 Clamp,Basic Consumable,YB-48,RB,9,,,EA,3,5
+Consumables,CON-YB-49,Tb 92 Donald Sow,Basic Consumable,YB-49,RB,6,,,EA,2,3
+Consumables,CON-YB-50,M8 D-Shackle,Basic Consumable,YB-50,RB,12,,,EA,3,6
+Consumables,CON-YB-51,M24 Eye Bolt,Basic Consumable,YB-51,RB,7,,,EA,2,4
+Consumables,CON-YB-34,P-Clamp 16,Basic Consumable,YB-34,RB,17,,,EA,5,9
+Consumables,CON-YB-35,P-Clamp 21,Basic Consumable,YB-35,RB,53,,,EA,14,27
+Consumables,CON-YB-36,M16 Eye Bolt,Basic Consumable,YB-36,RB,8,,,EA,2,4
+Consumables,CON-YB-47#2,M10 Eye Bolt,Basic Consumable,YB-47,RB,7,,,EA,2,4
+Consumables,CON-YB-37,M12 Eye Bolt,Basic Consumable,YB-37,RB,18,,,EA,5,9
+Consumables,CON-01238,Thread Tape,Basic Consumable,,RB,2,,,EA,1,1
+Consumables,CON-01239,Nutlock T76,Basic Consumable,,RB,4,,,EA,1,2
+Fittings,FIT-AW-07,Cap 7/16 Jic Fem Sw,,RA-01,,23,7.34,PIRTEK,EA,6,12
+Fittings,FIT-AU-07,Plug 7/16 Jic Male,,RA-02,,77,6.96,PIRTEK,EA,20,39
+Fittings,FIT-AW-09,Cap 9/16 Jic Fem Sw,,RA-03,,70,10.87,PIRTEK,EA,18,35
+Fittings,FIT-AU-09,Plug 9/16 Jic Male,,RA-04,,28,10.44,PIRTEK,EA,7,14
+Fittings,FIT-AW-12,Cap 3/4 Jic Fem Sw,,RA-05,,41,12.66,PIRTEK,EA,11,21
+Fittings,FIT-AU-12,Plug 3/4 Jic Male,,RA-06,,35,12.61,PIRTEK,EA,9,18
+Fittings,FIT-AW-14,7/8 Jic Female Cap,,RA-07,,77,17.97,PIRTEK,EA,20,39
+Fittings,FIT-AU-14,Plug 7/8 Jic Male,,RA-08,,19,16.81,PIRTEK,EA,5,10
+Fittings,FIT-AW-17,Cap 1.1/16 Jic Fem Sw,,RA-09,,26,25.06,PIRTEK,EA,7,13
+Fittings,FIT-AU-17,Plug 1.1/16 Jic Male,,RA-10,,16,23.05,PIRTEK,EA,4,8
+Fittings,FIT-AU-21,Plug 1.5/16 Jic Male,,RA-11,,29,40.01,PIRTEK,EA,8,15
+Fittings,FIT-AU-21#2,Plug 1.5/16 Jic Male,,RA-12,,30,,PIRTEK,EA,8,15
+Fittings,FIT-AU-26,Cap 1.5/8 Jic Fem Sw,,RA-13,,10,61.91,PIRTEK,EA,3,5
+Fittings,FIT-AU-26#2,Plug 1.5/8 Jic Male,,RA-14,,3,77.11,PIRTEK,EA,1,2
+Fittings,FIT-AW-30,Cap 1.7/8 Jic Fem Sw,,RA-15,,2,79.96,PIRTEK,EA,1,1
+Fittings,FIT-AU-30,Plug 1.7/8 Jic Male,,RA-16,,9,116.71,PIRTEK,EA,3,5
+Fittings,FIT-P-09-09,Nipple 9/16 Jic Male X 9/16 Jic Male,,RA-17,,42,12.61,PIRTEK,EA,11,21
+Fittings,FIT-P-07-07,Nipple 7/16 Jic Male X 7/16 Jic Male,,RA-18,,105,10.44,PIRTEK,EA,27,53
+Fittings,FIT-P-14-14,Nipple 7/8 Jic Male X 7/8 Jic Male,,RA-19,,62,30.46,PIRTEK,EA,16,31
+Fittings,FIT-P-12-12,Nipple 3/4 Jic Male X 3/4 Jic Male,,RA-20,,30,18.7,PIRTEK,EA,8,15
+Fittings,FIT-P-17-17,Nipple 1.1/16 Jic Male X 1.1/16 Jic Male,,RA-21,,12,33.06,PIRTEK,EA,3,6
+Fittings,FIT-P-21-21,Nipple 1.5/16 Jic Male X 1.5/16 Jic Male,,RA-22,,4,56.54,PIRTEK,EA,1,2
+Fittings,FIT-P-30-30,Nipple 1.7/8 Jic Male X 1.7/8 Jic Male,,RA-23,,0,184.58,PIRTEK,EA,0,0
+Fittings,FIT-P-26-26,Nipple 1.5/8 Jic Male X 1.5/8 Jic Male,,RA-24,,17,131.21,PIRTEK,EA,5,9
+Fittings,FIT-CAB-07-07,Elb 90 7/16 Jic M X 7/16 Jic Fem Sw,,RA-25,,76,,PIRTEK,EA,19,38
+Fittings,FIT-P-40-40,Nipple 2.1/2 Jic Male X 2.1/2 Jic Male,,RA-26,,2,344.59,PIRTEK,EA,1,1
+Fittings,FIT-CAB-09-09,Elb 90 9/16 Jic M X 9/16 Jic Fem Sw,,RA-27,,48,50.89,PIRTEK,EA,12,24
+Fittings,FIT-CAB-12-12,Elb 90 3/4 Jic M X 3/4 Jic Fem Sw,,RA-28,,32,61.76,PIRTEK,EA,8,16
+Fittings,FIT-CAB-14-14,Elb 90 7/8 Jic M X 7/8 Jic Fem Sw,,RA-29,,38,78.06,PIRTEK,EA,10,19
+Fittings,FIT-CAB-17-17,Elb 90 1.1/16 Jic M X 1.1/16 Jic Fem Sw,,RA-30,,28,107.43,PIRTEK,EA,7,14
+Fittings,FIT-CAB-21-21,Elb 90 1.5/16 Jic M X 1.5/16 Jic Fem Sw,,RA-31,,20,234.27,PIRTEK,EA,5,10
+Fittings,FIT-CAB-26-26,Elb 90 1.5/8 Jic M X 1.5/8 Jic Fem Sw,,RA-32,,4,412.02,PIRTEK,EA,1,2
+Fittings,FIT-CAB-30-30,Elb 90 1.7/8 Jic M X 1.7/8 Jic Fem Sw,,RA-33,,3,617.28,PIRTEK,EA,1,2
+Fittings,FIT-CAB-40-40,Elb 90 2.1/2 Jic M X 2.1/2 Jic Fem Sw,,RA-34,,4,617.28,PIRTEK,EA,1,2
+Fittings,FIT-CGB-12-12,Elb 45 3/4 Jic M X 3/4 Jic Fem Sw,,RA-35,,3,83.94,PIRTEK,EA,1,2
+Fittings,FIT-CGB-12-12#2,Elb 45 3/4 Jic M X 3/4 Jic Fem Sw,,RA-35,,0,83.94,PIRTEK,EA,0,0
+Fittings,FIT-CGB-07-07,Elb 45 7/16 Jic M X 7/16 Jic Fem Sw,,RA-36,,158,,PIRTEK,EA,40,79
+Fittings,FIT-CGB-14-14,Elb 45 7/8 Jic M X 7/8 Jic Fem Sw,,RA-38,,12,89.82,PIRTEK,EA,3,6
+Fittings,FIT-CGB-21-21,Elb 45 1.5/16 Jic M X 1.5/16 Jic Fem Sw,,RA-39,,0,251.92,PIRTEK,EA,0,0
+Fittings,FIT-CGB-17-17,Elb 45 1.1/16 Jic M X 1.1/16 Jic Fem Sw,,RA-40,,26,142.99,PIRTEK,EA,7,13
+Fittings,FIT-CGB-30-30,Elb 45 1.7/8 Jic M X 1.7/8 Jic Fem Sw,,RA-41,,6,512.85,PIRTEK,EA,2,3
+Fittings,FIT-CGB-26-26,Elb 45 1.5/8 Jic M X 1.5/8 Jic Fem Sw,,RA-42,,6,442.16,PIRTEK,EA,2,3
+Fittings,FIT-CMA-17-17-17,Tee 1.1/16 Jic Male X Fem Sw X Jic M,,RA-43,,45,,PIRTEK,EA,12,23
+Fittings,FIT-CMA-30-30-30,Tee 1.7/8 Jic Male X Fem Sw X Jic M,,RA-44,,0,801.76,PIRTEK,EA,0,0
+Fittings,FIT-CMA-09-09-09,Tee 9/16 Jic Male X Fem Sw X Jic M,,RA-45,,39,,PIRTEK,EA,10,20
+Fittings,FIT-CMA-07-07-07,Tee 7/16 Jic Male X Fem Sw X Jic M,,RA-46,,31,60.89,PIRTEK,EA,8,16
+Fittings,FIT-CMA-14-14-14,Tee 7/8 Jic Male X Fem Sw X Jic M,,RA-47,,36,106.99,PIRTEK,EA,9,18
+Fittings,FIT-CMA-12-12-12,Tee 3/4 Jic Male X Fem Sw X Jic M,,RA-48,,25,83.94,PIRTEK,EA,7,13
+Fittings,FIT-CMA-26-26-26,Tee 1.5/8 Jic Male X Fem Sw X Jic M,,RA-49,,2,537.25,PIRTEK,EA,1,1
+Fittings,FIT-CMA-21-21-21,Tee 1.5/16 Jic Male X Fem Sw X Jic M,,RA-50,,0,248.78,PIRTEK,EA,0,0
+Fittings,FIT-CBA-09-09-09,Tee 9/16 Jic M X Jic M X Jic M,,RA-51,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CBA-07-07-07,Tee 7/16 Jic M X Jic M X Jic M,,RA-52,,0,58.51,PIRTEK,EA,0,0
+Fittings,FIT-CBA-17-17-17,Tee 1.1/16 Jic M X Jic M X Jic M,,RA-53,,0,125.95,PIRTEK,EA,0,0
+Fittings,FIT-CBA-14-14-14,Tee 7/8 Jic M X Jic M X Jic M,,RA-54,,24,85.94,PIRTEK,EA,6,12
+Fittings,FIT-CBA-12-12-12,Tee 3/4 Jic M X Jic M X Jic M,,RA-55,,0,71.86,PIRTEK,EA,0,0
+Fittings,FIT-CBA-09-09-09#2,Tee 9/16 Jic M X Jic M X Jic M,,RA-56,,1,58.51,PIRTEK,EA,1,1
+Fittings,FIT-CBA-26-26-26,Tee 1.5/16 Jic M X Jic M X Jic M,,RA-57,,2,213.47,PIRTEK,EA,1,1
+Fittings,FIT-CBA-21-21-21,Tee 1.5/16 Jic M X Jic M X Jic M,,RA-58,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AAPJ-07-07,7/16 Jic M X 7/16 Jix F Sw,,RA-59,,72,23.91,PIRTEK,EA,18,36
+Fittings,FIT-CMA-12-12-12#2,Tee 3/4 Jic Male X Fem Sw X Jic M,,RA-60,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CBA-17-17-17#2,Tee 1.1/16 Jic M X Jic M X Jic M,,RA-61,,3,125.95,PIRTEK,EA,1,2
+Fittings,FIT-AAPJ-14-09,7/8 Jic M X 9/16 Jix F Sw,,RA-62,,4,47.09,PIRTEK,EA,1,2
+Fittings,FIT-AAPJ-12-12,Adaptor 3/4 Jic Male X Jic Fem Sw,,RA-63,,99,40.56,PIRTEK,EA,25,50
+Fittings,FIT-AAPJ-09-09,Adaptor 9/16 Jic Male X Jic Fem Sw,,RA-64,,46,29.34,PIRTEK,EA,12,23
+Fittings,FIT-AAPJ-21-21,Adaptor 1.5/16 Jic Male X 1.5/16 Jic Fem Sw,,RA-65,,4,,PIRTEK,EA,1,2
+Fittings,FIT-AAPJ-17-17,Adaptor 1.1/16 Jic Male X 1.1/16 Jic Fem Sw,,RA-66,,7,,PIRTEK,EA,2,4
+Fittings,FIT-AAPJ-14-14,Adaptor 7/8 Jic Male X 7/8 Jic Fem Sw,,RA-67,,25,,PIRTEK,EA,7,13
+Fittings,FIT-BB-12-07,Reducer Jic Fem X Jic Male (One Piece),,RA-68,,24,,PIRTEK,EA,6,12
+Fittings,FIT-BB-09-07,Reducer Jic Fem X Jic Male (One Piece),,RA-69,,37,,PIRTEK,EA,10,19
+Fittings,FIT-BB-21-17,Reducer Jic Fem X Jic Male (One Piece),,RA-70,,1,,PIRTEK,EA,1,1
+Fittings,FIT-BB-14-07,Reducer Jic Fem X Jic Male (One Piece),,RA-71,,19,,PIRTEK,EA,5,10
+Fittings,FIT-BB-14-09,Reducer Jic Fem X Jic Male (One Piece),,RA-72,,9,,PIRTEK,EA,3,5
+Fittings,FIT-BB-12-09,Reducer Jic Fem X Jic Male (One Piece),,RA-73,,23,23.05,PIRTEK,EA,6,12
+Fittings,FIT-BB-17-07,Reducer Jic Fem X Jic Male (One Piece),,RA-74,,2,,PIRTEK,EA,1,1
+Fittings,FIT-BB-17-14,Reducer Jic Fem X Jic Male (One Piece),,RA-75,,10,,PIRTEK,EA,3,5
+Fittings,FIT-BB-14-12,Reducer Jic Fem X Jic Male (One Piece),,RA-76,,7,29,PIRTEK,EA,2,4
+Fittings,FIT-BB-20-12,Reducer Jic Fem X Jic Male (One Piece),,RA-77,,9,,PIRTEK,EA,3,5
+Fittings,FIT-BB-17-14#2,Reducer Jic Fem X Jic Male (One Piece),,RA-78,,4,41.32,PIRTEK,EA,1,2
+Fittings,FIT-BB-17-12,Reducer Jic Fem X Jic Male (One Piece),,RA-79,,8,,PIRTEK,EA,2,4
+Fittings,FIT-BB-21-17#2,Reducer Jic Fem X Jic Male (One Piece),,RA-80,,14,23.05,PIRTEK,EA,4,7
+Fittings,FIT-BB-21-12,Reducer Jic Fem X Jic Male (One Piece),,RA-81,,4,,PIRTEK,EA,1,2
+Fittings,FIT-BB-21-09,Reducer Jic Fem X Jic Male (One Piece),,RA-82,,0,23.05,PIRTEK,EA,0,0
+Fittings,FIT-BB-30-21,Reducer Jic Fem X Jic Male (One Piece),,RA-83,,2,,PIRTEK,EA,1,1
+Fittings,FIT-BB-26-21,Reducer Jic Fem X Jic Male (One Piece),,RA-84,,2,,PIRTEK,EA,1,1
+Fittings,FIT-AAPJ-09-07,Adaptor 9/16 Jic Male X 7/16 Jic Fem Sw,,RA-85,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CAA-09-09,Elb 90 9/16 Jic Male X 9/16 Jic Male,,RB-01,,2,39.9,PIRTEK,EA,1,1
+Fittings,FIT-CAA-09-09#2,Elb 90 9/16 Jic Male X 9/16 Jic Male,,RB-02,,37,39.9,PIRTEK,EA,10,19
+Fittings,FIT-CAA-14-14,Elb 90 7/8 Jic Male X 7/8 Jic Male,,RB-03,,5,69.54,PIRTEK,EA,2,3
+Fittings,FIT-CAA-12-12,Elb 90 3/4 Jic Male X 3/4 Jic Male,,RB-04,,8,45.06,PIRTEK,EA,2,4
+Fittings,FIT-CAA-17-17,Elb 90 1.1/16 Jic Male X 1.1/16 Jic Male,,RB-05,,0,97.7,PIRTEK,EA,0,0
+Fittings,FIT-CAA-14-14#2,Elb 90 7/8 Jic Male X 7/8 Jic Male,,RB-06,,5,,PIRTEK,EA,2,3
+Fittings,FIT-P-17-14,Nipple 1.1/16 Jic Male X 7/8 Jic Male,,RB-07,,2,,PIRTEK,EA,1,1
+Fittings,FIT-P-17-12,Nipple 1.1/16 Jic Male X 3/4 Jic Male,,RB-08,,8,39.3,PIRTEK,EA,2,4
+Fittings,FIT-P-12-09,Nipple 3/4 Jic Male X 9/16 Jic Male,,RB-09,,9,,PIRTEK,EA,3,5
+Fittings,FIT-P-17-17#2,Nipple 1.1/16 Jic Male X 1.1/16 Jic Male,,RB-10,,3,33.06,PIRTEK,EA,1,2
+Fittings,FIT-P-14-12,Nipple 7/8 Jic Male X 3/4 Jic Male,,RB-11,,0,,PIRTEK,EA,0,0
+Fittings,FIT-P-12-09#2,Nipple 3/4 Jic Male X 9/16 Jic Male,,RB-12,,5,,PIRTEK,EA,2,3
+Fittings,FIT-BB-14-09#2,Reducer Jic Fem X Jic Male (One Piece),,RB-13,,0,,PIRTEK,EA,0,0
+Fittings,FIT-BB-14-12#2,Reducer Jic Fem X Jic Male (One Piece),,RB-14,,5,31.32,PIRTEK,EA,2,3
+Fittings,FIT-CAA-21-21,Elb 90 1.5/16 Jic Male X 1.5/16 Jic Male,,RB-15,,1,165.56,PIRTEK,EA,1,1
+Fittings,FIT-BB-21-12#2,Reducer Jic Fem X Jic Male (One Piece),,RB-16,,0,,PIRTEK,EA,0,0
+Fittings,FIT-BB-17-14#3,Reducer Jic Fem X Jic Male (One Piece),,RB-17,,0,23.05,PIRTEK,EA,0,0
+Fittings,FIT-BB-17-14#4,Reducer Jic Fem X Jic Male (One Piece),,RB-18,,1,,PIRTEK,EA,1,1
+Fittings,FIT-BB-17-12#2,Reducer Jic Fem X Jic Male (One Piece),,RB-19,,1,23.05,PIRTEK,EA,1,1
+Fittings,FIT-P-17-14#2,Nipple 1.1/16 Jic Male X 7/8 Jic Male,,RB-20,,2,40.13,PIRTEK,EA,1,1
+Fittings,FIT-CAA-17-17#2,Elb 90 1.1/16 Jic Male X 1.1/16 Jic Male,,RB-21,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C-10-09,Nipple 5/8 Bspp Male X 9/16 Jic Male,,RB-22,,7,,PIRTEK,EA,2,4
+Fittings,FIT-C-06-09,Nipple 3/8 Bspp Male X 9/16 Jic Male,,RB-23,,32,19.14,PIRTEK,EA,8,16
+Fittings,FIT-P-09-07,Nipple 9/16 Jic Male X 7/16 Jic Male,,RB-24,,6,,PIRTEK,EA,2,3
+Fittings,FIT-C-12-14,Nipple 3/4 Bspp Male X 7/8 Jic Male,,RB-25,,0,,PIRTEK,EA,0,0
+Fittings,FIT-C-10-12,Nipple 7/8 Bspp X 3/4 Jic Male,,RB-26,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C-06-12,Nipple 3/8 Bspp X 3/4 Jic Male,,RB-27,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AP-12,Plug 3/4 Bspp Male,,RB-28,,20,,PIRTEK,EA,5,10
+Fittings,FIT-AP-10,Plug 7/8 Bspp Male,,RB-29,,104,,PIRTEK,EA,26,52
+Fittings,FIT-AP-32,2 Bspp Plug,,RB-30,,1,303.82,PIRTEK,EA,1,1
+Fittings,FIT-AP-24,1 1/2 Bspp Plug,,RB-31,,7,179.42,PIRTEK,EA,2,4
+Fittings,FIT-CFA-16-21,Elb 90 1 Bspp Male X 1.5/16 Jic Male,,RB-32,,11,218.62,PIRTEK,EA,3,6
+Fittings,FIT-AP-32#2,Plug 2 Bspp Male,,RB-33,,3,303.82,PIRTEK,EA,1,2
+Fittings,FIT-CFA-02-09,Elb 90 1/8 Bspp Male X 9/16 Jic Male,,RB-34,,165,47.38,PIRTEK,EA,42,83
+Fittings,FIT-AP-32#3,Plug 2 Bspp Male,,RB-35,,1,,PIRTEK,EA,1,1
+Fittings,FIT-CFA-04-09,Elb 90 1/4 Bspp Male X 9/16 Jic Male,,RB-36,,57,,PIRTEK,EA,15,29
+Fittings,FIT-CFA-02-09#2,Elb 90 1/8 Bspp Male X 9/16 Jic Male,,RB-37,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CFA-04-12,Elb 90 1/4 Bspp Male X 3/4 Jic Male,,RB-38,,98,37.84,PIRTEK,EA,25,49
+Fittings,FIT-CFA-04-07,Elb 90 1/4 Bspp Male X 7/16 Jic Male,,RB-39,,18,,PIRTEK,EA,5,9
+Fittings,FIT-CFA-06-07,Elb 90 3/8 Bspp Male X 7/16 Jic Male,,RB-40,,192,,PIRTEK,EA,48,96
+Fittings,FIT-CFA-04-09#2,Elb 90 1/4 Bspp Male X 9/16 Jic Male,,RB-41,,52,,PIRTEK,EA,13,26
+Fittings,FIT-CFA-06-09,Elb 90 3/8 Bspp Male X 9/16 Jic Male,,RB-42,,158,45.23,PIRTEK,EA,40,79
+Fittings,FIT-C-06-04,Nipple 3/8 Bspp Male X 1/4 Jic Male,,RB-43,,0,37.84,PIRTEK,EA,0,0
+Fittings,FIT-CFA-06-12,Elb 90 3/8 Bspp Male X 3/4 Jic Male,,RB-44,,73,45.23,PIRTEK,EA,19,37
+Fittings,FIT-CFA-06-09#2,Elb 90 3/8 Bspp Male X 9/16 Jic Male,,RB-45,,0,58.7,PIRTEK,EA,0,0
+Fittings,FIT-CFA-06-12#2,Elb 90 3/8 Bspp Male X 3/4 Jic Male,,RB-46,,0,49.58,PIRTEK,EA,0,0
+Fittings,FIT-CFA-08-09,Elb 90 1/2 Bspp Male X 9/16 Jic Male,,RB-47,,6,74.18,PIRTEK,EA,2,3
+Fittings,FIT-CFA-08-12,Elb 90 1/2 Bspp Male X 3/4 Jic Male,,RB-48,,12,59.59,PIRTEK,EA,3,6
+Fittings,FIT-CFA-08-14,Elb 90 1/2 Bspp Male X 7/8 Jic Male,,RB-49,,47,77.11,PIRTEK,EA,12,24
+Fittings,FIT-CFA-08-17,Elb 90 1/2 Bspp Male X 1.1/16 Jic Male,,RB-50,,6,120.09,PIRTEK,EA,2,3
+Fittings,FIT-CFA-17-17,Elb 90 3/4 Bspp Male X 3/4 Jic Male,,RB-51,,15,,PIRTEK,EA,4,8
+Fittings,FIT-CFA-12-12,Elb 90 3/4 Bspp Male X 3/4 Jic Male,,RB-52,,2,121.66,PIRTEK,EA,1,1
+Fittings,FIT-CFA-12-14,Elb 90 3/4 Bspp Male X 7/8 Jic Male,,RB-53,,19,212,PIRTEK,EA,5,10
+Fittings,FIT-CFA-12-21,Elb 90 3/4 Bspp Male X 1 Jic Male,,RB-54,,2,218.62,PIRTEK,EA,1,1
+Fittings,FIT-CFA-21-17,Elb 90 1 Bspp Male X 1.1/16 Jic Male,,RB-55,,2,103.08,PIRTEK,EA,1,1
+Fittings,FIT-CFA-16-21#2,Elb 90 1 Bspp Male X 1 Jic Male,,RB-56,,1,,PIRTEK,EA,1,1
+Fittings,FIT-CLJ-12-12,Elb 90 3/4 Bspt Male X 3/4 Bspt Fem,,RB-57,,5,,PIRTEK,EA,2,3
+Fittings,FIT-CFJ-08-08,Elb 90 1/2 Bspp Male X 1/2 Bspt Male,,RB-58,,3,,PIRTEK,EA,1,2
+Fittings,FIT-CLJ-06-06,Elb 90 3/8 Bspt Male X 3/8 Bspt Fem,,RB-59,,7,70.49,PIRTEK,EA,2,4
+Fittings,FIT-CLJ-16-16,Elb 90 1 Bspt Male X 1 Bspt Fem,,RB-60,,4,,PIRTEK,EA,1,2
+Fittings,FIT-AH-04-04,Nipple 1/4 Bspp Male X 1/4 Bspp Male,,RB-61,,5,,PIRTEK,EA,2,3
+Fittings,FIT-AH-04-02,Nipple 1/4 Bspp Male X 1/8 Bspp Male,,RB-62,,9,,PIRTEK,EA,3,5
+Fittings,FIT-AH-06-04,Nipple 3/8 Bspp Male X 1/4 Bspp Male,,RB-63,,5,,PIRTEK,EA,2,3
+Fittings,FIT-AH-04-04#2,Nipple 1/4 Bspp Male X 1/4 Bspp Male,,RB-64,,2,,PIRTEK,EA,1,1
+Fittings,FIT-AH-04-02#2,Nipple 1/4 Bspp Male X 1/8 Bspp Male,,RB-65,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AH-08-04,Nipple 1/2 Bspp Male X 1/4 Bspp Male,,RB-66,,6,,PIRTEK,EA,2,3
+Fittings,FIT-AH-06-06,Nipple 3/8 Bspp Male X 3/8 Bspp Male,,RB-67,,21,,PIRTEK,EA,6,11
+Fittings,FIT-AH-08-08,Nipple 1/2 Bspp Male X 1/2 Bspp Male,,RB-68,,47,,PIRTEK,EA,12,24
+Fittings,FIT-AH-08-06,Nipple 1/2 Bspp Male X 3/8 Bspp Male,,RB-69,,67,,PIRTEK,EA,17,34
+Fittings,FIT-AH-16-12,Nipple 1 Bspp Male X 3/4 Bspp Male,,RB-70,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AH-08-06#2,Nipple 1/2 Bspp Male X 3/8 Bspp Male,,RB-71,,24,,PIRTEK,EA,6,12
+Fittings,FIT-AAMP-06-06,Adaptor 3/8 Bspp Male X 3/8 Bspp Fem Sw,,RB-72,,14,,PIRTEK,EA,4,7
+Fittings,FIT-AAMP-04-04,Adaptor 1/4 Bspp Male X 1/4 Bspp Fem Sw,,RB-73,,15,,PIRTEK,EA,4,8
+Fittings,FIT-AAMP-16-16,Adaptor 1 Bspp Male X 1 Bspp Fem Sw,,RB-74,,3,,PIRTEK,EA,1,2
+Fittings,FIT-AAMP-12-12,Adaptor 3/4 Bspp Male X 3/4 Bspp Fem Sw,,RB-75,,7,,PIRTEK,EA,2,4
+Fittings,FIT-AAMP-08-08,Adaptor 1/2 Bspp Male X 1/2 Bspp Fem Sw,,RB-76,,21,,PIRTEK,EA,6,11
+Fittings,FIT-AH-12-10,Nipple 3/4 Bspp Male 5/8 Bspp Male,,RB-77,,20,,PIRTEK,EA,5,10
+Fittings,FIT-AH-12-08,Nipple 3/4 Bspp Male X 1/2 Bspp Male,,RB-78,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AH-24-24,Nipple 1.1/2 Bspp Male X 1.1/2 Bspp Male,,RB-79,,3,208.74,PIRTEK,EA,1,2
+Fittings,FIT-C-12-12,Nipple 3/4 Bspp Male X 3/4 Bspp Male,,RB-80,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C-04-07,Nipple 1/4 Bspp Male X 7/16 Jic Male,,RB-81,,8,,PIRTEK,EA,2,4
+Fittings,FIT-C-02-07,Nipple 1/8 Bspp Male X 7/16 Jic Male,,RB-82,,0,,PIRTEK,EA,0,0
+Fittings,FIT-C-04-12,Nipple 1/4 Bspp Male X 3/4 Jic Male,,RB-83,,12,24.47,PIRTEK,EA,3,6
+Fittings,FIT-C-04-09,Nipple 1/4 Bspp Male X 9/16 Bspp Male,,RB-84,,13,,PIRTEK,EA,4,7
+Fittings,FIT-C-06-09#2,Nipple 3/8 Bspp Male X 9/16 Jic Male,,RB-85,,28,19.14,PIRTEK,EA,7,14
+Fittings,FIT-C-06-07,Nipple 3/8 Bspp Male X 7/16 Bspp Male,,RB-86,,139,,PIRTEK,EA,35,70
+Fittings,FIT-C-06-09#3,Nipple 3/8 Bspp Male X 9/16 Jic Male,,RC-01,,28,19.14,PIRTEK,EA,7,14
+Fittings,FIT-C-08-12,Nipple 1/2 Bspp Male X 3/4 Jic Male,,RC-02,,14,30.01,PIRTEK,EA,4,7
+Fittings,FIT-C-06-14,Nipple 3/8 Bspp Male X 7/8 Jic Male,,RC-03,,22,,PIRTEK,EA,6,11
+Fittings,FIT-C-06-12#2,Nipple 3/8 Bspp Male X 3/4 Jic Male,,RC-04,,22,,PIRTEK,EA,6,11
+Fittings,FIT-C-12-21,Nipple 3/4 Bspp Male X 1.5/16 Jic Male,,RC-05,,5,49.58,PIRTEK,EA,2,3
+Fittings,FIT-C-08-17,Nipple 1/2 Bspp Male X 1.1/16 Jic Male,,RC-06,,0,35.23,PIRTEK,EA,0,0
+Fittings,FIT-C-12-17,Nipple 3/4 Bspp Male X 1.1/16 Jic Male,,RC-07,,11,37.84,PIRTEK,EA,3,6
+Fittings,FIT-C-12-14#2,Nipple 3/4 Bspp Male X 7/8 Jic Male,,RC-08,,11,46.75,PIRTEK,EA,3,6
+Fittings,FIT-C-06-17,Nipple 3/8 Bspp Male X 1.1/16 Jic Male,,RC-09,,0,40.76,PIRTEK,EA,0,0
+Fittings,FIT-C-06-14#2,Nipple 3/8 Bspp Male X 7/8 Jic Male,,RC-10,,18,29,PIRTEK,EA,5,9
+Fittings,FIT-CVAN-06-09,Elb 90 3/8 Nptf Male X 9/16 Jic Male,,RC-100,,0,26.06,PIRTEK,EA,0,0
+Fittings,FIT-CVAN-04-07,Elb 90 1/4 Nptf Male X 7/16 Jic Male,,RC-101,,4,,PIRTEK,EA,1,2
+Fittings,FIT-M-20-21,Nipple 1.1/4 Npt Male X 1.5/16 Jic Male,,RC-102,,1,123.02,PIRTEK,EA,1,1
+Fittings,FIT-CVAN-10-12,Elb 90 5/8 Nptf Male X 3/4 Jic Male,,RC-103,,0,39.3,PIRTEK,EA,0,0
+Fittings,FIT-CVAN-08-12,Elb 90 1/2 Nptf Male X 3/4 Jic Male,,RC-104,,0,123.02,PIRTEK,EA,0,0
+Fittings,FIT-CVAN-08-09,Elb 90 1/2 Nptf Male X 9/16 Jic Male,,RC-105,,0,30.46,PIRTEK,EA,0,0
+Fittings,FIT-C-02-09,Nipple 1/8 Bspp Male X 9/16 Jic Male,,RC-11,,0,35.23,PIRTEK,EA,0,0
+Fittings,FIT-C-10-17,Nipple 5/8 Bspp Male X 1.1/16 Jic Male,,RC-12,,9,49.58,PIRTEK,EA,3,5
+Fittings,FIT-C-10-12#2,Nipple 5/8 Bspp Male X 3/4 Jic Male,,RC-13,,9,,PIRTEK,EA,3,5
+Fittings,FIT-C-10-14,Nipple 5/8 Bspp Male X 7/8 Jic Male,,RC-14,,13,41.72,PIRTEK,EA,4,7
+Fittings,FIT-C-12-09,Nipple 3/4 Bspp Male X 9/16 Jic Male,,RC-15,,47,44.44,PIRTEK,EA,12,24
+Fittings,FIT-C-12-09#2,Nipple 3/4 Bspp Male X 9/16 Jic Male,,RC-16,,0,44.44,PIRTEK,EA,0,0
+Fittings,FIT-C-10-12#3,Nipple 5/8 Bspp Male X 3/4 Jic Male,,RC-17,,0,,PIRTEK,EA,0,0
+Fittings,FIT-C-16-12,Nipple 1 Bspp Male X 3/4 Jic Male,,RC-18,,0,83.82,PIRTEK,EA,0,0
+Fittings,FIT-C-12-07,Nipple 3/4 Bspp Male X 7/16 Jic Male,,RC-19,,0,44.44,PIRTEK,EA,0,0
+Fittings,FIT-C-12-12#2,Nipple 3/4 Bspp Male X 3/4 Jic Male,,RC-20,,15,41.72,PIRTEK,EA,4,8
+Fittings,FIT-C-12-14#3,Nipple 3/4 Bspp Male X 7/8 Jic Male,,RC-21,,2,46.75,PIRTEK,EA,1,1
+Fittings,FIT-C-12-21#2,Nipple 3/4 Bspp Male X 1.5/16 Jic Male,,RC-22,,16,12.66,PIRTEK,EA,4,8
+Fittings,FIT-C-16-21,Nipple 1 Bspp Male X 1.5/16 Jic Male,,RC-23,,20,,PIRTEK,EA,5,10
+Fittings,FIT-C-16-17,Nipple 1 Bspp Male X 1.1/16 Jic Male,,RC-24,,14,66.98,PIRTEK,EA,4,7
+Fittings,FIT-C-16-17#2,Nipple 1 Bspp Male X 1.1/16 Jic Male,,RC-25,,0,66.98,PIRTEK,EA,0,0
+Fittings,FIT-C-16-26,Nipple 1 Bspp Male X 1.5/8 Jic Male,,RC-26,,13,,PIRTEK,EA,4,7
+Fittings,FIT-C-16-26#2,Nipple 1 Bspp Male X 1.5/8 Jic Male,,RC-27,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C-16-12#2,Nipple 1 Bspp Male X 3/4 Jic Male,,RC-28,,2,83.82,PIRTEK,EA,1,1
+Fittings,FIT-C-20-17,Nipple 1.1/4 Bspp Male X 1.1/16 Jic Male,,RC-29,,23,150.92,PIRTEK,EA,6,12
+Fittings,FIT-C-20-21,Nipple 1.1/4 Bspp Male X 1.5/16 Jic Male,,RC-30,,30,191.93,PIRTEK,EA,8,15
+Fittings,FIT-C-16-21#2,Nipple 1 Bspp Male X 1.5/16 Jic Male,,RC-31,,0,69.15,PIRTEK,EA,0,0
+Fittings,FIT-AABP-20-30,Nipple 1.1/2 Bspp Male X 1.7/8 Jic Fem Sw,,RC-32,,6,,PIRTEK,EA,2,3
+Fittings,FIT-C-20-30,Nipple 1.1/2 Bspp Male X 1.7/8 Jic Male,,RC-33,,9,,PIRTEK,EA,3,5
+Fittings,FIT-C-20-26,Nipple 1.1/4 Bspp Male X 1.5/8 Jic Male,,RC-34,,3,195.71,PIRTEK,EA,1,2
+Fittings,FIT-C-32-40,Nipple 2 Bspp Male X 2.1/2 Jic Male,,RC-35,,1,411.28,PIRTEK,EA,1,1
+Fittings,FIT-C-32-30,Nipple 2 Bspp Male X 1.7/8 Jic Male,,RC-36,,1,191.93,PIRTEK,EA,1,1
+Fittings,FIT-C-24-30,Nipple 1.1/2 Bspp Male X 1.7/8 Jic Male,,RC-37,,0,177.89,PIRTEK,EA,0,0
+Fittings,FIT-AABP-06-09,Adaptor 3/8 Bspp M X 9/16 Jic Fem Sw,,RC-38,,0,30.38,PIRTEK,EA,0,0
+Fittings,FIT-WJ-06-09,Adaptor 3/8 Bsp Fem Sw X 9/16 Jic Fem,,RC-39,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AABP-04-09,Adaptor 1/4 Bspp M X 9/16 Jic Fem Sw,,RC-40,,0,28.13,PIRTEK,EA,0,0
+Fittings,FIT-AABP-04-07,Adaptor 1/4 Bspp M X 7/16 Jic Fem Sw,,RC-41,,0,411.28,PIRTEK,EA,0,0
+Fittings,FIT-AABP-04-04,Adaptor 1/4 Bspp M X 1/4 Bspp Fem Sw,,RC-42,,0,40.96,PIRTEK,EA,0,0
+Fittings,FIT-AABP-06-12,Adaptor 3/8 Bspp M X 3/4 Jic Fem Sw,,RC-43,,24,30.38,PIRTEK,EA,6,12
+Fittings,FIT-AABP-06-09#2,Adaptor 3/8 Bspp M X 9/16 Jic Fem Sw,,RC-44,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AABP-06-07,Adaptor 3/8 Bspp M X 7/16 Jic Fem Sw,,RC-45,,0,40.96,PIRTEK,EA,0,0
+Fittings,FIT-AABP-12-17,Adaptor 3/4 Bspp M X 1.1/16 Jic Fem Sw,,RC-46,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AAB-08-12,Adaptor 1/2 Nptf M X 3/4 Jic Fem Sw,,RC-47,,33,28.13,PIRTEK,EA,9,17
+Fittings,FIT-AABP-12-09,Adaptor 3/4 Bspp M X 9/16 Jic Fem Sw,,RC-48,,15,,PIRTEK,EA,4,8
+Fittings,FIT-AABP-16-21,Adaptor 1 Bspp M X 1.5/16 Jic Fem Sw,,RC-49,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AABP-12-17#2,Adaptor 3/4 Bspp M X 1.1/16 Jic Fem Sw,,RC-50,,1,73.43,PIRTEK,EA,1,1
+Fittings,FIT-AABP-10-12,Adaptor 5/8 Bspp M X 3/4 Jic Fem Sw,,RC-51,,0,35.23,PIRTEK,EA,0,0
+Fittings,FIT-CJA-06-09,Elb 45 3/8 Bspt Male X 9/16 Jic Male,,RC-52,,50,28.71,PIRTEK,EA,13,25
+Fittings,FIT-CJA-04-09,Elb 45 1/4 Bspt Male X 9/16 Jic Male,,RC-53,,2,21.53,PIRTEK,EA,1,1
+Fittings,FIT-CJA-04-07,Elb 45 1/4 Bspt Male X 7/16 Jic Male,,RC-54,,0,17.02,PIRTEK,EA,0,0
+Fittings,FIT-AABP-06-09#3,Adaptor 3/8 Bspp M X 9/16 Jic Fem Sw,,RC-55,,7,22.18,PIRTEK,EA,2,4
+Fittings,FIT-CFA-06-09#3,Elb 90 3/8 Bspp Male X 9/16 Jic Male,,RC-56,,42,58.7,PIRTEK,EA,11,21
+Fittings,FIT-CJA-24-30,Elb 45 1.1/2 Bspt Male X 1.7/8 Jic Male,,RC-57,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AH-08-08#2,Nipple 1/2 Bspp Male X 1/2 Bspp Male,,RC-58,,27,,PIRTEK,EA,7,14
+Fittings,FIT-AH-04-04#3,Nipple 1/4 Bspp Male X 1/4 Bspp Male,,RC-59,,1,89.3,PIRTEK,EA,1,1
+Fittings,FIT-AH-12-12,Nipple 3/4 Bspp Male X 3/4 Bspp Male,,RC-60,,3,80.04,PIRTEK,EA,1,2
+Fittings,FIT-AH-10-10,Nipple 5/8 Bspp Male X 5/8 Bspp Male,,RC-61,,6,53.36,PIRTEK,EA,2,3
+Fittings,FIT-MCFB-10-10,Orfs/Bsp Str Adapt,,RC-62,,2,31.94,THC,EA,1,1
+Fittings,FIT-MCFB-06-06,Orfs/Bsp Str Adapt,,RC-63,,0,,THC,EA,0,0
+Fittings,FIT-MCFB-16-16,Orfs/Bsp Str Adapt,,RC-64,,1,,THC,EA,1,1
+Fittings,FIT-DN-08-08,Nipple 1/2 Bspt M X 1/2 Nptf M,,RC-65,,2,32.3,PIRTEK,EA,1,1
+Fittings,FIT-C-08-21,Nipple 1/2 Bspp Male X 1.5/16 Jic Male,,RC-66,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CFA-20-21,Elb 90 1.1/4 Bspp Male X 1.5/16 Jic Male,,RC-67,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AH-12-12#2,Nipple 3/4 Bspp Male X 3/4 Bspp Male,,RC-68,,0,50.43,PIRTEK,EA,0,0
+Fittings,FIT-AH-10-10#2,Nipple 5/8 Bspp Male X 5/8 Bspp Male,,RC-69,,0,,PIRTEK,EA,0,0
+Fittings,FIT-MCFB-06-06#2,Orfs/Bsp Str Adapt,,RC-70,,0,,THC,EA,0,0
+Fittings,FIT-C-16-26#3,Nipple 1 Bspp Male X 1.5/8 Jic Male,,RC-71,,0,128.27,PIRTEK,EA,0,0
+Fittings,FIT-C-08-21#2,Nipple 1/2 Bspp Male X 1.5/16 Jic Male,,RC-72,,1,,PIRTEK,EA,1,1
+Fittings,FIT-CFA-20-21#2,Elb 90 1.1/4 Bspp Male X 1.5/16 Jic Male,,RC-73,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AT-06,Plug 3/8 Nptf Male,,RC-74,,1,10.2,PIRTEK,EA,1,1
+Fittings,FIT-AT-04,Plug 1/4 Nptf Male,,RC-75,,2,7.88,PIRTEK,EA,1,1
+Fittings,FIT-AT-12,Plug 3/4 Nptf Male,,RC-76,,2,23.01,PIRTEK,EA,1,1
+Fittings,FIT-AT-08,Plug 1/2 Nptf Male,,RC-77,,8,16.39,PIRTEK,EA,2,4
+Fittings,FIT-AT-24,Plug 1.1/2 Nptf Male,,RC-78,,7,126.7,PIRTEK,EA,2,4
+Fittings,FIT-AT-16,Plug 1 Nptf Male,,RC-79,,2,37.83,PIRTEK,EA,1,1
+Fittings,FIT-M-04-09,Nipple 1/4 Npt Male X 9/16 Jic Male,,RC-80,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AT-32,Plug 2 Nptf Male,,RC-81,,4,171.25,PIRTEK,EA,1,2
+Fittings,FIT-M-06-09,Nipple 3/8 Npt Male X 9/16 Jic Male,,RC-82,,35,63.03,PIRTEK,EA,9,18
+Fittings,FIT-CVAN-06-07,Elb 90 3/8 Nptf Male X 7/16 Jic Male,,RC-83,,0,49.68,PIRTEK,EA,0,0
+Fittings,FIT-M-04-07,Nipple 1/4 Npt Male X 7/16 Jic Male,,RC-84,,0,17.02,PIRTEK,EA,0,0
+Fittings,FIT-M-10-17,Nipple 5/8 Npt Male X 1.1/16 Jic Male,,RC-85,,0,,PIRTEK,EA,0,0
+Fittings,FIT-M-08-09,Nipple 1/2 Npt Male X 9/16 Jic Male,,RC-86,,3,26.06,PIRTEK,EA,1,2
+Fittings,FIT-M-06-12,Nipple 3/8 Npt Male X 3/4 Jic Male,,RC-87,,0,19.34,PIRTEK,EA,0,0
+Fittings,FIT-M-16-12,Nipple 1 Npt Male X 3/4 Jic Male,,RC-88,,0,,PIRTEK,EA,0,0
+Fittings,FIT-M-12-12,Nipple 3/4 Npt Male X 3/4 Jic Male,,RC-89,,0,39.3,PIRTEK,EA,0,0
+Fittings,FIT-M-10-14,Nipple 5/8 Npt Male X 7/8 Jic Male,,RC-90,,0,129.62,PIRTEK,EA,0,0
+Fittings,FIT-M-08-12,Nipple 1/2 Npt Male X 3/4 Jic Male,,RC-91,,8,30.46,PIRTEK,EA,2,4
+Fittings,FIT-M-10-21,Nipple 5/8 Npt Male X 1.5/16 Jic Male,,RC-92,,0,,PIRTEK,EA,0,0
+Fittings,FIT-M-04-09#2,Nipple 1/4 Npt Male X 9/16 Jic Male,,RC-93,,0,,PIRTEK,EA,0,0
+Fittings,FIT-M-12-17,Nipple 3/4 Npt Male X 1.1/16 Jic Male,,RC-94,,3,40.13,PIRTEK,EA,1,2
+Fittings,FIT-M-12-21,Nipple 3/4 Npt Male X 1.5/16 Jic Male,,RC-95,,3,61.55,PIRTEK,EA,1,2
+Fittings,FIT-M-16-24,Nipple 1 Npt Male X 1.1/2 Jic Male,,RC-96,,0,63.03,PIRTEK,EA,0,0
+Fittings,FIT-M-16-17,Nipple 1 Npt Male X 1.1/16 Jic Male,,RC-97,,1,63.03,PIRTEK,EA,1,1
+Fittings,FIT-M-24-30,Nipple 1.1/2 Npt Male X 1.1/16 Jic Male,,RC-98,,4,123.02,PIRTEK,EA,1,2
+Fittings,FIT-M-32-21,Nipple 2 Npt Male X 1.5/16 Jic Male,,RC-99,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CVAN-10-17,Elb 90 5/8 Nptf Male X 1.1/16 Jic Male,,RD-01,,3,129.62,PIRTEK,EA,1,2
+Fittings,FIT-CVAN-12-12,Elb 90 3/4 Nptf Male X 3/4 Jic Male,,RD-02,,1,40.13,PIRTEK,EA,1,1
+Fittings,FIT-CJAN-10-14,Elb 45 5/8 Npt Male X 7/8 Jic Fem Sw,,RD-03,,6,,PIRTEK,EA,2,3
+Fittings,FIT-CVAN-10-12#2,Elb 90 5/8 Nptf Male X 3/4 Jic Male,,RD-04,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CLJN-06-06,Elb 90 3/8 Nptf Male X 3/8 Nptf Fem,,RD-05,,3,,PIRTEK,EA,1,2
+Fittings,FIT-CVAN-16-26,Elb 90 1 Nptf Male X 1.5/8 Jic Male,,RD-06,,2,63.03,PIRTEK,EA,1,1
+Fittings,FIT-CVAN-16-21,Elb 90 1 Nptf Male X 1.5/16 Jic Male,,RD-07,,7,63.03,PIRTEK,EA,2,4
+Fittings,FIT-CVAN-16-17,Elb 90 1 Nptf Male X 1.1/16 Jic Male,,RD-08,,0,61.55,PIRTEK,EA,0,0
+Fittings,FIT-CVAN-12-17,Elb 90 3/4 Nptf Male X 1.1/16 Jic Male,,RD-09,,0,,PIRTEK,EA,0,0
+Fittings,FIT-RD-10,Adaptor 1/4 Npt Male X 3/8 Bspp Female,,RD-10,,4,112.2,PIRTEK,EA,1,2
+Fittings,FIT-FF1239-0809,Elb 90 9/16 Uno Male X 13/16 Orfs Fem Sw,,RD-100,,2,72.78,PIRTEK,EA,1,1
+Fittings,FIT-CBJM-12-12-08,Tee 3/4 Jic M X Jic M X 1/2 Bspt Male,,RD-101,,16,52.62,PIRTEK,EA,4,8
+Fittings,FIT-CBM-09-09-09,Tee 9/16 Jic M X Jic M X 9/16 Uno Male,,RD-102,,3,98.75,PIRTEK,EA,1,2
+Fittings,FIT-CBM-08-08-08,Tee 1/2 Jic M X Jic M X 1/2 Uno Male,,RD-103,,16,,PIRTEK,EA,4,8
+Fittings,FIT-CBM-16-16-16,Tee Jic M X Jic M X Uno Male,,RD-104,,17,,PIRTEK,EA,5,9
+Fittings,FIT-CBM-12-12-12,Tee 3/4 Jic M X Jic M X 3/4 Uno Male,,RD-105,,42,,PIRTEK,EA,11,21
+Fittings,FIT-CFA-20-26,Elb 90 1.1/4 Bspp Male X 1.5/8 Jic Male,,RD-106,,4,57.83,PIRTEK,EA,1,2
+Fittings,FIT-L-08-12,Nipple M8 Metric Male X 3/4 Jic Male,,RD-107,,9,12.41,PIRTEK,EA,3,5
+Fittings,FIT-L-16-12,Nipple M16 Metric Male X 3/4 Jic Male,,RD-108,,4,,PIRTEK,EA,1,2
+Fittings,FIT-L-14-12,Nipple M14 Metric Male X 3/4 Jic Male,,RD-109,,6,7.88,PIRTEK,EA,2,3
+Fittings,FIT-CVAN-20-26,Elb 90 1.1/4 Nptf Male X 1.5/8 Jic Male,,RD-11,,14,,PIRTEK,EA,4,7
+Fittings,FIT-X26JF20,1.5/8 Jic Fem Str X 1.1/4 Hose (One Piece),,RD-110,,0,,PIRTEK,EA,0,0
+Fittings,FIT-L-22-12,Nipple M22 Metric Male X 3/4 Jic Male,,RD-111,,30,758.31,PIRTEK,EA,8,15
+Fittings,FIT-L-18-12,Nipple M18 Metric Male X 3/4 Jic Male,,RD-112,,31,458.74,PIRTEK,EA,8,16
+Fittings,FIT-L-20-09,Nipple M20 Metric Male X 9/16 Jic Male,,RD-113,,8,199.45,PIRTEK,EA,2,4
+Fittings,FIT-L-14-09,Nipple M14 Metric Male X 9/16 Jic Male,,RD-114,,0,135.71,PIRTEK,EA,0,0
+Fittings,FIT-L-16-09,Nipple M16 Metric Male X 9/16 Jic Male,,RD-115,,0,101.29,PIRTEK,EA,0,0
+Fittings,FIT-L-12-07,Nipple M12 Metric Male X 7/16 Jic Male,,RD-116,,1,73.52,PIRTEK,EA,1,1
+Fittings,FIT-W-06-04,Socket 3/8 Bspt Fem X 1/4 Bspt Fem,,RD-117,,1,52.8,PIRTEK,EA,1,1
+Fittings,FIT-WP-04-04,Socket 1/4 Bspp Fem X 1/4 Bspp Fem,,RD-118,,0,,PIRTEK,EA,0,0
+Fittings,FIT-ANU-04-07,Adaptor 1/4 Npt Fem X 7/16 Uno Male,,RD-119,,0,,PIRTEK,EA,0,0
+Fittings,FIT-CLJN-10-10,Elb 90 5/8 Npt Male X 5/8 Nptf Fem,,RD-12,,1,,PIRTEK,EA,1,1
+Fittings,FIT-W-04-04,Socket 1/4 Bspt Fem X 1/4 Bspt Fem,,RD-120,,30,,PIRTEK,EA,8,15
+Fittings,FIT-W-06-06,Socket 3/8 Bspt Fem X 3/8 Bspt Fem,,RD-121,,0,720.24,PIRTEK,EA,0,0
+Fittings,FIT-L-12-17,Nipple M12 Metric Male X 1.1/16 Jic Male,,RD-122,,9,,PIRTEK,EA,3,5
+Fittings,FIT-RD-123,Adaptor M10 Metric X 1/2 Bsp Male,,RD-123,,3,58.2,PIRTEK,EA,1,2
+Fittings,FIT-LPBV-2W-013,2-Way Ball Valve Size 013,,RD-124,,4,,PIRTEK,EA,1,2
+Fittings,FIT-111-06,1/4 Low Pressure Two Way Ball Valve,,RD-125,,0,,THC,EA,0,0
+Fittings,FIT-111-20,3/4 Low Pressure Two Way Ball Valve,,RD-126,,33,13.08,THC,EA,9,17
+Fittings,FIT-3/4-LOW-P-T-WAY-BALL-VALVE,3/4 Low P-T Way Ball Valve,,RD-127,,0,,PIRTEK,EA,0,0
+Fittings,FIT-111-32,1 1/4 Low Pressure Two Way Ball Valve,,RD-128,,1,19.09,THC,EA,1,1
+Fittings,FIT-111-25,1 Low Pressure Two Way Ball Valve,,RD-129,,6,11.09,THC,EA,2,3
+Fittings,FIT-AABN-06-12,Adaptor 3/8 Nptf M X 3/4 Jic Fem Sw,,RD-13,,2,43.28,PIRTEK,EA,1,1
+Fittings,FIT-LPBV-2W-38,2-Way Ball Valve Size 38,,RD-130,,10,,PIRTEK,EA,3,5
+Fittings,FIT-RD-131,Test Point 1/4 Bsp,,RD-131,,27,,PIRTEK,EA,7,14
+Fittings,FIT-RD-132,Test Point 3/8 Bsp,,RD-132,,7,,PIRTEK,EA,2,4
+Fittings,FIT-AABN-06-09,Adaptor 3/8 Nptf M X 9/16 Jic Fem Sw,,RD-14,,43,,PIRTEK,EA,11,22
+Fittings,FIT-AABN-08-07,Adaptor 1/2 Nptf M X 7/16 Jic Fem Sw,,RD-15,,0,85.8,PIRTEK,EA,0,0
+Fittings,FIT-AABN-08-04,Adaptor 1/2 Nptf M X 7/16 Jic Fem Sw,,RD-16,,2,,PIRTEK,EA,1,1
+Fittings,FIT-AABP-08-17,Adaptor 1/2 Bspp M X 1.1/16 Jic Fem Sw,,RD-17,,2,109.99,PIRTEK,EA,1,1
+Fittings,FIT-AABN-06-12#2,Adaptor 3/8 Nptf M X 3/4 Jic Fem Sw,,RD-18,,8,,PIRTEK,EA,2,4
+Fittings,FIT-AAM-08-08,Adaptor 1/2 Bspt Male X 1/2 Bspp Fem Sw,,RD-19,,3,,PIRTEK,EA,1,2
+Fittings,FIT-AABN-12-17,Adaptor 3/4 Nptf M X 1.1/16 Jic Fem Sw,,RD-20,,2,49.68,PIRTEK,EA,1,1
+Fittings,FIT-AABN-10-12,Adaptor 5/8 Nptf M X 3/4 Jic Fem Sw,,RD-21,,4,,PIRTEK,EA,1,2
+Fittings,FIT-AABN-20-26,Adaptor 1.1/4 Nptf M X 1.5/8 Jic Fem Sw,,RD-22,,6,,PIRTEK,EA,2,3
+Fittings,FIT-AABN-16-21,Adaptor 1 Nptf M X 1.5/16 Jic Fem Sw,,RD-23,,0,63.03,PIRTEK,EA,0,0
+Fittings,FIT-AABN-16-21#2,Adaptor 1 Nptf M X 1.5/16 Jic Fem Sw,,RD-24,,1,105.75,PIRTEK,EA,1,1
+Fittings,FIT-RD-25,Adaptor 5/8 Npt Male X 1/2 Bspp Female,,RD-25,,19,62.29,PIRTEK,EA,5,10
+Fittings,FIT-RD-26,Adaptor 1/2 Npt Male X 1/2 Bspp Female,,RD-26,,24,70.49,PIRTEK,EA,6,12
+Fittings,FIT-RD-27,Adaptor 3/8 Bsp X 1/2 Female,,RD-27,,1,91.2,PIRTEK,EA,1,1
+Fittings,FIT-RD-28,Adaptor 3/4 Npt Male X 1 Bspp Female,,RD-28,,0,105.75,PIRTEK,EA,0,0
+Fittings,FIT-RD-29,Adaptor 3/4 Npt Male X 1/2 Bspp Female,,RD-29,,2,,PIRTEK,EA,1,1
+Fittings,FIT-CVAN-20-26#2,10-Npt-10-Bsp-M,,RD-30,,22,253.5,PIRTEK,EA,6,11
+Fittings,FIT-CVAN-16-17#2,Elb 90 1 Nptf Male X 1.1/16 Jic Male,,RD-31,,3,140.88,PIRTEK,EA,1,2
+Fittings,FIT-M-08-09#2,Nipple 1/2 Npt Male X 9/16 Jic Male,,RD-32,,12,26.06,PIRTEK,EA,3,6
+Fittings,FIT-CVAN-16-26#2,Elb 90 1 Nptf Male X 1.5/8 Jic Male,,RD-33,,2,257.9,PIRTEK,EA,1,1
+Fittings,FIT-CVAN-10-17#2,Elb 90 5/8 Nptf Male X 1.1/16 Jic Male,,RD-34,,5,,PIRTEK,EA,2,3
+Fittings,FIT-M-12-21#2,Nipple 3/4 Npt Male X 1.5/16 Jic Male,,RD-35,,8,,PIRTEK,EA,2,4
+Fittings,FIT-CVAN-04-07#2,Elb 90 1/4 Nptf Male X 7/16 Jic Male,,RD-36,,0,,PIRTEK,EA,0,0
+Fittings,FIT-RD-37,Adaptor 3/8 Npt Male X 3/8 Bspp Female,,RD-37,,0,47.17,PIRTEK,EA,0,0
+Fittings,FIT-M12-21,Nipple 3/4 Npt Male X 1.5/16 Jic Male,,RD-38,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AAM-16-16,Adaptor 3/8 Nptf M X 3/4 Jic Fem Sw,,RD-39,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AAM-16-12,Adaptor 1 Bspt Male X 3/4 Bspp Fem Sw,,RD-40,,0,,PIRTEK,EA,0,0
+Fittings,FIT-RD-41,Adaptor 3/8 Npt Male X 3/8 Bspp Female,,RD-41,,0,63.03,PIRTEK,EA,0,0
+Fittings,FIT-RD-42,Adaptor 1/4 Npt Male X 3/8 Bspp Female,,RD-42,,0,19.34,PIRTEK,EA,0,0
+Fittings,FIT-RD-43,Adaptor 1.1/4 Npt Male X 1.1/4 Bspp Female,,RD-43,,1,,PIRTEK,EA,1,1
+Fittings,FIT-H-12-12,Nipple 3/4 Uno Male X 3/4 Bspt Male,,RD-44,,3,,PIRTEK,EA,1,2
+Fittings,FIT-DN-12-10,Nipple 3/4 Bsp Male X 5/8 Npt Male,,RD-45,,3,,PIRTEK,EA,1,2
+Fittings,FIT-DN-10-10,Nipple 5/8 Bsp Male X 5/8 Npt Male,,RD-46,,1,,PIRTEK,EA,1,1
+Fittings,FIT-CJPN-10-08,Elb 45 5/8 Npt Male X 1/2 Nptf Fem,,RD-47,,1,,PIRTEK,EA,1,1
+Fittings,FIT-CJAN-06-09,Elb 45 3/8 Nptf Male X 9/16 Jic Male,,RD-48,,0,24.23,PIRTEK,EA,0,0
+Fittings,FIT-CJAN-06-07,Elb 45 3/8 Nptf Male X 7/16 Jic Male,,RD-49,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AABN-06-09#2,Adaptor 3/8 Nptf M X 9/16 Jic Fem Sw,,RD-50,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AABN-06-07,Adaptor 3/8 Nptf M X 7/16 Jic Fem Sw,,RD-51,,0,,PIRTEK,EA,0,0
+Fittings,FIT-ABN-04-09,Adaptor 1/4 Npt Fem X 9/16 Jic Male Straight,,RD-52,,7,55.99,PIRTEK,EA,2,4
+Fittings,FIT-ABN-06-12,Adaptor 3/8 Npt Fem X 3/4 Jic Male Straight,,RD-53,,15,62.29,PIRTEK,EA,4,8
+Fittings,FIT-AN-16-16,Nipple 1 Npt Male X 1 Npt Male,,RD-54,,7,37.83,PIRTEK,EA,2,4
+Fittings,FIT-AN-12-12,Nipple 3/4 Npt Male X 3/4 Npt Male,,RD-55,,10,,PIRTEK,EA,3,5
+Fittings,FIT-J-07-12,Nipple 7/16 Uno Male X 3/4 Jic Male,,RD-56,,1,123.19,PIRTEK,EA,1,1
+Fittings,FIT-J-09-09,Nipple 9/16 Uno Male X 9/16 Jic Male,,RD-57,,20,95.39,PIRTEK,EA,5,10
+Fittings,FIT-J-07-07,Nipple 7/16 Uno Male X 7/16 Jic Male,,RD-58,,17,,PIRTEK,EA,5,9
+Fittings,FIT-J-09-17,Nipple 9/16 Uno Male X 1.1/16 Jic Male,,RD-59,,9,37.19,PIRTEK,EA,3,5
+Fittings,FIT-J-09-14,Nipple 9/16 Uno Male X 7/8 Jic Male,,RD-60,,7,,PIRTEK,EA,2,4
+Fittings,FIT-J-09-12,Nipple 9/16 Uno Male X 3/4 Jic Male,,RD-61,,10,14.6,PIRTEK,EA,3,5
+Fittings,FIT-J-12-17,Nipple 3/4 Uno Male X 1.1/16 Jic Male,,RD-62,,15,,PIRTEK,EA,4,8
+Fittings,FIT-J-12-12,Nipple 3/4 Uno Male X 3/4 Jic Male,,RD-63,,21,16.5,PIRTEK,EA,6,11
+Fittings,FIT-J-12-09,Nipple 3/4 Uno Male X 9/16 Jic Male,,RD-64,,15,39.46,PIRTEK,EA,4,8
+Fittings,FIT-J-14-12,Nipple 7/8 Uno Male X 3/4 Jic Male,,RD-65,,19,7.12,PIRTEK,EA,5,10
+Fittings,FIT-J-14-09,Nipple 7/8 Uno Male X 9/16 Jic Male,,RD-66,,57,25.36,PIRTEK,EA,15,29
+Fittings,FIT-J-12-14,Nipple 3/4 Uno Male X 7/8 Jic Male,,RD-67,,40,16.49,PIRTEK,EA,10,20
+Fittings,FIT-J-14-21,Nipple 7/8 Uno Male X 1.5/16 Jic Male,,RD-68,,9,12.46,PIRTEK,EA,3,5
+Fittings,FIT-J-14-17,Nipple 7/8 Uno Male X 1.1/16 Jic Male,,RD-69,,32,21.49,PIRTEK,EA,8,16
+Fittings,FIT-J-14-14,Nipple 7/8 Uno Male X 7/8 Jic Male,,RD-70,,65,13.52,PIRTEK,EA,17,33
+Fittings,FIT-J-17-14,Nipple 1.1/16 Uno Male X 7/8 Jic Male,,RD-71,,8,11.89,PIRTEK,EA,2,4
+Fittings,FIT-J-17-17,Nipple 1.1/16 Uno Male X 1.1/16 Jic Male,,RD-72,,6,15.44,PIRTEK,EA,2,3
+Fittings,FIT-J-17-09,Nipple 1.1/16 Uno Male X 9/16 Jic Male,,RD-73,,8,,PIRTEK,EA,2,4
+Fittings,FIT-CKA-07-07,Elb 45 7/16 Uno Male X 7/16 Jic Male,,RD-74,,15,14.88,PIRTEK,EA,4,8
+Fittings,FIT-J-21-21,Nipple 1.5/16 Uno Male X 1.5/16 Jic Male,,RD-75,,4,25.18,PIRTEK,EA,1,2
+Fittings,FIT-J-21-17,Nipple 1.5/16 Uno Male X 1.1/16 Jic Male,,RD-76,,2,37,PIRTEK,EA,1,1
+Fittings,FIT-CKA-09-12,Elb 45 9/16 Uno Male X 3/4 Jic Male,,RD-77,,18,25.79,PIRTEK,EA,5,9
+Fittings,FIT-CKA-09-09,Elb 45 9/16 Uno Male X 9/16 Jic Male,,RD-78,,9,,PIRTEK,EA,3,5
+Fittings,FIT-CKA-07-09,Elb 45 7/16 Uno Male X 9/16 Jic Male,,RD-79,,27,34.18,PIRTEK,EA,7,14
+Fittings,FIT-CKA-12-17,Elb 45 3/4 Uno Male X 1.1/16 Jic Male,,RD-80,,0,21.92,PIRTEK,EA,0,0
+Fittings,FIT-CKA-12-14,Elb 45 3/4 Uno Male X 7/8 Jic Male,,RD-81,,20,70.54,PIRTEK,EA,5,10
+Fittings,FIT-CKA-12-12,Elb 45 3/4 Uno Male X 3/4 Jic Male,,RD-82,,18,392.06,PIRTEK,EA,5,9
+Fittings,FIT-CKA-17-12,Elb 45 1.1/16 Uno Male X 3/4 Jic Male,,RD-83,,1,23.56,PIRTEK,EA,1,1
+Fittings,FIT-CKA-14-14,Elb 45 7/8 Uno Male X 7/8 Jic Male,,RD-84,,0,89.09,PIRTEK,EA,0,0
+Fittings,FIT-CKA-14-12,Elb 45 7/8 Uno Male X 3/4 Jic Male,,RD-85,,0,46.24,PIRTEK,EA,0,0
+Fittings,FIT-CEA-09-07,Elb 90 9/16 Uno Male X 7/16 Jic Male,,RD-86,,45,47.03,PIRTEK,EA,12,23
+Fittings,FIT-CEA-09-09,Elb 90 9/16 Uno Male X 9/16 Jic Male,,RD-87,,40,60.02,PIRTEK,EA,10,20
+Fittings,FIT-CEA-07-07,Elb 90 7/16 Uno Male X 7/16 Jic Male,,RD-88,,49,65.75,PIRTEK,EA,13,25
+Fittings,FIT-CEA-12-09,Elb 90 3/4 Uno Male X 9/16 Jic Male,,RD-89,,50,33.24,PIRTEK,EA,13,25
+Fittings,FIT-CEA-09-14,Elb 90 9/16 Uno Male X 7/8 Jic Male,,RD-90,,7,32.98,PIRTEK,EA,2,4
+Fittings,FIT-CEA-09-12,Elb 90 9/16 Uno Male X 3/4 Jic Male,,RD-91,,24,28.83,PIRTEK,EA,6,12
+Fittings,FIT-CEA-14-12,Elb 90 7/8 Uno Male X 3/4 Jic Male,,RD-92,,0,55.01,PIRTEK,EA,0,0
+Fittings,FIT-CEA-12-14,Elb 90 3/4 Uno Male X 7/8 Jic Male,,RD-93,,12,,PIRTEK,EA,3,6
+Fittings,FIT-CEA-12-12,Elb 90 3/4 Uno Male X 3/4 Jic Male,,RD-94,,28,44.82,PIRTEK,EA,7,14
+Fittings,FIT-CEA-17-12,Elb 90 1.1/16 Uno Male X 3/4 Jic Male,,RD-95,,5,,PIRTEK,EA,2,3
+Fittings,FIT-CEA-14-14,Elb 90 7/8 Uno Male X 7/8 Jic Male,,RD-96,,12,45.53,PIRTEK,EA,3,6
+Fittings,FIT-CEA-14-09,Elb 90 7/8 Uno Male X 9/16 Jic Male,,RD-97,,11,44.28,PIRTEK,EA,3,6
+Fittings,FIT-FF1239-0812,Elb 90 3/4 Uno Male X 13/16 Orfs Fem Sw,,RD-98,,0,42.83,PIRTEK,EA,0,0
+Fittings,FIT-CEA-09-09#2,Elb 90 9/16 Uno Male X 9/16 Jic Male,,RD-99,,0,76.97,PIRTEK,EA,0,0
+Fittings,FIT-AV-09,Plug 9/16 Uno Male,,RE-01,,40,,PIRTEK,EA,10,20
+Fittings,FIT-AV-12,Plug 3/4 Uno Male,,RE-02,,50,,PIRTEK,EA,13,25
+Fittings,FIT-AV-14,Plug 7/8 Uno Male,,RE-03,,19,,PIRTEK,EA,5,10
+Fittings,FIT-AV-17,Plug 1.1/16 Uno Male,,RE-04,,2,,PIRTEK,EA,1,1
+Fittings,FIT-AV-21,Plug 1.5/16 Uno Male,,RE-05,,65,,PIRTEK,EA,17,33
+Fittings,FIT-AV-26,Plug 1.5/8 Uno Male,,RE-06,,4,,PIRTEK,EA,1,2
+Fittings,FIT-AV-30,Plug 1.7/8 Uno Male,,RE-07,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AV-40,Plug 2.1/2 Uno Male,,RE-08,,0,,PIRTEK,EA,0,0
+Fittings,FIT-AX-06,Cap 3/8 Bspp Fem Sw,,RE-09,,60,,PIRTEK,EA,15,30
+Fittings,FIT-VSTIR-06,Plug 3/8 Bspp Hollow Hex (Vsti-R),,RE-10,,129,,PIRTEK,EA,33,65
+Fittings,FIT-VSTIR-08,Plug 1/2 Bspp Hollow Hex (Vsti-R),,RE-11,,0,,PIRTEK,EA,0,0
+Fittings,FIT-VSTIR-10,Plug 5/8 Bspp Hollow Hex (Vsti-R),,RE-12,,1,,PIRTEK,EA,1,1
+Fittings,FIT-VSTIR-12,Plug 3/4 Bspp Hollow Hex (Vsti-R),,RE-13,,6,,PIRTEK,EA,2,3
+Fittings,FIT-VSTIR-16,Plug 1 Bspp Hollow Hex (Vsti-R),,RE-14,,0,,PIRTEK,EA,0,0
+Fittings,FIT-VSTIR-20,Plug 1.1/4 Bspp Hollow Hex (Vsti-R),,RE-15,,4,,PIRTEK,EA,1,2
+Fittings,FIT-VSTIR-24,Plug 1.1/2 Bspp Hollow Hex (Vsti-R),,RE-16,,3,,PIRTEK,EA,1,2
+Fittings,FIT-VSTIR-32,Plug 2 Bspp Hollow Hex (Vsti-R),,RE-17,,2,,PIRTEK,EA,1,1
+Fittings,FIT-X26JF20#2,1 5/8 Jic Fm Str X 1 1/4 Hose,,RF-01,,0,,PIRTEK,EA,0,0
+Fittings,FIT-JF1-3024J,"1 7/8"" Jic Fem Str 1 1/2"" Hose",,RF-02,,6,,PIRTEK,EA,2,3
+Fittings,FIT-JF1-2620J,"1 5/8"" Jic Fem Str 1 1/4"" Hose",,RF-03,,0,,PIRTEK,EA,0,0
+Fittings,FIT-JF1-2116J,"1 5/16"" Jic Fem Str 1"" Hose",,RF-04,,1,,PIRTEK,EA,1,1
+Fittings,FIT-JF1-1712J,"1 1/16"" Jic Fem Str 3/4"" Hose",,RF-05,,0,,PIRTEK,EA,0,0
+Fittings,FIT-JF1-1410K,"7/8"" Jic Fem Str 5/8"" Hose",,RF-06,,6,,PIRTEK,EA,2,3
+Fittings,FIT-JF1-0906K,"9/16"" Jic Fem Str 3/8"" Hose",,RF-07,,28,,PIRTEK,EA,7,14
+Fittings,FIT-JF1-1208K,"3/4"" Jic Fem Str 1/2"" Hose",,RF-08,,0,,PIRTEK,EA,0,0
+Fittings,FIT-JF1-07-06,7/16 Jic Fem Str 3/8 Hose,,RF-09,,22,,PIRTEK,EA,6,11
+Fittings,FIT-JF1-0906J,"9/16"" Jic Fem Str 3/8"" Hose",,RF-10,,37,,PIRTEK,EA,10,19
+Fittings,FIT-X21JF12,1.5/16 Jic Fem Str X 3/4 Hose (One Piece),,RF-11,,54,,PIRTEK,EA,14,27
+Fittings,FIT-X26JF20#3,1.5/8 Jic Fem Str X 1.1/4 Hose (One Piece),,RF-12,,6,,PIRTEK,EA,2,3
+Fittings,FIT-X20JF24,1.5/8 Jic Fem Str X 1.1/2 Hose (One Piece),,RF-13,,54,,PIRTEK,EA,14,27
+Fittings,FIT-X21JF16,1 5/16 Jic Fm Str X 1 Hose,,RF-14,,40,,PIRTEK,EA,10,20
+Fittings,FIT-X17JF17,1.1/16 Jic Fem Str X 1.1/16 Hose (One Piece),,RF-15,,1,,PIRTEK,EA,1,1
+Fittings,FIT-X10JF08,5/8 Jic Fem Str X 1/2 Hose (One Piece),,RF-16,,92,,PIRTEK,EA,23,46
+Fittings,FIT-X09JF04,9/16 Jic Fm Str X 1/4 Hose,,RF-17,,211,,PIRTEK,EA,53,106
+Fittings,FIT-X09JF06,9/16 Jic Fm Str X 3/8 Hose,,RF-18,,338,,PIRTEK,EA,85,169
+Fittings,FIT-X12JF06,3/4 Jic Fm Str X 3/8 Hose,,RF-19,,185,,PIRTEK,EA,47,93
+Fittings,FIT-X07JF04,7/16 Jic Fm Str X 1/4 Hose,,RF-20,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF1231-04-08,Nipple 9/16 Orfs Male X 3/4 Uno Male,,RF-21,,3,,PIRTEK,EA,1,2
+Fittings,FIT-FF1231-04-06,Nipple 9/16 Orfs Male X 9/16 Uno Male,,RF-22,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1231-04-04,Nipple 9/16 Orfs Male X 7/16 Uno Male,,RF-23,,42,,PIRTEK,EA,11,21
+Fittings,FIT-FF1231-06-08,Nipple 11/16 Orfs Male X 3/4 Uno Male,,RF-24,,8,,PIRTEK,EA,2,4
+Fittings,FIT-FF1231-06-06,Nipple 11/16 Orfs Male X 9/16 Uno Male,,RF-25,,19,,PIRTEK,EA,5,10
+Fittings,FIT-FF1231-06-04,Nipple 11/16 Orfs Male X 7/16 Uno Male,,RF-26,,44,,PIRTEK,EA,11,22
+Fittings,FIT-FF1231-08-10,Nipple 13/16 Orfs Male X 7/8 Uno Male,,RF-27,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1231-08-08,Nipple 13/16 Orfs Male X 3/4 Uno Male,,RF-28,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1231-08-06,Nipple 13/16 Orfs Male X 9/16 Uno Male,,RF-29,,30,,PIRTEK,EA,8,15
+Fittings,FIT-FF1231-10-10,Nipple 1 Orfs Male X 7/8 Uno Male,,RF-30,,18,,PIRTEK,EA,5,9
+Fittings,FIT-FF1231-10-08,Nipple 1 Orfs Male X 3/4 Uno Male,,RF-31,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF1231-08-12,Nipple 13/16 Orfs Male X 1.1/16 Uno Male,,RF-32,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1231-12-16,Nipple 1.3/16 Orfs Male X 1.5/16 Uno Male,,RF-33,,14,,PIRTEK,EA,4,7
+Fittings,FIT-FF1231-12-12,Nipple 1.3/16 Orfs Male X 1.1/16 Uno Male,,RF-34,,36,,PIRTEK,EA,9,18
+Fittings,FIT-FF1231-16-16,Nipple 1.7/16 Orfs Male X 1.5/16 Uno Male,,RF-35,,1,36.97,PIRTEK,EA,1,1
+Fittings,FIT-FF1231-16-12,Nipple 1.7/16 Orfs Male X 1.1/16 Uno Male,,RF-36,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF1202-08-08,Nipple 13/16 Orfs Male X 1/2 Npt Male,,RF-37,,21,,PIRTEK,EA,6,11
+Fittings,FIT-FF1202-06-06,Nipple 11/16 Orfs Male X 3/8 Npt Male,,RF-38,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1202-06-02,Nipple 11/16 Orfs Male X 1/8 Npt Male,,RF-39,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1202-12-12,Nipple 1.3/16 Orfs Male X 3/4 Npt Male,,RF-40,,4,40.45,PIRTEK,EA,1,2
+Fittings,FIT-FF1202-12-08,Nipple 1.3/16 Orfs Male X 1/2 Npt Male,,RF-41,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF1202-06-08,Nipple 11/16 Orfs Male X 1/2 Npt Male,,RF-42,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1202-16-16,Nipple 1.7/16 Orfs Male X 1 Npt Male,,RF-43,,5,,PIRTEK,EA,2,3
+Fittings,FIT-FF1202-16-12,Nipple 1.7/16 Orfs Male X 3/4 Npt Male,,RF-44,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF1202-12-16,Nipple 1.3/16 Orfs Male X 1 Npt Male,,RF-45,,7,,PIRTEK,EA,2,4
+Fittings,FIT-FF1260LN-06-06,Nipple 11/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-46,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF1260LN-04-04,Nipple 9/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-47,,5,,PIRTEK,EA,2,3
+Fittings,FIT-FF1202-20-20,Nipple 1.11/16 Orfs Male X 1.1/4 Npt Male,,RF-48,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF1260LN-12-12,Nipple 1.3/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-49,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1260LN-10-10,Nipple 1 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-50,,5,,PIRTEK,EA,2,3
+Fittings,FIT-FF1260LN-08-08,Nipple 13/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-51,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF1260LN-06-06#2,Nipple 11/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-52,,8,,PIRTEK,EA,2,4
+Fittings,FIT-FF1260LN-04-04#2,Nipple 9/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-53,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF1260LN-16-16,Nipple 1.7/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-54,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF2406-04-06,Reducer 9/16 Orfs Fem Sw X 11/16 Orfs Male,,RF-55,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF2406-04-04,Reducer 9/16 Orfs Fem Sw X 9/16 Orfs Male,,RF-56,,0,28.34,PIRTEK,EA,0,0
+Fittings,FIT-FF1260LN-08-08#2,Nipple 13/16 Orfs Male X Orfs Male B/Hd C/W Locknut,,RF-57,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF2406-08-06,Reducer 13/16 Orfs Fem Sw X 11/16 Orfs Male,,RF-58,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF2406-08-08,Reducer 13/16 Orfs Fem Sw X 13/16 Orfs Male,,RF-59,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF2406-08-04,Reducer 13/16 Orfs Fem Sw X 9/16 Orfs Male,,RF-60,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF2406-12-10,Reducer 1.3/16 Orfs Fem Sw X 1 Orfs Male,,RF-61,,12,22.86,PIRTEK,EA,3,6
+Fittings,FIT-FF2406-12-08,Reducer 1.3/16 Orfs Fem Sw X 13/16 Orfs Male,,RF-62,,5,,PIRTEK,EA,2,3
+Fittings,FIT-FF2406-10-10,Reducer 1 Orfs Fem Sw X 1 Orfs Male,,RF-63,,4,,PIRTEK,EA,1,2
+Fittings,FIT-FF1205-08-08,Nipple 13/16 Orfs Male X 1/2 Bspt Male,,RF-64,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1205-04-04,Nipple 9/16 Orfs Male X 1/4 Bspt Male,,RF-65,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1205-08-08#2,Nipple 13/16 Orfs Male X 1/2 Bspt Male,,RF-66,,3,16.81,PIRTEK,EA,1,2
+Fittings,FIT-FF1205-04-04#2,Nipple 9/16 Orfs Male X 1/4 Bspt Male,,RF-67,,8,,PIRTEK,EA,2,4
+Fittings,FIT-FF1236-1212,Elb 90 1.3/16 Orfs M X 1.3/16 Orfs Fem Sw,,RF-68,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1236-0808,Elb 90 13/16 Orfs M X 13/16 Orfs Fem Sw,,RF-69,,0,,PIRTEK,EA,0,0
+Fittings,FIT-MFFB-17-17-02,M16x2 Test 20 & 1.1/16-12 ORFS,,RF-70,,0,39.6,PIRTEK,EA,0,0
+Fittings,FIT-MFFB-12-12-02,M16x2 Test 20 & 3/4 ORFS,,RF-71,,1,,PIRTEK,EA,1,1
+Fittings,FIT-MFFB-08-08-02,"M16x2 Test 20 & 13/16""-16 ORFS",,RF-72,,4,,PIRTEK,EA,1,2
+Fittings,FIT-EPK-12-12-12,Tee 3/4 Npt Fem X Npt Fem X Npt Fem,,RF-73,,2,,PIRTEK,EA,1,1
+Fittings,FIT-EPK-08-08-08,Tee 1/2 Npt Fem X Npt Fem X Npt Fem,,RF-74,,2,,PIRTEK,EA,1,1
+Fittings,FIT-EPK-04-04-04,Tee 1/4 Npt Fem X Npt Fem X Npt Fem,,RF-75,,2,,PIRTEK,EA,1,1
+Fittings,FIT-AQ-08-06,Reducing Bush 1/2 Bspt Male X 3/8 Bspt Fem,,RF-76,,9,20.02,PIRTEK,EA,3,5
+Fittings,FIT-AQ-06-04,Reducing Bush 3/8 Bspt Male X 1/4 Bspt Fem,,RF-77,,3,20.02,PIRTEK,EA,1,2
+Fittings,FIT-AQ-06-02,Reducing Bush 3/8 Bspt Male X 1/8 Bspt Fem,,RF-78,,1,14.89,PIRTEK,EA,1,1
+Fittings,FIT-RI-20-08,Reducing Adaptor 1.1/4 Bspp Male X 1/2 Bspp Fem Elastomeric Seal,,RF-79,,1,,PIRTEK,EA,1,1
+Fittings,FIT-AR-20-16,Reducing Bush 1.1/4 Nptf Male X 1 Nptf Fem,,RF-80,,2,11.63,PIRTEK,EA,1,1
+Fittings,FIT-AQ-12-06,Reducing Bush 3/4 Bspt Male X 3/8 Bspt Fem,,RF-81,,1,11.63,PIRTEK,EA,1,1
+Fittings,FIT-V-24-24,Socket 1.1/2 Nptf Fem X 1.1/2 Nptf Fem,,RF-82,,2,8.13,PIRTEK,EA,1,1
+Fittings,FIT-JB-14-09,Adaptor (Check Series Jb) 7/8 X 9/16,,RF-83,,1,,PIRTEK,EA,1,1
+Fittings,FIT-G22L,22 L Straight Coupling,,RF-84,,1,,PIRTEK,EA,1,1
+Fittings,FIT-W-16-12,Socket 1 Bspt Fem X 3/4 Bspt Fem,,RF-85,,2,,PIRTEK,EA,1,1
+Fittings,FIT-BMI-14-06K,Bspt Male X 3/8 Hose,,RF-86,,3,,PIRTEK,EA,1,2
+Fittings,FIT-BMI-16-06K,Bspt Male X 3/8 Hose,,RF-87,,0,,PIRTEK,EA,0,0
+Fittings,FIT-ANU-04-07#2,Adaptor 1/4 Npt Fem X 7/16 Uno Male,,RF-88,,4,,PIRTEK,EA,1,2
+Fittings,FIT-MTBFIG-0402PT,Test Point,,RF-89,,9,,PIRTEK,EA,3,5
+Fittings,FIT-V-32-32,Socket 2 Nptf Fem X 2 Nptf Fem,,RF-90,,3,,PIRTEK,EA,1,2
+Fittings,FIT-I2J-21-16,Interlock 1.5/16 Jic Fem X 1 Hose,,RG-01,,13,,PIRTEK,EA,4,7
+Fittings,FIT-IL20SFH45-6-20,Interlock Flange 45 6000 Series 1.1/4 X 1.1/4 Hose,,RG-03,,2,,PIRTEK,EA,1,1
+Fittings,FIT-IL20SFH45-6-16,Interlock Flange 45 6000 Series 1.1/4 X 1 Hose,,RG-04,,15,,PIRTEK,EA,4,8
+Fittings,FIT-I4FL9-16-20,Interlock Flange 90 6000 Series 1 X 1.1/4 Hose,,RG-05,,3,,PIRTEK,EA,1,2
+Fittings,FIT-I4FL4-16-20,Interlock Flange 45 6000 Series 1 X 1.1/4 Hose,,RG-06,,3,,PIRTEK,EA,1,2
+Fittings,FIT-IL20SFH90-6-20,Interlock Flange 90 6000 Series 1.1/4 X 1.1/4 Hose,,RG-07,,1,,PIRTEK,EA,1,1
+Fittings,FIT-IL20SFH90-6-16,Interlock Flange 90 6000 Series 1.1/4 X 1 Hose,,RG-08,,13,,PIRTEK,EA,4,7
+Fittings,FIT-IL16SFH90-6-16,Interlock Flange 90 6000 Series 1 X 1 Hose,,RG-09,,14,,PIRTEK,EA,4,7
+Fittings,FIT-R-10-10,Nipple 5/8 Jic Male X Jic Male B/Hd,,RG-10,,0,,PIRTEK,EA,0,0
+Fittings,FIT-IL12SFH90-6-16,Interlock Flange 90 6000 Series 3/4 X 1 Hose,,RG-11,,27,,PIRTEK,EA,7,14
+Fittings,FIT-IL20SFH-6-20,Interlock Flange Str 6000 Series 1.1/4 X 1.1/4 Hose,,RG-12,,6,,PIRTEK,EA,2,3
+Fittings,FIT-IL20SFH-6-16,Interlock Flange Str 6000 Series 1.1/4 X 1 Hose,,RG-13,,5,,PIRTEK,EA,2,3
+Fittings,FIT-IL12SFH-6-16,Interlock Flange Str 6000 Series 3/4 X 1 Hose,,RG-14,,22,,PIRTEK,EA,6,11
+Fittings,FIT-IL12SFH-6-12,Interlock Flange Str 6000 Series 3/4 X 3/4 Hose,,RG-15,,26,,PIRTEK,EA,7,13
+Fittings,FIT-I4FL-12-08,Interlock Flange Str 6000 Series 3/4 X 1/2 Hose,,RG-16,,10,,PIRTEK,EA,3,5
+Fittings,FIT-MTF-02,Test Point Fitting,,RG-17,,51,,PIRTEK,EA,13,26
+Fittings,FIT-MTF1-1620PT,Test Point Fitting,,RG-18,,13,,PIRTEK,EA,4,7
+Fittings,FIT-MTBF1G-0402PT,Test Point Fitting,,RG-19,,61,,PIRTEK,EA,16,31
+Fittings,FIT-S16SFH45516,Sae Flange Head Hose Tail,,RG-20,,1,,PIRTEK,EA,1,1
+Fittings,FIT-ESP-32,Esp-32 Not Identified,,RG-21,,5,,PIRTEK,EA,2,3
+Fittings,FIT-H16FLW,1 M/S Sleeves,,RG-22,,17,,PIRTEK,EA,5,9
+Fittings,FIT-H16FLW#2,1 M/S Sleeves,,RG-23,,7,,PIRTEK,EA,2,4
+Fittings,FIT-IL12FLW,"3/4"" Interlock Sleeve X 4Sh / R13 / R15 Hose",,RG-24,,10,,PIRTEK,EA,3,5
+Fittings,FIT-45-FLANGE-16-16-1,45 Flange Fitting 16 X 16,,RG-25,,2,,PIRTEK,EA,1,1
+Fittings,FIT-S20SFH90S-6-16,Solid 6000 Flange 90,,RG-26,,0,,PIRTEK,EA,0,0
+Fittings,FIT-STR-FLANGE-16-12,Str Flange Fitting 16 X 12,,RG-27,,1,,PIRTEK,EA,1,1
+Fittings,FIT-90-FLANGE-12-16-12-03,90 Flange Fitting 12 X 16,,RG-28,,8,,PIRTEK,EA,2,4
+Fittings,FIT-C629JM-12-17,C629Jm-12-16,,RG-29,,0,,PIRTEK,EA,0,0
+Fittings,FIT-R-24-24,Nipple Jic Male X Jic Male B/Hd,,RG-30,,5,,PIRTEK,EA,2,3
+Fittings,FIT-R-20-20,Nipple 1.5/8 Jic Male X Jic Male B/Hd,,RG-31,,12,,PIRTEK,EA,3,6
+Fittings,FIT-R-16-16,Nipple Jic Male X Jic Male B/Hd,,RG-32,,2,,PIRTEK,EA,1,1
+Fittings,FIT-R-12-12,Nipple 3/4 Jic Male X Jic Male B/Hd,,RG-33,,35,,PIRTEK,EA,9,18
+Fittings,FIT-R10-10,Nipple 5/8 Jic Male X Jic Male B/Hd,,RG-34,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF1291-06-08,Elb 90 3/8 Bspp Male X 13/16 Orfs Male,,RG-35,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF6500-06-06,-06 Orfs Male F/M 90 Adpt,,RG-36,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF6500-06-06#2,-06 Orfs Male F/M 90 Adpt,,RG-37,,3,,PIRTEK,EA,1,2
+Fittings,FIT-FF1236-10-10,Elb 90 1 Orfs M X 1 Orfs Fem Sw,,RG-38,,18,,PIRTEK,EA,5,9
+Fittings,FIT-FF1291-08-12,Elb 90 1/2 Bspp Male X 1.3/16 Orfs Male,,RG-39,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF6500-08-08,-08 Orfs Male F/M 90 Adpt,,RG-40,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF1291-02-04,Elb 90 1/8 Bspp Male X 9/16 Orfs Male,,RG-41,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF6500-16-16,-16 Orfs Male F/M 90 Adpt,,RG-42,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF6500-12-12,-12 Orfs Male F/M 90 Adpt,,RG-43,,3,,PIRTEK,EA,1,2
+Fittings,FIT-FF1238-08-06,Elb 90 13/16 Orfs Male X 9/16 Uno Male,,RG-44,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1291-06-04,Elb 90 3/8 Bspp Male X 9/16 Orfs Male,,RG-45,,7,,PIRTEK,EA,2,4
+Fittings,FIT-FF1291-04-04,Elb 90 1/4 Bspp Male X 9/16 Orfs Male,,RG-46,,7,,PIRTEK,EA,2,4
+Fittings,FIT-FF1230-09-12,Nipple 9/16 Orfs Male X 3/4 Orfs Male,,RG-47,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF1238-08-08,Elb 90 13/16 Orfs Male X 3/4 Uno Male,,RG-48,,4,,PIRTEK,EA,1,2
+Fittings,FIT-FF1291-12-12,Elb 90 3/4 Bspp Male X 1.3/16 Orfs Male,,RG-49,,4,,PIRTEK,EA,1,2
+Fittings,FIT-FF138-12-12,Adaptor 3/4 Orfs Male X 3/4 Orfs Male,,RG-50,,21,,PIRTEK,EA,6,11
+Fittings,FIT-FF1238-10-08,Elb 90 1 Orfs Male X 3/4 Uno Male,,RG-51,,7,,PIRTEK,EA,2,4
+Fittings,FIT-FF1238-20-20,Elb 90 1.11/16 Orfs Male X 1.5/8 Uno Male,,RG-52,,4,,PIRTEK,EA,1,2
+Fittings,FIT-FF1238-16-12,Elb 90 1.7/16 Orfs Male X 1.1/16 Uno Male,,RG-53,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1291-12-16,Elb 90 3/4 Bspp Male X 1.7/16 Orfs Male,,RG-54,,3,,PIRTEK,EA,1,2
+Fittings,FIT-FF1237-08-08,Elb 45 13/16 Orfs M X 13/16 Orfs Fem Sw,,RG-55,,32,,PIRTEK,EA,8,16
+Fittings,FIT-FF1237-06-06,Elb 45 11/16 Orfs M X 11/16 Orfs Fem Sw,,RG-56,,32,,PIRTEK,EA,8,16
+Fittings,FIT-FFF1237-04-04,Elb 45 9/16 Orfs M X 9/16 Orfs Fem Sw,,RG-57,,21,,PIRTEK,EA,6,11
+Fittings,FIT-FF1237-12-12,Elb 45 1.3/16 Orfs M X 1.3/16 Orfs Fem Sw,,RG-58,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1237-10-10,Elb 45 1 Orfs M X 1 Orfs Fem Sw,,RG-59,,16,,PIRTEK,EA,4,8
+Fittings,FIT-FF6802-08-08,-08 Sae Male X Orfs Male 45,,RG-60,,11,,PIRTEK,EA,3,6
+Fittings,FIT-FF6800-06-06,Elb 90 11/16 Orfs Male X 9/16 Sae Orb Male,,RG-61,,9,,PIRTEK,EA,3,5
+Fittings,FIT-FF1240-04-04,Elb 45 9/16 Orfs Male X 7/16 Uno Male,,RG-62,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF2408-04,"9/16""-18 Orfs Plug",,RG-63,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF1208-1216,Elb 90 1.3/16 Orfs Male X 1 Npt Male,,RG-64,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF1291-1616,Elb 90 1 Bspp Male X 1.7/16 Orfs Male,,RG-65,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF2408-10,"1""-14 Orfs Plug",,RG-66,,24,,PIRTEK,EA,6,12
+Fittings,FIT-FF2408-08,"13/16""-16 Orfs Plug",,RG-67,,25,,PIRTEK,EA,7,13
+Fittings,FIT-FF2408-06,"11/16""-16 Orfs Plug",,RG-68,,44,,PIRTEK,EA,11,22
+Fittings,FIT-FF2408-20,"1 11/16""-12 Orfs Plug",,RG-69,,13,,PIRTEK,EA,4,7
+Fittings,FIT-FF2408-16,"1 7/16""-12 Orfs Plug",,RG-70,,21,,PIRTEK,EA,6,11
+Fittings,FIT-FF2408-12,"1 3/16""-12 Orfs Plug",,RG-71,,11,,PIRTEK,EA,3,6
+Fittings,FIT-FF3040-06,Orfs Component 11/16,,RG-72,,16,,PIRTEK,EA,4,8
+Fittings,FIT-FF3040-04,Orfs Component 9/16,,RG-73,,71,,PIRTEK,EA,18,36
+Fittings,FIT-FF3040-10,Orfs Component 1,,RG-74,,6,,PIRTEK,EA,2,3
+Fittings,FIT-FF3040-08,Orfs Component 13/16,,RG-75,,4,,PIRTEK,EA,1,2
+Fittings,FIT-XTCL-06,3/8 R2 Non Skive Sleeve,,RG-76,,0,,PIRTEK,EA,0,0
+Fittings,FIT-XTCL-08,1/2 R2 Non Skive Sleeve,,RG-77,,40,,PIRTEK,EA,10,20
+Fittings,FIT-XTCL-10,5/8 R2 Non Skive Sleeve,,RG-78,,43,,PIRTEK,EA,11,22
+Fittings,FIT-XTCL-12,3/4 R2 Non Skive Sleeve,,RG-79,,8,,PIRTEK,EA,2,4
+Fittings,FIT-XTCL-16,1 R2 Non Skive Sleeve,,RG-80,,0,,PIRTEK,EA,0,0
+Fittings,FIT-XTCL-20,1.1/4 R2 Non Skive Sleeve,,RG-81,,0,,PIRTEK,EA,0,0
+Fittings,FIT-XTCL-24,1.1/2 R2 Non Skive Sleeve,,RG-82,,0,,PIRTEK,EA,0,0
+Fittings,FIT-XTCL-32,2 R2 Non Skive Sleeve,,RG-83,,0,,PIRTEK,EA,0,0
+Fittings,FIT-I2D-20-06,Interlock M20 Dko Metric Fem X 3/8 Hose,,RH-01,,15,,PIRTEK,EA,4,8
+Fittings,FIT-I2D9-20-06,Interlock M20 Dko Metric Fem 90 X 3/8 Hose,,RH-02,,7,,PIRTEK,EA,2,4
+Fittings,FIT-DSF42006K,Elb 45 M20X1.5 Dko Heavy Fem X 3/8 Hose,,RH-03,,16,,PIRTEK,EA,4,8
+Fittings,FIT-C629JM-12-17#2,Elb 90 Code 62 Flange 3/4 X 1.1/16 Jic Male,,RH-04,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C629JM-12-17#3,Elb 90 Code 62 Flange 3/4 X 1.1/16 Jic Male,,RH-05,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C629JM-12-12,Elb 90 Code 62 Flange 3/4 X 3/4 Jic Male,,RH-06,,3,,PIRTEK,EA,1,2
+Fittings,FIT-X04LORF90,X04Lorf89,,RH-07,,11,,PIRTEK,EA,3,6
+Fittings,FIT-IL32SFH45-6-32,Interlock Flange 45 6000 Series 2 X 2 Hose,,RH-08,,2,,PIRTEK,EA,1,1
+Fittings,FIT-I2F-12-12,Interlock 3/4 Bsp Fem Str X 3/4 Hose,,RH-09,,2,,PIRTEK,EA,1,1
+Fittings,FIT-I2F4-16-16,Interlock 1 Bsp Fem 45 X 1 Hose,,RH-10,,3,,PIRTEK,EA,1,2
+Fittings,FIT-I2F4-12-12,Interlock 3/4 Bsp Fem 45 X 3/4 Hose,,RH-11,,4,,PIRTEK,EA,1,2
+Fittings,FIT-I2F9-08-08,Interlock 1/2 Bsp Fem 90 X 1/2 Hose,,RH-12,,7,,PIRTEK,EA,2,4
+Fittings,FIT-I2F4-06-06,Interlock 3/8 Bsp Fem 45 X 3/8 Hose,,RH-13,,25,,PIRTEK,EA,7,13
+Fittings,FIT-X07JF04#2,X07Jf03,,RH-14,,26,,PIRTEK,EA,7,13
+Fittings,FIT-I2J4-07-04,Interlock 7/16 Jic Fem 45 X 1/4 Hose,,RH-15,,6,,PIRTEK,EA,2,3
+Fittings,FIT-X04LORF45,9/16 Orfs Fem 45 X 1/4 Hose (One Piece),,RH-16,,37,,PIRTEK,EA,10,19
+Fittings,FIT-X07JF04#3,X07Jf03,,RH-17,,3,,PIRTEK,EA,1,2
+Fittings,FIT-JF9-1410K-06S,7/8 Jic Fem 90 X 5/8 Hose,,RH-18,,2,,PIRTEK,EA,1,1
+Fittings,FIT-C619-2424J,Elb 90 Code 61 Flange 1.1/2 X 1.1/2 Hose,,RH-19,,5,,PIRTEK,EA,2,3
+Fittings,FIT-X16LORF45-16,X16Lorf45-15,,RH-20,,8,,PIRTEK,EA,2,4
+Fittings,FIT-X12LOR12-F,X12Lor12-F,,RH-21,,12,,PIRTEK,EA,3,6
+Fittings,FIT-I2F-12-12#2,Interlock 3/4 Bsp Fem Str X 3/4 Hose,,RH-22,,16,,PIRTEK,EA,4,8
+Fittings,FIT-C619-16-16J,Elb 90 Code 61 Flange 1 X 1 Hose,,RH-23,,2,,PIRTEK,EA,1,1
+Fittings,FIT-JF9-17-12J,1.1/16 Jic Fem 90 X 3/4 Hose,,RH-24,,3,,PIRTEK,EA,1,2
+Fittings,FIT-JF9-10-12J,Jf9-10-12J,,RH-25,,5,,PIRTEK,EA,2,3
+Fittings,FIT-RH-26,Quick Coupler,,RH-26,,3,,PIRTEK,EA,1,2
+Fittings,FIT-JF9-1410K,7/8 Jic Fem 90 X 5/8 Hose,,RH-27,,3,,PIRTEK,EA,1,2
+Fittings,FIT-JF9-0906K,9/16 Jic Fem 90 X 3/8 Hose,,RH-28,,5,,PIRTEK,EA,2,3
+Fittings,FIT-JF4-0704K,7/16 Jic Fem 45 X 1/4 Hose,,RH-29,,34,,PIRTEK,EA,9,17
+Fittings,FIT-JF9-0704K,7/16 Jic Fem 90 X 1/4 Hose,,RH-30,,18,,PIRTEK,EA,5,9
+Fittings,FIT-FF3040-16,Orfs Component 1.7/16,,RH-31,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF3040-12,Orfs Component 1.3/16,,RH-32,,16,,PIRTEK,EA,4,8
+Fittings,FIT-FF3040-24,Orfs Component 2,,RH-33,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF3040-20,Orfs Component 1.11/16,,RH-34,,22,,PIRTEK,EA,6,11
+Fittings,FIT-X08LORF08-F,X08Lorf08-F,,RI-01,,28,,PIRTEK,EA,7,14
+Fittings,FIT-X04LORF09,9/16 Orfs Fem Str,,RI-02,,45,18.6,PIRTEK,EA,12,23
+Fittings,FIT-I2D-18-06,Interlock M18 Dko Metric Fem X 3/8 Hose,,RI-03,,1,,PIRTEK,EA,1,1
+Fittings,FIT-DSF4-19-06K,Elb 45 M19X1.5 Dko Heavy Fem X 3/8 Hose,,RI-04,,1,,PIRTEK,EA,1,1
+Fittings,FIT-I2B-06-06,Interlock 3/8 Bsp Fitting X 3/8 Hose,,RI-05,,1,,PIRTEK,EA,1,1
+Fittings,FIT-I2DM-20-06,Interlock M20 Dko Metric Fem X 3/8 Hose,,RI-06,,5,,PIRTEK,EA,2,3
+Fittings,FIT-4001-16,Fitting Code 4001-16 Not Identified,,RI-07,,2,,PIRTEK,EA,1,1
+Fittings,FIT-OF9-1616J,1.7/16 Orfs Fem 90 X 1 Hose,,RI-08,,1,,PIRTEK,EA,1,1
+Fittings,FIT-BF9-10-10K,5/8 Bsp Fem 90 X 5/8 Hose,,RI-09,,11,,PIRTEK,EA,3,6
+Fittings,FIT-BF4-12-12J,3/4 Bsp Fem 45 X 3/4 Hose,,RI-10,,4,,PIRTEK,EA,1,2
+Fittings,FIT-BFI-12-12J,3/4 Bsp Fem Str X 3/4 Hose,,RI-11,,4,,PIRTEK,EA,1,2
+Fittings,FIT-JF1-1208K#2,3/4 Jic Fem Str X 1/2 Hose,,RI-12,,4,,PIRTEK,EA,1,2
+Fittings,FIT-I2J-21-16#2,Interlock 1.5/16 Jic Fem X 1 Hose,,RI-13,,48,,PIRTEK,EA,12,24
+Fittings,FIT-I2J-26-20,Interlock 1.5/8 Jic Fem X 1.1/4 Hose,,RI-14,,0,,PIRTEK,EA,0,0
+Fittings,FIT-I2B-08-08,Interlock 1/2 Bsp Fitting X 1/2 Hose,,RI-15,,1,,PIRTEK,EA,1,1
+Fittings,FIT-BF1-1010LT,5/8 Bsp Fem Str X 5/8 Hose,,RI-16,,16,,PIRTEK,EA,4,8
+Fittings,FIT-BF9-08-08K,1/2 Bsp Fem 90 X 1/2 Hose,,RI-17,,25,,PIRTEK,EA,7,13
+Fittings,FIT-BF1-0808K,1/2 Bsp Fem Str X 1/2 Hose,,RI-18,,19,,PIRTEK,EA,5,10
+Fittings,FIT-I2B-12-12,Interlock 3/4 Bsp Fitting X 3/4 Hose,,RI-19,,4,,PIRTEK,EA,1,2
+Fittings,FIT-BF1-06-06K,3/8 Bsp Fem Str X 3/8 Hose,,RI-20,,5,,PIRTEK,EA,2,3
+Fittings,FIT-DSMI-2006K,M20 Dko Heavy Male X 3/8 Hose,,RI-21,,7,,PIRTEK,EA,2,4
+Fittings,FIT-NMI-08-06K,1/2 Npt Male X 3/8 Hose,,RI-22,,19,,PIRTEK,EA,5,10
+Fittings,FIT-NMI-06-06K,3/8 Npt Male X 3/8 Hose,,RI-23,,1,,PIRTEK,EA,1,1
+Fittings,FIT-I2F-16-16,Interlock 1 Bsp Fem Str X 1 Hose,,RI-24,,0,,PIRTEK,EA,0,0
+Fittings,FIT-BFH-12-12,3/4 Bsp Fem X 3/4 Hose,,RI-25,,5,,PIRTEK,EA,2,3
+Fittings,FIT-X10LORF10-F,X10Lorf10-F,,RI-26,,5,,PIRTEK,EA,2,3
+Fittings,FIT-I2F9-06-08,Interlock 3/8 Bsp Fem 90 X 1/2 Hose,,RI-27,,0,,PIRTEK,EA,0,0
+Fittings,FIT-R-10-10#2,Nipple 7/8 Jic Male X 7/8 Jic Male Bulkhead,,RJ-01,,13,,PIRTEK,EA,4,7
+Fittings,FIT-OF1-06-06K,11/16 Orfs Fem Str X 3/8 Hose,,RJ-03,,65,,PIRTEK,EA,17,33
+Fittings,FIT-R-08-08,Nipple 3/4 Jic Male X 3/4 Jic Male Bulkhead,,RJ-04,,50,,PIRTEK,EA,13,25
+Fittings,FIT-R-06-06,Nipple 9/16 Jic Male X 9/16 Jic Male Bulkhead,,RJ-05,,32,,PIRTEK,EA,8,16
+Fittings,FIT-R-04-04,Nipple 7/16 Jic Male X 7/16 Jic Male Bulkhead,,RJ-06,,17,,PIRTEK,EA,5,9
+Fittings,FIT-X20LORF20-F,1.11/16 Orfs Fem Str X 1.1/4 Hose (One Piece),,RJ-07,,4,,PIRTEK,EA,1,2
+Fittings,FIT-X21-J905010,1.5/16 Jic Fem 90 X 5/8 Hose (One Piece),,RJ-08,,17,,PIRTEK,EA,5,9
+Fittings,FIT-X16LORF45516,1.7/16 Orfs Fem 45 X 1 Hose (One Piece),,RJ-09,,9,,PIRTEK,EA,3,5
+Fittings,FIT-X16LORF90516,1.7/16 Orfs Fem 90 X 1 Hose (One Piece),,RJ-10,,2,,PIRTEK,EA,1,1
+Fittings,FIT-X16LORF-16-F,1.7/16 Orfs Fem Str X 1 Hose (One Piece),,RJ-11,,19,,PIRTEK,EA,5,10
+Fittings,FIT-X14J90510,7/8 Jic Fem 90 X 5/8 Hose (One Piece),,RJ-12,,6,,PIRTEK,EA,2,3
+Fittings,FIT-X12LORF45512,1.3/16 Orfs Fem 45 X 3/4 Hose (One Piece),,RJ-13,,9,,PIRTEK,EA,3,5
+Fittings,FIT-X1J905010,1.5/16 Jic Fem 90 X 5/8 Hose (One Piece),,RJ-14,,5,,PIRTEK,EA,2,3
+Fittings,FIT-X12LORF12,1 3/16-12 Female Str X 3/4 Hose,,RJ-15,,27,,PIRTEK,EA,7,14
+Fittings,FIT-X12LORF90512,1.3/16 Orfs Fem 90 X 3/4 Hose (One Piece),,RJ-16,,1,,PIRTEK,EA,1,1
+Fittings,FIT-X12J90510,3/4 Jic Fem 90 X 5/8 Hose (One Piece),,RJ-17,,53,,PIRTEK,EA,14,27
+Fittings,FIT-X10LORF45510,1 Orfs Fem 45 X 5/8 Hose (One Piece),,RJ-18,,1,,PIRTEK,EA,1,1
+Fittings,FIT-X10LORF10-F#2,1 Orfs Fem Str X 5/8 Hose (One Piece),,RJ-19,,58,,PIRTEK,EA,15,29
+Fittings,FIT-X10LORF90510,1 Orfs Fem 90 X 5/8 Hose (One Piece),,RJ-20,,7,,PIRTEK,EA,2,4
+Fittings,FIT-X09J90S06,9/16 Jic 90 Swept X 3/8 Hose,,RJ-21,,122,,PIRTEK,EA,31,61
+Fittings,FIT-X08LORF08-F#2,13/16 Orfs Fem Str X 1/2 Hose (One Piece),,RJ-22,,23,,PIRTEK,EA,6,12
+Fittings,FIT-X06BF08,3/8 Bsp Fm Str X 1/2 Hose,,RJ-23,,0,,PIRTEK,EA,0,0
+Fittings,FIT-X08LORF9058,13/16 Orfs Fem 90 X 1/2 Hose (One Piece),,RJ-24,,4,,PIRTEK,EA,1,2
+Fittings,FIT-X10BF08,5/8 Bsp Fm Str X 1/2 Hose,,RJ-25,,3,,PIRTEK,EA,1,2
+Fittings,FIT-X08LORF45508,13/16 Orfs Fem 45 X 1/2 Hose (One Piece),,RJ-26,,4,,PIRTEK,EA,1,2
+Fittings,FIT-X06LORF06-F,11/16 Orfs Fem Str X 3/8 Hose (One Piece),,RJ-27,,37,,PIRTEK,EA,10,19
+Fittings,FIT-X06LORF455-06,11/16 Orfs Fem 45 X 3/8 Hose (One Piece),,RJ-28,,19,,PIRTEK,EA,5,10
+Fittings,FIT-X06LORF905-06,11/16 Orfs Fem 90 X 3/8 Hose (One Piece),,RJ-29,,48,,PIRTEK,EA,12,24
+Fittings,FIT-X04LORF455-04,9/16 Orfs Fem 45 X 1/4 Hose (One Piece),,RJ-30,,34,,PIRTEK,EA,9,17
+Fittings,FIT-X04LORF905-04,9/16 Orfs Fem 90 X 1/4 Hose (One Piece),,RJ-31,,17,,PIRTEK,EA,5,9
+Fittings,FIT-X04LORF04-F,9/16 Orfs Fem Str X 1/4 Hose (One Piece),,RJ-32,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1204-08-08,Nipple 13/16 Orfs Male X 13/16 Orfs Male,,RJ-33,,23,,PIRTEK,EA,6,12
+Fittings,FIT-FF1204-06-06,Nipple 11/16 Orfs Male X 11/16 Orfs Male,,RJ-34,,17,,PIRTEK,EA,5,9
+Fittings,FIT-FF1204-04-04,Nipple 9/16 Orfs Male X 9/16 Orfs Male,,RJ-35,,24,,PIRTEK,EA,6,12
+Fittings,FIT-FF1204-16-16,Nipple 1.7/16 Orfs Male X 1.7/16 Orfs Male,,RJ-36,,8,,PIRTEK,EA,2,4
+Fittings,FIT-FF1204-12-12,Nipple 1.3/16 Orfs Male X 1.3/16 Orfs Male,,RJ-37,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1204-10-10,Nipple 1 Orfs Male X 1 Orfs Male,,RJ-38,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF1201-04-04,Nipple 1/4 Bspp Male X 9/16 Orfs Male,,RJ-39,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1201-02-04,Nipple 1/8 Bspp Male X 9/16 Orfs Male,,RJ-40,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1204-20-20,Nipple 1.11/16 Orfs Male X 1.11/16 Orfs Male,,RJ-41,,0,,PIRTEK,EA,0,0
+Fittings,FIT-MCFB-06-04,Adaptor 11/16 Orfs Male X 1/4 Bsp Male Straight,,RJ-42,,8,,THC,EA,2,4
+Fittings,FIT-FF1201-04-08,Nipple 1/4 Bspp Male X 13/16 Orfs Male,,RJ-43,,2,,PIRTEK,EA,1,1
+Fittings,FIT-FF1201-04-06,Nipple 1/4 Bspp Male X 11/16 Orfs Male,,RJ-44,,14,,PIRTEK,EA,4,7
+Fittings,FIT-FF1201-06-06,Nipple 3/8 Bspp Male X 11/16 Orfs Male,,RJ-45,,3,,PIRTEK,EA,1,2
+Fittings,FIT-MCFB-06-06#3,Adaptor 11/16 Orfs Male X 3/8 Bsp Male Straight,,RJ-46,,18,,THC,EA,5,9
+Fittings,FIT-FF1201-06-04,Nipple 3/8 Bspp Male X 9/16 Orfs Male,,RJ-47,,17,,PIRTEK,EA,5,9
+Fittings,FIT-MSCB-08-06,Adaptor 13/16 Orfs X 3/8 Bsp,,RJ-48,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF1201-06-08,Nipple 3/8 Bspp Male X 13/16 Orfs Male,,RJ-49,,7,,PIRTEK,EA,2,4
+Fittings,FIT-MCFB-06-08,Adaptor 11/16 Orfs Male X 1/2 Bsp Male Straight,,RJ-50,,0,,THC,EA,0,0
+Fittings,FIT-FF1201-08-08,Nipple 1/2 Bspp Male X 13/16 Orfs Male,,RJ-51,,2,,PIRTEK,EA,1,1
+Fittings,FIT-MCFB-08-08,Adaptor 13/16 Orfs Male X 1/2 Bsp Male Straight,,RJ-52,,5,,THC,EA,2,3
+Fittings,FIT-FF1201-08-06,Nipple 1/2 Bspp Male X 11/16 Orfs Male,,RJ-53,,3,,PIRTEK,EA,1,2
+Fittings,FIT-FF1201-10-10,Nipple 5/8 Bspp Male X 1 Orfs Male,,RJ-54,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF1201-08-12,Nipple 1/2 Bspp Male X 1.3/16 Orfs Male,,RJ-55,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1201-08-10,Nipple 1/2 Bspp Male X 1 Orfs Male,,RJ-56,,2,,PIRTEK,EA,1,1
+Fittings,FIT-MCFB-12-12,Adaptor 1.3/16 Orfs Male X 3/4 Bsp Male Straight,,RJ-57,,10,,THC,EA,3,5
+Fittings,FIT-FF1201-12-10,Nipple 3/4 Bspp Male X 1 Orfs Male,,RJ-58,,32,,PIRTEK,EA,8,16
+Fittings,FIT-FF1201-12-08,Nipple 3/4 Bspp Male X 13/16 Orfs Male,,RJ-59,,3,,PIRTEK,EA,1,2
+Fittings,FIT-MCFC-16-12,Adaptor 1 Bsp Male X 1.3/16 Orfs Fem Sw,,RJ-60,,21,,THC,EA,6,11
+Fittings,FIT-MCFC-12-16,Adaptor 3/4 Bsp Male X 1.7/16 Orfs Fem Sw,,RJ-61,,1,,THC,EA,1,1
+Fittings,FIT-FF1201-12-16,Nipple 3/4 Bspp Male X 1.7/16 Orfs Male,,RJ-62,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1201-20-20,Nipple 1.1/4 Bspp Male X 1.11/16 Orfs Male,,RJ-63,,6,,PIRTEK,EA,2,3
+Fittings,FIT-MCFB-16-16#2,Adaptor 1.7/16 Orfs Male X 1 Bsp Male Straight,,RJ-64,,1,,THC,EA,1,1
+Fittings,FIT-FF1201-16-16,Nipple 1 Bspp Male X 1.7/16 Orfs Male,,RJ-65,,7,,PIRTEK,EA,2,4
+Fittings,FIT-FF1227-08-08-08,Tee 13/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-66,,8,,PIRTEK,EA,2,4
+Fittings,FIT-FF1227-06-06-06,Tee 11/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-67,,17,,PIRTEK,EA,5,9
+Fittings,FIT-FF1227-04-04-04,Tee 9/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-68,,15,,PIRTEK,EA,4,8
+Fittings,FIT-FF1227-12-12-12,Tee 1.3/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-70,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1227-10-10-10,Tee 1 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-71,,16,,PIRTEK,EA,4,8
+Fittings,FIT-FF6602-08-08-08,Tee 13/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-72,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF1248-06-06-06,Tee 11/16 Orfs Male X Orfs Fem X Orfs Male,,RJ-73,,10,,PIRTEK,EA,3,5
+Fittings,FIT-FF6602-04-04-04,Tee 9/16 Orfs Male X Orfs Male X Orfs Fem Sw,,RJ-74,,17,,PIRTEK,EA,5,9
+Fittings,FIT-FF1266-06-06-06,Tee 9/16 Uno Male X 11/16 Orfs Male X 11/16 Orfs Male,,RJ-75,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF1248-10-10-10,Tee 1 Orfs Male X Orfs Fem X Orfs Male,,RJ-76,,12,,PIRTEK,EA,3,6
+Fittings,FIT-FF1248-12-12-12,Tee 1.3/16 Orfs Male X Orfs Fem X Orfs Male,,RJ-77,,1,,PIRTEK,EA,1,1
+Fittings,FIT-FF1266-16-16-16,Tee 1.5/16 Uno Male X 1.7/16 Orfs Male X 1.7/16 Orfs Male,,RJ-78,,0,,PIRTEK,EA,0,0
+Fittings,FIT-FF1266-16-16-16#2,Tee 1.5/16 Uno Male X 1.7/16 Orfs Male X 1.7/16 Orfs Male,,RJ-79,,5,,PIRTEK,EA,2,3
+Fittings,FIT-FF1266-16-16-16#3,Tee 1.5/16 Uno Male X 1.7/16 Orfs Male X 1.7/16 Orfs Male,,RJ-80,,0,,PIRTEK,EA,0,0
+Fittings,FIT-R-20-20#2,Nipple 1.5/8 Jic Male X 1.5/8 Jic Male Bulkhead,,RJ-81,,13,,PIRTEK,EA,4,7
+Fittings,FIT-R-16-16#2,Nipple 1.5/16 Jic Male X 1.5/16 Jic Male Bulkhead,,RJ-82,,9,,PIRTEK,EA,3,5
+Rebuild Store,RBS-AREGUL002,Line Regulator,,,,1,,ADENDORFF,EA,1,1
+Rebuild Store,RBS-ISO9001-2015,Iso9001-2015,,,,1,,AIR SOURCE TREATMENT,EA,1,1
+Rebuild Store,RBS-DK614,Toggle Latch And Hook,,,,20,124.76,ASTRA INDUSTRIAL,EA,5,10
+Rebuild Store,RBS-PADLOCK-SET-BIG,Padlock Set Big,,,,15,297.1,ASTRA INDUSTRIAL,EA,4,8
+Rebuild Store,RBS-PADLOCK-SET-SMALL,Padlock Set Small,,,,13,,ASTRA INDUSTRIAL,EA,4,7
+Rebuild Store,RBS-OB1318,"Filter Head, 3/4Npt",,,,1,,BALDWIN FILTERS,EA,1,1
+Rebuild Store,RBS-PF10,Pf10,,,,2,,BALDWIN FILTERS,EA,1,1
+Rebuild Store,RBS-SPIDEX-65-ELEMENT,Spidex 65 Element,,,,1,516.75,BMG,EA,1,1
+Rebuild Store,RBS-478-951,Handle,,,,10,,RS PRO,EA,3,5
+Rebuild Store,RBS-SA-GAUGE,Sa Gauge,,,,4,,40 BAR GAUGE,EA,1,2
+Rebuild Store,RBS-2029699,Drill Head Set,,,,2,,ROBIT,EA,1,1
+Rebuild Store,RBS-BMT-14340,Pressure Reducing Valve,,,,1,,MALGORANI,EA,1,1
+Rebuild Store,RBS-06F-07-2334,Shank Hlx C38,,,,2,,ROBIT,EA,1,1
+Rebuild Store,RBS-76075-00001000-01,Pressure Switch,,,,1,,MOUSER ELECTRONICS,EA,1,1
+Rebuild Store,RBS-B10-AL-CAP,Pf10,,,,3,,BALDWIN FILTERS,EA,1,2
+Rebuild Store,RBS-BACK-UP-CAMERA-AND-MONITOR-KITS,Back Up Camera And Monitor Kits,,,,1,,,EA,1,1
+Rebuild Store,RBS-310-040-004C,Temperature Gauge Cockpit,,,,1,,,EA,1,1
+Rebuild Store,RBS-KWS117-BSP,Kws117-Bsp,,,,2,,KELTEC,EA,1,1
+Rebuild Store,RBS-CU1101M25ANP01,Cu1101M25Anp01,,,,2,,MPFILTRI,EA,1,1
+Rebuild Store,RBS-19765015,19765015,,,,1,,DANFOSS,EA,1,1
+Rebuild Store,RBS-450767,Shk Hlx1 R23 028/235,,,,1,,BOART LONGYEAR,EA,1,1
+Rebuild Store,RBS-1-SIGHT-GLASS,"1"" Sight Glass",,,,1,,HYDROMOBILE,EA,1,1
+Rebuild Store,RBS-1/2-SIGHT-GLASS,"1/2"" Sight Glass",,,,4,,HYDROMOBILE,EA,1,2
+Rebuild Store,RBS-1-1/2-SIGHT-GLASS,"1 1/2"" Sight Glass",,,,6,,HYDROMOBILE,EA,2,3
+Rebuild Store,RBS-P539468,Breather Air Spin-On,,,,1,418,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-RK22168,Mounting Head,,,,1,1280,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-362518J,Solenoid Vlave,,,,1,560.19,PARKER STORE,EA,1,1
+Rebuild Store,RBS-P551855,P551855,,,,3,,DONALDSON,EA,1,2
+Rebuild Store,RBS-P566991,Hydraulic Filter,,,,1,3806.94,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P565243,Hydraulic Filter,,,,2,310.09,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P171855,Hydraulic Filler Cap,,,,1,361.77,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P780036,Safety Filter,,,,1,628.47,OHR & J LOGISTICS,EA,1,1
+Rebuild Store,RBS-TH140A1,Rubber Bonnet Catches,,,,2,,HINGEMASTER,EA,1,1
+Rebuild Store,RBS-P181059,P181059,,,,1,,DONALDSON,EA,1,1
+Rebuild Store,RBS-P77732,P77732,,,,0,,DONALDSON,EA,0,0
+Rebuild Store,RBS-P550010,Lube Filter,,,,1,,DONALDSON,EA,1,1
+Rebuild Store,RBS-P550848,Fuel Filter Water Seperator,,,,1,,DONALDSON,EA,1,1
+Rebuild Store,RBS-P551852,Fuel Filter,,,,1,627.03,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P550588,Fuel Filter,,,,2,,DONALDSON,EA,1,1
+Rebuild Store,RBS-P765281,Small Hydraulic Filter,,,,1,845.99,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P552076,Coolant Filter,,,,2,691.19,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P551551,Hydraulic Filter,,,,1,,DONALDSON,EA,1,1
+Rebuild Store,RBS-P550774,Fuel Filter,,,,1,292.28,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P550417,Hydraulic Filter,,,,1,1807.24,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P777732,Air Cleaner Bracket,,,,1,256.86,FILVENT JHB,EA,1,1
+Rebuild Store,RBS-G070006/-G082503,Air Cleaner,,,,1,3391.41,FILVENT JHB,EA,1,1
+Rebuild Store,RBS-S/N-2245-15291,I/O Module,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-S/N-36518465,S/N: 36518465,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-5580010412,Bracket,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-9106219201,Danfoss Mbs3050 060,,,,4,6593.94,EPIROC,EA,1,2
+Rebuild Store,RBS-5580011074,Sensor,,,,1,1158.71,EPIROC,EA,1,1
+Rebuild Store,RBS-5112000183,Avgassystem,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3177303600,Press.Red.Valve,,,,1,4810.86,EPIROC,EA,1,1
+Rebuild Store,RBS-3217855800,Avta15 Thermostat,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-51122878947,Press.Red.Cart,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176004600,Control Box,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-9106-4623-91,Nipple,,,,3,,EPIROC,EA,1,2
+Rebuild Store,RBS-0147-1567-03,0147 1567 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3177-3070-00,3177 3070 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0347-6100-30,0347 6100 30,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0661-1033-00,0661 1033 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0291-1128-28,0291 1128 28,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2335-00,0301 2335 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3715-0589-00,3715 0589 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0300-0274-13,0300 0274 13,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1564-03,0147 1564 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0226-0306-00,0226 0306 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-8915-0022-46,8915 0022 46,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1360-03,0147 1360 03,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1365-03,0147 1365 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0570-5010-14,0570 5010 14,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-5535-00,3176 5535 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1362-03,0147 1362 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-8915-0022-47,8915 0022 47,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0337-6074-00,0337 6074 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3177-3016-00,3177 3016 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-9111-3940-07,9111 3940 07,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-1011-2378-00,1011 2378 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1325-03,0147 1325 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0291-1128-25,0291 1128 25,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6615-00,3176 6615 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6537-00,3176 6537 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2378-00,0301 2378 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2344-00,0301 2344 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0291-1128-18,0291 1128 18,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1961-80,0147 1961 80,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1567-03#2,0147 1567 03,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0570-5010-92,0570 5010 92,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0291-1128-28#2,0291 1128 28,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6502-00,3176 6502 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2378-00#2,0301 2378 00,,,,12,,EPIROC,EA,3,6
+Rebuild Store,RBS-9111-3940-07#2,9111 3940 07,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1402-04,0147 1402 04,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0226-0306-00#2,0226 0306 00,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-9106-0010-81,9106 0010 81,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1325-03#2,0147 1325 03,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0147-1479-03,0147 1479 03,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0653-0905-06,0653 0905 06,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3715-0585-06,3715 0585 06,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6615-00#2,3176 6615 00,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2378-00#3,0301 2378 00,,,,16,,EPIROC,EA,4,8
+Rebuild Store,RBS-3175-0584-00,3175 0584 00,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2358-00,0301 2358 00,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-5730-0151-96,5730 0151 96,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-3176-6615-00#3,3176 6615 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6352-00,3176 6352 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0686-3716-07,0686 3716 07,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-9106-0260-37,9106 0260 37,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6351-00,3176 6351 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0301-2344-00#2,0301 2344 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1360-03#2,0147 1360 03,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0291-1128-25#2,0291 1128 25,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0147-1325-03#3,0147 1325 03,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0570-5010-14#2,0570 5010 14,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-2131-00,3176 2131 00,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0698-5140-71,0698 5140 71,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1365-03#2,0147 1365 03,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-3715-0585-00,3715 0585 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0216-3365-00,0216 3365 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0337-6074-00#2,0337 6074 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0147-1360-03#3,0147 1360 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0317-6512-06,0317 6512 06,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3177-3070-00#2,3177 3070 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-0291-1128-18#2,0291 1128 18,,,,4,,EPIROC,EA,1,2
+Rebuild Store,RBS-0291-1128-25#3,0291 1128 25,,,,8,,EPIROC,EA,2,4
+Rebuild Store,RBS-0147-1961-80#2,0147 1961 80,,,,2,,EPIROC,EA,1,1
+Rebuild Store,RBS-0300-0139-03,0300 0139 03,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3176-6616-00,3176 6616 00,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-S/N-36824744,Pump,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-P/N-5540463200,Piston Accumulator,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-6060016680,"Filter, Hyd, Element",,,,3,4778.91,EPIROC,EA,1,2
+Rebuild Store,RBS-3217-8937-40,3217 8937 40,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3217-9060-03,Connect Plate,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-P/N-3217958420,P/N : 3217958420,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3218200670,Bellows Coup.,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-3217-9060-02,Conn Plate,,,,1,,EPIROC,EA,1,1
+Rebuild Store,RBS-TPI.02601,Tpi.02601,,,,3,,FBN,EA,1,2
+Rebuild Store,RBS-D141G10A,D141G10A,,,,2,,FILTREC,EA,1,1
+Rebuild Store,RBS-RHR850M05B3/001,Filter,,,,1,,FILTREC,EA,1,1
+Rebuild Store,RBS-WF2027,Coolant Filter,,,,1,,FLEETGAURD,EA,1,1
+Rebuild Store,RBS-AF25553,Air Filter,,,,1,,FLEETGAURD,EA,1,1
+Rebuild Store,RBS-32A6201020M,"Element Kit, Fuel",,,,2,,GENUINE PARTS,EA,1,1
+Rebuild Store,RBS-SA-12560,Air Filter,,,,1,,HIFI,EA,1,1
+Rebuild Store,RBS-M0-3016,Bol Bowl,,,,2,,HIFI,EA,1,1
+Rebuild Store,RBS-ACCUMULATOR,Accumulator,,,,1,,HYDAC,EA,1,1
+Rebuild Store,RBS-14L23-/-7022620,14L23 / 7022620,,,,1,,HYDRAFORCE,EA,1,1
+Rebuild Store,RBS-SGS-08B,Sight Glass,,,,2,,HYDROLINE,EA,1,1
+Rebuild Store,RBS-23520380R,Coolant Level Sensor,,,,1,,INTERNATIONAL AUTOMATIVE,EA,1,1
+Rebuild Store,RBS-YZ107347,Yz107347,,,,5,,JOHN DEERE,EA,2,3
+Rebuild Store,RBS-YZ104766,Yz104766,,,,2,,JOHN DEERE,EA,1,1
+Rebuild Store,RBS-A38311151003,A38311151003,,,,1,,LUKAS,EA,1,1
+Rebuild Store,RBS-WDK-940/1,Wdk 940/1,,,,2,,MANN FILTER,EA,1,1
+Rebuild Store,RBS-TEMP-VALVE,Temp Valve,,,,2,,MINTOR,EA,1,1
+Rebuild Store,RBS-710-424-9215,Control Light Module 24V,,,,9,,MOTOMETER,EA,3,5
+Rebuild Store,RBS-TA80B10A001PO1,Ta80B10A001Po1,,,,4,,MPFILTRI,EA,1,2
+Rebuild Store,RBS-DLE50HA50PO1,Dle50Ha50Po1,,,,2,,MPFILTRI,EA,1,1
+Rebuild Store,RBS-MF1002P10NBP01,Mf1002P10Nbp01,,,,1,,MPFILTRI,EA,1,1
+Rebuild Store,RBS-MF1801P25NB01,Mf1801P25Nb01,,,,1,,MPFILTRI,EA,1,1
+Rebuild Store,RBS-PFEX160BAB6P01,Pfex160Bab6P01,,,,2,,MPFILTRI,EA,1,1
+Rebuild Store,RBS-RC3G-13L,Radiator Cap,,,,1,,NEPTUNE,EA,1,1
+Rebuild Store,RBS-RS.PRO-689-394,Ball Joints,,,,28,,RS COMPONENTS,EA,7,14
+Rebuild Store,RBS-BG00986464,Temp Sensor,,,,1,5941.85,SANDVIK,EA,1,1
+Rebuild Store,RBS-88392379,Pressure Transmitter,,,,1,23230.4,SANDVIK,EA,1,1
+Rebuild Store,RBS-SR2-S00116-000,Sr2-S00116-000,,,,2,,SANDVIK,EA,1,1
+Rebuild Store,RBS-KP2/130-30A,Brushgear,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-FILTER,Filter,,,,2,,SANDVIK,EA,1,1
+Rebuild Store,RBS-7383303,7383303,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-J2A060-2-N-3523-GB,J2A060 2 N 3523 Gb,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-2.0401-DN8-PN40-H037,2.0401 Dn8 Pn40 H037,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-73833303,73833303,,,,2,,SANDVIK,EA,1,1
+Rebuild Store,RBS-8559098,Nozzle,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-55037836,Filter,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-5520379,Collecting Piece,,,,1,,SANDVIK,EA,1,1
+Rebuild Store,RBS-JOYSTICK-LEVER,Joystick Lever,,,,20,,,EA,5,10
+Rebuild Store,RBS-OEM-1262300,Rubber Mounting,,,,4,,,EA,1,2
+Rebuild Store,RBS-TB-25,Cap,,,,1,,,EA,1,1
+Rebuild Store,RBS-281011-602E,Rotary Ltch Std Lh 7.2Mm,,,,2,,,EA,1,1
+Rebuild Store,RBS-3709937,Thermometer,,,,1,,,EA,1,1
+Rebuild Store,RBS-SS304,"4"" Clamp",,,,2,,,EA,1,1
+Rebuild Store,RBS-P171055/-D141G10A,Filter Cap,,,,2,928.29,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P566991#2,Hydraulic Filter,,,,2,3592,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-P164174,Hydraulic Filter,,,,2,875.84,FILTER & HOSE SOLUTIONS,EA,1,1
+Rebuild Store,RBS-321-BELLOWS,321 Bellows,,,,0,,,EA,0,0
+Rebuild Store,RBS-HLX5-T38,Spline Shank,,,,2,,,EA,1,1
+Rebuild Store,RBS-DRILL-HEAD,Drill Head,,,,1,,,EA,1,1
+Rebuild Store,RBS-SPLINE-SHANK,Spline Shank,,,,1,,,EA,1,1
+Rebuild Store,RBS-C4PCK219721,Wipers,,,,2,,,EA,1,1
+Rebuild Store,RBS-HZC001,Holders (Orange),,,,8,,,EA,2,4
+Rebuild Store,RBS-QUARTER-TURN-FOR-PADLOS,281-9101.00-00000,,,,1,,ASTRA INDUSTRIAL,EA,1,1
+Rebuild Store,RBS-INDUCTION-PIPES,Induction Pipes,,,,2,,,EA,1,1
+Electrical Bay,ELE-TNCG/M20/6-12/BL,M20 Nylon Cable Gland,,RK-01,,21,,TTS,EA,6,11
+Electrical Bay,ELE-TNCG/M25/13-17/BL,M25 Nylon Cable Gland,,RK-02,,20,,TTS,EA,5,10
+Electrical Bay,ELE-TNCG/M32/16-21/BL,M32 Nylon Cable Gland,,RK-03,,14,,TTS,EA,4,7
+Electrical Bay,ELE-T/PX1BW,M20 Bwr Gland,,RK-04,,9,,TTS,EA,3,5
+Electrical Bay,ELE-T/PX2BW,M25 Bwr Gland,,RK-05,,14,,TTS,EA,4,7
+Electrical Bay,ELE-T/PX3BW,M26 Bwr Gland,,RK-06,,11,,TTS,EA,3,6
+Electrical Bay,ELE-T/LNB/M20,M20 Lock Nut,,RK-07,,20,,TTS,EA,5,10
+Electrical Bay,ELE-T/LNB/M25,M25 Lock Nut,,RK-08,,27,,TTS,EA,7,14
+Electrical Bay,ELE-T/LNB/M32,M32 Lock Nut,,RK-09,,39,,TTS,EA,10,20
+Electrical Bay,ELE-T47-B,M20 Clamping Bush,,RK-10,,24,,TTS,EA,6,12
+Electrical Bay,ELE-T48-B,M25 Clamping Bush,,RK-11,,25,,TTS,EA,7,13
+Electrical Bay,ELE-TDSP/M16/N,M16 Stopping Plug,,RK-12,,19,,TTS,EA,5,10
+Electrical Bay,ELE-TDSP/M20/N,M20 Stopping Plug,,RK-13,,32,,TTS,EA,8,16
+Electrical Bay,ELE-TDSP/M25/N,M25 Stopping Plug,,RK-14,,25,,TTS,EA,7,13
+Electrical Bay,ELE-TDSP/M32/N,M32 Stopping Plug,,RK-15,,21,,TTS,EA,6,11
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-WHITE,Electrical Cable,,RK-22,,0,,HELUKABLE,EA,0,0
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-BLUE,Electrical Cable,,RK-23,,0,,HELUKABLE,EA,0,0
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-ORANGE,Electrical Cable,,RK-24,,0,,HELUKABLE,EA,0,0
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-GREY,Electrical Cable,,RK-25,,7,,HELUKABLE,EA,2,4
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-VIOLET,Electrical Cable,,RK-26,,1,,HELUKABLE,EA,1,1
+Electrical Bay,ELE-H05V-K-BOX-1X1-MM-GREEN,Electrical Cable,,RK-27,,6,,HELUKABLE,EA,2,3
+Electrical Bay,ELE-PLUG-24-31,Electrical Plug,,RK-28,,19,,TTS,EA,5,10
+Electrical Bay,ELE-E1010,Red Fuse 30A,,RK-29,,30,,BRENO PARTS,EA,8,15
+Electrical Bay,ELE-E1030,Green Fuse 30A,,RK-30,,25,,BRENO PARTS,EA,7,13
+Electrical Bay,ELE-PT-2-5-QUATTRO,Terminal Block,,RK-31,,21,,EPS,EA,6,11
+Electrical Bay,ELE-TSEH24/M32/SL,Metal Side Entry Hood 24 Pin Single Lever,,RK-32,,5,,TTS,EA,2,3
+Electrical Bay,ELE-TPMB/10/SL,Metal Panel Mount Single Lever,,RK-33,,8,,TTS,EA,2,4
+Electrical Bay,ELE-PC-3819-13-T-ENCLOSURE,Enclosure,,RK-34,,4,,TTS,EA,1,2
+Electrical Bay,ELE-TFI016/16A/CL,Female Insert 16 Pin,,RK-35,,6,,TTS,EA,2,3
+Electrical Bay,ELE-TSEH10/M25/SL,Metal Side Entry Hood 10 Pin Single Lever,,RK-36,,2,,TTS,EA,1,1
+Electrical Bay,ELE-LTP32-M32-CSS90,32Mm Male Connector 90 Deg Lot,,RK-37,,1,,TTS,EA,1,1
+Electrical Bay,ELE-TPMB/24/SL,Metal Panel Mount Base 24 Pin Single Lever,,RK-38,,6,,TTS,EA,2,3
+Electrical Bay,ELE-EPS-A2C-2.5,Terminal,,RK-39,,15,,EPS,EA,4,8
+Electrical Bay,ELE-EPS-ZDU-1.5,Terminal,,RK-40,,18,,EPS,EA,5,9
+Electrical Bay,ELE-EPS-ZDU-2.5/4N,Terminal,,RK-41,,26,,EPS,EA,7,13
+Electrical Bay,ELE-EPS-ZDU-1.5/4N,Terminal,,RK-42,,29,,EPS,EA,8,15
+Electrical Bay,ELE-EPS-ZSI-6-2/FC,Terminal,,RK-43,,15,,EPS,EA,4,8
+Electrical Bay,ELE-EPS-ZDU-2.5/2X2AN,Terminal,,RK-44,,18,,EPS,EA,5,9
+Electrical Bay,ELE-EPS-WTR-4,Terminal,,RK-45,,24,,EPS,EA,6,12
+Electrical Bay,ELE-EPS-WDK-2.5,Terminal,,RK-46,,28,,EPS,EA,7,14
+Paints,PNT-00001,Dtm Aqua Sandvik Orange 4.5Lt,,,,11,,,EA,3,6
+Paints,PNT-00002,Dtm Aqua Epiroc Yellow 4.5Lt,,,,12,,,EA,3,6
+Paints,PNT-00003,Dtm Aqua Dark Grey 4.5Lt,,,,7,,,EA,2,4
+Paints,PNT-00004,Dtm Aqua Straight White 4.5Lt,,,,10,,,EA,3,5
+Paints,PNT-00005,Dtm Aqua Satin Black 4.5Lt,,,,6,,,EA,2,3
+Paints,PNT-00006,Dtm Aqua Satin Signal Red 4.5Lt,,,,8,,,EA,2,4
+Paints,PNT-00007,Qd Enamel Epiroc Yellow 20Lt,,,,4,,,EA,1,2
+Paints,PNT-00008,Qd Enamel Sandvik Orange 20Lt,,,,5,,,EA,2,3
+Paints,PNT-00009,Qd Enamel White 20Lt,,,,4,,,EA,1,2
+Paints,PNT-00010,Lacquer Thinners Grade-A 25Lt,,,,9,,,EA,3,5
+Paints,PNT-00011,Qd Enamel Thinners 25Lt,,,,11,,,EA,3,6
+Oils,OIL-00001,Shell S2 V220 2,,,,2,,,EA,1,1
+Oils,OIL-00002,Syntol Sb,,,,4,,,EA,1,2
+Oils,OIL-00003,Petrogrease,,,,2,,,EA,1,1
+Oils,OIL-00004,Shell Spirax 85W140,,,,5,,,EA,2,3
+Oils,OIL-00005,Tekrpol,,,,2,,,EA,1,1
+Oils,OIL-00006,Shell Air Tool S2 A,,,,2,,,EA,1,1
+Oils,OIL-00007,S2 Atf D2,,,,7,,,EA,2,4
+Oils,OIL-00008,Compressor Oil 100,,,,4,,,EA,1,2
+Oils,OIL-00009,Shell Tellus S2 M,,,,1,,,EA,1,1
+Oils,OIL-00010,Shell V220C 2,,,,2,,,EA,1,1
+Oils,OIL-00011,Illuminating Paraffin (20L),,,,2,,,EA,1,1
+Oils,OIL-00012,Shell 15W40,,,,9,,,EA,3,5
+Oils,OIL-00013,Shell 4Txm,,,,10,,,EA,3,5
+Oils,OIL-00014,Petromark Ep 2 Grease,,,,1,,,EA,1,1
+Oils,OIL-00015,Grinding Oil,,,,1,,,EA,1,1
+Oils,OIL-00016,Anti Freeze,,,,15,,,EA,4,8
+Oils,OIL-00017,Corena R 68,,,,4,,,EA,1,2
+Oils,OIL-00018,Gear Oil 80W90,,,,5,,,EA,2,3
+Oils,OIL-00019,Transfluid Sae 30,,,,1,,,EA,1,1
+Oils,OIL-00020,Shell Sae 30,,,,10,,,EA,3,5
+Oils,OIL-00021,Illuminating Paraffin (210L),,,,2,,,EA,1,1
+Oils,OIL-00022,Hydraulic Oil 68 (210L),,,,2,,,EA,1,1
+Oils,OIL-00023,Hydraulic Oil 46 (210L),,,,3,,,EA,1,2
+Oils,OIL-00024,Potenza Paraffin (210L),,,,2,,,EA,1,1

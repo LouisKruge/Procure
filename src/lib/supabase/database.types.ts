@@ -224,6 +224,54 @@ export type Database = {
           },
         ]
       }
+      import_stock_feed: {
+        Row: {
+          area: string | null
+          bin: string | null
+          description: string | null
+          id: number
+          location: string | null
+          price: number | null
+          qty: number | null
+          reorder_point: number | null
+          reorder_qty: number | null
+          sku: string | null
+          supplier: string | null
+          type_name: string | null
+          uom: string | null
+        }
+        Insert: {
+          area?: string | null
+          bin?: string | null
+          description?: string | null
+          id?: number
+          location?: string | null
+          price?: number | null
+          qty?: number | null
+          reorder_point?: number | null
+          reorder_qty?: number | null
+          sku?: string | null
+          supplier?: string | null
+          type_name?: string | null
+          uom?: string | null
+        }
+        Update: {
+          area?: string | null
+          bin?: string | null
+          description?: string | null
+          id?: number
+          location?: string | null
+          price?: number | null
+          qty?: number | null
+          reorder_point?: number | null
+          reorder_qty?: number | null
+          sku?: string | null
+          supplier?: string | null
+          type_name?: string | null
+          uom?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -436,6 +484,7 @@ export type Database = {
           category_id: string | null
           created_at: string
           default_bin: string | null
+          default_location: string | null
           default_supplier_id: string | null
           description: string
           id: string
@@ -454,6 +503,7 @@ export type Database = {
           category_id?: string | null
           created_at?: string
           default_bin?: string | null
+          default_location?: string | null
           default_supplier_id?: string | null
           description: string
           id?: string
@@ -472,6 +522,7 @@ export type Database = {
           category_id?: string | null
           created_at?: string
           default_bin?: string | null
+          default_location?: string | null
           default_supplier_id?: string | null
           description?: string
           id?: string
@@ -508,6 +559,7 @@ export type Database = {
           id: string
           item_id: string
           last_movement_at: string | null
+          location: string | null
           qty_in_transit: number
           qty_on_hand: number
           qty_on_order: number
@@ -520,6 +572,7 @@ export type Database = {
           id?: string
           item_id: string
           last_movement_at?: string | null
+          location?: string | null
           qty_in_transit?: number
           qty_on_hand?: number
           qty_on_order?: number
@@ -532,6 +585,7 @@ export type Database = {
           id?: string
           item_id?: string
           last_movement_at?: string | null
+          location?: string | null
           qty_in_transit?: number
           qty_on_hand?: number
           qty_on_order?: number
@@ -1136,10 +1190,12 @@ export type Database = {
       }
       v_reorder_suggestions: {
         Row: {
+          bin_location: string | null
           category_name: string | null
           description: string | null
           item_id: string | null
           lead_time_days: number | null
+          location: string | null
           qty_on_hand: number | null
           qty_on_order: number | null
           reorder_point: number | null
@@ -1183,9 +1239,11 @@ export type Database = {
           default_supplier_id: string | null
           default_supplier_name: string | null
           description: string | null
+          group_name: string | null
           item_id: string | null
           last_movement_at: string | null
           level_id: string | null
+          location: string | null
           qty_in_transit: number | null
           qty_on_hand: number | null
           qty_on_order: number | null
@@ -1392,6 +1450,10 @@ export type Database = {
         }[]
       }
       has_site_access: { Args: { p_site_id: string }; Returns: boolean }
+      import_stock_rows: {
+        Args: { p_adjust_quantities?: boolean; p_rows: Json; p_site_id: string }
+        Returns: Json
+      }
       is_admin: { Args: never; Returns: boolean }
       is_manager: { Args: never; Returns: boolean }
       issue_dispatch: {
@@ -1418,6 +1480,47 @@ export type Database = {
           isOneToOne: true
           isSetofReturn: false
         }
+      }
+      item_usage_stats: {
+        Args: { p_days?: number; p_limit?: number; p_site_id?: string }
+        Returns: {
+          avg_cost: number
+          avg_per_month: number
+          avg_per_week: number
+          bin_location: string
+          category_name: string
+          days_cover: number
+          description: string
+          group_name: string
+          issue_events: number
+          issued_value: number
+          item_id: string
+          last_issued_at: string
+          location: string
+          qty_issued: number
+          qty_on_hand: number
+          qty_received: number
+          reorder_point: number
+          sku: string
+          stock_value: number
+          turnover_rate: number
+          uom: string
+        }[]
+      }
+      ordered_vs_used: {
+        Args: { p_days?: number; p_limit?: number; p_site_id?: string }
+        Returns: {
+          balance: number
+          description: string
+          item_id: string
+          order_count: number
+          qty_issued: number
+          qty_on_hand: number
+          qty_ordered: number
+          qty_received: number
+          sku: string
+          uom: string
+        }[]
       }
       post_movement: {
         Args: {
@@ -1608,6 +1711,7 @@ export type Database = {
           category_id: string | null
           created_at: string
           default_bin: string | null
+          default_location: string | null
           default_supplier_id: string | null
           description: string
           id: string
@@ -1689,6 +1793,35 @@ export type Database = {
           isOneToOne: true
           isSetofReturn: false
         }
+      }
+      usage_by_category: {
+        Args: { p_days?: number; p_site_id?: string }
+        Returns: {
+          category_id: string
+          category_name: string
+          group_name: string
+          issued_value: number
+          lines: number
+          lines_dead: number
+          lines_moving: number
+          qty_issued: number
+          qty_on_hand: number
+          stock_value: number
+        }[]
+      }
+      usage_by_period: {
+        Args: { p_bucket?: string; p_periods?: number; p_site_id?: string }
+        Returns: {
+          issue_events: number
+          issued_value: number
+          items_touched: number
+          period_label: string
+          period_start: string
+          qty_issued: number
+          qty_received: number
+          receipt_events: number
+          received_value: number
+        }[]
       }
     }
     Enums: {
