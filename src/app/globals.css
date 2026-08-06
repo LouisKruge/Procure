@@ -1,0 +1,199 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * NEXUS Stock design tokens.
+ *
+ * Two things drive these choices: the app is read at arm's length on a
+ * tablet under bad warehouse lighting, and stock status has to be legible
+ * at a glance without reading the number. Hence the high-contrast surfaces
+ * and the three fixed status colours (ok / low / out) used everywhere.
+ */
+
+:root {
+  --radius: 0.625rem;
+
+  --background: oklch(0.98 0.004 250);
+  --foreground: oklch(0.16 0.015 255);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.015 255);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.015 255);
+
+  --primary: oklch(0.52 0.16 258);
+  --primary-foreground: oklch(0.99 0.005 250);
+
+  --secondary: oklch(0.955 0.008 250);
+  --secondary-foreground: oklch(0.24 0.02 255);
+
+  --muted: oklch(0.955 0.008 250);
+  --muted-foreground: oklch(0.5 0.018 255);
+
+  --accent: oklch(0.94 0.02 250);
+  --accent-foreground: oklch(0.2 0.02 255);
+
+  --destructive: oklch(0.58 0.21 27);
+  --destructive-foreground: oklch(0.99 0.005 250);
+
+  --border: oklch(0.9 0.008 250);
+  --input: oklch(0.9 0.008 250);
+  --ring: oklch(0.52 0.16 258);
+
+  /* Stock status - the three states that matter on every screen. */
+  --ok: oklch(0.58 0.14 155);
+  --ok-foreground: oklch(0.99 0.005 250);
+  --ok-subtle: oklch(0.94 0.04 155);
+
+  --low: oklch(0.7 0.16 75);
+  --low-foreground: oklch(0.2 0.03 75);
+  --low-subtle: oklch(0.95 0.05 85);
+
+  --out: oklch(0.58 0.21 27);
+  --out-foreground: oklch(0.99 0.005 250);
+  --out-subtle: oklch(0.95 0.04 27);
+
+  --transit: oklch(0.6 0.13 265);
+  --transit-subtle: oklch(0.95 0.03 265);
+}
+
+.dark {
+  --background: oklch(0.16 0.012 258);
+  --foreground: oklch(0.95 0.005 250);
+
+  --card: oklch(0.2 0.014 258);
+  --card-foreground: oklch(0.95 0.005 250);
+  --popover: oklch(0.21 0.014 258);
+  --popover-foreground: oklch(0.95 0.005 250);
+
+  --primary: oklch(0.68 0.15 255);
+  --primary-foreground: oklch(0.16 0.02 258);
+
+  --secondary: oklch(0.26 0.015 258);
+  --secondary-foreground: oklch(0.93 0.005 250);
+
+  --muted: oklch(0.26 0.015 258);
+  --muted-foreground: oklch(0.68 0.014 255);
+
+  --accent: oklch(0.3 0.02 258);
+  --accent-foreground: oklch(0.95 0.005 250);
+
+  --destructive: oklch(0.65 0.19 25);
+  --destructive-foreground: oklch(0.99 0.005 250);
+
+  --border: oklch(0.31 0.014 258);
+  --input: oklch(0.33 0.014 258);
+  --ring: oklch(0.68 0.15 255);
+
+  --ok: oklch(0.68 0.15 155);
+  --ok-foreground: oklch(0.16 0.02 258);
+  --ok-subtle: oklch(0.28 0.05 155);
+
+  --low: oklch(0.78 0.15 78);
+  --low-foreground: oklch(0.18 0.03 78);
+  --low-subtle: oklch(0.3 0.06 78);
+
+  --out: oklch(0.68 0.19 25);
+  --out-foreground: oklch(0.16 0.02 258);
+  --out-subtle: oklch(0.3 0.08 25);
+
+  --transit: oklch(0.72 0.13 265);
+  --transit-subtle: oklch(0.29 0.05 265);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ok: var(--ok);
+  --color-ok-foreground: var(--ok-foreground);
+  --color-ok-subtle: var(--ok-subtle);
+  --color-low: var(--low);
+  --color-low-foreground: var(--low-foreground);
+  --color-low-subtle: var(--low-subtle);
+  --color-out: var(--out);
+  --color-out-foreground: var(--out-foreground);
+  --color-out-subtle: var(--out-subtle);
+  --color-transit: var(--transit);
+  --color-transit-subtle: var(--transit-subtle);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    /* Gloves and touch: never let a mis-tap select text instead of pressing. */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Numbers line up in columns when they are tabular. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Stop iOS zooming the whole page when a number field is focused. */
+  @media (max-width: 640px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/* Keyboard hint chips shown next to primary actions on desktop. */
+.kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.4rem;
+  padding: 0 0.3rem;
+  height: 1.4rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--muted);
+  color: var(--muted-foreground);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
