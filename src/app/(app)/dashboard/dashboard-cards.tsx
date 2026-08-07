@@ -116,16 +116,11 @@ export function RiskCard({
   return (
     <Link
       href="/procurement"
-      className={cn(
-        "surface surface-sheen lift group relative overflow-hidden p-5",
-        level.tone === "critical" && "bg-[var(--critical-wash)]",
-      )}
+      className="surface surface-sheen edge-lit lift group relative overflow-hidden p-5"
     >
-      {/* A hue wash rather than a border: the card itself signals severity. */}
-      <div
-        className="pointer-events-none absolute -right-20 -top-24 size-56 rounded-full opacity-[0.10] blur-[64px]"
-        style={{ background: `var(--${level.tone === "success" ? "success" : level.tone === "critical" ? "critical" : "attention"})` }}
-      />
+      {/* No severity wash. The plate stays graphite whatever the state - the
+          figure, the ring and the chip carry the signal, and they only read
+          as urgent because nothing around them is tinted. */}
 
       <div className="relative flex items-start justify-between gap-3">
         <div>
@@ -192,7 +187,7 @@ export function RiskCard({
         <Stat label="Exposure" value={formatMoney(exposure)} small />
       </div>
 
-      <span className="relative mt-3 flex items-center gap-1 text-[12px] font-medium text-[var(--nav-bright)] opacity-0 transition-opacity group-hover:opacity-100">
+      <span className="relative mt-3 flex items-center gap-1 text-[12px] font-medium text-[var(--text-secondary)] opacity-0 transition-opacity group-hover:opacity-100">
         Review procurement <ArrowUpRight className="size-3" />
       </span>
     </Link>
@@ -248,7 +243,7 @@ export function ValueCard({
   const healthy = 100 - deadShare;
 
   return (
-    <Link href="/analytics" className="surface surface-sheen lift group p-5">
+    <Link href="/analytics" className="surface surface-sheen edge-lit lift group p-5">
       <SectionLabel>Cash in inventory</SectionLabel>
 
       <div className="mt-2">
@@ -282,7 +277,7 @@ export function ValueCard({
         <Meter value={deadShare} tone="attention" />
       </div>
 
-      <span className="mt-4 flex items-center gap-1 text-[12px] font-medium text-[var(--nav-bright)] opacity-0 transition-opacity group-hover:opacity-100">
+      <span className="mt-4 flex items-center gap-1 text-[12px] font-medium text-[var(--text-secondary)] opacity-0 transition-opacity group-hover:opacity-100">
         Open analytics <ArrowUpRight className="size-3" />
       </span>
     </Link>
@@ -304,7 +299,7 @@ export function ThroughputCard({
   const quiet = issued === 0 && received === 0;
 
   return (
-    <Link href="/analytics" className="surface surface-sheen lift group p-5">
+    <Link href="/analytics" className="surface surface-sheen edge-lit lift group p-5">
       <div className="flex items-start justify-between">
         <SectionLabel>Throughput · {periodLabel}</SectionLabel>
         {quiet ? null : <Chip tone="auto" dot>Live</Chip>}
@@ -324,7 +319,7 @@ export function ThroughputCard({
               <p className="text-[11px] text-[var(--text-tertiary)]">Issued</p>
               <AnimatedNumber
                 value={issued}
-                className="num-hero block text-[28px] text-[var(--nav-bright)]"
+                className="num-hero block text-[28px] text-white"
               />
               <Sparkline values={series.out} tone="nav" width={104} height={26} />
             </div>
@@ -332,9 +327,9 @@ export function ThroughputCard({
               <p className="text-[11px] text-[var(--text-tertiary)]">Received</p>
               <AnimatedNumber
                 value={received}
-                className="num-hero block text-[28px] text-[var(--success-bright)]"
+                className="num-hero block text-[28px] text-[var(--text-secondary)]"
               />
-              <Sparkline values={series.in} tone="success" width={104} height={26} />
+              <Sparkline values={series.in} tone="neutral" width={104} height={26} />
             </div>
           </div>
 
@@ -379,7 +374,7 @@ export function Panel({
   emptyLabel?: string;
 }) {
   return (
-    <section className="surface flex flex-col overflow-hidden">
+    <section className="surface edge-lit flex flex-col overflow-hidden">
       <header className="flex h-12 items-center gap-2.5 px-4">
         <h2 className="text-[13px] font-semibold">{title}</h2>
         {count !== undefined && count > 0 ? (

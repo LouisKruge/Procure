@@ -106,10 +106,10 @@ export function AppShell({
 
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Top bar ------------------------------------------------------ */}
-        <header className="glass sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line-subtle)] px-3 sm:px-5">
+        <header className="glass sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line)] px-3 sm:px-5">
           <Link href="/dashboard" className="flex items-center gap-2 lg:hidden">
-            <span className="grid size-7 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav)] to-[var(--nav-dim)]">
-              <span className="text-[11px] font-bold text-white">N</span>
+            <span className="grid size-7 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
+              <span className="text-[11px] font-semibold tracking-[-0.02em] text-white">N</span>
             </span>
           </Link>
 
@@ -137,7 +137,7 @@ export function AppShell({
             >
               <Bell className="size-[18px]" />
               {totalAlerts > 0 ? (
-                <span className="num absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-[var(--critical)] px-1 text-[9px] font-bold text-white">
+                <span className="num absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-[var(--critical)] px-1 text-[9px] font-semibold text-white">
                   {totalAlerts > 99 ? "99+" : totalAlerts}
                 </span>
               ) : null}

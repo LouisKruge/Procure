@@ -190,7 +190,7 @@ export function StockCatalogue({
             value={search}
             onChange={(e) => setSearchAndReset(e.target.value)}
             placeholder="Filter by code, description or bin…"
-            className="h-9 w-full rounded-[var(--r-md)] bg-[var(--layer-sunken)] pl-9 pr-8 text-[13px] outline-none placeholder:text-[var(--text-quaternary)] focus-visible:ring-1 focus-visible:ring-[var(--nav)]"
+            className="h-9 w-full rounded-[var(--r-md)] bg-[var(--layer-sunken)] pl-9 pr-8 text-[13px] outline-none placeholder:text-[var(--text-quaternary)] ring-1 ring-inset ring-[var(--line)] focus-visible:ring-[1.5px] focus-visible:ring-[oklch(1_0_0_/_0.5)]"
           />
           {search ? (
             <button
@@ -269,7 +269,7 @@ export function StockCatalogue({
         <div className="overflow-x-auto">
           <table className="w-full min-w-[64rem] text-[13px]">
             <thead>
-              <tr className="bg-[var(--layer-sunken)] text-left">
+              <tr className="text-left">
                 <Th sort={sort} column="sku" onSort={toggleSort}>Code</Th>
                 <Th sort={sort} column="description" onSort={toggleSort}>Description</Th>
                 <Th>Category</Th>
@@ -297,7 +297,7 @@ export function StockCatalogue({
                         {total === 0 && !filtered ? (
                           <>
                             Load your spreadsheet from{" "}
-                            <Link href="/import" className="text-[var(--nav-bright)] hover:underline">
+                            <Link href="/import" className="text-white underline underline-offset-4 decoration-[var(--line-strong)] hover:decoration-white">
                               Import stock
                             </Link>
                             .
@@ -316,12 +316,26 @@ export function StockCatalogue({
                   return (
                     <tr
                       key={r.level_id}
-                      className="border-t border-[var(--line-subtle)] transition-colors hover:bg-[var(--layer-interactive)]"
+                      className={cn(
+                        "group/row border-t border-[var(--line-subtle)] transition-colors",
+                        "hover:bg-[var(--layer-surface)]",
+                      )}
                     >
-                      <Td>
+                      <Td className="relative">
+                        <span
+                          aria-hidden
+                          className={cn(
+                            "absolute inset-y-0 left-0 w-[2px]",
+                            out
+                              ? "bg-[var(--critical)]"
+                              : low
+                                ? "bg-[var(--attention)]"
+                                : "bg-transparent group-hover/row:bg-[var(--line-strong)]",
+                          )}
+                        />
                         <Link
                           href={`/stock/${r.item_id}`}
-                          className="code font-semibold hover:text-[var(--nav-bright)]"
+                          className="code font-medium text-[var(--text-secondary)] transition-colors hover:text-white"
                         >
                           {r.sku}
                         </Link>
@@ -425,7 +439,7 @@ function Picker({
       aria-label={label}
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      className="h-9 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-2.5 text-[12px] text-[var(--text-secondary)] outline-none focus-visible:ring-1 focus-visible:ring-[var(--nav)]"
+      className="h-9 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-2.5 text-[12px] text-[var(--text-secondary)] outline-none ring-1 ring-inset ring-[var(--line)] focus-visible:ring-[1.5px] focus-visible:ring-[oklch(1_0_0_/_0.5)]"
     >
       {children}
     </select>
@@ -451,7 +465,10 @@ function Th({
   return (
     <th
       className={cn(
-        "px-3 py-2 text-[10.5px] font-semibold uppercase tracking-[0.07em] text-[var(--text-quaternary)]",
+        // Sticks under the app bar so the column names stay with the numbers
+        // on a two-thousand-line catalogue.
+        "sticky top-14 z-10 bg-[var(--layer-sunken)] px-3.5 py-2.5 text-[10px] font-medium uppercase tracking-[0.12em] text-[var(--text-quaternary)]",
+        "after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-[var(--line)] after:content-['']",
         align === "right" && "text-right",
       )}
     >
@@ -490,7 +507,7 @@ function Td({
   align?: "right";
 }) {
   return (
-    <td className={cn("px-3 py-2", align === "right" && "text-right", className)}>
+    <td className={cn("px-3.5 py-2.5", align === "right" && "text-right", className)}>
       {children}
     </td>
   );

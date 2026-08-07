@@ -56,7 +56,7 @@ export function Hero() {
         <div className="max-w-5xl">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full bg-[oklch(1_0_0_/_0.05)] py-1.5 pl-1.5 pr-3.5 text-[12px] text-[var(--text-tertiary)]">
-              <span className="rounded-full bg-[var(--nav-wash)] px-2 py-0.5 text-[10.5px] font-semibold uppercase tracking-[0.1em] text-[var(--nav-bright)]">
+              <span className="rounded-full bg-[oklch(1_0_0_/_0.09)] px-2 py-0.5 text-[10.5px] font-medium uppercase tracking-[0.14em] text-white">
                 Live
               </span>
               Running 2,242 stock lines in production
@@ -68,7 +68,7 @@ export function Hero() {
               The operating system
               <br />
               for industrial{" "}
-              <span className="bg-gradient-to-r from-[var(--nav-bright)] via-[oklch(0.82_0.12_235)] to-[var(--auto-bright)] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-[oklch(0.66_0_0)] bg-clip-text text-transparent">
                 operations.
               </span>
             </h1>
@@ -122,7 +122,7 @@ export function Hero() {
               }}
             >
               {/* Light behind the glass */}
-              <div className="pointer-events-none absolute -inset-x-16 -top-10 bottom-0 rounded-[3rem] bg-[radial-gradient(60%_50%_at_50%_0%,oklch(0.6_0.16_250_/_0.22),transparent_70%)] blur-2xl" />
+              <div className="pointer-events-none absolute -inset-x-16 -top-10 bottom-0 rounded-[3rem] bg-[radial-gradient(60%_50%_at_50%_0%,oklch(1_0_0_/_0.07),transparent_70%)] blur-2xl" />
 
               <div className="relative overflow-hidden rounded-[var(--r-2xl)] bg-[var(--layer-surface)] shadow-[0_40px_120px_-24px_oklch(0_0_0_/_0.8),0_0_0_1px_var(--line)]">
                 <div className="surface-sheen pointer-events-none absolute inset-0 rounded-[var(--r-2xl)]" />
@@ -255,10 +255,6 @@ function Label({ children }: { children: React.ReactNode }) {
 function RiskPanel() {
   return (
     <Panel>
-      <div
-        className="pointer-events-none absolute -right-16 -top-20 size-48 rounded-full opacity-[0.12] blur-[60px]"
-        style={{ background: "var(--attention)" }}
-      />
       <div className="relative flex items-start justify-between">
         <div>
           <Label>Inventory at risk</Label>
@@ -325,7 +321,7 @@ function FlowPanel() {
       <div className="mt-3 grid grid-cols-2 gap-3">
         <div>
           <p className="text-[10.5px] text-[var(--text-tertiary)]">Issued</p>
-          <p className="num-hero text-[20px] text-[var(--nav-bright)]">1,284</p>
+          <p className="num-hero text-[20px] text-white">1,284</p>
           <Sparkline values={OUT_SERIES} tone="nav" width={92} height={24} />
         </div>
         <div>

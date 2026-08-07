@@ -38,8 +38,8 @@ export default function LoginPage() {
         <div className="mk-grid pointer-events-none absolute inset-0" />
 
         <Link href="/" className="relative flex items-center gap-2.5">
-          <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav-bright)] to-[var(--nav-dim)] shadow-[0_4px_14px_-4px_oklch(0.58_0.17_258_/_0.8)]">
-            <span className="text-[13px] font-bold text-white">N</span>
+          <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
+            <span className="text-[13px] font-semibold tracking-[-0.02em] text-white">N</span>
           </span>
           <span className="text-[15px] font-semibold tracking-[-0.01em]">Nexus</span>
         </Link>
@@ -78,7 +78,7 @@ export default function LoginPage() {
       <main className="relative flex min-h-dvh flex-col justify-center px-6 py-14 sm:px-10">
         <div
           className="pointer-events-none absolute left-1/2 top-[26%] size-[460px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.09] blur-[110px] lg:hidden"
-          style={{ background: "var(--nav)" }}
+          style={{ background: "#ffffff" }}
         />
 
         <Link
@@ -90,8 +90,8 @@ export default function LoginPage() {
         </Link>
 
         <div className="animate-in-up relative mx-auto w-full max-w-[22rem]">
-          <div className="grid size-11 place-items-center rounded-[var(--r-lg)] bg-gradient-to-br from-[var(--nav-bright)] to-[var(--nav-dim)] shadow-[0_8px_24px_-8px_oklch(0.58_0.17_258_/_0.8)] lg:hidden">
-            <span className="text-[17px] font-bold tracking-tight text-white">N</span>
+          <div className="grid size-11 place-items-center rounded-[var(--r-lg)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)] lg:hidden">
+            <span className="text-[17px] font-semibold tracking-[-0.02em] text-white">N</span>
           </div>
 
           <h1 className="mt-6 text-[26px] font-semibold tracking-[-0.025em] lg:mt-0">

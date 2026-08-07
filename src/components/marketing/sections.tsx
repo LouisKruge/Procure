@@ -111,20 +111,20 @@ export function Showcase() {
                   >
                     <span
                       className={cn(
-                        "absolute inset-y-3 left-0 w-0.5 rounded-full bg-[var(--nav-bright)] transition-all duration-300",
+                        "absolute inset-y-3 left-0 w-0.5 rounded-full bg-white transition-all duration-300",
                         on ? "opacity-100" : "opacity-0",
                       )}
                     />
                     <span
                       className={cn(
                         "grid size-8 shrink-0 place-items-center rounded-[var(--r-md)] transition-colors",
-                        on ? "bg-[var(--nav-wash)]" : "bg-[oklch(1_0_0_/_0.05)]",
+                        on ? "bg-[oklch(1_0_0_/_0.10)]" : "bg-[oklch(1_0_0_/_0.04)]",
                       )}
                     >
                       <Icon
                         className={cn(
                           "size-4",
-                          on ? "text-[var(--nav-bright)]" : "text-[var(--text-tertiary)]",
+                          on ? "text-white" : "text-[var(--text-tertiary)]",
                         )}
                       />
                     </span>
@@ -145,7 +145,7 @@ export function Showcase() {
                       className={cn(
                         "ml-auto hidden size-3.5 shrink-0 transition-all duration-300 lg:block",
                         on
-                          ? "translate-x-0 text-[var(--nav-bright)] opacity-100"
+                          ? "translate-x-0 text-white opacity-100"
                           : "-translate-x-1 opacity-0",
                       )}
                     />
@@ -226,7 +226,7 @@ function ModuleStage({ id }: { id: string }) {
             key={String(code)}
             className="flex items-center gap-3 border-t border-[var(--line-subtle)] py-2.5"
           >
-            <span className="grid size-4 place-items-center rounded-[3px] bg-[var(--nav)] text-[9px] font-bold text-white">
+            <span className="grid size-4 place-items-center rounded-[3px] bg-white text-[9px] font-bold text-[#0A0A0A]">
               ✓
             </span>
             <div className="min-w-0 flex-1">
@@ -248,7 +248,7 @@ function ModuleStage({ id }: { id: string }) {
         ))}
         <div className="mt-3 flex items-center justify-between border-t border-[var(--line-subtle)] pt-3">
           <span className="text-[11.5px] text-[var(--text-tertiary)]">3 suppliers selected</span>
-          <span className="rounded-[var(--r-md)] bg-[var(--nav)] px-3 py-1.5 text-[11.5px] font-semibold text-white">
+          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
             Create purchase orders
           </span>
         </div>
@@ -294,7 +294,7 @@ function ModuleStage({ id }: { id: string }) {
             <p className="text-[11px] text-[var(--text-tertiary)]">This receipt</p>
             <p className="num text-[13px] font-semibold">300 units · {formatMoney(1284)}</p>
           </div>
-          <span className="rounded-[var(--r-md)] bg-[var(--nav)] px-3 py-1.5 text-[11.5px] font-semibold text-white">
+          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
             Post receipt
           </span>
         </div>
@@ -351,7 +351,7 @@ function ModuleStage({ id }: { id: string }) {
           <span className="text-[11.5px] text-[var(--text-tertiary)]">
             18 of 412 lines out
           </span>
-          <span className="rounded-[var(--r-md)] bg-[var(--nav)] px-3 py-1.5 text-[11.5px] font-semibold text-white">
+          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
             Approve and post
           </span>
         </div>
@@ -600,7 +600,7 @@ export function Numbers() {
         <Reveal>
           <div className="flex items-center gap-4">
             <span className="mk-index">03</span>
-            <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--nav-bright)]">
+            <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--text-secondary)]">
               From the live deployment
             </span>
           </div>
@@ -674,8 +674,8 @@ export function Industries() {
             return (
               <Reveal key={ind.name} delay={i * 45}>
                 <div className="group relative h-full overflow-hidden rounded-[var(--r-xl)] bg-[var(--layer-surface)] p-6 transition-all duration-400 hover:bg-[var(--layer-elevated)] hover:shadow-[var(--shadow-lg)]">
-                  <div className="pointer-events-none absolute -right-10 -top-10 size-32 rounded-full bg-[var(--nav)] opacity-0 blur-[50px] transition-opacity duration-500 group-hover:opacity-25" />
-                  <Icon className="relative size-5 text-[var(--text-tertiary)] transition-colors duration-300 group-hover:text-[var(--nav-bright)]" />
+                  <div className="pointer-events-none absolute -right-10 -top-10 size-32 rounded-full bg-white opacity-0 blur-[60px] transition-opacity duration-500 group-hover:opacity-[0.07]" />
+                  <Icon className="relative size-5 text-[var(--text-tertiary)] transition-colors duration-300 group-hover:text-white" />
                   <p className="relative mt-8 text-[15px] font-semibold">{ind.name}</p>
                   <p className="relative mt-1.5 text-[12px] leading-snug text-[var(--text-quaternary)]">
                     {ind.note}
@@ -704,7 +704,7 @@ export function Closing() {
             <h2 className="mk-display text-[clamp(2.25rem,1.5rem+3.4vw,4.5rem)]">
               Stop asking the storeman
               <br />
-              <span className="bg-gradient-to-r from-[var(--nav-bright)] to-[var(--auto-bright)] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white to-[oklch(0.62_0_0)] bg-clip-text text-transparent">
                 whether you have it.
               </span>
             </h2>
@@ -729,8 +729,8 @@ export function Closing() {
           <div className="grid gap-10 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
             <div>
               <div className="flex items-center gap-2.5">
-                <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav-bright)] to-[var(--nav-dim)]">
-                  <span className="text-[13px] font-bold text-white">N</span>
+                <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
+                  <span className="text-[13px] font-semibold tracking-[-0.02em] text-white">N</span>
                 </span>
                 <span className="text-[15px] font-semibold">Nexus</span>
               </div>

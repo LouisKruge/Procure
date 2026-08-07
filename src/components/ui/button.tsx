@@ -9,19 +9,27 @@ import { cn } from "@/lib/utils";
  * baseline target here is a gloved thumb on a tablet, not a mouse pointer.
  */
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-[background-color,color,transform,box-shadow] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] [&_svg]:pointer-events-none [&_svg]:size-5 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[var(--r-md)] text-sm font-medium tracking-[-0.005em] transition-[background-color,color,box-shadow,transform] duration-150 ease-[var(--ease-out)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-40 active:scale-[0.985] [&_svg]:pointer-events-none [&_svg]:size-[18px] [&_svg]:shrink-0",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        /* White face, black type. The brightest thing on the screen, which is
+           the weight a commit action earns when nothing else uses colour. */
+        default:
+          "bg-primary text-primary-foreground shadow-[0_1px_0_oklch(1_0_0_/_0.5)_inset] hover:bg-[oklch(0.93_0_0)] active:bg-[oklch(0.87_0_0)]",
+        /* Oxide, not signal. Dark enough to sit in a monochrome row. */
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground ring-1 ring-inset ring-[oklch(0.62_0.14_25_/_0.32)] hover:bg-[oklch(0.37_0.10_25)]",
         outline:
-          "border border-[var(--line-strong)] bg-[var(--layer-surface)] hover:bg-[var(--layer-interactive)]",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        ok: "bg-ok text-ok-foreground hover:bg-ok/90",
+          "bg-[var(--layer-surface)] text-[var(--text-primary)] ring-1 ring-inset ring-[var(--line-strong)] hover:bg-[var(--layer-elevated)] hover:ring-[oklch(1_0_0_/_0.2)]",
+        secondary:
+          "bg-secondary text-secondary-foreground ring-1 ring-inset ring-[var(--line)] hover:bg-[var(--layer-interactive)]",
+        ghost:
+          "text-[var(--text-tertiary)] hover:bg-[var(--layer-interactive)] hover:text-[var(--text-primary)]",
+        link: "text-[var(--text-primary)] underline-offset-4 hover:underline",
+        /* An affirmative action is still a button, not a status: it gets the
+           secondary chassis, and only the label carries the channel. */
+        ok: "bg-[var(--layer-surface)] text-ok ring-1 ring-inset ring-[var(--line-strong)] hover:bg-[var(--layer-elevated)] hover:ring-[oklch(0.62_0.08_158_/_0.35)]",
       },
       size: {
         default: "h-11 px-5 py-2",

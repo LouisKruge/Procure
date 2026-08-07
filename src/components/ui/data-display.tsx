@@ -317,20 +317,20 @@ export function Chip({
   className?: string;
 }) {
   const wash: Record<Tone, string> = {
-    neutral: "bg-[var(--layer-interactive)] text-[var(--text-secondary)]",
-    success: "bg-[var(--success-wash)] text-[var(--success-bright)]",
-    attention: "bg-[var(--attention-wash)] text-[var(--attention-bright)]",
-    critical: "bg-[var(--critical-wash)] text-[var(--critical-bright)]",
-    nav: "bg-[var(--nav-wash)] text-[var(--nav-bright)]",
-    auto: "bg-[var(--auto-wash)] text-[var(--auto-bright)]",
-    ai: "bg-[var(--ai-wash)] text-[var(--ai-bright)]",
-    pending: "bg-[var(--pending-wash)] text-[var(--pending-bright)]",
+    neutral: "bg-[var(--layer-interactive)] text-[var(--text-secondary)] ring-[var(--line)]",
+    success: "bg-[var(--success-wash)] text-[var(--success-bright)] ring-[oklch(0.62_0.08_158_/_0.24)]",
+    attention: "bg-[var(--attention-wash)] text-[var(--attention-bright)] ring-[oklch(0.70_0.10_74_/_0.24)]",
+    critical: "bg-[var(--critical-wash)] text-[var(--critical-bright)] ring-[oklch(0.58_0.13_25_/_0.26)]",
+    nav: "bg-[var(--nav-wash)] text-[var(--nav-bright)] ring-[var(--line-strong)]",
+    auto: "bg-[var(--auto-wash)] text-[var(--auto-bright)] ring-[oklch(0.66_0.03_245_/_0.24)]",
+    ai: "bg-[var(--ai-wash)] text-[var(--ai-bright)] ring-[var(--line)]",
+    pending: "bg-[var(--pending-wash)] text-[var(--pending-bright)] ring-[oklch(0.62_0.024_245_/_0.24)]",
   };
 
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 whitespace-nowrap rounded-[var(--r-sm)] px-2 py-[3px] text-[11px] font-semibold leading-none",
+        "inline-flex items-center gap-1.5 whitespace-nowrap rounded-[var(--r-sm)] px-2 py-[3px] text-[11px] font-medium leading-none ring-1 ring-inset",
         wash[tone],
         className,
       )}

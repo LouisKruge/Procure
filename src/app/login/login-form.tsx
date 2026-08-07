@@ -89,7 +89,7 @@ export function LoginForm() {
         type="submit"
         size="lg"
         disabled={busy}
-        className="h-12 w-full shadow-[0_8px_24px_-8px_oklch(0.58_0.17_258_/_0.7)] transition-shadow hover:shadow-[0_14px_40px_-10px_oklch(0.58_0.17_258_/_0.9)]"
+        className="h-12 w-full"
       >
         {busy ? <Loader2 className="animate-spin" /> : null}
         {busy ? "Signing in…" : "Sign in"}

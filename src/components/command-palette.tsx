@@ -166,7 +166,7 @@ export function CommandPalette({
       >
         <div className="flex items-center gap-3 border-b border-[var(--line-subtle)] px-4">
           {loading ? (
-            <Loader2 className="size-[18px] animate-spin text-[var(--nav-bright)]" />
+            <Loader2 className="size-[18px] animate-spin text-[var(--text-secondary)]" />
           ) : (
             <Search className="size-[18px] text-[var(--text-quaternary)]" />
           )}

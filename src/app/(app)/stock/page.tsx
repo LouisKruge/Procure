@@ -68,7 +68,7 @@ export default async function StockPage() {
         ) : (
           <Link
             href="/import"
-            className="flex h-9 items-center rounded-[var(--r-md)] bg-[var(--nav)] px-3.5 text-[13px] font-semibold text-white transition-colors hover:bg-[var(--nav-bright)] hover:text-[oklch(0.15_0.01_264)]"
+            className="flex h-9 items-center rounded-[var(--r-md)] bg-white px-3.5 text-[13px] font-medium text-[#0A0A0A] transition-colors hover:bg-[oklch(0.93_0_0)]"
           >
             Import your stock
           </Link>

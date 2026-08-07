@@ -71,13 +71,13 @@ export function MarketingNav() {
             ? // The bar floats over live dashboard panels, so the fill has to
               // carry legibility on its own - backdrop blur is a bonus, not
               // the plan.
-              "glass h-14 max-w-5xl rounded-[var(--r-xl)] bg-[oklch(0.16_0.009_264_/_0.9)] px-4 ring-1 ring-inset ring-[oklch(1_0_0_/_0.07)] shadow-[var(--shadow-xl)]"
+              "glass h-14 max-w-5xl rounded-[var(--r-xl)] bg-[oklch(0.08_0_0_/_0.92)] px-4 ring-1 ring-inset ring-[var(--line)] shadow-[var(--shadow-xl)]"
             : "h-20 max-w-[84rem] px-6 lg:px-10",
         )}
       >
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
-          <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav-bright)] to-[var(--nav-dim)] shadow-[0_4px_14px_-4px_oklch(0.58_0.17_258_/_0.8)]">
-            <span className="text-[13px] font-bold text-white">N</span>
+          <span className="grid size-8 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
+            <span className="text-[13px] font-semibold tracking-[-0.02em] text-white">N</span>
           </span>
           <span className="text-[15px] font-semibold tracking-[-0.01em]">Nexus</span>
         </Link>
@@ -118,7 +118,7 @@ export function MarketingNav() {
           </Link>
           <Link
             href="/login"
-            className="group inline-flex h-9 items-center gap-1.5 rounded-[var(--r-md)] bg-[oklch(1_0_0_/_0.94)] px-4 text-[13px] font-semibold text-[oklch(0.16_0.01_264)] transition-all hover:bg-white active:scale-[0.98]"
+            className="group inline-flex h-9 items-center gap-1.5 rounded-[var(--r-md)] bg-white px-4 text-[13px] font-medium text-[#0A0A0A] transition-[background-color,transform] hover:bg-[oklch(0.93_0_0)] active:scale-[0.985]"
           >
             Book a demo
             <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -184,7 +184,7 @@ export function MarketingNav() {
             ))}
           <Link
             href="/login"
-            className="mt-2 block rounded-[var(--r-md)] bg-[var(--nav)] px-3 py-3 text-center text-[14px] font-semibold text-white"
+            className="mt-2 block rounded-[var(--r-md)] bg-white px-3 py-3 text-center text-[14px] font-medium text-[#0A0A0A]"
           >
             Sign in
           </Link>

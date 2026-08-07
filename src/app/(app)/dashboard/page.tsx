@@ -149,7 +149,7 @@ export default async function OverviewPage() {
           </Link>
           <Link
             href="/receiving"
-            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--nav)] px-3.5 text-[13px] font-semibold text-white shadow-[var(--shadow-sm)] transition-colors hover:bg-[var(--nav-bright)] hover:text-[oklch(0.15_0.01_264)]"
+            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-white px-3.5 text-[13px] font-medium text-[#0A0A0A] transition-colors hover:bg-[oklch(0.93_0_0)]"
           >
             Receive <kbd className="kbd bg-white/15 text-white/80">⇧R</kbd>
           </Link>
@@ -192,7 +192,7 @@ export default async function OverviewPage() {
           action={
             <Link
               href="/procurement"
-              className="text-[12px] font-medium text-[var(--nav-bright)] hover:underline"
+              className="text-[12px] font-medium text-[var(--text-secondary)] transition-colors hover:text-white"
             >
               Raise orders
             </Link>
@@ -328,7 +328,7 @@ export default async function OverviewPage() {
           action={
             <Link
               href="/reports"
-              className="text-[12px] font-medium text-[var(--nav-bright)] hover:underline"
+              className="text-[12px] font-medium text-[var(--text-secondary)] transition-colors hover:text-white"
             >
               Full log
             </Link>

@@ -436,7 +436,6 @@ export function Counter({
             <div className="mt-4 flex flex-wrap gap-3">
               <Button
                 size="lg"
-                variant="destructive"
                 className="flex-1 sm:flex-none sm:px-10"
                 disabled={busy !== null}
                 onClick={() => void post("out")}
@@ -446,7 +445,7 @@ export function Counter({
               </Button>
               <Button
                 size="lg"
-                variant="ok"
+                variant="outline"
                 className="flex-1 sm:flex-none sm:px-10"
                 disabled={busy !== null}
                 onClick={() => void post("in")}

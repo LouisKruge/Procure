@@ -10,18 +10,28 @@
  * arm's length in a workshop where the lighting is bad and the shift starts
  * before sunrise.
  *
- * Three rules the whole system follows:
+ * The material is anodised aluminium under studio lighting: black, graphite,
+ * white, and a single soft highlight along the top edge of anything that sits
+ * proud of the surface. There is no brand hue. A blue accent would put this
+ * in the same drawer as every project-management tool ever shipped, and this
+ * is not that kind of software.
+ *
+ * Four rules the whole system follows:
  *
  *   1. DEPTH, NOT BORDERS. Surfaces separate by luminance, not outlines. A
  *      border is a last resort for when two surfaces must sit at the same
  *      elevation. Nine layers, each a measured step in lightness.
  *
- *   2. COLOUR IS INFORMATION. Accent hues are never decorative. If something
- *      is orange it needs attention; if it is red it is losing you money now.
- *      Neutral is the default state and most of the screen stays neutral, so
- *      the moment colour appears the eye goes straight to it.
+ *   2. THE INTERFACE IS MONOCHROME. Black, graphite and white carry the
+ *      structure. Hierarchy comes from weight, scale and spacing.
  *
- *   3. NUMBERS ARE THE PRODUCT. Quantities, money, stock codes and bins are
+ *   3. COLOUR IS INFORMATION, AND ONLY INFORMATION. Four channels exist:
+ *      muted red (losing money now), soft amber (needs attention), muted
+ *      green (healthy), grey-blue (in flight). Nothing else is ever tinted.
+ *      Because the screen is otherwise neutral, a single amber figure is
+ *      seen from across the room.
+ *
+ *   4. NUMBERS ARE THE PRODUCT. Quantities, money, stock codes and bins are
  *      set in monospace with tabular figures so columns align and a changing
  *      digit does not reflow the row.
  * ============================================================================
@@ -32,75 +42,95 @@
   color-scheme: dark;
 
   /* ---------------------------------------------------------------- depth
-   * Nine elevations. Each step is roughly +0.022 lightness, which is the
-   * smallest difference that still reads as "in front of" without a border.
+   * Nine elevations on a true black ground. The steps are small - three to
+   * six points of luminance - because on black a large jump reads as a
+   * patch of grey paint rather than a lit surface.
    */
-  --layer-base:        oklch(0.145 0.009 264);  /* app background          */
-  --layer-sunken:      oklch(0.126 0.008 264);  /* wells, table headers    */
-  --layer-surface:     oklch(0.178 0.010 264);  /* cards                   */
-  --layer-elevated:    oklch(0.203 0.011 264);  /* raised cards, sidebar   */
-  --layer-interactive: oklch(0.228 0.012 264);  /* hover                   */
-  --layer-active:      oklch(0.256 0.013 264);  /* pressed, selected       */
-  --layer-floating:    oklch(0.222 0.012 264);  /* dropdowns, popovers     */
-  --layer-modal:       oklch(0.212 0.012 264);  /* dialogs                 */
-  --layer-overlay:     oklch(0.09 0.01 264 / 0.72);
+  --layer-base:        #000000;  /* app background                        */
+  --layer-sunken:      #050505;  /* wells, table headers                  */
+  --layer-chrome:      #090909;  /* sidebar, top bar - architecture       */
+  --layer-surface:     #101010;  /* cards                                 */
+  --layer-elevated:    #161616;  /* raised cards, hover                   */
+  --layer-interactive: #1A1A1A;  /* hover                                 */
+  --layer-active:      #222222;  /* pressed, selected                     */
+  --layer-floating:    #151515;  /* dropdowns, popovers                   */
+  --layer-modal:       #131313;  /* dialogs                               */
+  --layer-overlay:     oklch(0 0 0 / 0.76);
 
-  /* Hairlines. Barely visible by design - they define an edge, not a box. */
-  --line-subtle: oklch(1 0 0 / 0.05);
-  --line:        oklch(1 0 0 / 0.08);
-  --line-strong: oklch(1 0 0 / 0.14);
+  /* Hairlines. Held as white alpha rather than flat hex so an edge still
+   * reads as an edge when it lands on a lifted surface instead of black. */
+  --line-subtle: oklch(1 0 0 / 0.06);   /* ≈ #101010 on black */
+  --line:        oklch(1 0 0 / 0.10);   /* ≈ #1A1A1A on black */
+  --line-strong: oklch(1 0 0 / 0.14);   /* ≈ #232323 on black */
 
-  /* Top highlight that makes a surface read as physical rather than painted. */
-  --sheen: linear-gradient(180deg, oklch(1 0 0 / 0.055) 0%, oklch(1 0 0 / 0) 42%);
+  /* The one lighting effect in the system: a highlight along the top edge,
+   * as if a soft box sits above the machine. */
+  --sheen: linear-gradient(180deg, oklch(1 0 0 / 0.05) 0%, oklch(1 0 0 / 0) 38%);
 
   /* ------------------------------------------------------------- content */
-  --text-primary:   oklch(0.97 0.003 264);
-  --text-secondary: oklch(0.79 0.008 264);
-  --text-tertiary:  oklch(0.64 0.010 264);
-  --text-quaternary:oklch(0.50 0.010 264);
-  --text-disabled:  oklch(0.40 0.008 264);
+  --text-primary:   #FFFFFF;
+  --text-secondary: #B8B8B8;
+  --text-tertiary:  #8A8A8A;
+  --text-quaternary:#6E6E6E;
+  --text-disabled:  #4A4A4A;
+
+  /* ------------------------------------------------------------- neutral
+   * What used to be the brand hue. It is now simply white, so every control
+   * that reaches for the "accent" gets a machined highlight rather than a
+   * colour. Four stops so existing components keep working.
+   */
+  --nav-dim:       oklch(0.40 0 0);
+  --nav:           #FFFFFF;
+  --nav-bright:    #FFFFFF;
+  --nav-wash:      oklch(1 0 0 / 0.08);
 
   /* ------------------------------------------------------------ channels
-   * Each hue carries one meaning and ships four stops:
+   * Desaturated on purpose. These are instrument colours read against black,
+   * not brand colours: enough chroma to name the state at a glance, never
+   * enough to look like a highlighter. Each ships four stops:
    *   dim    - large fills and rails
    *   base   - the canonical hue
-   *   bright - text and icons on dark, hits AA at 14px
+   *   bright - text and icons on black, holds AA at 14px
    *   wash   - tinted surface for chips and banners
    */
-  --nav-dim:       oklch(0.42 0.14 258);
-  --nav:           oklch(0.58 0.17 258);
-  --nav-bright:    oklch(0.74 0.15 258);
-  --nav-wash:      oklch(0.58 0.17 258 / 0.14);
 
-  --attention-dim:    oklch(0.46 0.13 62);
-  --attention:        oklch(0.68 0.16 62);
-  --attention-bright: oklch(0.82 0.14 68);
-  --attention-wash:   oklch(0.68 0.16 62 / 0.14);
+  /* Needs attention. Soft amber, closer to brass than to yellow. */
+  --attention-dim:    oklch(0.42 0.07 72);
+  --attention:        oklch(0.62 0.10 74);
+  --attention-bright: oklch(0.79 0.10 78);
+  --attention-wash:   oklch(0.70 0.10 74 / 0.11);
 
-  --success-dim:    oklch(0.42 0.11 158);
-  --success:        oklch(0.62 0.15 158);
-  --success-bright: oklch(0.78 0.16 158);
-  --success-wash:   oklch(0.62 0.15 158 / 0.13);
+  /* Healthy. Muted green, the colour of a lit indicator rather than a leaf. */
+  --success-dim:    oklch(0.38 0.05 158);
+  --success:        oklch(0.56 0.075 158);
+  --success-bright: oklch(0.74 0.085 158);
+  --success-wash:   oklch(0.62 0.08 158 / 0.11);
 
-  --critical-dim:    oklch(0.42 0.16 22);
-  --critical:        oklch(0.58 0.21 22);
-  --critical-bright: oklch(0.74 0.19 22);
-  --critical-wash:   oklch(0.58 0.21 22 / 0.15);
+  /* Losing money now. Muted red - oxide, not signal. */
+  --critical-dim:    oklch(0.34 0.09 25);
+  --critical:        oklch(0.52 0.13 25);
+  --critical-bright: oklch(0.70 0.13 25);
+  --critical-wash:   oklch(0.58 0.13 25 / 0.12);
 
-  --ai-dim:    oklch(0.42 0.15 300);
-  --ai:        oklch(0.60 0.19 300);
-  --ai-bright: oklch(0.76 0.16 300);
-  --ai-wash:   oklch(0.60 0.19 300 / 0.14);
+  /* In flight / informational. The subtle grey-blue, and the only place any
+   * blue survives in the system. Barely chromatic by design. */
+  --auto-dim:    oklch(0.40 0.022 245);
+  --auto:        oklch(0.58 0.030 245);
+  --auto-bright: oklch(0.76 0.028 245);
+  --auto-wash:   oklch(0.66 0.030 245 / 0.11);
 
-  --auto-dim:    oklch(0.46 0.11 210);
-  --auto:        oklch(0.66 0.14 210);
-  --auto-bright: oklch(0.80 0.13 210);
-  --auto-wash:   oklch(0.66 0.14 210 / 0.13);
+  /* Waiting on a person. Same informational channel, held one stop cooler
+   * so a queue does not shout at the same volume as a shortage. */
+  --pending-dim:    oklch(0.38 0.018 245);
+  --pending:        oklch(0.55 0.024 245);
+  --pending-bright: oklch(0.72 0.022 245);
+  --pending-wash:   oklch(0.62 0.024 245 / 0.10);
 
-  --pending-dim:    oklch(0.50 0.11 95);
-  --pending:        oklch(0.72 0.14 95);
-  --pending-bright: oklch(0.86 0.13 98);
-  --pending-wash:   oklch(0.72 0.14 95 / 0.13);
+  /* Machine-generated. Pure neutral - a suggestion is not a status. */
+  --ai-dim:    oklch(0.38 0 0);
+  --ai:        oklch(0.62 0 0);
+  --ai-bright: oklch(0.86 0 0);
+  --ai-wash:   oklch(1 0 0 / 0.07);
 
   /* -------------------------------------------------------------- radius
    * 4 / 6 / 8 / 12 / 16 / 24. Nested corners step down one level so the
@@ -115,25 +145,25 @@
   --r-full: 999px;
 
   /* -------------------------------------------------------------- shadow
-   * Two stacked shadows: a tight contact shadow that grounds the element,
-   * and a wide ambient one. Dark UI needs a rim light too, or elevation
-   * reads as a smudge.
+   * On a true black ground a drop shadow is almost invisible, so elevation
+   * is carried by the rim light instead: a hairline that brightens as the
+   * element rises. The black is still there to seat the edge, just quieter.
    */
   --shadow-sm:
-    0 1px 2px oklch(0 0 0 / 0.34),
+    0 1px 2px oklch(0 0 0 / 0.55),
     0 0 0 1px var(--line-subtle);
   --shadow-md:
-    0 2px 4px oklch(0 0 0 / 0.30),
-    0 6px 16px -4px oklch(0 0 0 / 0.42),
-    0 0 0 1px var(--line-subtle);
+    0 2px 6px oklch(0 0 0 / 0.55),
+    0 8px 20px -6px oklch(0 0 0 / 0.6),
+    0 0 0 1px var(--line);
   --shadow-lg:
-    0 4px 8px oklch(0 0 0 / 0.28),
-    0 16px 40px -8px oklch(0 0 0 / 0.52),
-    0 0 0 1px var(--line);
+    0 4px 10px oklch(0 0 0 / 0.6),
+    0 18px 44px -10px oklch(0 0 0 / 0.7),
+    0 0 0 1px var(--line-strong);
   --shadow-xl:
-    0 8px 16px oklch(0 0 0 / 0.30),
-    0 32px 72px -12px oklch(0 0 0 / 0.62),
-    0 0 0 1px var(--line);
+    0 10px 20px oklch(0 0 0 / 0.65),
+    0 40px 90px -16px oklch(0 0 0 / 0.8),
+    0 0 0 1px var(--line-strong);
 
   /* -------------------------------------------------------------- motion
    * Springs for anything that moves in space, ease for anything that only
@@ -162,29 +192,33 @@
   --card-foreground: var(--text-primary);
   --popover: var(--layer-floating);
   --popover-foreground: var(--text-primary);
-  --primary: var(--nav);
-  --primary-foreground: oklch(0.98 0.005 264);
-  --secondary: var(--layer-interactive);
+  /* The primary action is white on black. It is the brightest thing that can
+   * appear on the screen, which is exactly the weight a commit action should
+   * carry when nothing else is competing for attention with colour. */
+  --primary: #FFFFFF;
+  --primary-foreground: #0A0A0A;
+  --secondary: var(--layer-elevated);
   --secondary-foreground: var(--text-primary);
   --muted: var(--layer-elevated);
   --muted-foreground: var(--text-tertiary);
   --accent: var(--layer-interactive);
   --accent-foreground: var(--text-primary);
-  --destructive: var(--critical);
-  --destructive-foreground: oklch(0.98 0.005 264);
+  /* Danger is a very dark oxide fill with a light face, not a red button. */
+  --destructive: oklch(0.27 0.075 25);
+  --destructive-foreground: oklch(0.88 0.06 25);
   --border: var(--line);
   --input: var(--line-strong);
-  --ring: var(--nav-bright);
+  --ring: oklch(1 0 0 / 0.42);
   --radius: var(--r-lg);
 
   --ok: var(--success-bright);
-  --ok-foreground: oklch(0.15 0.01 264);
+  --ok-foreground: #08120C;
   --ok-subtle: var(--success-wash);
   --low: var(--attention-bright);
-  --low-foreground: oklch(0.15 0.01 264);
+  --low-foreground: #14100A;
   --low-subtle: var(--attention-wash);
   --out: var(--critical-bright);
-  --out-foreground: oklch(0.15 0.01 264);
+  --out-foreground: #150A0A;
   --out-subtle: var(--critical-wash);
   --transit: var(--auto-bright);
   --transit-subtle: var(--auto-wash);
@@ -227,6 +261,7 @@
      than a font size, and every input in the app would paint its text in
      the base layer colour. Keep layer tokens prefixed. */
   --color-layer-base: var(--layer-base);
+  --color-chrome: var(--layer-chrome);
   --color-sunken: var(--layer-sunken);
   --color-surface: var(--layer-surface);
   --color-elevated: var(--layer-elevated);
@@ -294,16 +329,19 @@
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
-  /* A faint vertical gradient stops the base layer reading as flat paint. */
+  /* One soft box above the machine. Achromatic and very weak - just enough
+   * that the black reads as a lit surface rather than an absence. */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background:
-      radial-gradient(120% 70% at 50% -20%, oklch(0.30 0.04 264 / 0.30), transparent 60%),
-      radial-gradient(80% 50% at 100% 0%, oklch(0.30 0.05 258 / 0.14), transparent 55%);
+    background: radial-gradient(
+      130% 70% at 50% -18%,
+      oklch(1 0 0 / 0.045),
+      transparent 62%
+    );
   }
 
   ::selection {
@@ -369,7 +407,12 @@
     font-feature-settings: "zero";
   }
 
-  /* ------------------------------------------------------------- surfaces */
+  /* ------------------------------------------------------------- surfaces
+   * A panel is a milled plate: flat graphite face, hairline edge, and a
+   * single specular line along the top where the light catches. That top
+   * line is the whole trick - without it a dark rectangle reads as a hole
+   * in the page rather than a piece sitting on it.
+   */
   .surface {
     background-color: var(--layer-surface);
     border-radius: var(--r-lg);
@@ -377,13 +420,32 @@
     position: relative;
   }
 
-  /* The sheen is what separates a premium surface from a grey rectangle. */
   .surface-sheen::before {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: inherit;
     background: var(--sheen);
+    pointer-events: none;
+  }
+
+  /* The machined top edge. Applied to cards and panels. */
+  .edge-lit {
+    position: relative;
+  }
+  .edge-lit::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(1 0 0 / 0.16) 18%,
+      oklch(1 0 0 / 0.16) 82%,
+      transparent
+    );
     pointer-events: none;
   }
 
@@ -396,9 +458,9 @@
   /* Frosted glass. Used only where content must show through - the command
    * bar and sticky headers - never as decoration. */
   .glass {
-    background-color: oklch(0.178 0.010 264 / 0.72);
-    backdrop-filter: blur(20px) saturate(160%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    background-color: oklch(0.05 0 0 / 0.78);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
   }
 
   /* ----------------------------------------------------------- indicators */
@@ -459,7 +521,9 @@
     opacity: 0.9;
   }
 
-  /* Sliding indicator behind the active nav item. */
+  /* Navigation. The active item is marked by a thin white datum on the left
+   * edge and a slightly lifted face - no fill, no colour. It reads as a
+   * machined index mark rather than a highlighted row. */
   .nav-item {
     position: relative;
     transition:
@@ -473,12 +537,12 @@
     top: 50%;
     height: 0;
     width: 2px;
-    border-radius: var(--r-full);
-    background: var(--nav-bright);
+    border-radius: 0 var(--r-full) var(--r-full) 0;
+    background: #ffffff;
     transform: translateY(-50%);
     transition: height var(--t-base) var(--spring);
   }
-  .nav-item[data-active="true"]::after { height: 18px; }
+  .nav-item[data-active="true"]::after { height: 16px; }
 }
 
 @keyframes shimmer {
@@ -569,7 +633,7 @@
   top: -14rem;
   left: 50%;
   translate: -50% 0;
-  background: oklch(0.55 0.16 258 / 0.20);
+  background: oklch(1 0 0 / 0.055);
   animation: mk-drift 26s var(--ease) infinite alternate;
 }
 .mk-bloom::after {
@@ -577,7 +641,7 @@
   height: 22rem;
   top: 12rem;
   right: -8rem;
-  background: oklch(0.55 0.14 210 / 0.11);
+  background: oklch(1 0 0 / 0.03);
   animation: mk-drift 34s var(--ease) infinite alternate-reverse;
 }
 

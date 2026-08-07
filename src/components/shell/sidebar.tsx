@@ -39,7 +39,7 @@ import { SectionLabel } from "@/components/ui/data-display";
 export type NavEntry = {
   href: string;
   label: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
   shortcut?: string;
   group: string;
   primary?: boolean;
@@ -190,7 +190,7 @@ export function Sidebar({
 
   return (
     <aside
-      className="relative hidden shrink-0 flex-col border-r border-[var(--line-subtle)] bg-[var(--layer-elevated)] lg:flex"
+      className="relative hidden shrink-0 flex-col border-r border-[var(--line)] bg-[var(--layer-chrome)] lg:flex"
       style={{
         width: collapsed ? 64 : width,
         transition: dragging ? "none" : "width var(--t-base) var(--ease-out)",
@@ -198,12 +198,12 @@ export function Sidebar({
     >
       {/* Workspace ------------------------------------------------------- */}
       <div className="flex h-14 items-center gap-2.5 px-3">
-        <div className="grid size-8 shrink-0 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav)] to-[var(--nav-dim)] shadow-[var(--shadow-sm)]">
-          <span className="text-[13px] font-bold tracking-tight text-white">N</span>
+        <div className="edge-lit grid size-8 shrink-0 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
+          <span className="text-[13px] font-semibold tracking-[-0.02em] text-white">N</span>
         </div>
         {!collapsed ? (
           <div className="min-w-0 flex-1 animate-in-up">
-            <p className="truncate text-[13px] font-semibold leading-tight">Nexus</p>
+            <p className="truncate text-[13px] font-medium leading-tight tracking-[-0.01em]">Nexus</p>
             <p className="code truncate text-[10.5px] leading-tight text-[var(--text-quaternary)]">
               {siteCode} · {siteName}
             </p>
@@ -217,8 +217,8 @@ export function Sidebar({
           type="button"
           onClick={onOpenSearch}
           className={cn(
-            "group flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-surface)] px-2.5 text-left",
-            "shadow-[var(--shadow-sm)] transition-colors hover:bg-[var(--layer-interactive)]",
+            "group flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-2.5 text-left",
+            "ring-1 ring-inset ring-[var(--line)] transition-colors hover:bg-[var(--layer-surface)] hover:ring-[var(--line-strong)]",
             collapsed && "w-9 justify-center px-0",
           )}
           aria-label="Search"
@@ -236,15 +236,15 @@ export function Sidebar({
           type="button"
           onClick={onQuickCreate}
           className={cn(
-            "flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--nav)] px-2.5 text-[13px] font-semibold",
-            "text-white shadow-[var(--shadow-sm)] transition-all hover:bg-[var(--nav-bright)] hover:text-[oklch(0.15_0.01_264)] active:scale-[0.98]",
+            "flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-white px-2.5 text-[13px] font-medium tracking-[-0.005em]",
+            "text-[#0A0A0A] transition-[background-color,transform] duration-150 hover:bg-[oklch(0.93_0_0)] active:scale-[0.985]",
             collapsed && "w-9 justify-center px-0",
           )}
           aria-label="Quick create"
         >
           <Plus className="size-4 shrink-0" />
           {!collapsed ? <span className="flex-1 text-left">Create</span> : null}
-          {!collapsed ? <kbd className="kbd bg-white/15 text-white/80">C</kbd> : null}
+          {!collapsed ? <kbd className="kbd bg-black/10 text-black/55 shadow-none">C</kbd> : null}
         </button>
       </div>
 
@@ -332,7 +332,7 @@ export function Sidebar({
           aria-orientation="vertical"
           aria-label="Resize sidebar"
         >
-          <div className="mx-auto h-full w-px bg-transparent transition-colors hover:bg-[var(--nav)]" />
+          <div className="mx-auto h-full w-px bg-transparent transition-colors hover:bg-[var(--line-strong)]" />
         </div>
       ) : null}
     </aside>
@@ -349,9 +349,9 @@ function NavGroup({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mb-4">
+    <div className="mb-6 last:mb-2">
       {label ? (
-        <div className="mb-1 flex items-center gap-1.5 px-2">
+        <div className="mb-2 flex items-center gap-1.5 px-3">
           {icon}
           <SectionLabel>{label}</SectionLabel>
         </div>
@@ -385,16 +385,16 @@ function NavLink({
         data-active={active}
         title={collapsed ? item.label : undefined}
         className={cn(
-          "nav-item flex h-9 items-center gap-2.5 rounded-[var(--r-md)] pl-3 pr-2 text-[13px]",
+          "nav-item flex h-9 items-center gap-3 rounded-[var(--r-md)] pl-3 pr-2 text-[13px] tracking-[-0.005em]",
           collapsed && "justify-center px-0",
           active
-            ? "bg-[var(--nav-wash)] font-semibold text-[var(--nav-bright)]"
+            ? "bg-[var(--layer-elevated)] font-medium text-white [&_svg]:text-white"
             : muted
               ? "text-[var(--text-quaternary)] hover:bg-[var(--layer-interactive)] hover:text-[var(--text-secondary)]"
-              : "text-[var(--text-secondary)] hover:bg-[var(--layer-interactive)] hover:text-[var(--text-primary)]",
+              : "text-[var(--text-tertiary)] hover:bg-[var(--layer-interactive)] hover:text-[var(--text-primary)]",
         )}
       >
-        <Icon className="size-4 shrink-0" />
+        <Icon className="size-[17px] shrink-0 transition-colors duration-150" strokeWidth={1.6} />
         {!collapsed ? <span className="flex-1 truncate">{item.label}</span> : null}
         {!collapsed && item.shortcut && !active ? (
           <kbd className="kbd opacity-0 transition-opacity group-hover/nav:opacity-100">
@@ -438,11 +438,11 @@ export function MobileBar({ onOpenSearch }: { onOpenSearch: () => void }) {
             href={item.href}
             className={cn(
               "relative flex flex-1 flex-col items-center gap-1 py-2.5 text-[10px] font-medium transition-colors",
-              active ? "text-[var(--nav-bright)]" : "text-[var(--text-quaternary)]",
+              active ? "text-white" : "text-[var(--text-quaternary)]",
             )}
           >
             {active ? (
-              <span className="absolute top-0 h-0.5 w-8 rounded-b-full bg-[var(--nav-bright)]" />
+              <span className="absolute top-0 h-0.5 w-8 rounded-b-full bg-white" />
             ) : null}
             <Icon className="size-5" />
             {item.label}

@@ -81,7 +81,7 @@ export function SectionHead({
       <Reveal>
         <div className="flex items-center gap-4">
           <span className="mk-index">{index}</span>
-          <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--nav-bright)]">
+          <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--text-secondary)]">
             {eyebrow}
           </span>
         </div>
@@ -130,7 +130,7 @@ export function Cta({
         "mk-cta group inline-flex h-12 items-center justify-center gap-2 rounded-[var(--r-lg)] px-6 text-[14px] font-semibold",
         "transition-[transform,box-shadow,background-color] duration-200 active:scale-[0.98]",
         variant === "primary"
-          ? "bg-[var(--nav)] text-white shadow-[0_8px_24px_-8px_oklch(0.58_0.17_258_/_0.7)] hover:shadow-[0_14px_40px_-10px_oklch(0.58_0.17_258_/_0.9)]"
+          ? "bg-white text-[#0A0A0A] hover:bg-[oklch(0.93_0_0)]"
           : "bg-[oklch(1_0_0_/_0.04)] text-[var(--text-secondary)] hover:bg-[oklch(1_0_0_/_0.08)] hover:text-[var(--text-primary)]",
         className,
       )}

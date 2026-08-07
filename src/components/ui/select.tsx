@@ -17,8 +17,9 @@ const SelectTrigger = React.forwardRef<
   <SelectPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex h-11 w-full items-center justify-between gap-2 rounded-lg border border-[var(--line-strong)] bg-[var(--layer-surface)] px-3 py-2 text-base shadow-sm",
-      "focus:outline-none focus:ring-2 focus:ring-ring focus:border-[var(--nav)]",
+      "flex h-11 w-full items-center justify-between gap-2 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-3.5 py-2 text-base tracking-[-0.005em] transition-[background-color,box-shadow] duration-150",
+      "ring-1 ring-inset ring-[var(--line-strong)] hover:ring-[oklch(1_0_0_/_0.18)]",
+      "focus:outline-none focus:bg-[var(--layer-surface)] focus:ring-[1.5px] focus:ring-[oklch(1_0_0_/_0.55)]",
       "disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 [&>span]:text-left",
       className,
     )}
@@ -41,7 +42,7 @@ const SelectContent = React.forwardRef<
       ref={ref}
       position={position}
       className={cn(
-        "relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-lg border bg-popover text-popover-foreground shadow-lg",
+        "relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-[var(--r-lg)] bg-popover text-popover-foreground shadow-[var(--shadow-xl)]",
         "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0",
         position === "popper" &&
           "data-[side=bottom]:translate-y-1 data-[side=top]:-translate-y-1",
@@ -76,8 +77,8 @@ const SelectItem = React.forwardRef<
   <SelectPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex w-full cursor-pointer select-none items-center rounded-md py-2.5 pl-9 pr-3 text-base outline-none",
-      "focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+      "relative flex w-full cursor-pointer select-none items-center rounded-[var(--r-sm)] py-2.5 pl-9 pr-3 text-base text-[var(--text-secondary)] outline-none transition-colors",
+      "focus:bg-[var(--layer-interactive)] focus:text-[var(--text-primary)] data-[state=checked]:text-[var(--text-primary)] data-[disabled]:pointer-events-none data-[disabled]:opacity-40",
       className,
     )}
     {...props}

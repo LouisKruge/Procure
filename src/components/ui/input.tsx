@@ -8,10 +8,14 @@ const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
       type={type}
       ref={ref}
       className={cn(
-        "flex h-11 w-full rounded-lg border border-[var(--line-strong)] bg-[var(--layer-surface)] px-3 py-2 text-base shadow-sm transition-colors",
-        "placeholder:text-muted-foreground",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:border-[var(--nav)]",
-        "disabled:cursor-not-allowed disabled:opacity-50",
+        // Sunken face, hairline edge, no shadow: a field is milled *into*
+        // the panel, so it should read as below the surface, not above it.
+        "flex h-11 w-full rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-3.5 py-2 text-base tracking-[-0.005em] transition-[background-color,box-shadow] duration-150",
+        "ring-1 ring-inset ring-[var(--line-strong)]",
+        "placeholder:text-[var(--text-disabled)]",
+        "hover:ring-[oklch(1_0_0_/_0.18)]",
+        "focus-visible:outline-none focus-visible:bg-[var(--layer-surface)] focus-visible:ring-[1.5px] focus-visible:ring-[oklch(1_0_0_/_0.55)]",
+        "disabled:cursor-not-allowed disabled:opacity-40",
         "file:border-0 file:bg-transparent file:text-sm file:font-medium",
         className,
       )}
