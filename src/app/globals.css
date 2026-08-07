@@ -1,106 +1,193 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 /*
- * NEXUS Stock design tokens.
+ * ============================================================================
+ * NEXUS DESIGN SYSTEM
+ * ============================================================================
  *
- * Two things drive these choices: the app is read at arm's length on a
- * tablet under bad warehouse lighting, and stock status has to be legible
- * at a glance without reading the number. Hence the high-contrast surfaces
- * and the three fixed status colours (ok / low / out) used everywhere.
+ * Dark only. Not because dark is fashionable, but because this is read at
+ * arm's length in a workshop where the lighting is bad and the shift starts
+ * before sunrise.
+ *
+ * Three rules the whole system follows:
+ *
+ *   1. DEPTH, NOT BORDERS. Surfaces separate by luminance, not outlines. A
+ *      border is a last resort for when two surfaces must sit at the same
+ *      elevation. Nine layers, each a measured step in lightness.
+ *
+ *   2. COLOUR IS INFORMATION. Accent hues are never decorative. If something
+ *      is orange it needs attention; if it is red it is losing you money now.
+ *      Neutral is the default state and most of the screen stays neutral, so
+ *      the moment colour appears the eye goes straight to it.
+ *
+ *   3. NUMBERS ARE THE PRODUCT. Quantities, money, stock codes and bins are
+ *      set in monospace with tabular figures so columns align and a changing
+ *      digit does not reflow the row.
+ * ============================================================================
  */
 
-:root {
-  --radius: 0.625rem;
-
-  --background: oklch(0.98 0.004 250);
-  --foreground: oklch(0.16 0.015 255);
-
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.16 0.015 255);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.16 0.015 255);
-
-  --primary: oklch(0.52 0.16 258);
-  --primary-foreground: oklch(0.99 0.005 250);
-
-  --secondary: oklch(0.955 0.008 250);
-  --secondary-foreground: oklch(0.24 0.02 255);
-
-  --muted: oklch(0.955 0.008 250);
-  --muted-foreground: oklch(0.5 0.018 255);
-
-  --accent: oklch(0.94 0.02 250);
-  --accent-foreground: oklch(0.2 0.02 255);
-
-  --destructive: oklch(0.58 0.21 27);
-  --destructive-foreground: oklch(0.99 0.005 250);
-
-  --border: oklch(0.9 0.008 250);
-  --input: oklch(0.9 0.008 250);
-  --ring: oklch(0.52 0.16 258);
-
-  /* Stock status - the three states that matter on every screen. */
-  --ok: oklch(0.58 0.14 155);
-  --ok-foreground: oklch(0.99 0.005 250);
-  --ok-subtle: oklch(0.94 0.04 155);
-
-  --low: oklch(0.7 0.16 75);
-  --low-foreground: oklch(0.2 0.03 75);
-  --low-subtle: oklch(0.95 0.05 85);
-
-  --out: oklch(0.58 0.21 27);
-  --out-foreground: oklch(0.99 0.005 250);
-  --out-subtle: oklch(0.95 0.04 27);
-
-  --transit: oklch(0.6 0.13 265);
-  --transit-subtle: oklch(0.95 0.03 265);
-}
-
+:root,
 .dark {
-  --background: oklch(0.16 0.012 258);
-  --foreground: oklch(0.95 0.005 250);
+  color-scheme: dark;
 
-  --card: oklch(0.2 0.014 258);
-  --card-foreground: oklch(0.95 0.005 250);
-  --popover: oklch(0.21 0.014 258);
-  --popover-foreground: oklch(0.95 0.005 250);
+  /* ---------------------------------------------------------------- depth
+   * Nine elevations. Each step is roughly +0.022 lightness, which is the
+   * smallest difference that still reads as "in front of" without a border.
+   */
+  --layer-base:        oklch(0.145 0.009 264);  /* app background          */
+  --layer-sunken:      oklch(0.126 0.008 264);  /* wells, table headers    */
+  --layer-surface:     oklch(0.178 0.010 264);  /* cards                   */
+  --layer-elevated:    oklch(0.203 0.011 264);  /* raised cards, sidebar   */
+  --layer-interactive: oklch(0.228 0.012 264);  /* hover                   */
+  --layer-active:      oklch(0.256 0.013 264);  /* pressed, selected       */
+  --layer-floating:    oklch(0.222 0.012 264);  /* dropdowns, popovers     */
+  --layer-modal:       oklch(0.212 0.012 264);  /* dialogs                 */
+  --layer-overlay:     oklch(0.09 0.01 264 / 0.72);
 
-  --primary: oklch(0.68 0.15 255);
-  --primary-foreground: oklch(0.16 0.02 258);
+  /* Hairlines. Barely visible by design - they define an edge, not a box. */
+  --line-subtle: oklch(1 0 0 / 0.05);
+  --line:        oklch(1 0 0 / 0.08);
+  --line-strong: oklch(1 0 0 / 0.14);
 
-  --secondary: oklch(0.26 0.015 258);
-  --secondary-foreground: oklch(0.93 0.005 250);
+  /* Top highlight that makes a surface read as physical rather than painted. */
+  --sheen: linear-gradient(180deg, oklch(1 0 0 / 0.055) 0%, oklch(1 0 0 / 0) 42%);
 
-  --muted: oklch(0.26 0.015 258);
-  --muted-foreground: oklch(0.68 0.014 255);
+  /* ------------------------------------------------------------- content */
+  --text-primary:   oklch(0.97 0.003 264);
+  --text-secondary: oklch(0.79 0.008 264);
+  --text-tertiary:  oklch(0.64 0.010 264);
+  --text-quaternary:oklch(0.50 0.010 264);
+  --text-disabled:  oklch(0.40 0.008 264);
 
-  --accent: oklch(0.3 0.02 258);
-  --accent-foreground: oklch(0.95 0.005 250);
+  /* ------------------------------------------------------------ channels
+   * Each hue carries one meaning and ships four stops:
+   *   dim    - large fills and rails
+   *   base   - the canonical hue
+   *   bright - text and icons on dark, hits AA at 14px
+   *   wash   - tinted surface for chips and banners
+   */
+  --nav-dim:       oklch(0.42 0.14 258);
+  --nav:           oklch(0.58 0.17 258);
+  --nav-bright:    oklch(0.74 0.15 258);
+  --nav-wash:      oklch(0.58 0.17 258 / 0.14);
 
-  --destructive: oklch(0.65 0.19 25);
-  --destructive-foreground: oklch(0.99 0.005 250);
+  --attention-dim:    oklch(0.46 0.13 62);
+  --attention:        oklch(0.68 0.16 62);
+  --attention-bright: oklch(0.82 0.14 68);
+  --attention-wash:   oklch(0.68 0.16 62 / 0.14);
 
-  --border: oklch(0.31 0.014 258);
-  --input: oklch(0.33 0.014 258);
-  --ring: oklch(0.68 0.15 255);
+  --success-dim:    oklch(0.42 0.11 158);
+  --success:        oklch(0.62 0.15 158);
+  --success-bright: oklch(0.78 0.16 158);
+  --success-wash:   oklch(0.62 0.15 158 / 0.13);
 
-  --ok: oklch(0.68 0.15 155);
-  --ok-foreground: oklch(0.16 0.02 258);
-  --ok-subtle: oklch(0.28 0.05 155);
+  --critical-dim:    oklch(0.42 0.16 22);
+  --critical:        oklch(0.58 0.21 22);
+  --critical-bright: oklch(0.74 0.19 22);
+  --critical-wash:   oklch(0.58 0.21 22 / 0.15);
 
-  --low: oklch(0.78 0.15 78);
-  --low-foreground: oklch(0.18 0.03 78);
-  --low-subtle: oklch(0.3 0.06 78);
+  --ai-dim:    oklch(0.42 0.15 300);
+  --ai:        oklch(0.60 0.19 300);
+  --ai-bright: oklch(0.76 0.16 300);
+  --ai-wash:   oklch(0.60 0.19 300 / 0.14);
 
-  --out: oklch(0.68 0.19 25);
-  --out-foreground: oklch(0.16 0.02 258);
-  --out-subtle: oklch(0.3 0.08 25);
+  --auto-dim:    oklch(0.46 0.11 210);
+  --auto:        oklch(0.66 0.14 210);
+  --auto-bright: oklch(0.80 0.13 210);
+  --auto-wash:   oklch(0.66 0.14 210 / 0.13);
 
-  --transit: oklch(0.72 0.13 265);
-  --transit-subtle: oklch(0.29 0.05 265);
+  --pending-dim:    oklch(0.50 0.11 95);
+  --pending:        oklch(0.72 0.14 95);
+  --pending-bright: oklch(0.86 0.13 98);
+  --pending-wash:   oklch(0.72 0.14 95 / 0.13);
+
+  /* -------------------------------------------------------------- radius
+   * 4 / 6 / 8 / 12 / 16 / 24. Nested corners step down one level so the
+   * inner curve stays concentric with the outer.
+   */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-2xl: 24px;
+  --r-full: 999px;
+
+  /* -------------------------------------------------------------- shadow
+   * Two stacked shadows: a tight contact shadow that grounds the element,
+   * and a wide ambient one. Dark UI needs a rim light too, or elevation
+   * reads as a smudge.
+   */
+  --shadow-sm:
+    0 1px 2px oklch(0 0 0 / 0.34),
+    0 0 0 1px var(--line-subtle);
+  --shadow-md:
+    0 2px 4px oklch(0 0 0 / 0.30),
+    0 6px 16px -4px oklch(0 0 0 / 0.42),
+    0 0 0 1px var(--line-subtle);
+  --shadow-lg:
+    0 4px 8px oklch(0 0 0 / 0.28),
+    0 16px 40px -8px oklch(0 0 0 / 0.52),
+    0 0 0 1px var(--line);
+  --shadow-xl:
+    0 8px 16px oklch(0 0 0 / 0.30),
+    0 32px 72px -12px oklch(0 0 0 / 0.62),
+    0 0 0 1px var(--line);
+
+  /* -------------------------------------------------------------- motion
+   * Springs for anything that moves in space, ease for anything that only
+   * changes colour or opacity. Durations stay under 240ms: this is a tool
+   * people use hundreds of times a shift, and animation must never be
+   * something you wait for.
+   */
+  --spring: linear(
+    0, 0.0088 1.72%, 0.0347 3.53%, 0.1305 7.24%, 0.4192 16.28%, 0.5867 21.4%,
+    0.7376 26.98%, 0.8543 32.93%, 0.9418 39.42%, 0.9754 43.53%, 0.9979 48.32%,
+    1.0113 55.42%, 1.0064 68.19%, 1
+  );
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 120ms;
+  --t-base: 180ms;
+  --t-slow: 240ms;
+
+  /* -------------------------------------- shadcn-compatible aliases
+   * Every screen already built reads these names. Remapping them here means
+   * the new system reaches the whole app without touching fifteen pages.
+   */
+  --background: var(--layer-base);
+  --foreground: var(--text-primary);
+  --card: var(--layer-surface);
+  --card-foreground: var(--text-primary);
+  --popover: var(--layer-floating);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--nav);
+  --primary-foreground: oklch(0.98 0.005 264);
+  --secondary: var(--layer-interactive);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--layer-elevated);
+  --muted-foreground: var(--text-tertiary);
+  --accent: var(--layer-interactive);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--critical);
+  --destructive-foreground: oklch(0.98 0.005 264);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--nav-bright);
+  --radius: var(--r-lg);
+
+  --ok: var(--success-bright);
+  --ok-foreground: oklch(0.15 0.01 264);
+  --ok-subtle: var(--success-wash);
+  --low: var(--attention-bright);
+  --low-foreground: oklch(0.15 0.01 264);
+  --low-subtle: var(--attention-wash);
+  --out: var(--critical-bright);
+  --out-foreground: oklch(0.15 0.01 264);
+  --out-subtle: var(--critical-wash);
+  --transit: var(--auto-bright);
+  --transit-subtle: var(--auto-wash);
 }
 
 @theme inline {
@@ -136,64 +223,308 @@
   --color-transit: var(--transit);
   --color-transit-subtle: var(--transit-subtle);
 
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
+  --color-base: var(--layer-base);
+  --color-sunken: var(--layer-sunken);
+  --color-surface: var(--layer-surface);
+  --color-elevated: var(--layer-elevated);
+  --color-interactive: var(--layer-interactive);
+  --color-layer-active: var(--layer-active);
+  --color-floating: var(--layer-floating);
+
+  --color-nav: var(--nav);
+  --color-nav-bright: var(--nav-bright);
+  --color-nav-wash: var(--nav-wash);
+  --color-attention: var(--attention);
+  --color-attention-bright: var(--attention-bright);
+  --color-attention-wash: var(--attention-wash);
+  --color-success: var(--success);
+  --color-success-bright: var(--success-bright);
+  --color-success-wash: var(--success-wash);
+  --color-critical: var(--critical);
+  --color-critical-bright: var(--critical-bright);
+  --color-critical-wash: var(--critical-wash);
+  --color-ai: var(--ai);
+  --color-ai-bright: var(--ai-bright);
+  --color-ai-wash: var(--ai-wash);
+  --color-auto: var(--auto);
+  --color-auto-bright: var(--auto-bright);
+  --color-auto-wash: var(--auto-wash);
+  --color-pending: var(--pending);
+  --color-pending-bright: var(--pending-bright);
+  --color-pending-wash: var(--pending-wash);
+
+  --text-secondary-fg: var(--text-secondary);
+  --text-tertiary-fg: var(--text-tertiary);
+
+  --radius-xs: var(--r-xs);
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-xl: var(--r-xl);
+  --radius-2xl: var(--r-2xl);
+
+  --shadow-elev-sm: var(--shadow-sm);
+  --shadow-elev-md: var(--shadow-md);
+  --shadow-elev-lg: var(--shadow-lg);
+  --shadow-elev-xl: var(--shadow-xl);
+
+  --font-mono: var(--font-mono-stack);
 }
 
 @layer base {
   * {
-    border-color: var(--border);
+    border-color: var(--line);
+  }
+
+  html {
+    /* 8px rhythm: every spacing value in the app is a multiple of this. */
+    --unit: 8px;
   }
 
   body {
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: var(--layer-base);
+    color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
-    /* Gloves and touch: never let a mis-tap select text instead of pressing. */
+    -moz-osx-font-smoothing: grayscale;
     -webkit-tap-highlight-color: transparent;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
-  /* Numbers line up in columns when they are tabular. */
-  .tabular {
-    font-variant-numeric: tabular-nums;
+  /* A faint vertical gradient stops the base layer reading as flat paint. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(120% 70% at 50% -20%, oklch(0.30 0.04 264 / 0.30), transparent 60%),
+      radial-gradient(80% 50% at 100% 0%, oklch(0.30 0.05 258 / 0.14), transparent 55%);
   }
 
-  /* Stop iOS zooming the whole page when a number field is focused. */
-  @media (max-width: 640px) {
-    input,
-    select,
-    textarea {
-      font-size: 16px;
-    }
+  ::selection {
+    background: var(--nav-wash);
+    color: var(--text-primary);
   }
 
   :focus-visible {
-    outline: 2px solid var(--ring);
+    outline: 2px solid var(--nav-bright);
     outline-offset: 2px;
+    border-radius: var(--r-xs);
+  }
+
+  /* Scrollbars that belong to the design rather than the operating system. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--layer-active) transparent;
+  }
+  *::-webkit-scrollbar { width: 10px; height: 10px; }
+  *::-webkit-scrollbar-track { background: transparent; }
+  *::-webkit-scrollbar-thumb {
+    background: var(--layer-active);
+    border-radius: var(--r-full);
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-thumb:hover { background: var(--text-quaternary); background-clip: content-box; }
+
+  /* Stop iOS zooming the page when a number field takes focus. */
+  @media (max-width: 640px) {
+    input, select, textarea { font-size: 16px; }
   }
 }
 
-/* Keyboard hint chips shown next to primary actions on desktop. */
-.kbd {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.4rem;
-  padding: 0 0.3rem;
-  height: 1.4rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: var(--muted);
-  color: var(--muted-foreground);
-  font-size: 0.7rem;
-  font-weight: 600;
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+@layer components {
+  /* ------------------------------------------------------------- numerals
+   * Anything countable, priced or coded. Tabular figures keep columns from
+   * shifting as digits change under a live update.
+   */
+  .num {
+    font-family: var(--font-mono-stack);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "zero";
+    letter-spacing: -0.01em;
+  }
+
+  /* Headline figures: tight, confident, slightly negative tracking. */
+  .num-hero {
+    font-family: var(--font-mono-stack);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum", "zero";
+    letter-spacing: -0.035em;
+    font-weight: 600;
+    line-height: 0.95;
+  }
+
+  .tabular { font-variant-numeric: tabular-nums; }
+
+  /* Codes: SKU, PO, bin, job. Slightly wider so they read as identifiers. */
+  .code {
+    font-family: var(--font-mono-stack);
+    letter-spacing: 0.01em;
+    font-feature-settings: "zero";
+  }
+
+  /* ------------------------------------------------------------- surfaces */
+  .surface {
+    background-color: var(--layer-surface);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+  }
+
+  /* The sheen is what separates a premium surface from a grey rectangle. */
+  .surface-sheen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--sheen);
+    pointer-events: none;
+  }
+
+  .surface-raised {
+    background-color: var(--layer-elevated);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Frosted glass. Used only where content must show through - the command
+   * bar and sticky headers - never as decoration. */
+  .glass {
+    background-color: oklch(0.178 0.010 264 / 0.72);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+  }
+
+  /* ----------------------------------------------------------- indicators */
+  .pulse-dot {
+    position: relative;
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    border-radius: var(--r-full);
+    background: currentColor;
+  }
+  .pulse-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: nexus-pulse 2.4s var(--ease-out) infinite;
+  }
+
+  @keyframes nexus-pulse {
+    0%   { transform: scale(1);   opacity: 0.7; }
+    70%  { transform: scale(2.6); opacity: 0; }
+    100% { transform: scale(2.6); opacity: 0; }
+  }
+
+  /* Keyboard hints. */
+  .kbd {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: var(--r-xs);
+    background: var(--layer-interactive);
+    box-shadow: inset 0 -1px 0 oklch(0 0 0 / 0.35), 0 0 0 1px var(--line);
+    color: var(--text-tertiary);
+    font-family: var(--font-mono-stack);
+    font-size: 10.5px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  /* Left status rail on list rows - reads faster than an icon. */
+  .rail {
+    position: relative;
+  }
+  .rail::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    border-radius: var(--r-full);
+    background: currentColor;
+    opacity: 0.9;
+  }
+
+  /* Sliding indicator behind the active nav item. */
+  .nav-item {
+    position: relative;
+    transition:
+      background-color var(--t-fast) var(--ease),
+      color var(--t-fast) var(--ease);
+  }
+  .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 0;
+    width: 2px;
+    border-radius: var(--r-full);
+    background: var(--nav-bright);
+    transform: translateY(-50%);
+    transition: height var(--t-base) var(--spring);
+  }
+  .nav-item[data-active="true"]::after { height: 18px; }
+}
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+@layer utilities {
+  .animate-in-up {
+    animation: nexus-in-up var(--t-slow) var(--ease-out) both;
+  }
+  @keyframes nexus-in-up {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: none; }
+  }
+
+  .stagger > * {
+    animation: nexus-in-up var(--t-slow) var(--ease-out) both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger > *:nth-child(2) { animation-delay: 30ms; }
+  .stagger > *:nth-child(3) { animation-delay: 60ms; }
+  .stagger > *:nth-child(4) { animation-delay: 90ms; }
+  .stagger > *:nth-child(5) { animation-delay: 120ms; }
+  .stagger > *:nth-child(6) { animation-delay: 150ms; }
+
+  .lift {
+    transition:
+      transform var(--t-base) var(--spring),
+      box-shadow var(--t-base) var(--ease-out),
+      background-color var(--t-fast) var(--ease);
+  }
+  .lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+/* Respect the system setting. Everything still works, it just stops moving. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .lift:hover { transform: none; }
 }
 
 @media print {
-  .no-print {
-    display: none !important;
-  }
+  .no-print { display: none !important; }
 }

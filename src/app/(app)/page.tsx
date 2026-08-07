@@ -1,317 +1,371 @@
 import Link from "next/link";
-import {
-  AlertTriangle,
-  ArrowLeftRight,
-  PackageX,
-  ShoppingCart,
-  TrendingDown,
-  Wallet,
-} from "lucide-react";
 
 import { getSession } from "@/lib/session";
 import { createClient } from "@/lib/supabase/server";
 import { formatMoney, formatQty, relativeDays } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  DocStatusBadge,
-  ListRow,
-  PageHeader,
-  QtyWithUom,
-  SectionCard,
-  StatTile,
-} from "@/components/shared";
+import { Chip } from "@/components/ui/data-display";
 import { RealtimeRefresh } from "@/components/realtime-refresh";
+
+import {
+  FeedRow,
+  Greeting,
+  Panel,
+  RiskCard,
+  ThroughputCard,
+  ValueCard,
+} from "./dashboard-cards";
 
 export const dynamic = "force-dynamic";
 
-export default async function DashboardPage() {
+/** Days of cover turned into a plain-language date, not a number to decode. */
+function stockoutLabel(cover: number | null) {
+  if (cover === null || !Number.isFinite(cover)) return null;
+  if (cover <= 0) return "out now";
+  if (cover < 1) return "out today";
+  if (cover < 2) return "out tomorrow";
+  if (cover < 14) return `~${Math.round(cover)} days left`;
+  return null;
+}
+
+export default async function OverviewPage() {
   const session = await getSession();
   const supabase = await createClient();
   const siteId = session.siteId;
 
-  // One round trip for everything the landing screen needs. RLS already
-  // limits these to sites the user can see; siteId narrows further when a
-  // specific site is selected in the header.
-  const scoped = <T,>(q: T & { eq: (c: string, v: string) => T }) =>
+  const scope = <T extends { eq: (c: string, v: string) => T }>(q: T) =>
     siteId ? q.eq("site_id", siteId) : q;
 
   const [
-    stockOut,
-    belowReorder,
     valuation,
-    openPos,
-    inboundTransfers,
+    critical,
+    usage,
+    weekly,
     pendingTakes,
-    criticalItems,
-    recentMovements,
+    openPos,
+    inTransit,
+    recent,
+    totalLines,
   ] = await Promise.all([
-    scoped(
-      supabase
-        .from("v_stock_status")
-        .select("*", { count: "exact", head: true })
-        .eq("stock_status", "out"),
-    ),
-    scoped(
-      supabase
-        .from("v_stock_status")
-        .select("*", { count: "exact", head: true })
-        .eq("stock_status", "low"),
-    ),
-    scoped(supabase.from("v_stock_valuation").select("total_value, total_qty")),
-    scoped(
-      supabase
-        .from("v_purchase_order_summary")
-        .select("*")
-        .in("status", ["sent", "partially_received"])
-        .order("expected_date", { ascending: true })
-        .limit(6),
-    ),
-    supabase
-      .from("transfers")
-      .select(
-        "id, transfer_number, status, sent_at, from_site:sites!transfers_from_site_id_fkey(code), to_site:sites!transfers_to_site_id_fkey(code, id)",
-      )
-      .eq("status", "in_transit")
-      .order("sent_at", { ascending: true })
-      .limit(6),
-    scoped(
-      supabase
-        .from("v_stock_take_summary")
-        .select("*")
-        .eq("status", "pending_approval")
-        .order("submitted_at", { ascending: true })
-        .limit(6),
-    ),
-    scoped(
+    scope(supabase.from("v_stock_valuation").select("total_value, lines_total, lines_with_stock")),
+    scope(
       supabase
         .from("v_stock_status")
         .select("*")
         .in("stock_status", ["out", "low"])
         .order("stock_status", { ascending: true })
-        .order("qty_on_hand", { ascending: true })
-        .limit(8),
+        .order("stock_value", { ascending: false })
+        .limit(10),
     ),
-    scoped(
+    supabase.rpc("item_usage_stats", {
+      p_days: 30,
+      p_site_id: siteId ?? undefined,
+      p_limit: 400,
+    }),
+    supabase.rpc("usage_by_period", {
+      p_bucket: "week",
+      p_periods: 8,
+      p_site_id: siteId ?? undefined,
+    }),
+    scope(
+      supabase
+        .from("v_stock_take_summary")
+        .select("*")
+        .eq("status", "pending_approval")
+        .order("submitted_at", { ascending: true })
+        .limit(4),
+    ),
+    scope(
+      supabase
+        .from("v_purchase_order_summary")
+        .select("*")
+        .in("status", ["sent", "partially_received"])
+        .order("expected_date", { ascending: true })
+        .limit(4),
+    ),
+    supabase
+      .from("transfers")
+      .select("id, transfer_number, sent_at, from_site:sites!transfers_from_site_id_fkey(code), to_site:sites!transfers_to_site_id_fkey(code)")
+      .eq("status", "in_transit")
+      .order("sent_at", { ascending: true })
+      .limit(4),
+    scope(
       supabase
         .from("v_movement_log")
         .select("*")
         .order("created_at", { ascending: false })
-        .limit(8),
+        .limit(7),
     ),
+    scope(supabase.from("v_stock_status").select("*", { count: "exact", head: true })),
   ]);
 
-  const totalValue = (valuation.data ?? []).reduce(
-    (sum, r) => sum + Number(r.total_value ?? 0),
+  const val = valuation.data ?? [];
+  const totalValue = val.reduce((s, r) => s + Number(r.total_value ?? 0), 0);
+  const lines = totalLines.count ?? 0;
+
+  const usageRows = (usage.data ?? []) as {
+    item_id: string;
+    qty_issued: number;
+    stock_value: number;
+    days_cover: number | null;
+  }[];
+
+  const coverBySku = new Map(usageRows.map((r) => [r.item_id, r.days_cover]));
+  const deadRows = usageRows.filter((r) => Number(r.qty_issued) === 0 && Number(r.stock_value) > 0);
+  const deadValue = deadRows.reduce((s, r) => s + Number(r.stock_value), 0);
+
+  const weeks = (weekly.data ?? []) as {
+    qty_issued: number;
+    qty_received: number;
+  }[];
+  const issued7 = Number(weeks.at(-1)?.qty_issued ?? 0);
+  const received7 = Number(weeks.at(-1)?.qty_received ?? 0);
+
+  const criticalRows = critical.data ?? [];
+  const stockedOut = criticalRows.filter((r) => r.stock_status === "out");
+  const exposure = criticalRows.reduce(
+    (s, r) => s + Number(r.reorder_qty ?? 0) * Number(r.avg_cost ?? 0),
     0,
   );
 
-  const overdueCount = (openPos.data ?? []).filter((p) => p.is_overdue).length;
-  const inbound = (inboundTransfers.data ?? []).filter(
-    (t) => !siteId || (t.to_site as { id?: string } | null)?.id === siteId,
-  );
-
-  const scopeLabel = session.site ? session.site.name : "All sites";
+  const outCount = stockedOut.length;
+  const lowCount = criticalRows.length - outCount;
 
   return (
     <>
       <RealtimeRefresh />
 
-      <PageHeader
-        title="Today"
-        description={`${scopeLabel} · ${new Date().toLocaleDateString("en-ZA", {
-          weekday: "long",
-          day: "numeric",
-          month: "long",
-        })}`}
-        action={
-          <Button asChild size="sm" variant="outline">
-            <Link href="/stock">
-              Stock lookup <kbd className="kbd ml-1">Ctrl K</kbd>
-            </Link>
-          </Button>
-        }
-      />
+      {/* Header ------------------------------------------------------- */}
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+        <Greeting
+          name={session.fullName}
+          site={session.site ? session.site.name : "All sites"}
+        />
+        <div className="flex items-center gap-2">
+          <Link
+            href="/dispatch/new"
+            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-surface)] px-3.5 text-[13px] font-medium shadow-[var(--shadow-sm)] transition-colors hover:bg-[var(--layer-interactive)]"
+          >
+            Issue stock <kbd className="kbd">⇧D</kbd>
+          </Link>
+          <Link
+            href="/receiving"
+            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--nav)] px-3.5 text-[13px] font-semibold text-white shadow-[var(--shadow-sm)] transition-colors hover:bg-[var(--nav-bright)] hover:text-[oklch(0.15_0.01_264)]"
+          >
+            Receive <kbd className="kbd bg-white/15 text-white/80">⇧R</kbd>
+          </Link>
+        </div>
+      </div>
 
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
-        <StatTile
-          label="Stocked out"
-          value={stockOut.count ?? 0}
-          sub="lines at zero"
-          tone={(stockOut.count ?? 0) > 0 ? "out" : "ok"}
-          href="/procurement"
-          icon={<PackageX />}
+      {/* Hero row ----------------------------------------------------- */}
+      <div className="stagger grid gap-3 lg:grid-cols-3">
+        <RiskCard
+          stockedOut={outCount}
+          low={lowCount}
+          totalLines={lines}
+          exposure={exposure}
         />
-        <StatTile
-          label="Below reorder"
-          value={belowReorder.count ?? 0}
-          sub="need ordering"
-          tone={(belowReorder.count ?? 0) > 0 ? "low" : "ok"}
-          href="/procurement"
-          icon={<TrendingDown />}
+        <ValueCard
+          totalValue={totalValue}
+          deadValue={deadValue}
+          deadLines={deadRows.length}
+          totalLines={lines}
         />
-        <StatTile
-          label="Open POs"
-          value={openPos.data?.length ?? 0}
-          sub={overdueCount > 0 ? `${overdueCount} overdue` : "on schedule"}
-          tone={overdueCount > 0 ? "low" : "neutral"}
-          href="/procurement/orders"
-          icon={<ShoppingCart />}
-        />
-        <StatTile
-          label="In transit"
-          value={inbound.length}
-          sub="awaiting receipt"
-          tone={inbound.length > 0 ? "transit" : "neutral"}
-          href="/transfers"
-          icon={<ArrowLeftRight />}
-        />
-        <StatTile
-          label="Stock value"
-          value={formatMoney(totalValue)}
-          sub={scopeLabel}
-          href="/reports"
-          icon={<Wallet />}
+        <ThroughputCard
+          issued={issued7}
+          received={received7}
+          periodLabel="this week"
+          series={{
+            out: weeks.map((w) => Number(w.qty_issued)),
+            in: weeks.map((w) => Number(w.qty_received)),
+          }}
         />
       </div>
 
-      <div className="mt-4 grid gap-4 lg:grid-cols-2">
-        <SectionCard
-          title="Needs attention"
-          empty={(criticalItems.data ?? []).length === 0}
+      {/* Working set -------------------------------------------------- */}
+      <div className="mt-3 grid gap-3 xl:grid-cols-[1.35fr_1fr]">
+        <Panel
+          title="Needs ordering"
+          count={criticalRows.length}
+          tone={outCount > 0 ? "critical" : "attention"}
+          empty={criticalRows.length === 0}
+          emptyLabel="Every line is above its minimum"
           action={
-            <Button asChild size="sm" variant="ghost">
-              <Link href="/procurement">Order</Link>
-            </Button>
+            <Link
+              href="/procurement"
+              className="text-[12px] font-medium text-[var(--nav-bright)] hover:underline"
+            >
+              Raise orders
+            </Link>
           }
         >
-          {(criticalItems.data ?? []).map((row) => (
-            <ListRow
-              key={row.level_id}
-              href={`/stock/${row.item_id}`}
-              tone={row.stock_status === "out" ? "out" : "low"}
-              title={`${row.sku} — ${row.description}`}
-              subtitle={`${row.site_code} · bin ${row.bin_location ?? "—"} · reorder at ${formatQty(row.reorder_point)}`}
-              right={
-                <QtyWithUom
-                  qty={row.qty_on_hand}
-                  uom={row.uom}
-                  className={row.stock_status === "out" ? "text-out" : "text-low"}
-                />
-              }
-              rightSub={
-                Number(row.qty_on_order ?? 0) > 0
-                  ? `${formatQty(row.qty_on_order)} on order`
-                  : undefined
-              }
-            />
-          ))}
-        </SectionCard>
+          {criticalRows.map((row) => {
+            const cover = coverBySku.get(row.item_id!) ?? null;
+            const forecast = stockoutLabel(cover);
+            const out = row.stock_status === "out";
 
-        <SectionCard
-          title="Awaiting your approval"
-          empty={(pendingTakes.data ?? []).length === 0}
-        >
-          {(pendingTakes.data ?? []).map((take) => (
-            <ListRow
-              key={take.id}
-              href={`/stock-takes/${take.id}`}
-              tone="low"
-              title={`${take.reference} — ${take.site_code}`}
-              subtitle={`${take.variance_lines} lines out · counted ${relativeDays(take.submitted_at)}`}
-              right={
-                <span
-                  className={
-                    Number(take.variance_value) < 0
-                      ? "tabular font-semibold text-out"
-                      : "tabular font-semibold text-ok"
-                  }
-                >
-                  {formatMoney(take.variance_value)}
-                </span>
-              }
-              rightSub="variance"
-            />
-          ))}
-        </SectionCard>
-
-        <SectionCard title="Deliveries due" empty={(openPos.data ?? []).length === 0}>
-          {(openPos.data ?? []).map((po) => (
-            <ListRow
-              key={po.id}
-              href={`/receiving/${po.id}`}
-              tone={po.is_overdue ? "low" : undefined}
-              title={`${po.po_number} — ${po.supplier_name}`}
-              subtitle={`${po.site_code} · ${
-                po.is_overdue ? "overdue" : "due"
-              } ${relativeDays(po.expected_date)} · ${formatQty(po.outstanding_qty)} outstanding`}
-              right={<DocStatusBadge status={po.status ?? "sent"} />}
-              rightSub={formatMoney(po.total_value)}
-            />
-          ))}
-        </SectionCard>
-
-        <SectionCard title="Stock in transit" empty={inbound.length === 0}>
-          {inbound.map((t) => {
-            const from = t.from_site as { code?: string } | null;
-            const to = t.to_site as { code?: string } | null;
             return (
-              <ListRow
-                key={t.id}
-                href={`/transfers/${t.id}`}
-                tone="transit"
-                title={`${t.transfer_number} — ${from?.code} → ${to?.code}`}
-                subtitle={`Sent ${relativeDays(t.sent_at)}`}
-                right={<Badge variant="transit">Receive</Badge>}
+              <FeedRow
+                key={row.level_id}
+                href={`/stock/${row.item_id}`}
+                tone={out ? "critical" : "attention"}
+                code={row.sku ?? undefined}
+                title={row.description ?? ""}
+                meta={[
+                  row.bin_location ? `bin ${row.bin_location}` : null,
+                  row.location,
+                  row.default_supplier_name,
+                  Number(row.qty_on_order ?? 0) > 0
+                    ? `${formatQty(row.qty_on_order)} on order`
+                    : null,
+                ]
+                  .filter(Boolean)
+                  .join(" · ")}
+                chip={
+                  out ? (
+                    <Chip tone="critical">Out</Chip>
+                  ) : forecast ? (
+                    <Chip tone="attention">{forecast}</Chip>
+                  ) : (
+                    <Chip tone="attention">Below min</Chip>
+                  )
+                }
+                value={
+                  <span className={out ? "text-[var(--critical-bright)]" : undefined}>
+                    {formatQty(row.qty_on_hand)}
+                    <span className="ml-1 text-[10px] font-normal text-[var(--text-quaternary)]">
+                      {row.uom}
+                    </span>
+                  </span>
+                }
+                valueLabel={`min ${formatQty(row.reorder_point)}`}
               />
             );
           })}
-        </SectionCard>
+        </Panel>
+
+        <div className="flex flex-col gap-3">
+          <Panel
+            title="Awaiting approval"
+            count={pendingTakes.data?.length ?? 0}
+            tone="pending"
+            empty={(pendingTakes.data ?? []).length === 0}
+            emptyLabel="No counts waiting on you"
+          >
+            {(pendingTakes.data ?? []).map((t) => (
+              <FeedRow
+                key={t.id}
+                href={`/stock-takes/${t.id}`}
+                tone="pending"
+                code={t.reference ?? undefined}
+                title={`${t.variance_lines} lines out of ${t.line_count}`}
+                meta={`${t.site_code} · submitted ${relativeDays(t.submitted_at)}`}
+                value={
+                  <span
+                    className={
+                      Number(t.variance_value) < 0
+                        ? "text-[var(--critical-bright)]"
+                        : "text-[var(--success-bright)]"
+                    }
+                  >
+                    {formatMoney(t.variance_value)}
+                  </span>
+                }
+                valueLabel="variance"
+              />
+            ))}
+          </Panel>
+
+          <Panel
+            title="Deliveries due"
+            count={openPos.data?.length ?? 0}
+            tone="auto"
+            empty={(openPos.data ?? []).length === 0}
+            emptyLabel="Nothing outstanding with suppliers"
+          >
+            {(openPos.data ?? []).map((po) => (
+              <FeedRow
+                key={po.id}
+                href={`/receiving/${po.id}`}
+                tone={po.is_overdue ? "attention" : "auto"}
+                code={po.po_number ?? undefined}
+                title={po.supplier_name ?? ""}
+                meta={`${po.site_code} · ${po.is_overdue ? "overdue" : "due"} ${relativeDays(po.expected_date)}`}
+                chip={po.is_overdue ? <Chip tone="attention">Late</Chip> : undefined}
+                value={formatQty(po.outstanding_qty)}
+                valueLabel="outstanding"
+              />
+            ))}
+          </Panel>
+
+          {(inTransit.data ?? []).length > 0 ? (
+            <Panel title="In transit" count={inTransit.data?.length} tone="auto">
+              {(inTransit.data ?? []).map((t) => {
+                const from = t.from_site as { code?: string } | null;
+                const to = t.to_site as { code?: string } | null;
+                return (
+                  <FeedRow
+                    key={t.id}
+                    href={`/transfers/${t.id}`}
+                    tone="auto"
+                    code={t.transfer_number}
+                    title={`${from?.code} → ${to?.code}`}
+                    meta={`sent ${relativeDays(t.sent_at)}`}
+                    chip={<Chip tone="auto">Receive</Chip>}
+                  />
+                );
+              })}
+            </Panel>
+          ) : null}
+        </div>
       </div>
 
-      <div className="mt-4">
-        <SectionCard
-          title="Recent movements"
-          empty={(recentMovements.data ?? []).length === 0}
+      {/* Activity ----------------------------------------------------- */}
+      <div className="mt-3">
+        <Panel
+          title="Warehouse activity"
+          empty={(recent.data ?? []).length === 0}
+          emptyLabel="No movements recorded yet — this fills in as stock is booked in and out"
           action={
-            <Button asChild size="sm" variant="ghost">
-              <Link href="/reports">Export</Link>
-            </Button>
+            <Link
+              href="/reports"
+              className="text-[12px] font-medium text-[var(--nav-bright)] hover:underline"
+            >
+              Full log
+            </Link>
           }
         >
-          {(recentMovements.data ?? []).map((m) => (
-            <ListRow
+          {(recent.data ?? []).map((m) => (
+            <FeedRow
               key={m.id}
               href={`/stock/${m.item_id}`}
-              title={`${m.sku} — ${m.description}`}
-              subtitle={`${m.site_code} · ${m.reason ?? m.movement_type} · ${relativeDays(m.created_at)}${
-                m.user_name ? ` · ${m.user_name}` : ""
-              }`}
-              right={
+              tone={m.direction === "in" ? "success" : undefined}
+              code={m.sku ?? undefined}
+              title={m.description ?? ""}
+              meta={[
+                m.site_code,
+                m.reason ?? m.movement_type,
+                m.user_name,
+                relativeDays(m.created_at),
+              ]
+                .filter(Boolean)
+                .join(" · ")}
+              value={
                 <span
                   className={
                     m.direction === "in"
-                      ? "tabular font-semibold text-ok"
-                      : "tabular font-semibold text-out"
+                      ? "text-[var(--success-bright)]"
+                      : "text-[var(--text-primary)]"
                   }
                 >
                   {m.direction === "in" ? "+" : "−"}
                   {formatQty(m.qty)}
                 </span>
               }
-              rightSub={m.reference_no ?? undefined}
+              valueLabel={m.reference_no ?? undefined}
             />
           ))}
-        </SectionCard>
+        </Panel>
       </div>
-
-      {(criticalItems.data ?? []).length === 0 &&
-      (pendingTakes.data ?? []).length === 0 ? (
-        <p className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-          <AlertTriangle className="size-4" />
-          Nothing needs action at {scopeLabel.toLowerCase()} right now.
-        </p>
-      ) : null}
     </>
   );
 }

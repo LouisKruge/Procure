@@ -1,12 +1,6 @@
-import Link from "next/link";
-import { Boxes } from "lucide-react";
-
 import { getSession } from "@/lib/session";
-import { BottomNav, Sidebar } from "@/components/app-nav";
-import { SiteSwitcher } from "@/components/site-switcher";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { CommandPalette } from "@/components/command-palette";
-import { UserMenu } from "@/components/user-menu";
+import { createClient } from "@/lib/supabase/server";
+import { AppShell } from "@/components/shell/app-shell";
 
 export default async function AppLayout({
   children,
@@ -14,46 +8,51 @@ export default async function AppLayout({
   children: React.ReactNode;
 }) {
   const session = await getSession();
+  const supabase = await createClient();
+
+  // Counts for the live status strip in the top bar. Head-only queries, so
+  // this costs three cheap counts rather than pulling rows on every page.
+  const scope = <T extends { eq: (c: string, v: string) => T }>(q: T) =>
+    session.siteId ? q.eq("site_id", session.siteId) : q;
+
+  const [critical, attention, approvals] = await Promise.all([
+    scope(
+      supabase
+        .from("v_stock_status")
+        .select("*", { count: "exact", head: true })
+        .eq("stock_status", "out"),
+    ),
+    scope(
+      supabase
+        .from("v_stock_status")
+        .select("*", { count: "exact", head: true })
+        .eq("stock_status", "low"),
+    ),
+    scope(
+      supabase
+        .from("v_stock_take_summary")
+        .select("*", { count: "exact", head: true })
+        .eq("status", "pending_approval"),
+    ),
+  ]);
 
   return (
-    <div className="flex min-h-dvh flex-col">
-      <header className="sticky top-0 z-30 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
-        <div className="flex items-center gap-2 px-3 py-2.5 sm:px-4">
-          <Link href="/" className="flex shrink-0 items-center gap-2">
-            <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-              <Boxes className="size-5" />
-            </span>
-            <span className="hidden text-base font-bold tracking-tight sm:inline">
-              NEXUS Stock
-            </span>
-          </Link>
-
-          <div className="ml-auto flex min-w-0 items-center gap-2">
-            <SiteSwitcher
-              sites={session.sites}
-              siteId={session.siteId}
-              allowAll={session.isManager || session.sites.length > 1}
-            />
-            <ThemeToggle />
-            <UserMenu
-              fullName={session.fullName}
-              email={session.email}
-              role={session.role}
-            />
-          </div>
-        </div>
-      </header>
-
-      <div className="flex flex-1">
-        <Sidebar />
-        {/* Bottom padding keeps the last row clear of the mobile nav bar. */}
-        <main className="min-w-0 flex-1 px-3 pb-24 pt-4 sm:px-5 lg:pb-8">
-          {children}
-        </main>
-      </div>
-
-      <BottomNav />
-      <CommandPalette />
-    </div>
+    <AppShell
+      fullName={session.fullName}
+      email={session.email}
+      role={session.role}
+      sites={session.sites}
+      siteId={session.siteId}
+      siteName={session.site?.name ?? "All sites"}
+      siteCode={session.site?.code ?? "ALL"}
+      allowAll={session.isManager || session.sites.length > 1}
+      alerts={{
+        critical: critical.count ?? 0,
+        attention: attention.count ?? 0,
+        approvals: approvals.count ?? 0,
+      }}
+    >
+      {children}
+    </AppShell>
   );
 }

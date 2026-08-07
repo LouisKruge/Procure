@@ -5,15 +5,24 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-const currency = new Intl.NumberFormat("en-ZA", {
-  style: "currency",
-  currency: "ZAR",
-  minimumFractionDigits: 2,
-});
+/**
+ * Number formatting is done by hand rather than through Intl.
+ *
+ * Intl resolves en-ZA differently under Node than in the browser - Node's
+ * ICU groups with a non-breaking space, Chrome with a comma - so every
+ * server-rendered money value mismatched on hydration. Doing it explicitly
+ * costs a few lines and makes the output identical everywhere.
+ */
+function group(intPart: string) {
+  return intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 export function formatMoney(value: number | string | null | undefined) {
   const n = Number(value ?? 0);
-  return currency.format(Number.isFinite(n) ? n : 0);
+  const safe = Number.isFinite(n) ? n : 0;
+  const negative = safe < 0;
+  const [whole, decimals] = Math.abs(safe).toFixed(2).split(".");
+  return `${negative ? "−" : ""}R ${group(whole)}.${decimals}`;
 }
 
 /**
@@ -23,9 +32,12 @@ export function formatMoney(value: number | string | null | undefined) {
 export function formatQty(value: number | string | null | undefined) {
   const n = Number(value ?? 0);
   if (!Number.isFinite(n)) return "0";
-  return Number.isInteger(n)
-    ? n.toLocaleString("en-ZA")
-    : n.toLocaleString("en-ZA", { maximumFractionDigits: 3 });
+
+  const negative = n < 0;
+  const abs = Math.abs(n);
+  const rounded = Number.isInteger(abs) ? String(abs) : abs.toFixed(3).replace(/0+$/, "").replace(/\.$/, "");
+  const [whole, decimals] = rounded.split(".");
+  return `${negative ? "−" : ""}${group(whole)}${decimals ? `.${decimals}` : ""}`;
 }
 
 export function formatDate(value: string | Date | null | undefined) {

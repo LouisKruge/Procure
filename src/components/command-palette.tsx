@@ -1,63 +1,86 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import * as React from "react";
 import { useRouter } from "next/navigation";
-import { CornerDownLeft, Loader2, Package, Search } from "lucide-react";
+import { ArrowRight, CornerDownLeft, Loader2, Package, Search } from "lucide-react";
 
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { createClient } from "@/lib/supabase/client";
-import { cn, formatQty } from "@/lib/utils";
-import { NAV_ITEMS } from "@/components/app-nav";
+import { cn, formatMoney, formatQty } from "@/lib/utils";
+import { NAV_ITEMS } from "@/components/shell/sidebar";
 
 type ItemHit = {
   id: string;
   sku: string;
   description: string;
   uom: string;
+  avg_cost: number;
   total_on_hand: number;
 };
 
 type Row =
-  | { kind: "nav"; href: string; label: string }
+  | { kind: "nav"; href: string; label: string; group: string; icon: React.ComponentType<{ className?: string }> }
   | { kind: "item"; item: ItemHit };
 
 /**
- * Ctrl/Cmd-K palette. Exists so a desktop user never has to reach for the
- * mouse: type part of a stock code or description, arrow to it, Enter.
- * Nav destinations are listed too so the whole app is keyboard reachable.
+ * Command palette. Opens on ⌘K or from the sidebar, and is the fastest path
+ * to anything in the system: type part of a stock code, a description or a
+ * screen name, arrow to it, Enter.
+ *
+ * Controlled rather than self-managing its own hotkey, so the shell owns all
+ * keyboard state in one place.
  */
-export function CommandPalette() {
+export function CommandPalette({
+  open,
+  onOpenChange,
+}: {
+  open: boolean;
+  onOpenChange: (v: boolean) => void;
+}) {
   const router = useRouter();
-  const [open, setOpen] = useState(false);
-  const [query, setQuery] = useState("");
-  const [items, setItems] = useState<ItemHit[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [cursor, setCursor] = useState(0);
-  const listRef = useRef<HTMLDivElement>(null);
+  const [query, setQuery] = React.useState("");
+  const [items, setItems] = React.useState<ItemHit[]>([]);
+  const [loading, setLoading] = React.useState(false);
+  const [cursor, setCursor] = React.useState(0);
+  const listRef = React.useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  const reset = React.useCallback(() => {
+    setQuery("");
+    setItems([]);
+    setCursor(0);
+  }, []);
+
+  const close = React.useCallback(() => {
+    reset();
+    onOpenChange(false);
+  }, [reset, onOpenChange]);
+
+  React.useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
-        setOpen((v) => !v);
+        if (open) reset();
+        onOpenChange(!open);
+        return;
+      }
+      if (e.key === "Escape" && open) {
+        reset();
+        onOpenChange(false);
+      }
+
+      // "/" focuses search from anywhere, the way it does in a terminal.
+      const el = e.target as HTMLElement | null;
+      const typing =
+        el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.isContentEditable);
+      if (e.key === "/" && !typing && !open) {
+        e.preventDefault();
+        onOpenChange(true);
       }
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [open, onOpenChange, reset]);
 
-  function onOpenChange(next: boolean) {
-    setOpen(next);
-    if (!next) {
-      setQuery("");
-      setItems([]);
-      setCursor(0);
-    }
-  }
-
-  // The debounce timer owns every state update here, so nothing is set
-  // synchronously while the effect is running.
-  useEffect(() => {
+  React.useEffect(() => {
     const term = query.trim();
     let cancelled = false;
 
@@ -67,10 +90,8 @@ export function CommandPalette() {
         setLoading(false);
         return;
       }
-
       setLoading(true);
-      const supabase = createClient();
-      const { data } = await supabase.rpc("search_stock_items", {
+      const { data } = await createClient().rpc("search_stock_items", {
         p_query: term,
         p_limit: 8,
       });
@@ -79,7 +100,7 @@ export function CommandPalette() {
         setLoading(false);
         setCursor(0);
       }
-    }, 140);
+    }, 130);
 
     return () => {
       cancelled = true;
@@ -87,21 +108,28 @@ export function CommandPalette() {
     };
   }, [query]);
 
-  const navMatches = NAV_ITEMS.filter((n) =>
-    n.label.toLowerCase().includes(query.trim().toLowerCase()),
-  );
+  const term = query.trim().toLowerCase();
+  const navMatches = NAV_ITEMS.filter(
+    (n) => term === "" || n.label.toLowerCase().includes(term) || n.group.toLowerCase().includes(term),
+  ).slice(0, term === "" ? 6 : 5);
 
   const rows: Row[] = [
-    ...navMatches.map((n) => ({ kind: "nav" as const, href: n.href, label: n.label })),
+    ...navMatches.map((n) => ({
+      kind: "nav" as const,
+      href: n.href,
+      label: n.label,
+      group: n.group,
+      icon: n.icon,
+    })),
     ...items.map((item) => ({ kind: "item" as const, item })),
   ];
 
-  const go = useCallback(
+  const go = React.useCallback(
     (row: Row) => {
-      setOpen(false);
+      close();
       router.push(row.kind === "nav" ? row.href : `/stock/${row.item.id}`);
     },
-    [router],
+    [router, close],
   );
 
   function onKeyDown(e: React.KeyboardEvent) {
@@ -117,84 +145,142 @@ export function CommandPalette() {
     }
   }
 
-  useEffect(() => {
+  React.useEffect(() => {
     listRef.current
       ?.querySelector('[data-active="true"]')
       ?.scrollIntoView({ block: "nearest" });
   }, [cursor]);
 
-  return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="top-[12%] max-w-xl translate-y-0 gap-0 p-0">
-        <DialogTitle className="sr-only">Search</DialogTitle>
+  if (!open) return null;
 
-        <div className="flex items-center gap-3 border-b px-4">
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-start justify-center bg-[var(--layer-overlay)] p-4 pt-[12vh] backdrop-blur-sm"
+      onClick={close}
+    >
+      <div
+        role="dialog"
+        aria-label="Search"
+        className="animate-in-up w-full max-w-[620px] overflow-hidden rounded-[var(--r-xl)] bg-[var(--layer-modal)] shadow-[var(--shadow-xl)]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-center gap-3 border-b border-[var(--line-subtle)] px-4">
           {loading ? (
-            <Loader2 className="size-5 animate-spin text-muted-foreground" />
+            <Loader2 className="size-[18px] animate-spin text-[var(--nav-bright)]" />
           ) : (
-            <Search className="size-5 text-muted-foreground" />
+            <Search className="size-[18px] text-[var(--text-quaternary)]" />
           )}
           <input
             autoFocus
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={onKeyDown}
-            placeholder="Search stock or jump to a screen…"
-            className="h-14 flex-1 bg-transparent text-base outline-none placeholder:text-muted-foreground"
+            placeholder="Search stock, or jump to a screen…"
+            className="h-14 flex-1 bg-transparent text-[15px] outline-none placeholder:text-[var(--text-quaternary)]"
           />
           <kbd className="kbd">ESC</kbd>
         </div>
 
-        <div ref={listRef} className="max-h-[55dvh] overflow-y-auto p-2">
+        <div ref={listRef} className="max-h-[52dvh] overflow-y-auto p-2">
           {rows.length === 0 ? (
-            <p className="px-3 py-8 text-center text-sm text-muted-foreground">
+            <p className="px-3 py-10 text-center text-[13px] text-[var(--text-quaternary)]">
               {query.trim().length < 2
-                ? "Type at least two characters."
-                : "Nothing matched that."}
+                ? "Type at least two characters"
+                : `Nothing matched “${query.trim()}”`}
             </p>
           ) : (
-            rows.map((row, i) => (
-              <button
-                key={row.kind === "nav" ? row.href : row.item.id}
-                type="button"
-                data-active={i === cursor}
-                onMouseEnter={() => setCursor(i)}
-                onClick={() => go(row)}
-                className={cn(
-                  "flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left",
-                  i === cursor ? "bg-accent" : "",
-                )}
-              >
-                {row.kind === "nav" ? (
-                  <>
-                    <CornerDownLeft className="size-4 shrink-0 text-muted-foreground" />
-                    <span className="text-sm font-medium">{row.label}</span>
-                    <span className="ml-auto text-xs text-muted-foreground">Screen</span>
-                  </>
-                ) : (
-                  <>
-                    <Package className="size-4 shrink-0 text-muted-foreground" />
-                    <span className="min-w-0 flex-1">
-                      <span className="block truncate text-sm font-semibold">
-                        {row.item.sku}
-                      </span>
-                      <span className="block truncate text-xs text-muted-foreground">
-                        {row.item.description}
-                      </span>
-                    </span>
-                    <span className="tabular shrink-0 text-sm font-semibold">
-                      {formatQty(row.item.total_on_hand)}
-                      <span className="ml-1 text-xs font-normal text-muted-foreground">
-                        {row.item.uom}
-                      </span>
-                    </span>
-                  </>
-                )}
-              </button>
-            ))
+            <>
+              {navMatches.length > 0 ? (
+                <p className="px-3 pb-1 pt-2 text-[10.5px] font-semibold uppercase tracking-[0.09em] text-[var(--text-quaternary)]">
+                  Go to
+                </p>
+              ) : null}
+
+              {rows.map((row, i) => {
+                const active = i === cursor;
+                const isFirstItem =
+                  row.kind === "item" && rows.findIndex((r) => r.kind === "item") === i;
+
+                return (
+                  <React.Fragment key={row.kind === "nav" ? row.href : row.item.id}>
+                    {isFirstItem ? (
+                      <p className="px-3 pb-1 pt-3 text-[10.5px] font-semibold uppercase tracking-[0.09em] text-[var(--text-quaternary)]">
+                        Stock
+                      </p>
+                    ) : null}
+
+                    <button
+                      type="button"
+                      data-active={active}
+                      onMouseEnter={() => setCursor(i)}
+                      onClick={() => go(row)}
+                      className={cn(
+                        "flex w-full items-center gap-3 rounded-[var(--r-md)] px-3 py-2.5 text-left transition-colors",
+                        active ? "bg-[var(--layer-interactive)]" : "",
+                      )}
+                    >
+                      {row.kind === "nav" ? (
+                        <>
+                          <span className="grid size-7 shrink-0 place-items-center rounded-[var(--r-sm)] bg-[var(--layer-interactive)]">
+                            <row.icon className="size-3.5 text-[var(--text-secondary)]" />
+                          </span>
+                          <span className="flex-1 text-[13px] font-medium">{row.label}</span>
+                          <span className="text-[11px] text-[var(--text-quaternary)]">
+                            {row.group}
+                          </span>
+                          {active ? (
+                            <CornerDownLeft className="size-3.5 text-[var(--text-quaternary)]" />
+                          ) : (
+                            <ArrowRight className="size-3.5 text-[var(--text-disabled)]" />
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          <span className="grid size-7 shrink-0 place-items-center rounded-[var(--r-sm)] bg-[var(--layer-interactive)]">
+                            <Package className="size-3.5 text-[var(--text-secondary)]" />
+                          </span>
+                          <span className="min-w-0 flex-1">
+                            <span className="code block truncate text-[13px] font-semibold">
+                              {row.item.sku}
+                            </span>
+                            <span className="block truncate text-[11px] text-[var(--text-quaternary)]">
+                              {row.item.description}
+                            </span>
+                          </span>
+                          <span className="shrink-0 text-right">
+                            <span className="num block text-[13px] font-semibold">
+                              {formatQty(row.item.total_on_hand)}
+                              <span className="ml-1 text-[10px] font-normal text-[var(--text-quaternary)]">
+                                {row.item.uom}
+                              </span>
+                            </span>
+                            <span className="num block text-[10.5px] text-[var(--text-quaternary)]">
+                              {formatMoney(row.item.avg_cost)}
+                            </span>
+                          </span>
+                        </>
+                      )}
+                    </button>
+                  </React.Fragment>
+                );
+              })}
+            </>
           )}
         </div>
-      </DialogContent>
-    </Dialog>
+
+        <div className="flex items-center gap-4 border-t border-[var(--line-subtle)] px-4 py-2 text-[10.5px] text-[var(--text-quaternary)]">
+          <span className="flex items-center gap-1">
+            <kbd className="kbd">↑</kbd>
+            <kbd className="kbd">↓</kbd> navigate
+          </span>
+          <span className="flex items-center gap-1">
+            <kbd className="kbd">↵</kbd> open
+          </span>
+          <span className="ml-auto flex items-center gap-1">
+            <kbd className="kbd">C</kbd> create
+          </span>
+        </div>
+      </div>
+    </div>
   );
 }
