@@ -105,7 +105,7 @@ export function AppShell({
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Top bar ------------------------------------------------------ */}
         <header className="glass sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line-subtle)] px-3 sm:px-5">
-          <Link href="/" className="flex items-center gap-2 lg:hidden">
+          <Link href="/dashboard" className="flex items-center gap-2 lg:hidden">
             <span className="grid size-7 place-items-center rounded-[var(--r-md)] bg-gradient-to-br from-[var(--nav)] to-[var(--nav-dim)]">
               <span className="text-[11px] font-bold text-white">N</span>
             </span>

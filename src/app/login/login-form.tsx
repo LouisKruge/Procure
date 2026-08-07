@@ -7,7 +7,6 @@ import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/misc";
-import { Card, CardContent } from "@/components/ui/card";
 import { createClient } from "@/lib/supabase/client";
 import { friendlyError } from "@/lib/errors";
 
@@ -39,55 +38,62 @@ export function LoginForm() {
       return;
     }
 
-    router.replace(params.get("next") || "/");
+    router.replace(params.get("next") || "/dashboard");
     router.refresh();
   }
 
   return (
-    <Card className="w-full max-w-sm">
-      <CardContent className="pt-5">
-        <form onSubmit={onSubmit} className="space-y-4">
-          <div className="space-y-1.5">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              autoComplete="username"
-              autoFocus
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@company.co.za"
-            />
-          </div>
+    <form onSubmit={onSubmit} className="space-y-4">
+      <div className="space-y-1.5">
+        <Label htmlFor="email" className="text-[12px] text-[var(--text-tertiary)]">
+          Email
+        </Label>
+        <Input
+          id="email"
+          type="email"
+          autoComplete="username"
+          autoFocus
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="you@company.co.za"
+          className="h-12 bg-[var(--layer-sunken)] text-[14px]"
+        />
+      </div>
 
-          <div className="space-y-1.5">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              autoComplete="current-password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
+      <div className="space-y-1.5">
+        <Label htmlFor="password" className="text-[12px] text-[var(--text-tertiary)]">
+          Password
+        </Label>
+        <Input
+          id="password"
+          type="password"
+          autoComplete="current-password"
+          required
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="h-12 bg-[var(--layer-sunken)] text-[14px]"
+        />
+      </div>
 
-          {error ? (
-            <p
-              role="alert"
-              className="rounded-lg bg-out-subtle px-3 py-2 text-sm font-medium text-out"
-            >
-              {error}
-            </p>
-          ) : null}
+      {error ? (
+        <p
+          role="alert"
+          className="rounded-lg bg-out-subtle px-3 py-2 text-sm font-medium text-out"
+        >
+          {error}
+        </p>
+      ) : null}
 
-          <Button type="submit" size="lg" className="w-full" disabled={busy}>
-            {busy ? <Loader2 className="animate-spin" /> : null}
-            {busy ? "Signing in…" : "Sign in"}
-          </Button>
-        </form>
-      </CardContent>
-    </Card>
+      <Button
+        type="submit"
+        size="lg"
+        disabled={busy}
+        className="h-12 w-full shadow-[0_8px_24px_-8px_oklch(0.58_0.17_258_/_0.7)] transition-shadow hover:shadow-[0_14px_40px_-10px_oklch(0.58_0.17_258_/_0.9)]"
+      >
+        {busy ? <Loader2 className="animate-spin" /> : null}
+        {busy ? "Signing in…" : "Sign in"}
+      </Button>
+    </form>
   );
 }

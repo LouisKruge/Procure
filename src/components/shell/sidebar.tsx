@@ -45,7 +45,7 @@ export type NavEntry = {
 };
 
 export const NAV_ITEMS: NavEntry[] = [
-  { href: "/", label: "Overview", icon: LayoutDashboard, group: "Floor", primary: true },
+  { href: "/dashboard", label: "Overview", icon: LayoutDashboard, group: "Floor", primary: true },
   { href: "/stock", label: "Stock", icon: Package, shortcut: "S", group: "Floor", primary: true },
   { href: "/receiving", label: "Receiving", icon: PackagePlus, shortcut: "R", group: "Floor", primary: true },
   { href: "/dispatch", label: "Dispatch", icon: Truck, shortcut: "D", group: "Floor", primary: true },
@@ -65,7 +65,9 @@ export const NAV_ITEMS: NavEntry[] = [
 const GROUPS = ["Floor", "Control", "Insight", "Workshop"] as const;
 
 export function isActive(pathname: string, href: string) {
-  return href === "/" ? pathname === "/" : pathname.startsWith(href);
+  return href === "/dashboard"
+    ? pathname === "/dashboard"
+    : pathname.startsWith(href);
 }
 
 /* ------------------------------------------------------------- preferences
@@ -130,7 +132,7 @@ export function Sidebar({
   React.useEffect(() => {
     if (!ready) return;
     const entry = NAV_ITEMS.find((n) => isActive(pathname, n.href));
-    if (!entry || entry.href === "/") return;
+    if (!entry || entry.href === "/dashboard") return;
 
     const t = setTimeout(() => setRecent((prev) => {
       const next = [entry.href, ...prev.filter((h) => h !== entry.href)].slice(0, 4);

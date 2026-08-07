@@ -528,3 +528,143 @@
 @media print {
   .no-print { display: none !important; }
 }
+
+/* ============================================================================
+ * MARKETING SURFACE
+ * ----------------------------------------------------------------------------
+ * The public page runs hotter than the product: more light, more depth, more
+ * air. It shares the same tokens so the two never feel like different
+ * companies, but the marketing layer adds atmosphere the app deliberately
+ * does without.
+ *
+ * The visual signature is engineering drawing, not SaaS gradient - a faint
+ * measured grid, technical annotation marks, and hairline rules that behave
+ * like datum lines.
+ * ==========================================================================*/
+
+.mk-grid {
+  background-image:
+    linear-gradient(to right, oklch(1 0 0 / 0.028) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.028) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
+}
+
+/* Ambient light. Two slow-drifting sources, never a rainbow mesh. */
+.mk-bloom::before,
+.mk-bloom::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+}
+.mk-bloom::before {
+  width: 46rem;
+  height: 30rem;
+  top: -14rem;
+  left: 50%;
+  translate: -50% 0;
+  background: oklch(0.55 0.16 258 / 0.20);
+  animation: mk-drift 26s var(--ease) infinite alternate;
+}
+.mk-bloom::after {
+  width: 32rem;
+  height: 22rem;
+  top: 12rem;
+  right: -8rem;
+  background: oklch(0.55 0.14 210 / 0.11);
+  animation: mk-drift 34s var(--ease) infinite alternate-reverse;
+}
+
+@keyframes mk-drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to   { transform: translate3d(-4%, 3%, 0) scale(1.12); }
+}
+
+/* Film grain. Kills banding on the large dark gradients. */
+.mk-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Editorial display type. Tight, confident, optically corrected. */
+.mk-display {
+  font-weight: 600;
+  letter-spacing: -0.038em;
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.mk-lede {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.1875rem);
+  line-height: 1.55;
+  color: var(--text-tertiary);
+  text-wrap: pretty;
+}
+
+/* Section index marks, as on a drawing sheet. */
+.mk-index {
+  font-family: var(--font-mono-stack);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--text-disabled);
+}
+
+/* Datum rule that draws itself in when the section arrives. */
+.mk-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--line-strong), transparent);
+  transform-origin: left;
+  animation: mk-draw 1.1s var(--ease-out) both;
+}
+@keyframes mk-draw {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* Magnetic primary button: light gathers at the cursor. */
+.mk-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.mk-cta::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    18rem circle at var(--mx, 50%) var(--my, 50%),
+    oklch(1 0 0 / 0.22),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: opacity var(--t-base) var(--ease);
+  z-index: -1;
+}
+.mk-cta:hover::before { opacity: 1; }
+
+/* Scroll reveal, driven by IntersectionObserver rather than scroll position
+   so it costs nothing while idle. */
+.mk-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.75s var(--ease-out),
+    transform 0.75s var(--ease-out);
+}
+.mk-reveal[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mk-reveal { opacity: 1; transform: none; transition: none; }
+  .mk-bloom::before, .mk-bloom::after { animation: none; }
+  .mk-rule { animation: none; }
+}

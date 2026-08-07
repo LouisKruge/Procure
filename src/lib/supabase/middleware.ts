@@ -5,6 +5,9 @@ import type { Database } from "./database.types";
 
 const PUBLIC_PATHS = ["/login", "/auth"];
 
+/** The marketing page is the only public route that is not under a prefix. */
+const PUBLIC_EXACT = ["/"];
+
 /**
  * Refreshes the auth session on every request and bounces signed-out users
  * to /login. Auth is still enforced by RLS in the database - this only
@@ -39,7 +42,8 @@ export async function updateSession(request: NextRequest) {
   } = await supabase.auth.getUser();
 
   const { pathname } = request.nextUrl;
-  const isPublic = PUBLIC_PATHS.some((p) => pathname.startsWith(p));
+  const isPublic =
+    PUBLIC_PATHS.some((p) => pathname.startsWith(p)) || PUBLIC_EXACT.includes(pathname);
 
   // API routes answer for themselves - redirecting a fetch to the HTML login
   // page would surface as a JSON parse error instead of "session expired".
@@ -50,9 +54,10 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (user && pathname === "/login") {
+  // Someone already signed in has no use for the login or marketing page.
+  if (user && (pathname === "/login" || pathname === "/")) {
     const url = request.nextUrl.clone();
-    url.pathname = "/";
+    url.pathname = "/dashboard";
     url.search = "";
     return NextResponse.redirect(url);
   }
