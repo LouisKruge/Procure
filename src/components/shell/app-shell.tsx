@@ -9,6 +9,7 @@ import {
   ClipboardCheck,
   LogOut,
   PackagePlus,
+  Scale,
   ShoppingCart,
   Truck,
 } from "lucide-react";
@@ -24,6 +25,7 @@ import { MobileBar, Sidebar } from "./sidebar";
 
 /* Quick create targets. Shift+key from anywhere. */
 const CREATE_ACTIONS = [
+  { href: "/counter", label: "Counter", desc: "Book stock out or back in", icon: Scale, key: "B" },
   { href: "/dispatch/new", label: "Dispatch", desc: "Issue stock out", icon: Truck, key: "D" },
   { href: "/receiving", label: "Receipt", desc: "Book stock in", icon: PackagePlus, key: "R" },
   { href: "/transfers/new", label: "Transfer", desc: "Move between sites", icon: ArrowLeftRight, key: "T" },

@@ -16,6 +16,7 @@ import {
   Pin,
   PinOff,
   Plus,
+  Scale,
   Search,
   ShoppingCart,
   SlidersHorizontal,
@@ -46,6 +47,7 @@ export type NavEntry = {
 
 export const NAV_ITEMS: NavEntry[] = [
   { href: "/dashboard", label: "Overview", icon: LayoutDashboard, group: "Floor", primary: true },
+  { href: "/counter", label: "Counter", icon: Scale, shortcut: "B", group: "Floor", primary: true },
   { href: "/stock", label: "Stock", icon: Package, shortcut: "S", group: "Floor", primary: true },
   { href: "/receiving", label: "Receiving", icon: PackagePlus, shortcut: "R", group: "Floor", primary: true },
   { href: "/dispatch", label: "Dispatch", icon: Truck, shortcut: "D", group: "Floor", primary: true },

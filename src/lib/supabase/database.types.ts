@@ -1403,6 +1403,56 @@ export type Database = {
           isSetofReturn: false
         }
       }
+      counter_post: {
+        Args: {
+          p_direction: Database["public"]["Enums"]["movement_direction"]
+          p_item_id: string
+          p_qty: number
+          p_reason?: string | null
+          p_reference?: string | null
+          p_site_id: string
+        }
+        Returns: {
+          created_at: string
+          direction: Database["public"]["Enums"]["movement_direction"]
+          id: string
+          item_id: string
+          movement_type: Database["public"]["Enums"]["movement_type"]
+          qty: number
+          qty_after: number | null
+          reason: string | null
+          reference_id: string | null
+          reference_no: string | null
+          reference_type: string | null
+          site_id: string
+          unit_cost: number
+          user_id: string | null
+        }
+        SetofOptions: {
+          from: "*"
+          to: "stock_movements"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      counter_search: {
+        Args: { p_limit?: number; p_query: string; p_site_id: string }
+        Returns: {
+          avg_cost: number
+          barcode: string | null
+          bin_location: string | null
+          category_name: string | null
+          description: string
+          item_id: string
+          location: string | null
+          qty_on_hand: number
+          reorder_point: number
+          score: number
+          sku: string
+          stock_status: string
+          uom: string
+        }[]
+      }
       create_purchase_orders_from_suggestions: {
         Args: { p_items: Json; p_notes?: string; p_site_id: string }
         Returns: {

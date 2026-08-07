@@ -223,7 +223,10 @@
   --color-transit: var(--transit);
   --color-transit-subtle: var(--transit-subtle);
 
-  --color-base: var(--layer-base);
+  /* Not --color-base: that would make "text-base" a colour utility rather
+     than a font size, and every input in the app would paint its text in
+     the base layer colour. Keep layer tokens prefixed. */
+  --color-layer-base: var(--layer-base);
   --color-sunken: var(--layer-sunken);
   --color-surface: var(--layer-surface);
   --color-elevated: var(--layer-elevated);
