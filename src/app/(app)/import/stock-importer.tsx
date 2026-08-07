@@ -152,6 +152,26 @@ export function StockImporter({
     load(raw);
   }
 
+  /**
+   * The July 2026 workbook, converted and shipped with the app so the first
+   * load is one button rather than a file hunt. Same path as any other
+   * import once it is read.
+   */
+  async function loadBundled() {
+    setBusy(true);
+    try {
+      const res = await fetch("/seed/eventspec-stock.csv");
+      if (!res.ok) throw new Error(String(res.status));
+      const raw = await res.text();
+      setText(raw.slice(0, 4000));
+      load(raw);
+    } catch {
+      toast.error("Could not read the bundled stock file.");
+    } finally {
+      setBusy(false);
+    }
+  }
+
   async function run() {
     if (!site) return toast.error("Choose which site this stock belongs to.");
     if (rows.length === 0) return toast.error("Nothing to import.");
@@ -233,6 +253,9 @@ export function StockImporter({
                 onClick={() => fileRef.current?.click()}
               >
                 <FileUp /> Choose file
+              </Button>
+              <Button variant="outline" onClick={loadBundled} disabled={busy}>
+                Use Eventspec sheet
               </Button>
             </div>
           </div>
