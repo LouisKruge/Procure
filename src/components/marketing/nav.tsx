@@ -66,7 +66,7 @@ export function MarketingNav() {
     >
       <div
         className={cn(
-          "mx-auto flex items-center gap-2 transition-all duration-500",
+          "mx-auto flex items-center gap-2 transition-[max-width,height,background-color,box-shadow,padding] duration-500",
           scrolled
             ? // The bar floats over live dashboard panels, so the fill has to
               // carry legibility on its own - backdrop blur is a bonus, not

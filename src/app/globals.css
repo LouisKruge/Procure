@@ -618,36 +618,46 @@
   -webkit-mask-image: radial-gradient(120% 90% at 50% 0%, #000 30%, transparent 78%);
 }
 
-/* Ambient light. Two slow-drifting sources, never a rainbow mesh. */
+/* Ambient light. Two slow-drifting sources, never a rainbow mesh.
+ *
+ * These used to be solid ellipses under filter: blur(90px), drifting with a
+ * scale. A scale on a blurred layer has to re-rasterise the blur every
+ * frame at a new size, which on a throttled tablet cost more than the whole
+ * rest of the page: the idle hero was dropping to 20fps before anyone
+ * touched it.
+ *
+ * A radial gradient IS a blur, resolved once by the rasteriser and then
+ * reused. Same light, no per-frame filter, and the drift is now a pure
+ * composited translate that never touches the main thread.
+ */
 .mk-bloom::before,
 .mk-bloom::after {
   content: "";
   position: absolute;
-  border-radius: 50%;
   pointer-events: none;
-  filter: blur(90px);
+  will-change: transform;
 }
 .mk-bloom::before {
-  width: 46rem;
-  height: 30rem;
-  top: -14rem;
+  width: 62rem;
+  height: 42rem;
+  top: -18rem;
   left: 50%;
-  translate: -50% 0;
-  background: oklch(1 0 0 / 0.055);
+  margin-left: -31rem;
+  background: radial-gradient(closest-side, oklch(1 0 0 / 0.06), transparent);
   animation: mk-drift 26s var(--ease) infinite alternate;
 }
 .mk-bloom::after {
-  width: 32rem;
-  height: 22rem;
-  top: 12rem;
-  right: -8rem;
-  background: oklch(1 0 0 / 0.03);
+  width: 44rem;
+  height: 32rem;
+  top: 8rem;
+  right: -14rem;
+  background: radial-gradient(closest-side, oklch(1 0 0 / 0.032), transparent);
   animation: mk-drift 34s var(--ease) infinite alternate-reverse;
 }
 
 @keyframes mk-drift {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to   { transform: translate3d(-4%, 3%, 0) scale(1.12); }
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-3%, 2.5%, 0); }
 }
 
 /* Film grain. Kills banding on the large dark gradients. */

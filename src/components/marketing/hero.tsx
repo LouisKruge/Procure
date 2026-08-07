@@ -23,27 +23,61 @@ const OUT_SERIES = [42, 61, 38, 90, 72, 110, 84, 128, 96, 141];
 const IN_SERIES = [50, 30, 72, 41, 98, 64, 120, 96, 132, 104];
 
 export function Hero() {
-  const [tilt, setTilt] = React.useState({ x: 0, y: 0 });
-  const frame = React.useRef<number | undefined>(undefined);
+  /* --------------------------------------------------------- parallax
+   * Three small cards drift with the pointer. Nothing else does.
+   *
+   * This was measured twice before it was written this way. Routing the
+   * pointer through React state re-reconciled the whole hero on every
+   * mouse move and held 30fps on a throttled tablet. Moving it to a CSS
+   * custom property was worse, not better: custom properties are not
+   * composited, so each write invalidated style for every descendant that
+   * read it, and the 3D-transformed dashboard behind them had to be
+   * re-rastered each frame.
+   *
+   * So the dashboard no longer moves at all - it is the largest, most
+   * expensive layer on the page and it was contributing the least. Only
+   * the three cards move, each written directly to its own node, each
+   * promoted with will-change. That is three composited transforms a
+   * frame and no style recalculation anywhere.
+   */
+  const stage = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     // Coarse pointers get no tilt: it would only fight the scroll.
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
+    const root = stage.current;
+    if (!root) return;
+
+    const cards = Array.from(
+      root.querySelectorAll<HTMLElement>("[data-depth]"),
+    ).map((el) => ({ el, depth: Number(el.dataset.depth) || 0 }));
+    if (cards.length === 0) return;
+
+    let frame: number | undefined;
+    let x = 0;
+    let y = 0;
+
+    function paint() {
+      frame = undefined;
+      for (const { el, depth } of cards) {
+        el.style.transform = `translate3d(${(x * depth).toFixed(1)}px, ${(
+          y * depth * 0.5
+        ).toFixed(1)}px, 0)`;
+      }
+    }
+
     function onMove(e: MouseEvent) {
-      if (frame.current) cancelAnimationFrame(frame.current);
-      frame.current = requestAnimationFrame(() => {
-        const nx = e.clientX / window.innerWidth - 0.5;
-        const ny = e.clientY / window.innerHeight - 0.5;
-        setTilt({ x: nx, y: ny });
-      });
+      x = e.clientX / window.innerWidth - 0.5;
+      y = e.clientY / window.innerHeight - 0.5;
+      if (frame === undefined) frame = requestAnimationFrame(paint);
     }
 
     window.addEventListener("mousemove", onMove, { passive: true });
     return () => {
       window.removeEventListener("mousemove", onMove);
-      if (frame.current) cancelAnimationFrame(frame.current);
+      if (frame !== undefined) cancelAnimationFrame(frame);
     };
   }, []);
 
@@ -111,18 +145,11 @@ export function Hero() {
         </div>
 
         {/* Product ---------------------------------------------------- */}
-        <div className="relative mt-16 lg:mt-20" style={{ perspective: "1800px" }}>
+        <div ref={stage} className="relative mt-16 lg:mt-20">
           <Reveal delay={200}>
-            <div
-              className="relative will-change-transform"
-              style={{
-                transform: `rotateX(${(-tilt.y * 2.4).toFixed(2)}deg) rotateY(${(tilt.x * 3).toFixed(2)}deg)`,
-                transition: "transform 500ms var(--ease-out)",
-                transformStyle: "preserve-3d",
-              }}
-            >
+            <div className="relative">
               {/* Light behind the glass */}
-              <div className="pointer-events-none absolute -inset-x-16 -top-10 bottom-0 rounded-[3rem] bg-[radial-gradient(60%_50%_at_50%_0%,oklch(1_0_0_/_0.07),transparent_70%)] blur-2xl" />
+              <div className="pointer-events-none absolute -inset-x-16 -top-10 bottom-0 rounded-[3rem] bg-[radial-gradient(60%_50%_at_50%_0%,oklch(1_0_0_/_0.07),transparent_70%)]" />
 
               <div className="relative overflow-hidden rounded-[var(--r-2xl)] bg-[var(--layer-surface)] shadow-[0_40px_120px_-24px_oklch(0_0_0_/_0.8),0_0_0_1px_var(--line)]">
                 <div className="surface-sheen pointer-events-none absolute inset-0 rounded-[var(--r-2xl)]" />
@@ -159,7 +186,6 @@ export function Hero() {
               <FloatingCard
                 className="-left-10 top-1/3 hidden 2xl:block"
                 depth={40}
-                tilt={tilt}
                 delay="0.9s"
               >
                 <div className="flex items-center gap-2.5">
@@ -178,7 +204,6 @@ export function Hero() {
               <FloatingCard
                 className="-right-10 top-20 hidden 2xl:block"
                 depth={64}
-                tilt={tilt}
                 delay="1.15s"
               >
                 <div className="flex items-center gap-2.5">
@@ -197,7 +222,6 @@ export function Hero() {
               <FloatingCard
                 className="-right-8 bottom-16 hidden 2xl:block"
                 depth={30}
-                tilt={tilt}
                 delay="1.4s"
               >
                 <div className="flex items-center gap-2.5">
@@ -425,30 +449,33 @@ function FloatingCard({
   children,
   className,
   depth,
-  tilt,
   delay,
 }: {
   children: React.ReactNode;
   className?: string;
   depth: number;
-  tilt: { x: number; y: number };
   delay: string;
 }) {
+  // Two elements on purpose. The entrance is a CSS animation that sets
+  // transform, and an animation outranks an inline style in the cascade -
+  // so if the parallax were written to the same node, `animate-in-up`
+  // would hold it at transform: none forever. The outer node is the
+  // parallax target; the inner one does the entrance.
   return (
     <div
-      className={cn(
-        "absolute z-10 rounded-[var(--r-lg)] bg-[var(--layer-floating)] px-3.5 py-2.5",
-        "shadow-[0_20px_50px_-16px_oklch(0_0_0_/_0.75),0_0_0_1px_var(--line)]",
-        "animate-in-up",
-        className,
-      )}
-      style={{
-        transform: `translate3d(${(tilt.x * depth).toFixed(1)}px, ${(tilt.y * depth * 0.5).toFixed(1)}px, 60px)`,
-        transition: "transform 700ms var(--ease-out)",
-        animationDelay: delay,
-      }}
+      className={cn("absolute z-10", className)}
+      data-depth={depth}
+      style={{ transition: "transform 700ms var(--ease-out)", willChange: "transform" }}
     >
-      {children}
+      <div
+        className={cn(
+          "animate-in-up rounded-[var(--r-lg)] bg-[var(--layer-floating)] px-3.5 py-2.5",
+          "shadow-[0_20px_50px_-16px_oklch(0_0_0_/_0.75),0_0_0_1px_var(--line)]",
+        )}
+        style={{ animationDelay: delay }}
+      >
+        {children}
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -27,8 +28,14 @@ export const SITE_COOKIE = "nexus_site";
  * Loads the signed-in user, their role and the sites they can reach.
  * Redirects to /login if there is no session - every page under (app)
  * calls this, so an expired session never renders a half-empty screen.
+ *
+ * Wrapped in cache(): the (app) layout and the page inside it both need the
+ * session, and they render in the same pass. Without this every navigation
+ * paid for two auth round trips and two profile lookups to learn the same
+ * thing twice - which, at the distance between the browser, the function
+ * and the database, is most of a second of doing nothing.
  */
-export async function getSession(): Promise<Session> {
+export const getSession = cache(async function getSession(): Promise<Session> {
   const supabase = await createClient();
 
   const {
@@ -88,4 +95,4 @@ export async function getSession(): Promise<Session> {
     siteId,
     site: visibleSites.find((s) => s.id === siteId) ?? null,
   };
-}
+});

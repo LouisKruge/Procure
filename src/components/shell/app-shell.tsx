@@ -23,6 +23,8 @@ import type { Site } from "@/lib/session";
 
 import { MobileBar, Sidebar } from "./sidebar";
 
+export type Alerts = { critical: number; attention: number; approvals: number };
+
 /* Quick create targets. Shift+key from anywhere. */
 const CREATE_ACTIONS = [
   { href: "/counter", label: "Counter", desc: "Book stock out or back in", icon: Scale, key: "B" },
@@ -54,7 +56,8 @@ export function AppShell({
   siteName: string;
   siteCode: string;
   allowAll: boolean;
-  alerts: { critical: number; attention: number; approvals: number };
+  /* Unresolved on purpose - see the layout. */
+  alerts: Promise<Alerts>;
 }) {
   const router = useRouter();
   const [searchOpen, setSearchOpen] = React.useState(false);
@@ -93,8 +96,6 @@ export function AppShell({
     return () => window.removeEventListener("keydown", onKey);
   }, [router]);
 
-  const totalAlerts = alerts.critical + alerts.approvals;
-
   return (
     <div className="relative z-10 flex min-h-dvh">
       <Sidebar
@@ -106,24 +107,21 @@ export function AppShell({
 
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Top bar ------------------------------------------------------ */}
-        <header className="glass sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line)] px-3 sm:px-5">
+        <header className="sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line)] bg-[var(--layer-chrome)] px-3 sm:px-5">
           <Link href="/dashboard" className="flex items-center gap-2 lg:hidden">
             <span className="grid size-7 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
               <span className="text-[11px] font-semibold tracking-[-0.02em] text-white">N</span>
             </span>
           </Link>
 
-          {/* Live status ------------------------------------------------ */}
+          {/* Live status. Streams in behind the shell rather than holding
+              it up - see the layout for why. */}
           <div className="hidden items-center gap-2 md:flex">
-            <Chip tone={alerts.critical > 0 ? "critical" : "success"} dot>
-              {alerts.critical > 0 ? `${alerts.critical} critical` : "All clear"}
-            </Chip>
-            {alerts.attention > 0 ? (
-              <Chip tone="attention">{alerts.attention} low</Chip>
-            ) : null}
-            {alerts.approvals > 0 ? (
-              <Chip tone="pending">{alerts.approvals} to approve</Chip>
-            ) : null}
+            <React.Suspense
+              fallback={<span className="h-[19px] w-24 rounded-[var(--r-sm)] bg-[var(--layer-interactive)]" />}
+            >
+              <LiveStatus alerts={alerts} />
+            </React.Suspense>
           </div>
 
           <div className="ml-auto flex items-center gap-2">
@@ -133,14 +131,12 @@ export function AppShell({
               type="button"
               onClick={() => router.push("/procurement")}
               className="relative grid size-9 place-items-center rounded-[var(--r-md)] text-[var(--text-tertiary)] transition-colors hover:bg-[var(--layer-interactive)] hover:text-[var(--text-primary)]"
-              aria-label={`Notifications${totalAlerts ? `, ${totalAlerts} needing attention` : ""}`}
+              aria-label="Notifications"
             >
               <Bell className="size-[18px]" />
-              {totalAlerts > 0 ? (
-                <span className="num absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-[var(--critical)] px-1 text-[9px] font-semibold text-white">
-                  {totalAlerts > 99 ? "99+" : totalAlerts}
-                </span>
-              ) : null}
+              <React.Suspense fallback={null}>
+                <BellBadge alerts={alerts} />
+              </React.Suspense>
             </button>
 
             <ProfileMenu fullName={fullName} email={email} role={role} />
@@ -156,6 +152,34 @@ export function AppShell({
       <CommandPalette open={searchOpen} onOpenChange={setSearchOpen} />
       <QuickCreate open={createOpen} onOpenChange={setCreateOpen} />
     </div>
+  );
+}
+
+/* ---------------------------------------------------------------- alerts */
+
+function LiveStatus({ alerts }: { alerts: Promise<Alerts> }) {
+  const { critical, attention, approvals } = React.use(alerts);
+
+  return (
+    <>
+      <Chip tone={critical > 0 ? "critical" : "success"} dot>
+        {critical > 0 ? `${critical} critical` : "All clear"}
+      </Chip>
+      {attention > 0 ? <Chip tone="attention">{attention} low</Chip> : null}
+      {approvals > 0 ? <Chip tone="pending">{approvals} to approve</Chip> : null}
+    </>
+  );
+}
+
+function BellBadge({ alerts }: { alerts: Promise<Alerts> }) {
+  const { critical, approvals } = React.use(alerts);
+  const total = critical + approvals;
+  if (total === 0) return null;
+
+  return (
+    <span className="num absolute -right-0.5 -top-0.5 grid h-4 min-w-4 place-items-center rounded-full bg-[var(--critical)] px-1 text-[9px] font-semibold text-white">
+      {total > 99 ? "99+" : total}
+    </span>
   );
 }
 

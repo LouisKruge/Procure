@@ -428,7 +428,7 @@ export function MobileBar({ onOpenSearch }: { onOpenSearch: () => void }) {
   const primary = NAV_ITEMS.filter((n) => n.primary);
 
   return (
-    <nav className="glass fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--line)] pb-[env(safe-area-inset-bottom)] lg:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--line)] bg-[var(--layer-chrome)] pb-[env(safe-area-inset-bottom)] lg:hidden">
       {primary.map((item) => {
         const Icon = item.icon;
         const active = isActive(pathname, item.href);
