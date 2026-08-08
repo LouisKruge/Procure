@@ -24,7 +24,17 @@ import {
  * ========================================================================== */
 
 /** Live clock + greeting. Client-side so it ticks and matches the viewer. */
-export function Greeting({ name, site }: { name: string; site: string }) {
+export function Greeting({
+  name,
+  site,
+  status,
+}: {
+  name: string;
+  site: string;
+  /** Plain-language health, ahead of the site name. It is the first thing
+   *  anyone wants to know and it costs a line that was already there. */
+  status?: string;
+}) {
   const [now, setNow] = React.useState<Date | null>(null);
 
   React.useEffect(() => {
@@ -57,8 +67,8 @@ export function Greeting({ name, site }: { name: string; site: string }) {
       <h1 className="text-[26px] font-semibold leading-none tracking-[-0.02em] sm:text-[30px]">
         {greeting}, {first}
       </h1>
-      <p className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-[var(--text-tertiary)]">
-        <span>{site}</span>
+      <p className="mt-2.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-[var(--text-tertiary)]">
+        <span>{status ?? site}</span>
         {now ? (
           <>
             <span className="text-[var(--text-disabled)]">·</span>
@@ -458,5 +468,122 @@ export function FeedRow({
         </div>
       ) : null}
     </Link>
+  );
+}
+
+/* ---------------------------------------------------------- health card
+ * The range in four bands, with the score that summarises them sitting in
+ * the middle of a ring. The score is never shown alone: the four counts are
+ * right beside it, so anyone who distrusts a composite number can take it
+ * apart in one glance.
+ */
+export function HealthCard({
+  good,
+  watch,
+  atRisk,
+  critical,
+  score,
+}: {
+  good: number;
+  watch: number;
+  atRisk: number;
+  critical: number;
+  score: number;
+}) {
+  const bands = [
+    { label: "Good standing", value: good, tone: undefined },
+    { label: "Watch", value: watch, tone: undefined },
+    { label: "At risk", value: atRisk, tone: "text-[var(--attention-bright)]" },
+    { label: "Critical", value: critical, tone: "text-[var(--critical-bright)]" },
+  ];
+
+  return (
+    <section className="surface surface-sheen edge-lit p-5">
+      <SectionLabel>Inventory health</SectionLabel>
+
+      <div className="mt-4 flex items-center gap-6">
+        <div className="flex shrink-0 flex-col items-center gap-1.5">
+          <Ring
+            value={score}
+            size={78}
+            tone={score >= 80 ? "success" : score >= 60 ? "attention" : "critical"}
+            label={<span className="num text-[20px] font-semibold">{Math.round(score)}</span>}
+          />
+          <span className="text-[9.5px] uppercase tracking-[0.08em] text-[var(--text-quaternary)]">
+            Health score
+          </span>
+        </div>
+
+        <dl className="min-w-0 flex-1 space-y-2.5">
+          {bands.map((b) => (
+            <div key={b.label} className="flex items-baseline justify-between gap-3">
+              <dt className={cn("text-[12.5px]", b.tone ?? "text-[var(--text-secondary)]")}>
+                {b.label}
+              </dt>
+              <dd className="num text-[12.5px] text-[var(--text-tertiary)]">
+                {formatQty(b.value)}
+                <span className="ml-1 text-[10.5px] text-[var(--text-quaternary)]">
+                  {b.value === 1 ? "line" : "lines"}
+                </span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+  );
+}
+
+/* ------------------------------------------------------ risk by category
+ * Where the money at risk actually sits. Bars are shares of the largest
+ * category rather than of the total - the question is which shelf to walk
+ * to first, not what percentage of anything this represents.
+ */
+export function RiskCategories({
+  rows,
+}: {
+  rows: { category_name: string; lines: number; value_at_risk: number }[];
+}) {
+  const max = Math.max(...rows.map((r) => Number(r.value_at_risk) || 0), 1);
+
+  return (
+    <section className="surface surface-sheen edge-lit p-5">
+      <div className="flex items-center justify-between">
+        <SectionLabel>Top risk categories</SectionLabel>
+        <Link
+          href="/procurement"
+          className="text-[12px] font-medium text-[var(--text-secondary)] transition-colors hover:text-white"
+        >
+          View all
+        </Link>
+      </div>
+
+      {rows.length === 0 ? (
+        <p className="mt-5 text-[12.5px] text-[var(--text-quaternary)]">
+          Nothing is below its minimum. There is no exposure to rank.
+        </p>
+      ) : (
+        <ul className="mt-4 space-y-3">
+          {rows.map((r) => (
+            <li key={r.category_name}>
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="truncate text-[12.5px] text-[var(--text-secondary)]">
+                  {r.category_name}
+                </span>
+                <span className="num shrink-0 text-[12px] text-[var(--text-tertiary)]">
+                  {formatMoney(Number(r.value_at_risk))}
+                </span>
+              </div>
+              <div className="mt-1.5 h-[3px] overflow-hidden rounded-full bg-[var(--layer-sunken)]">
+                <div
+                  className="h-full rounded-full bg-[var(--text-tertiary)]"
+                  style={{ width: `${Math.max((Number(r.value_at_risk) / max) * 100, 2)}%` }}
+                />
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
   );
 }

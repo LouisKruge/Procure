@@ -1504,6 +1504,25 @@ export type Database = {
         Args: { p_adjust_quantities?: boolean; p_rows: Json; p_site_id: string }
         Returns: Json
       }
+      inventory_health: {
+        Args: { p_site_id?: string | null }
+        Returns: {
+          at_risk_lines: number
+          critical_lines: number
+          good_lines: number
+          health_score: number
+          total_lines: number
+          watch_lines: number
+        }[]
+      }
+      risk_by_category: {
+        Args: { p_limit?: number; p_site_id?: string | null }
+        Returns: {
+          category_name: string
+          lines: number
+          value_at_risk: number
+        }[]
+      }
       is_admin: { Args: never; Returns: boolean }
       is_manager: { Args: never; Returns: boolean }
       issue_dispatch: {

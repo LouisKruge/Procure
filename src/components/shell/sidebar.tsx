@@ -15,7 +15,6 @@ import {
   PackagePlus,
   Pin,
   PinOff,
-  Plus,
   Scale,
   Search,
   ShoppingCart,
@@ -46,12 +45,13 @@ export type NavEntry = {
 };
 
 export const NAV_ITEMS: NavEntry[] = [
-  { href: "/dashboard", label: "Overview", icon: LayoutDashboard, group: "Floor", primary: true },
-  { href: "/counter", label: "Counter", icon: Scale, shortcut: "B", group: "Floor", primary: true },
-  { href: "/stock", label: "Stock", icon: Package, shortcut: "S", group: "Floor", primary: true },
-  { href: "/receiving", label: "Receiving", icon: PackagePlus, shortcut: "R", group: "Floor", primary: true },
-  { href: "/dispatch", label: "Dispatch", icon: Truck, shortcut: "D", group: "Floor", primary: true },
-  { href: "/transfers", label: "Transfers", icon: ArrowLeftRight, shortcut: "T", group: "Floor" },
+  { href: "/dashboard", label: "Overview", icon: LayoutDashboard, group: "Overview", primary: true },
+  { href: "/counter", label: "Counter", icon: Scale, shortcut: "B", group: "Overview", primary: true },
+
+  { href: "/stock", label: "Stock", icon: Package, shortcut: "S", group: "Operations", primary: true },
+  { href: "/receiving", label: "Receiving", icon: PackagePlus, shortcut: "R", group: "Operations", primary: true },
+  { href: "/dispatch", label: "Dispatch", icon: Truck, shortcut: "D", group: "Operations" },
+  { href: "/transfers", label: "Transfers", icon: ArrowLeftRight, shortcut: "T", group: "Operations" },
 
   { href: "/procurement", label: "Procurement", icon: ShoppingCart, shortcut: "P", group: "Control" },
   { href: "/stock-takes", label: "Stock takes", icon: ClipboardCheck, group: "Control" },
@@ -64,7 +64,24 @@ export const NAV_ITEMS: NavEntry[] = [
   { href: "/import", label: "Import", icon: Upload, group: "Workshop" },
 ];
 
-const GROUPS = ["Floor", "Control", "Insight", "Workshop"] as const;
+const GROUPS = ["Overview", "Operations", "Control", "Insight", "Workshop"] as const;
+
+/** The mark: a milled plate with a brass face. Two shapes, no wordmark. */
+function Mark() {
+  return (
+    <span
+      aria-hidden
+      className="grid size-[26px] shrink-0 place-items-center rounded-[var(--r-sm)] bg-[var(--brass)]"
+    >
+      <svg viewBox="0 0 16 16" className="size-[13px]" fill="none">
+        <path
+          d="M3 13V3h3.2l5.6 7.4V3H13v10H9.8L4.2 5.6V13H3Z"
+          fill="#0B0A08"
+        />
+      </svg>
+    </span>
+  );
+}
 
 export function isActive(pathname: string, href: string) {
   return href === "/dashboard"
@@ -98,13 +115,9 @@ function readJson<T>(key: string, fallback: T): T {
 export function Sidebar({
   siteName,
   siteCode,
-  onOpenSearch,
-  onQuickCreate,
 }: {
   siteName: string;
   siteCode: string;
-  onOpenSearch: () => void;
-  onQuickCreate: () => void;
 }) {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = React.useState(false);
@@ -196,57 +209,22 @@ export function Sidebar({
         transition: dragging ? "none" : "width var(--t-base) var(--ease-out)",
       }}
     >
-      {/* Workspace ------------------------------------------------------- */}
-      <div className="flex h-14 items-center gap-2.5 px-3">
-        <div className="edge-lit grid size-8 shrink-0 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
-          <span className="text-[13px] font-semibold tracking-[-0.02em] text-white">N</span>
-        </div>
+      {/* Wordmark -------------------------------------------------------- */}
+      <Link
+        href="/dashboard"
+        className={cn(
+          "flex h-16 items-center gap-2.5 px-4",
+          collapsed && "justify-center px-0",
+        )}
+        title={collapsed ? `${siteCode} · ${siteName}` : undefined}
+      >
+        <Mark />
         {!collapsed ? (
-          <div className="min-w-0 flex-1 animate-in-up">
-            <p className="truncate text-[13px] font-medium leading-tight tracking-[-0.01em]">Nexus</p>
-            <p className="code truncate text-[10.5px] leading-tight text-[var(--text-quaternary)]">
-              {siteCode} · {siteName}
-            </p>
-          </div>
+          <span className="animate-in-up truncate text-[14px] font-semibold uppercase tracking-[0.16em]">
+            Nexus
+          </span>
         ) : null}
-      </div>
-
-      {/* Actions --------------------------------------------------------- */}
-      <div className={cn("flex flex-col gap-1.5 px-3 pb-3", collapsed && "items-center px-2")}>
-        <button
-          type="button"
-          onClick={onOpenSearch}
-          className={cn(
-            "group flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-2.5 text-left",
-            "ring-1 ring-inset ring-[var(--line)] transition-colors hover:bg-[var(--layer-surface)] hover:ring-[var(--line-strong)]",
-            collapsed && "w-9 justify-center px-0",
-          )}
-          aria-label="Search"
-        >
-          <Search className="size-4 shrink-0 text-[var(--text-tertiary)]" />
-          {!collapsed ? (
-            <>
-              <span className="flex-1 text-[13px] text-[var(--text-quaternary)]">Search…</span>
-              <kbd className="kbd">⌘K</kbd>
-            </>
-          ) : null}
-        </button>
-
-        <button
-          type="button"
-          onClick={onQuickCreate}
-          className={cn(
-            "flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-white px-2.5 text-[13px] font-medium tracking-[-0.005em]",
-            "text-[#0A0A0A] transition-[background-color,transform] duration-150 hover:bg-[oklch(0.93_0_0)] active:scale-[0.985]",
-            collapsed && "w-9 justify-center px-0",
-          )}
-          aria-label="Quick create"
-        >
-          <Plus className="size-4 shrink-0" />
-          {!collapsed ? <span className="flex-1 text-left">Create</span> : null}
-          {!collapsed ? <kbd className="kbd bg-black/10 text-black/55 shadow-none">C</kbd> : null}
-        </button>
-      </div>
+      </Link>
 
       {/* Navigation ------------------------------------------------------ */}
       <nav className="flex-1 overflow-y-auto px-3 pb-4">

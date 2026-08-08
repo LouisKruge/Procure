@@ -9,8 +9,10 @@ import { RealtimeRefresh } from "@/components/realtime-refresh";
 import {
   FeedRow,
   Greeting,
+  HealthCard,
   Panel,
   RiskCard,
+  RiskCategories,
   ThroughputCard,
   ValueCard,
 } from "./dashboard-cards";
@@ -45,6 +47,8 @@ export default async function OverviewPage() {
     inTransit,
     recent,
     totalLines,
+    health,
+    riskCategories,
   ] = await Promise.all([
     scope(supabase.from("v_stock_valuation").select("total_value, lines_total, lines_with_stock")),
     scope(
@@ -96,6 +100,8 @@ export default async function OverviewPage() {
         .limit(7),
     ),
     scope(supabase.from("v_stock_status").select("*", { count: "exact", head: true })),
+    supabase.rpc("inventory_health", { p_site_id: siteId ?? undefined }),
+    supabase.rpc("risk_by_category", { p_site_id: siteId ?? undefined, p_limit: 5 }),
   ]);
 
   const val = valuation.data ?? [];
@@ -130,6 +136,13 @@ export default async function OverviewPage() {
   const outCount = stockedOut.length;
   const lowCount = criticalRows.length - outCount;
 
+  const bands = (health.data ?? [])[0];
+  const riskRows = (riskCategories.data ?? []) as {
+    category_name: string;
+    lines: number;
+    value_at_risk: number;
+  }[];
+
   return (
     <>
       <RealtimeRefresh />
@@ -139,19 +152,27 @@ export default async function OverviewPage() {
         <Greeting
           name={session.fullName}
           site={session.site ? session.site.name : "All sites"}
+          status={
+            outCount === 0 && lowCount === 0
+              ? "All systems operational"
+              : outCount > 0
+                ? `${formatQty(outCount)} ${outCount === 1 ? "line" : "lines"} at zero`
+                : `${formatQty(lowCount)} below minimum`
+          }
         />
         <div className="flex items-center gap-2">
           <Link
             href="/dispatch/new"
-            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-surface)] px-3.5 text-[13px] font-medium shadow-[var(--shadow-sm)] transition-colors hover:bg-[var(--layer-interactive)]"
+            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--layer-surface)] px-3.5 text-[13px] font-medium ring-1 ring-inset ring-[var(--line-strong)] transition-colors hover:bg-[var(--layer-elevated)]"
           >
             Issue stock <kbd className="kbd">⇧D</kbd>
           </Link>
           <Link
             href="/receiving"
-            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-white px-3.5 text-[13px] font-medium text-[#0A0A0A] transition-colors hover:bg-[oklch(0.93_0_0)]"
+            className="flex h-9 items-center gap-2 rounded-[var(--r-md)] bg-[var(--brass)] px-3.5 text-[13px] font-medium text-[#0B0A08] transition-colors hover:bg-[var(--brass-bright)]"
           >
-            Receive <kbd className="kbd bg-white/15 text-white/80">⇧R</kbd>
+            Receive
+            <kbd className="kbd bg-black/10 text-black/55 shadow-none">⇧R</kbd>
           </Link>
         </div>
       </div>
@@ -365,6 +386,18 @@ export default async function OverviewPage() {
             />
           ))}
         </Panel>
+      </div>
+
+      {/* Standing ----------------------------------------------------- */}
+      <div className="mt-3 grid gap-3 lg:grid-cols-2">
+        <HealthCard
+          good={Number(bands?.good_lines ?? 0)}
+          watch={Number(bands?.watch_lines ?? 0)}
+          atRisk={Number(bands?.at_risk_lines ?? 0)}
+          critical={Number(bands?.critical_lines ?? 0)}
+          score={Number(bands?.health_score ?? 100)}
+        />
+        <RiskCategories rows={riskRows} />
       </div>
     </>
   );

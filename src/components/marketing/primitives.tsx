@@ -130,7 +130,7 @@ export function Cta({
         "mk-cta group inline-flex h-12 items-center justify-center gap-2 rounded-[var(--r-lg)] px-6 text-[14px] font-semibold",
         "transition-[transform,box-shadow,background-color] duration-200 active:scale-[0.98]",
         variant === "primary"
-          ? "bg-white text-[#0A0A0A] hover:bg-[oklch(0.93_0_0)]"
+          ? "bg-[var(--brass)] text-[#0B0A08] hover:bg-[var(--brass-bright)]"
           : "bg-[oklch(1_0_0_/_0.04)] text-[var(--text-secondary)] hover:bg-[oklch(1_0_0_/_0.08)] hover:text-[var(--text-primary)]",
         className,
       )}

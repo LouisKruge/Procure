@@ -6,10 +6,14 @@ import Link from "next/link";
 import {
   ArrowLeftRight,
   Bell,
+  ChevronDown,
+  ChevronRight,
+  CircleHelp,
   ClipboardCheck,
   LogOut,
   PackagePlus,
   Scale,
+  Search,
   ShoppingCart,
   Truck,
 } from "lucide-react";
@@ -98,33 +102,51 @@ export function AppShell({
 
   return (
     <div className="relative z-10 flex min-h-dvh">
-      <Sidebar
-        siteName={siteName}
-        siteCode={siteCode}
-        onOpenSearch={() => setSearchOpen(true)}
-        onQuickCreate={() => setCreateOpen(true)}
-      />
+      <Sidebar siteName={siteName} siteCode={siteCode} />
 
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Top bar ------------------------------------------------------ */}
-        <header className="sticky top-0 z-30 flex h-14 items-center gap-2 border-b border-[var(--line)] bg-[var(--layer-chrome)] px-3 sm:px-5">
+        <header className="sticky top-0 z-30 flex h-16 items-center gap-3 border-b border-[var(--line)] bg-[var(--layer-chrome)] px-3 sm:px-5">
           <Link href="/dashboard" className="flex items-center gap-2 lg:hidden">
-            <span className="grid size-7 place-items-center rounded-[var(--r-md)] bg-[var(--layer-active)] ring-1 ring-inset ring-[var(--line-strong)]">
-              <span className="text-[11px] font-semibold tracking-[-0.02em] text-white">N</span>
+            <span className="grid size-7 place-items-center rounded-[var(--r-sm)] bg-[var(--brass)]">
+              <span className="text-[11px] font-bold text-[#0B0A08]">N</span>
             </span>
           </Link>
 
           {/* Live status. Streams in behind the shell rather than holding
               it up - see the layout for why. */}
-          <div className="hidden items-center gap-2 md:flex">
+          <div className="hidden items-center gap-2 lg:flex">
             <React.Suspense
-              fallback={<span className="h-[19px] w-24 rounded-[var(--r-sm)] bg-[var(--layer-interactive)]" />}
+              fallback={
+                <span className="h-[22px] w-40 rounded-[var(--r-sm)] bg-[var(--layer-interactive)]" />
+              }
             >
               <LiveStatus alerts={alerts} />
             </React.Suspense>
+            <Link
+              href="/reports"
+              className="inline-flex h-[26px] items-center gap-1 rounded-[var(--r-sm)] px-2.5 text-[11.5px] text-[var(--text-tertiary)] ring-1 ring-inset ring-[var(--line)] transition-colors hover:text-[var(--text-primary)] hover:ring-[var(--line-strong)]"
+            >
+              System status
+              <ChevronRight className="size-3" />
+            </Link>
           </div>
 
-          <div className="ml-auto flex items-center gap-2">
+          {/* Command bar. The one search on the screen, centred, so it reads
+              as the way in rather than as a field on a form. */}
+          <button
+            type="button"
+            onClick={() => setSearchOpen(true)}
+            className="group mx-auto flex h-9 w-full max-w-[26rem] items-center gap-2.5 rounded-[var(--r-md)] bg-[var(--layer-sunken)] px-3 text-left ring-1 ring-inset ring-[var(--line)] transition-colors hover:bg-[var(--layer-surface)] hover:ring-[var(--line-strong)]"
+          >
+            <Search className="size-4 shrink-0 text-[var(--text-quaternary)]" />
+            <span className="flex-1 truncate text-[13px] text-[var(--text-quaternary)]">
+              Search or type a command…
+            </span>
+            <kbd className="kbd hidden sm:inline-flex">⌘K</kbd>
+          </button>
+
+          <div className="flex shrink-0 items-center gap-1">
             <SiteSwitcher sites={sites} siteId={siteId} allowAll={allowAll} />
 
             <button
@@ -137,6 +159,16 @@ export function AppShell({
               <React.Suspense fallback={null}>
                 <BellBadge alerts={alerts} />
               </React.Suspense>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setCreateOpen(true)}
+              className="hidden size-9 place-items-center rounded-[var(--r-md)] text-[var(--text-tertiary)] transition-colors hover:bg-[var(--layer-interactive)] hover:text-[var(--text-primary)] sm:grid"
+              aria-label="Create"
+              title="Create — press C"
+            >
+              <CircleHelp className="size-[18px]" />
             </button>
 
             <ProfileMenu fullName={fullName} email={email} role={role} />
@@ -298,14 +330,19 @@ function ProfileMenu({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className={cn(
-          "grid size-9 place-items-center rounded-full bg-gradient-to-br from-[var(--layer-active)] to-[var(--layer-interactive)]",
-          "text-[11px] font-bold text-[var(--text-secondary)] shadow-[var(--shadow-sm)] transition-transform active:scale-95",
-        )}
+        className="flex h-9 items-center gap-1.5 rounded-[var(--r-md)] pl-1 pr-1.5 transition-colors hover:bg-[var(--layer-interactive)]"
         aria-label="Account"
         aria-expanded={open}
       >
-        {initials || "?"}
+        <span className="grid size-7 place-items-center rounded-full bg-[var(--layer-active)] text-[10.5px] font-semibold text-[var(--text-secondary)] ring-1 ring-inset ring-[var(--line-strong)]">
+          {initials || "?"}
+        </span>
+        <ChevronDown
+          className={cn(
+            "size-3.5 text-[var(--text-quaternary)] transition-transform duration-200",
+            open && "rotate-180",
+          )}
+        />
       </button>
 
       {open ? (

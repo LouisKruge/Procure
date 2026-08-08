@@ -118,7 +118,7 @@ export function MarketingNav() {
           </Link>
           <Link
             href="/login"
-            className="group inline-flex h-9 items-center gap-1.5 rounded-[var(--r-md)] bg-white px-4 text-[13px] font-medium text-[#0A0A0A] transition-[background-color,transform] hover:bg-[oklch(0.93_0_0)] active:scale-[0.985]"
+            className="group inline-flex h-9 items-center gap-1.5 rounded-[var(--r-md)] bg-[var(--brass)] px-4 text-[13px] font-medium text-[#0B0A08] transition-[background-color,transform] hover:bg-[var(--brass-bright)] active:scale-[0.985]"
           >
             Book a demo
             <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -184,7 +184,7 @@ export function MarketingNav() {
             ))}
           <Link
             href="/login"
-            className="mt-2 block rounded-[var(--r-md)] bg-white px-3 py-3 text-center text-[14px] font-medium text-[#0A0A0A]"
+            className="mt-2 block rounded-[var(--r-md)] bg-[var(--brass)] px-3 py-3 text-center text-[14px] font-medium text-[#0B0A08]"
           >
             Sign in
           </Link>

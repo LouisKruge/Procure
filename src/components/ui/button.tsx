@@ -16,7 +16,7 @@ const buttonVariants = cva(
         /* White face, black type. The brightest thing on the screen, which is
            the weight a commit action earns when nothing else uses colour. */
         default:
-          "bg-primary text-primary-foreground shadow-[0_1px_0_oklch(1_0_0_/_0.5)_inset] hover:bg-[oklch(0.93_0_0)] active:bg-[oklch(0.87_0_0)]",
+          "bg-primary text-primary-foreground shadow-[0_1px_0_oklch(1_0_0_/_0.28)_inset] hover:bg-[var(--brass-bright)] active:bg-[oklch(0.76_0.05_85)]",
         /* Oxide, not signal. Dark enough to sit in a monochrome row. */
         destructive:
           "bg-destructive text-destructive-foreground ring-1 ring-inset ring-[oklch(0.62_0.14_25_/_0.32)] hover:bg-[oklch(0.37_0.10_25)]",

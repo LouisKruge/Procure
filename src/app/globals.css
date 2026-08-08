@@ -74,15 +74,27 @@
   --text-quaternary:#6E6E6E;
   --text-disabled:  #4A4A4A;
 
-  /* ------------------------------------------------------------- neutral
-   * What used to be the brand hue. It is now simply white, so every control
-   * that reaches for the "accent" gets a machined highlight rather than a
-   * colour. Four stops so existing components keep working.
+  /* --------------------------------------------------------------- brass
+   * The one warm note in the system: an unlacquered brass / champagne that
+   * reads as machined metal rather than as a brand colour. It is barely
+   * chromatic - close enough to the neutrals that the screen still scans as
+   * monochrome, warm enough that the commit action and the mark are
+   * unmistakably deliberate.
+   *
+   * It carries exactly two jobs: the primary action, and the wordmark.
+   * Everywhere else the interface stays black, graphite and white.
    */
-  --nav-dim:       oklch(0.40 0 0);
-  --nav:           #FFFFFF;
-  --nav-bright:    #FFFFFF;
-  --nav-wash:      oklch(1 0 0 / 0.08);
+  --brass-dim:    oklch(0.52 0.038 82);
+  --brass:        oklch(0.82 0.048 85);
+  --brass-bright: oklch(0.89 0.044 86);
+  --brass-wash:   oklch(0.82 0.048 85 / 0.10);
+
+  /* The old accent name, repointed. Everything that reached for the accent
+   * now gets the brass instead of a flat white. */
+  --nav-dim:       var(--brass-dim);
+  --nav:           var(--brass);
+  --nav-bright:    var(--brass-bright);
+  --nav-wash:      var(--brass-wash);
 
   /* ------------------------------------------------------------ channels
    * Desaturated on purpose. These are instrument colours read against black,
@@ -192,11 +204,10 @@
   --card-foreground: var(--text-primary);
   --popover: var(--layer-floating);
   --popover-foreground: var(--text-primary);
-  /* The primary action is white on black. It is the brightest thing that can
-   * appear on the screen, which is exactly the weight a commit action should
-   * carry when nothing else is competing for attention with colour. */
-  --primary: #FFFFFF;
-  --primary-foreground: #0A0A0A;
+  /* The primary action is brass on black - the only warm surface on the
+   * screen, and the only thing competing with the numbers for attention. */
+  --primary: var(--brass);
+  --primary-foreground: #0B0A08;
   --secondary: var(--layer-elevated);
   --secondary-foreground: var(--text-primary);
   --muted: var(--layer-elevated);
@@ -208,7 +219,7 @@
   --destructive-foreground: oklch(0.88 0.06 25);
   --border: var(--line);
   --input: var(--line-strong);
-  --ring: oklch(1 0 0 / 0.42);
+  --ring: oklch(0.82 0.048 85 / 0.5);
   --radius: var(--r-lg);
 
   --ok: var(--success-bright);
@@ -269,6 +280,9 @@
   --color-layer-active: var(--layer-active);
   --color-floating: var(--layer-floating);
 
+  --color-brass: var(--brass);
+  --color-brass-bright: var(--brass-bright);
+  --color-brass-wash: var(--brass-wash);
   --color-nav: var(--nav);
   --color-nav-bright: var(--nav-bright);
   --color-nav-wash: var(--nav-wash);

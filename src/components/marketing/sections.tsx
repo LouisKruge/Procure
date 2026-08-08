@@ -226,7 +226,7 @@ function ModuleStage({ id }: { id: string }) {
             key={String(code)}
             className="flex items-center gap-3 border-t border-[var(--line-subtle)] py-2.5"
           >
-            <span className="grid size-4 place-items-center rounded-[3px] bg-white text-[9px] font-bold text-[#0A0A0A]">
+            <span className="grid size-4 place-items-center rounded-[3px] bg-[var(--brass)] text-[9px] font-bold text-[#0B0A08]">
               ✓
             </span>
             <div className="min-w-0 flex-1">
@@ -248,7 +248,7 @@ function ModuleStage({ id }: { id: string }) {
         ))}
         <div className="mt-3 flex items-center justify-between border-t border-[var(--line-subtle)] pt-3">
           <span className="text-[11.5px] text-[var(--text-tertiary)]">3 suppliers selected</span>
-          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
+          <span className="rounded-[var(--r-md)] bg-[var(--brass)] px-3 py-1.5 text-[11.5px] font-medium text-[#0B0A08]">
             Create purchase orders
           </span>
         </div>
@@ -294,7 +294,7 @@ function ModuleStage({ id }: { id: string }) {
             <p className="text-[11px] text-[var(--text-tertiary)]">This receipt</p>
             <p className="num text-[13px] font-semibold">300 units · {formatMoney(1284)}</p>
           </div>
-          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
+          <span className="rounded-[var(--r-md)] bg-[var(--brass)] px-3 py-1.5 text-[11.5px] font-medium text-[#0B0A08]">
             Post receipt
           </span>
         </div>
@@ -351,7 +351,7 @@ function ModuleStage({ id }: { id: string }) {
           <span className="text-[11.5px] text-[var(--text-tertiary)]">
             18 of 412 lines out
           </span>
-          <span className="rounded-[var(--r-md)] bg-white px-3 py-1.5 text-[11.5px] font-medium text-[#0A0A0A]">
+          <span className="rounded-[var(--r-md)] bg-[var(--brass)] px-3 py-1.5 text-[11.5px] font-medium text-[#0B0A08]">
             Approve and post
           </span>
         </div>
